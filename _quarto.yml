@@ -1,5 +1,7 @@
 project:
   type: book
+  post-render:
+    - renumber-envs.py   # יישור מספור הסביבות וההפניות למספור של הספר
 book:
   title: אלגברה לינארית
   author: ד"ר יונתן שלח, ד"ר נדב מאיר
@@ -29,12 +31,8 @@ book:
         text: הורדת הספר כ-PDF
 
 language:
-  label:
-    fig: "איור"
-    tbl: "טבלה"
-    eq: "משוואה"
-  ui:
-    chapter: "פרק"
+  crossref-ch-prefix: "פרק"     # טקסט @sec-הפניה לפרק שלם
+  crossref-sec-prefix: "סעיף"
 bibliography: references.bib
 
 crossref:
@@ -43,7 +41,23 @@ crossref:
   fig-prefix: "איור"    # במקום "Figure" בטקסטי הפניה (@fig-...)
   tbl-title: "טבלה"
   tbl-prefix: "טבלה"
+  eq-prefix: "משוואה"
   title-delim: ":"      # המפריד בין "איור 4.1" לכיתוב (לא תמיד חל ב-PDF)
+  # תוויות עבריות לסביבות המשפט — גם לכותרת בתיבה וגם לטקסט של @הפניות
+  thm-title: "משפט"
+  thm-prefix: "משפט"
+  lem-title: "למה"
+  lem-prefix: "למה"
+  cor-title: "מסקנה"
+  cor-prefix: "מסקנה"
+  prp-title: "טענה"
+  prp-prefix: "טענה"
+  def-title: "הגדרה"
+  def-prefix: "הגדרה"
+  exm-title: "דוגמה"
+  exm-prefix: "דוגמה"
+  exr-title: "תרגיל"
+  exr-prefix: "תרגיל"
 
 
 format:
@@ -62,10 +76,8 @@ format:
     include-before-body:
       - math-macros.html
     include-after-body:
-      - auto-env-titles.html
-      - chapter-numbering.html
       - tracking.html
-      - report-typo.html   # ← זה
+      - report-typo.html
     include-in-header: _includes/head.html
       
     filters:
