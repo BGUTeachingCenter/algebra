@@ -141,22 +141,27 @@ def main():
             fh.write(html)
 
     # ---------- מעבר שני: שכתוב טקסט ההפניות בכל הקבצים ----------
+    # שתי צורות של הפניות אצל Quarto:
+    #   מספר בלבד (-@id):   <a class="quarto-xref"><span>5.2</span></a>
+    #   תווית + מספר (@id): <a class="quarto-xref">טענה&nbsp;<span>5.2</span></a>
+    # התווית יושבת מחוץ ל-span והמספר בפנים, לכן תופסים כל אחד לחוד.
     xref_re = re.compile(
-        r'(<a href="[^"]*#([\w.-]+)" class="quarto-xref"[^>]*><span>)([^<]*)(</span></a>)')
+        r'(<a href="[^"]*#([\w.-]+)" class="quarto-xref"[^>]*>)'
+        r'([^<]*)<span>([^<]*)</span>(</a>)')
 
     def fix_xref(m):
         target = m.group(2)
         if target not in ref_map:
             return m.group(0)
         label, num = ref_map[target]
-        old = m.group(3)
-        if re.fullmatch(r'[0-9]+(\.[0-9]+)*', old):          # מספר בלבד
-            new = num
-        elif re.fullmatch(r'[^0-9]+(?:&nbsp;|\s)[0-9.]+', old):  # תווית + מספר
-            new = f'{label}&nbsp;{num}'
-        else:
+        prefix, old_num = m.group(3), m.group(4)
+        if not re.fullmatch(r'[0-9]+(\.[0-9]+)*', old_num):
             return m.group(0)
-        return m.group(1) + new + m.group(4)
+        if prefix.strip().replace('&nbsp;', ''):   # יש תווית — מחליפים גם אותה
+            new = f'{label}&nbsp;<span>{num}</span>'
+        else:                                      # מספר בלבד
+            new = f'{prefix}<span>{num}</span>'
+        return m.group(1) + new + m.group(5)
 
     for path in chapter_files():
         with open(path, encoding="utf-8") as fh:

@@ -3,7 +3,7 @@
 .proposition, .corollary, .proof, .remark {
   border: 1px solid var(--env-color, #999);
   margin: 1.25em 0;
-  border-radius: 0;
+  border-radius: 10px;
   overflow: hidden;
   direction: rtl;
 }
@@ -162,7 +162,8 @@ figure.quarto-figure figcaption {
 .callout.solution {
   --env-color: rgba(72, 209, 204, 0.35);
   border: 1px solid var(--env-color);
-  border-radius: 0;
+  border-radius: 10px;
+  overflow: hidden;
   box-shadow: none;
   margin: 1.25rem 0;
 }
