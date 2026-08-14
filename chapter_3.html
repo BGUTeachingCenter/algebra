@@ -547,7 +547,7 @@ A+B&amp;=\begin{pmatrix} 1+7-5i &amp; i+2+7i \\
 <div class="theorem-title">הוכחה</div><p>כל התכונות עוברות בירושה מחיבור וכפל ב- <span class="math inline">\(\mathbb{F}\)</span> (מדובר בתכונות מוכרות של <span class="math inline">\(\mathbb{R}\)</span> וראינו (בפרק <a href="chapter_0_5.html" class="quarto-xref"><span>3</span></a>) שהן עוברות בירושה ל- <span class="math inline">\(\mathbb{C}\)</span>). נוכיח למשל את חוק הפילוג: נתמקד באיבר הכללי של כל מטריצה בשוויון שצריך להוכיח. לכל <span class="math inline">\(1\leq i\leq m, 1\leq j\leq n\)</span> מתקיים</p>
 <p><span class="math display">\[.(\alpha(A+B))_{ij}=\alpha(A+B)_{ij}=\alpha((A)_{ij}+(B)_{ij})=\alpha (A)_{ij}+\alpha (B)_{ij}\]</span> שימו לב שהמעבר האחרון נכון לפי חוק הפילוג ב-<span class="math inline">\(\mathbb{F}\)</span>. לכן נובע כי <span class="math display">\[.\alpha(A+B)=\alpha A+\beta A\]</span></p>
 <p>נוכיח גם את ניטרליות מטריצת האפס: <span class="math display">\[(A+\mathbf{0}_{m\times n})_{ij}=(A)_{ij}+(\mathbf{0}_{m\times n})_{ij}=(A)_{ij}+0=(A)_{ij}\]</span> לכל <span class="math inline">\(1\leq i\leq m, 1\leq j\leq n\)</span>, ולכן <span class="math display">\[,A+\mathbf{0}_{m\times n}=A\]</span></p>
-<p>ההוכחות של שאר הסעיפים דומות, כאשר הרעיון הכללי הוא שימוש ב- <a href="#def-entry-formula" class="quarto-xref">הגדרה&nbsp;<span>6.1</span></a> והתכונות המתאימות של חיבור/כפל ב- <span class="math inline">\(\mathbb{F}\)</span>.&nbsp;◻</p>
+<p>ההוכחות של שאר הסעיפים דומות, כאשר הרעיון הכללי הוא שימוש ב- <a href="#def-entry-formula" class="quarto-xref">הגדרה&nbsp;<span>6.4</span></a> והתכונות המתאימות של חיבור/כפל ב- <span class="math inline">\(\mathbb{F}\)</span>.&nbsp;◻</p>
 </div>
 <div class="exercise"><div class="theorem-title">תרגיל 6.1</div>
 <p>הוכיחו את חוק הקיבוץ לכפל בסקלר.</p>
@@ -2097,7 +2097,7 @@ E_7 E_6 E_5 E_4 E_3 E_2 E_1 A &amp;=
 <div class="theorem-title">הוכחה</div><p>כבר הוכחנו שחמשת התנאים הראשונים שקולים. נראה כי <span class="math display">\[(\text{ג}) \impliedby (\text{ו}) \impliedby (\text{א})\]</span> וגם <span class="math display">\[(\text{ז}) \iff (\text{ה})\]</span> ומכאן נסיק שכל אחד מהתנאים <span class="math inline">\((\text{ח}) ,(\text{ז}) ,(\text{ו})\)</span> שקול לכל שאר התנאים.</p>
 <p><span class="math inline">\(:(\text{ו}) \impliedby (\text{א})\)</span> זה נובע ישירות ממסקנה <a href="#cor-left" class="quarto-xref"><span>6.28</span></a> עם <span class="math inline">\(A'=I_n\)</span>.</p>
 <p><span class="math inline">\(:(\text{ג}) \impliedby (\text{ו})\)</span> נניח כי קיימת <span class="math inline">\(B\in\mathbb{M}_{n\times n}(\mathbb{F})\)</span> כך ש- <span class="math inline">\(BA=I_n\)</span>. אז כדי לפתור את הממ"ל <span class="math inline">\(Ax=0\)</span> נכפיל את שני האגפים ב- <span class="math inline">\(B\)</span> משמאל: <span class="math display">\[B(Ax)=B\cdot0 \implies I_n x=0 \implies x=0\]</span> לכן יש פתרון יחיד.</p>
-<p><span class="math inline">\(:(\text{ז}) \impliedby (\text{ה})\)</span> המטרה היא למצוא <span class="math inline">\(C\in\mathbb{M}_{n\times n}(\mathbb{F})\)</span> כך ש- <span class="math inline">\(AC=I_n\)</span>. נסמן את העמודות של <span class="math inline">\(C\)</span> ע"י <span class="math inline">\(v_1,v_2,...,v_n\in\mathbb{F}^n\)</span>, ואז לפי <a href="#prp-product-column" class="quarto-xref">טענה&nbsp;<span>6.2</span></a> מתקיים <span class="math display">\[.AC=\begin{pmatrix}
+<p><span class="math inline">\(:(\text{ז}) \impliedby (\text{ה})\)</span> המטרה היא למצוא <span class="math inline">\(C\in\mathbb{M}_{n\times n}(\mathbb{F})\)</span> כך ש- <span class="math inline">\(AC=I_n\)</span>. נסמן את העמודות של <span class="math inline">\(C\)</span> ע"י <span class="math inline">\(v_1,v_2,...,v_n\in\mathbb{F}^n\)</span>, ואז לפי <a href="#prp-product-column" class="quarto-xref">טענה&nbsp;<span>6.13</span></a> מתקיים <span class="math display">\[.AC=\begin{pmatrix}
 | &amp; | &amp; &amp; | \\
 Av_1 &amp; Av_2 &amp; \cdots &amp; Av_n \\
 | &amp; | &amp; &amp; |
@@ -2121,7 +2121,7 @@ x_2 \\
 \vdots \\
 x_n
 \end{pmatrix}\]</span> עם <span class="math inline">\(.x=\sum_{j=1}^n \beta_j v_j\)</span> לכן נקבל <span class="math display">\[.Ax=A(\sum_{j=1}^n \beta_j v_j)=\sum_{j=1}^n \beta_j Av_j=\sum_{j=1}^n \beta_j e_j=b.\]</span></p>
-<p>ניתן להכניס את <span class="math inline">\(A\)</span> לתוך הסכימה לפי <a href="#prp-matrix-vector" class="quarto-xref">טענה&nbsp;<span>6.1</span></a>.&nbsp;◻</p>
+<p>ניתן להכניס את <span class="math inline">\(A\)</span> לתוך הסכימה לפי <a href="#prp-matrix-vector" class="quarto-xref">טענה&nbsp;<span>6.9</span></a>.&nbsp;◻</p>
 </div>
 <p>לכאורה, הפיכות מימין והפיכות משמאל מתייחסות לשתי מטריצות <span class="math inline">\(B,C\)</span> שיכולות להיות שונות, אבל ראינו כי הפיכות משמאל שקולה להפיכות מימין. אז אמור להיות קשר בין המטריצות, ואכן:</p>
 <div id="prp-inverses" class="proposition theorem">
