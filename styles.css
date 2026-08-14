@@ -182,6 +182,14 @@ figure.quarto-figure figcaption {
   color: #555;
 }
 
+/* ===== ניווט בין פרקים: היפוך ראשי החצים ל-RTL ===== */
+/* Quarto מקבע חץ-שמאלה ל"הקודם" וחץ-ימינה ל"הבא"; ב-RTL הכיוון הפוך */
+.page-navigation .bi-arrow-left-short,
+.page-navigation .bi-arrow-right-short {
+  display: inline-block;
+  transform: scaleX(-1);
+}
+
 /* ===== רשימות עבריות ===== */
 ol[type="a"] {
   list-style-type: hebrew;

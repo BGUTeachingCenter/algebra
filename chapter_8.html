@@ -325,7 +325,7 @@ a_1^k &amp; 0 &amp; \cdots &amp; 0 \\
 <p>התהליך של מציאת <span class="math inline">\(B\)</span> כנ"ל נקרא לכסון. מהי האינטואיציה ההנדסית מאחוריו? בדרך כלל, מערכת לינארית מערבבת רכיבים. אבל יש כיוונים מיוחדים במרחב — הכיוונים העצמיים — שבהם המערכת פועלת בצורה "טהורה". המשמעות של כיוון עצמי: נכנסים בכיוון הזה ויוצאים באותו הכיוון (עד כדי סימן, כלומר ייתכן היפוך כיוון). במילים אחרות: אם מתחילים בדיוק בכיוון הזה, המערכת לא יוצרת ערבוב עם כיוונים אחרים. מה שכן עשוי להשתנות הוא האורך, כלומר יש כפל בסקלר.</p>
 <p>העתקה לינארית כללית היא כמו מערכת שבה כל משתנה משפיע על כולם, כלומר יש ערבוב. משמעות הלכסון היא בחירת משתנים חדשים (צירופים לינאריים של המשתנים המקוריים) כך שעבורם המערכת מתנהגת כאילו היא מפוצלת לערוצים נפרדים, בלי ערבוב. הפיצול עוזר לנו להבין את המערכת יותר טוב, וזו המטרה הכללית של לכסון.</p>
 <p>קודם כל, נבין את ההגדרה המדויקת של אבני הבניין של לכסון: ערכים עצמיים ווקטורים עצמיים. נעסוק רק במקרה של ה"ל <span class="math inline">\(T:\mathbb{F}^n\to\mathbb{F}^n\)</span>, אך נציין שההגדרה עבור <span class="math inline">\(T:V\to V\)</span> דומה לכל מ"ו <span class="math inline">\(V\)</span> נוצר סופית. המקרה של <span class="math inline">\(V=\mathbb{F}^n\)</span> פשוט יותר כי מלכתחילה יש מטריצה ריבועית <span class="math inline">\(A\in\mathbb{M}_{n\times n}(\mathbb{F})\)</span> עבורה <span class="math inline">\(T=T_A\)</span>, ולכן ההגדרה תתייחס אל <span class="math inline">\(A\)</span> באופן מפורש.</p>
-<div class="definition">
+<div class="definition"><div class="theorem-title">הגדרה 11.1</div>
 <p>תהי <span class="math inline">\(A\in\mathbb{M}_{n\times n}(\mathbb{F})\)</span>.</p>
 <ol type="1">
 <li><p><span class="math inline">\(\lambda\in\mathbb{F}\)</span> נקרא ערך עצמי (ע"ע) של <span class="math inline">\(A\)</span> אם קיים <span class="math inline">\(\underline{0}\neq v\in\mathbb{F}^n\)</span> כך ש- <span class="math display">\[.Av=\lambda v\]</span> <span class="math inline">\(v\)</span> כנ"ל נקרא וקטור עצמי (ו"ע) של <span class="math inline">\(A\)</span> המתאים ל- <span class="math inline">\(\lambda\)</span>.</p></li>
@@ -342,11 +342,11 @@ a_1^k &amp; 0 &amp; \cdots &amp; 0 \\
 </figcaption>
 </figure>
 </div>
-<div class="proof remark">
-<p><span class="proof-title"><em>Remark</em>. </span>כל ע"ע של <span class="math inline">\(A\)</span> גם נקרא ע"ע של <span class="math inline">\(T_A\)</span>, אך נתמקד במטריצות. אכן, לפי הגדרת <span class="math inline">\(T_A\)</span> מתקיים <span class="math inline">\(T_Av=Av\)</span>. מכאן שלכל <span class="math inline">\(\lambda\in\mathbb{F},v\neq\underline{0}\)</span> מתקיים <span class="math display">\[.T_Av=\lambda v \iff Av=\lambda v\]</span> לכן, גם אם ההקשר הוא ה"ל ניתן לעבור למטריצה המתאימה ולעשות את החישובים עליה כדי למצוא את הע"ע ואת המרחבים העצמיים המתאימים. נוח להתמקד במטריצות מלכתחילה וכך נעשה.</p>
+<div class="remark">
+<div class="theorem-title">הערה 11.1</div><p>כל ע"ע של <span class="math inline">\(A\)</span> גם נקרא ע"ע של <span class="math inline">\(T_A\)</span>, אך נתמקד במטריצות. אכן, לפי הגדרת <span class="math inline">\(T_A\)</span> מתקיים <span class="math inline">\(T_Av=Av\)</span>. מכאן שלכל <span class="math inline">\(\lambda\in\mathbb{F},v\neq\underline{0}\)</span> מתקיים <span class="math display">\[.T_Av=\lambda v \iff Av=\lambda v\]</span> לכן, גם אם ההקשר הוא ה"ל ניתן לעבור למטריצה המתאימה ולעשות את החישובים עליה כדי למצוא את הע"ע ואת המרחבים העצמיים המתאימים. נוח להתמקד במטריצות מלכתחילה וכך נעשה.</p>
 </div>
 <div id="exm-eigenvalues" class="example theorem">
-<p><span class="theorem-title"><strong>Example 11.1</strong></span> עבור <span class="math display">\[A=\begin{pmatrix}
+<div class="theorem-title">דוגמה 11.1</div><p>עבור <span class="math display">\[A=\begin{pmatrix}
 2 &amp; 1 \\
 1 &amp; 2
 \end{pmatrix}\]</span> נראה כי <span class="math inline">\(\lambda_1=1,\ \lambda_2=3\)</span> הם ע"ע. אכן, מתקיים: <span class="math display">\[\begin{aligned}
@@ -377,7 +377,7 @@ a_1^k &amp; 0 &amp; \cdots &amp; 0 \\
 </div>
 </div>
 <div id="prp-eigen-det" class="proposition theorem">
-<p><span class="theorem-title"><strong>Proposition 11.1</strong></span> <em>תהי <span class="math inline">\(A\in\mathbb{M}_{n\times n}(\mathbb{F})\)</span> ויהי <span class="math inline">\(\lambda\in\mathbb{F}\)</span> (לא בהכרח ע"ע). אז מתקיים:</em></p>
+<div class="theorem-title">טענה 11.2</div><p><em>תהי <span class="math inline">\(A\in\mathbb{M}_{n\times n}(\mathbb{F})\)</span> ויהי <span class="math inline">\(\lambda\in\mathbb{F}\)</span> (לא בהכרח ע"ע). אז מתקיים:</em></p>
 <ol type="1">
 <li><p><em><span class="math display">\[V_{\lambda}=\mathop{\mathrm{N}}(\lambda I_n-A)\]</span> בפרט, <span class="math inline">\(V_{\lambda}\)</span> הוא תת-מרחב של <span class="math inline">\(\mathbb{F}^n\)</span>.</em></p></li>
 <li><p><em><span class="math display">\[\det(\lambda I_n-A)=0 \iff V_{\lambda}\neq\Set{\underline{0}} \iff \text{$\lambda$
@@ -386,21 +386,21 @@ $A$}\]</span></em></p></li>
 </ol>
 </div>
 <div class="proof">
-<p><span class="proof-title"><em>Proof</em>. </span>&nbsp;</p>
+<div class="theorem-title">הוכחה</div><p>&nbsp;</p>
 <ol type="1">
 <li><p>לכל <span class="math inline">\(v\in\mathbb{F}^n\)</span> מתקיים: <span class="math display">\[\begin{aligned}
 v\in V_{\lambda} &amp;\iff Av=\lambda v \iff \lambda v-Av=\underline{0} \\
 &amp;\iff (\lambda I_n-A)v=\underline{0} \iff v\in\mathop{\mathrm{N}}(\lambda I_n-A)
 \end{aligned}\]</span> קיבלנו כי <span class="math inline">\(V_{\lambda}=\mathop{\mathrm{N}}(\lambda I_n-A)\)</span>. בפרט, זהו תת-מרחב של <span class="math inline">\(\mathbb{F}^n\)</span>.</p></li>
-<li><p>לפי ההגדרה, <span class="math inline">\(\lambda\)</span> הוא ע"ע של <span class="math inline">\(A\)</span> אם ורק אם קיים <span class="math inline">\(v\neq\underline{0}\)</span> כך ש- <span class="math inline">\(Av=\lambda v\)</span>. התנאי האחרון בדיוק שקול לתנאי <span class="math inline">\(V_{\lambda}\neq\Set{\underline{0}}\)</span>. לפי הסעיף הקודם ומשפט <a href="./chapter_3.html#thm-invertible">6.75</a> עבור המטריצה <span class="math inline">\(\lambda I_n-A\)</span>, מתקיים: <span class="math display">\[\begin{aligned}
+<li><p>לפי ההגדרה, <span class="math inline">\(\lambda\)</span> הוא ע"ע של <span class="math inline">\(A\)</span> אם ורק אם קיים <span class="math inline">\(v\neq\underline{0}\)</span> כך ש- <span class="math inline">\(Av=\lambda v\)</span>. התנאי האחרון בדיוק שקול לתנאי <span class="math inline">\(V_{\lambda}\neq\Set{\underline{0}}\)</span>. לפי הסעיף הקודם ומשפט <a href="chapter_3.html#thm-invertible" class="quarto-xref"><span>6.33</span></a> עבור המטריצה <span class="math inline">\(\lambda I_n-A\)</span>, מתקיים: <span class="math display">\[\begin{aligned}
 V_{\lambda}\neq\Set{\underline{0}} &amp;\iff \mathop{\mathrm{N}}(\lambda I_n-A)\neq {\underline{0}} \iff \text{אינה הפיכה} \, \lambda I_n-A \\
 &amp;\iff \det(\lambda I_n-A)=0
 \end{aligned}\]</span></p></li>
 </ol>
 <p>&nbsp;◻</p>
 </div>
-<div class="example">
-<p>נחזור לדוגמה <a href="#exm-eigenvalues">11.3</a>. הראינו כי <span class="math inline">\(\lambda_1=1,\,\lambda_2=3\)</span> הם ע"ע של <span class="math inline">\(A\)</span>, אבל איך ניתן היה למצוא אותם? ראשית נחשב את הדטרמיננטה של המטריצה <span class="math inline">\(\lambda I_2-A\)</span>:</p>
+<div class="example"><div class="theorem-title">דוגמה 11.2</div>
+<p>נחזור לדוגמה <a href="#exm-eigenvalues" class="quarto-xref"><span>11.1</span></a>. הראינו כי <span class="math inline">\(\lambda_1=1,\,\lambda_2=3\)</span> הם ע"ע של <span class="math inline">\(A\)</span>, אבל איך ניתן היה למצוא אותם? ראשית נחשב את הדטרמיננטה של המטריצה <span class="math inline">\(\lambda I_2-A\)</span>:</p>
 <p><span class="math display">\[\det(\lambda I_2-A)=\det\begin{pmatrix}
 \lambda-2 &amp; -1 \\
 -1 &amp; \lambda -2
@@ -423,23 +423,23 @@ V_{\lambda}\neq\Set{\underline{0}} &amp;\iff \mathop{\mathrm{N}}(\lambda I_n-A)\
 0 &amp; 0
 \end{pmatrix}=\mathop{\mathrm{Span}}\left(\begin{pmatrix}1\\1\end{pmatrix}\right)\]</span> לכן, <span class="math inline">\(\begin{pmatrix}1\\1\end{pmatrix}\)</span> הוא ו"ע של <span class="math inline">\(A\)</span> המתאים לע"ע <span class="math inline">\(\lambda_2=3\)</span>. גם כאן כל כפולה בסקלר (חוץ מוקטור האפס) היא גם גם ו"ע.</p>
 </div>
-<div class="exercise">
+<div class="exercise"><div class="theorem-title">תרגיל 11.1</div>
 <p>תהי <span class="math inline">\(A\in\mathbb{M}_{n\times n}(\mathbb{F})\)</span>. הוכיחו כי <span class="math inline">\(0\)</span> הוא ע"ע של <span class="math inline">\(A\)</span> אם ורק אם <span class="math inline">\(A\)</span> אינה הפיכה.</p>
 </div>
 <div class="proof">
-<p><span class="proof-title"><em>Proof</em>. </span>לפי משפט <a href="./chapter_3.html#thm-invertible2">6.75</a> מתקיים: <span class="math display">\[\text{$A$ אינה הפיכה} \iff \exists\thinspace v\neq\underline{0}\,:\,Av=\underline{0}=0\cdot v\iff \text{$0$
+<div class="theorem-title">הוכחה</div><p>לפי משפט <a href="chapter_3.html#thm-invertible" class="quarto-xref"><span>6.33</span></a> מתקיים: <span class="math display">\[\text{$A$ אינה הפיכה} \iff \exists\thinspace v\neq\underline{0}\,:\,Av=\underline{0}=0\cdot v\iff \text{$0$
 הוא ע"ע של
 $A$}\]</span>&nbsp;◻</p>
 </div>
-<div class="definition">
+<div class="definition"><div class="theorem-title">הגדרה 11.3</div>
 <p>תהי <span class="math inline">\(A\in\mathbb{M}_{n\times n}(\mathbb{F})\)</span>. נגדיר <span class="math inline">\(p_A(x)=\det(x I_n-A)\)</span> ונקרא לו הפולינום האופייני של <span class="math inline">\(A\)</span>.</p>
 </div>
-<div class="proof remark">
-<p><span class="proof-title"><em>Remark</em>. </span>זהו פולינום ממעלה <span class="math inline">\(n\)</span> כי בחישוב הדטרמיננטה מופיע סכום (עם סימנים מתחלפים) של מכפלות של איברי המטריצה. יש בדיוק מכפלה אחת בפיתוח שהיא ממעלה <span class="math inline">\(n\)</span>, והיא זו המתאימה לאיברי האלכסון הראשי. לפי טענה <a href="#prp-eigen-det">11.4</a>, שורשי הפולינום הם בדיוק הע"ע של <span class="math inline">\(A\)</span>. נדגיש שהם לא בהכרח ממשיים גם אם <span class="math inline">\(\mathbb{F}=\mathbb{R}\)</span>.</p>
+<div class="remark">
+<div class="theorem-title">הערה 11.2</div><p>זהו פולינום ממעלה <span class="math inline">\(n\)</span> כי בחישוב הדטרמיננטה מופיע סכום (עם סימנים מתחלפים) של מכפלות של איברי המטריצה. יש בדיוק מכפלה אחת בפיתוח שהיא ממעלה <span class="math inline">\(n\)</span>, והיא זו המתאימה לאיברי האלכסון הראשי. לפי טענה <a href="#prp-eigen-det" class="quarto-xref"><span>11.2</span></a>, שורשי הפולינום הם בדיוק הע"ע של <span class="math inline">\(A\)</span>. נדגיש שהם לא בהכרח ממשיים גם אם <span class="math inline">\(\mathbb{F}=\mathbb{R}\)</span>.</p>
 <p>אין חשיבות לאות, אבל מקובל להשתמש ב- <span class="math inline">\(x\)</span> עבור המשתנה של הפולינום וב- <span class="math inline">\(\lambda\)</span> עבור הע"ע.</p>
 </div>
 <div id="exm-no-split" class="example theorem">
-<p><span class="theorem-title"><strong>Example 11.2</strong></span> עבור <span class="math display">\[A=\begin{pmatrix}
+<div class="theorem-title">דוגמה 11.3</div><p>עבור <span class="math display">\[A=\begin{pmatrix}
 0 &amp; -1 \\
 1 &amp; 0
 \end{pmatrix}\]</span> מתקיים <span class="math display">\[.p_A(x)=\det(x I_2-A)=\det\begin{pmatrix}
@@ -463,14 +463,14 @@ V_{-i}&amp;=\mathop{\mathrm{N}}(-iI_2-A)=\mathop{\mathrm{N}}\begin{pmatrix}
 \end{pmatrix}=\mathop{\mathrm{Span}}\left(\begin{pmatrix}1\\i\end{pmatrix}\right)
 \end{aligned}\]</span></p>
 </div>
-<div class="exercise">
+<div class="exercise"><div class="theorem-title">תרגיל 11.2</div>
 <p>מצאו את כל הע"ע ואת המרחבים העצמיים המתאימים עבור <span class="math display">\[.A=\begin{pmatrix}
 4 &amp; 0 &amp; 3 \\
 0 &amp; 3 &amp; 0 \\
 1 &amp; 0 &amp; 2
 \end{pmatrix}\]</span></p>
 </div>
-<div class="callout callout-style-default callout-note callout-titled" title="פתרון">
+<div class="callout callout-style-default callout-note callout-titled solution" title="פתרון">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -526,15 +526,15 @@ V_5&amp;=\mathop{\mathrm{N}}(5I_3-A)=\mathop{\mathrm{N}}\begin{pmatrix}
 </div>
 </div>
 </div>
-<div class="definition">
+<div class="definition"><div class="theorem-title">הגדרה 11.4</div>
 <p>מטריצות <span class="math inline">\(A,B\in\mathbb{M}_{n\times n}(\mathbb{F})\)</span> נקראות דומות אם קיימת <span class="math inline">\(P\in\mathbb{M}_{n\times n}(\mathbb{F})\)</span> הפיכה כך ש- <span class="math display">\[.A=PBP^{-1}\]</span></p>
 </div>
-<div class="proof remark">
-<p><span class="proof-title"><em>Remark</em>. </span>באותה המידה אפשר לכתוב <span class="math display">\[.B=P^{-1}AP\]</span> כלומר: <span class="math inline">\(A\)</span> דומה ל- <span class="math inline">\(B\)</span> אם ורק אם <span class="math inline">\(B\)</span> דומה ל- <span class="math inline">\(A\)</span>, כפי שהיינו מצפים מהמילה "דמיון".</p>
+<div class="remark">
+<div class="theorem-title">הערה 11.3</div><p>באותה המידה אפשר לכתוב <span class="math display">\[.B=P^{-1}AP\]</span> כלומר: <span class="math inline">\(A\)</span> דומה ל- <span class="math inline">\(B\)</span> אם ורק אם <span class="math inline">\(B\)</span> דומה ל- <span class="math inline">\(A\)</span>, כפי שהיינו מצפים מהמילה "דמיון".</p>
 <p>להוכיח ששתי מטריצות נתונות הן דומות זו משימה לא טריוויאלית. איך נמצא את <span class="math inline">\(P\)</span>? נגיע לכך בהמשך דרך לכסון (הקשור לו"ע וע"ע), אך בינתיים נראה דוגמה לבדיקת הדמיון בהינתן <span class="math inline">\(P\)</span>.</p>
 </div>
 <div id="exm-similar" class="example theorem">
-<p><span class="theorem-title"><strong>Example 11.3</strong></span> המטריצות <span class="math display">\[A=\begin{pmatrix}
+<div class="theorem-title">דוגמה 11.4</div><p>המטריצות <span class="math display">\[A=\begin{pmatrix}
 2 &amp; -1 \\
 -1 &amp; 2
 \end{pmatrix},\quad B=\begin{pmatrix}
@@ -554,10 +554,10 @@ V_5&amp;=\mathop{\mathrm{N}}(5I_3-A)=\mathop{\mathrm{N}}\begin{pmatrix}
 0 &amp; 1
 \end{pmatrix}\]</span></p>
 </div>
-<div class="definition">
+<div class="definition"><div class="theorem-title">הגדרה 11.5</div>
 <p><span class="math inline">\(A\in\mathbb{M}_{n\times n}(\mathbb{F})\)</span> נקראת לכסינה אם היא דומה למטריצה אלכסונית <span class="math inline">\(D\in\mathbb{M}_{n\times n}(\mathbb{F})\)</span>, כלומר קיימת <span class="math inline">\(P\in\mathbb{M}_{n\times n}(\mathbb{F})\)</span> הפיכה כך ש- <span class="math display">\[.A=PDP^{-1}\]</span></p>
 </div>
-<div class="example">
+<div class="example"><div class="theorem-title">דוגמה 11.5</div>
 <p>&nbsp;</p>
 <ol type="1">
 <li><p>המטריצה <span class="math display">\[A=\begin{pmatrix}
@@ -579,7 +579,7 @@ V_5&amp;=\mathop{\mathrm{N}}(5I_3-A)=\mathop{\mathrm{N}}\begin{pmatrix}
 1 &amp; 0 \\
 1 &amp; 1  
 \end{pmatrix}=A\]</span></p></li>
-<li><p>בדוגמה <a href="#exm-similar">11.13</a> ראינו כי <span class="math display">\[A=\begin{pmatrix}
+<li><p>בדוגמה <a href="#exm-similar" class="quarto-xref"><span>11.4</span></a> ראינו כי <span class="math display">\[A=\begin{pmatrix}
 2 &amp; -1 \\
 -1 &amp; 2
 \end{pmatrix},\quad B=\begin{pmatrix}
@@ -610,10 +610,10 @@ V_5&amp;=\mathop{\mathrm{N}}(5I_3-A)=\mathop{\mathrm{N}}\begin{pmatrix}
 </ol>
 </div>
 <p>הדוגמה לעיל מעידה על תכונה כללית של יחס הדמיון בין מטריצות: טרנזיטיביות. הכוונה המדויקת תובהר בתרגיל הבא:</p>
-<div class="exercise">
+<div class="exercise"><div class="theorem-title">תרגיל 11.3</div>
 <p>יהיו <span class="math inline">\(A,B,C\in\mathbb{M}_{n\times n}(\mathbb{F})\)</span> כך ש- <span class="math inline">\(A\)</span> דומה ל- <span class="math inline">\(B\)</span> ו- <span class="math inline">\(B\)</span> דומה ל- <span class="math inline">\(C\)</span>. אז <span class="math inline">\(A\)</span> דומה ל- <span class="math inline">\(C\)</span>.</p>
 </div>
-<div class="callout callout-style-default callout-note callout-titled" title="פתרון">
+<div class="callout callout-style-default callout-note callout-titled solution" title="פתרון">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -631,14 +631,14 @@ V_5&amp;=\mathop{\mathrm{N}}(5I_3-A)=\mathop{\mathrm{N}}\begin{pmatrix}
 </div>
 <p>אם כן, לאור התרגיל האחרון אפשר כבר להבין ששתי מטריצות לכסינות הן דומות זו לזו אם הן דומות לאותה מטריצה אלכסונית. בכיוון השני, נוכיח שהפולינומים האופייניים והע"ע של מטריצות דומות בהכרח שווים.</p>
 <div id="prp-char-poly" class="proposition theorem">
-<p><span class="theorem-title"><strong>Proposition 11.2</strong></span> <em>יהיו <span class="math inline">\(A,B\in\mathbb{M}_{n\times n}(\mathbb{F})\)</span> דומות. אז מתקיים:</em></p>
+<div class="theorem-title">טענה 11.6</div><p><em>יהיו <span class="math inline">\(A,B\in\mathbb{M}_{n\times n}(\mathbb{F})\)</span> דומות. אז מתקיים:</em></p>
 <ol type="1">
 <li><p><em>לכל <span class="math inline">\(\lambda\in\mathbb{F}\)</span> המטריצות <span class="math display">\[\lambda I_n-A,\,\lambda I_n-B\]</span> דומות.</em></p></li>
 <li><p><em>מתקיים <span class="math display">\[.p_A(x)=p_B(x)\]</span></em></p></li>
 <li><p><em>ל- <span class="math inline">\(A,B\)</span> יש אותם ע"ע.</em></p></li>
 </ol>
 </div>
-<div class="callout callout-style-default callout-note callout-titled" title="פתרון">
+<div class="callout callout-style-default callout-note callout-titled solution" title="פתרון">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -653,8 +653,8 @@ V_5&amp;=\mathop{\mathrm{N}}(5I_3-A)=\mathop{\mathrm{N}}\begin{pmatrix}
 <p>לפי הנתון, קיימת <span class="math inline">\(P\in\mathbb{M}_{n\times n}(\mathbb{F})\)</span> הפיכה כך ש- <span class="math display">\[.A=PBP^{-1}\]</span></p>
 <ol type="1">
 <li><p>יהי <span class="math inline">\(\lambda\in\mathbb{F}\)</span>. מתקיים <span class="math display">\[.P(\lambda I_n-B)P^{-1}=\lambda PP^{-1}-PBP^{-1}=\lambda I_n-A\]</span> לכן, שתי המטריצות דומות.</p></li>
-<li><p>זו מסקנה מהסעיף הקודם ותרגיל <a href="./chapter_4.html#exr-similar-det">7.19</a>. דטרמיננטות של מטריצות דומות הן שוות, ולכן <span class="math display">\[.p_A(x)=\det(xI_n-A)=\det(xI_n-B)=p_B(x)\]</span></p></li>
-<li><p>לפי הסעיף הקודם וטענה <a href="#prp-eigen-det">11.4</a>, נובע כי <span class="math display">\[.\text{$\lambda$
+<li><p>זו מסקנה מהסעיף הקודם ותרגיל <a href="chapter_4.html#exr-similar-det" class="quarto-xref"><span>7.3</span></a>. דטרמיננטות של מטריצות דומות הן שוות, ולכן <span class="math display">\[.p_A(x)=\det(xI_n-A)=\det(xI_n-B)=p_B(x)\]</span></p></li>
+<li><p>לפי הסעיף הקודם וטענה <a href="#prp-eigen-det" class="quarto-xref"><span>11.2</span></a>, נובע כי <span class="math display">\[.\text{$\lambda$
 הוא ע"ע של
 $A$} \iff p_A(\lambda)=0 \iff p_B(\lambda)=0 \iff \text{$\lambda$
 הוא ע"ע של
@@ -668,10 +668,10 @@ $B$}\]</span> כלומר: ל- <span class="math inline">\(A,B\)</span> יש או
 <h2 data-number="11.2" class="anchored" data-anchor-id="משפט-הלכסון-ויישומו"><span class="header-section-number">11.2</span> משפט הלכסון ויישומו</h2>
 <p>מהו הקשר בין לכסון לבין ערכים עצמיים? הם מופיעים על האלכסון הראשי של המטריצה האלכסונית <span class="math inline">\(D\)</span>. ומה לגבי הוקטורים העצמיים? הם העמודות של <span class="math inline">\(P\)</span>. זה הרעיון של המשפט הבא, שנקרא לו משפט הלכסון.</p>
 <div id="thm-diag" class="theorem">
-<p><span class="theorem-title"><strong>Theorem 11.1</strong></span> <em><span class="math inline">\(A\in\mathbb{M}_{n\times n}(\mathbb{F})\)</span> היא לכסינה אם ורק אם קיים ל- <span class="math inline">\(\mathbb{F}^n\)</span> בסיס <span class="math inline">\(B=\Set{v_1,...,v_n}\)</span> המורכב מוקטורים עצמיים של <span class="math inline">\(A\)</span>.</em></p>
+<div class="theorem-title">משפט 11.7</div><p><em><span class="math inline">\(A\in\mathbb{M}_{n\times n}(\mathbb{F})\)</span> היא לכסינה אם ורק אם קיים ל- <span class="math inline">\(\mathbb{F}^n\)</span> בסיס <span class="math inline">\(B=\Set{v_1,...,v_n}\)</span> המורכב מוקטורים עצמיים של <span class="math inline">\(A\)</span>.</em></p>
 </div>
 <div class="proof">
-<p><span class="proof-title"><em>Proof</em>. </span>בכיוון הראשון, נניח כי קיים ל- <span class="math inline">\(\mathbb{F}^n\)</span> בסיס <span class="math inline">\(B=\Set{v_1,...,v_n}\)</span> של וקטורים עצמיים המתאימים לע"ע <span class="math inline">\(\lambda_1,...,\lambda_n\in\mathbb{F}\)</span>. ליתר דיוק: <span class="math display">\[\forall 1\leq i\leq n\,:\,Av_i=\lambda_iv_i\]</span> נסתכל על <span class="math inline">\(T_A:\mathbb{F}^n\to\mathbb{F}^n\)</span> ונשים לב כי <span class="math display">\[.D=\begin{pmatrix}
+<div class="theorem-title">הוכחה</div><p>בכיוון הראשון, נניח כי קיים ל- <span class="math inline">\(\mathbb{F}^n\)</span> בסיס <span class="math inline">\(B=\Set{v_1,...,v_n}\)</span> של וקטורים עצמיים המתאימים לע"ע <span class="math inline">\(\lambda_1,...,\lambda_n\in\mathbb{F}\)</span>. ליתר דיוק: <span class="math display">\[\forall 1\leq i\leq n\,:\,Av_i=\lambda_iv_i\]</span> נסתכל על <span class="math inline">\(T_A:\mathbb{F}^n\to\mathbb{F}^n\)</span> ונשים לב כי <span class="math display">\[.D=\begin{pmatrix}
 \big| &amp; \big| &amp;        &amp; \big| \\
 [\lambda_1 v_1]_B &amp; [\lambda_2 v_2]_B &amp; \cdots &amp; [\lambda_n v_n]_B \\
 \big| &amp; \big| &amp;        &amp; \big|
@@ -682,7 +682,7 @@ $B$}\]</span> כלומר: ל- <span class="math inline">\(A,B\)</span> יש או
 0 &amp; \lambda_2 &amp; \cdots &amp; 0 \\
 \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
 0 &amp; 0 &amp; \cdots &amp; \lambda_n
-\end{pmatrix}\]</span> זו מטריצה אלכסונית. נשתמש במסקנה <a href="./chapter_7.html#cor-rep-similar">10.65</a>: <span class="math display">\[A=[T_A]_E^E=[I]_E^B[T_A]_B^B([I]_E^B)^{-1}\]</span> נסמן <span class="math inline">\(P=[I]_E^B,\,D=[T]_B^B\)</span>. קיבלנו כי <span class="math inline">\(A=PDP^{-1}\)</span> בנוסף, מתקיים <span class="math display">\[.P=[I]_E^B=
+\end{pmatrix}\]</span> זו מטריצה אלכסונית. נשתמש במסקנה <a href="chapter_7.html#cor-rep-similar" class="quarto-xref"><span>10.29</span></a>: <span class="math display">\[A=[T_A]_E^E=[I]_E^B[T_A]_B^B([I]_E^B)^{-1}\]</span> נסמן <span class="math inline">\(P=[I]_E^B,\,D=[T]_B^B\)</span>. קיבלנו כי <span class="math inline">\(A=PDP^{-1}\)</span> בנוסף, מתקיים <span class="math display">\[.P=[I]_E^B=
 \left(
 \begin{array}{cccc}
 \big| &amp; \big| &amp;        &amp; \big| \\
@@ -729,7 +729,7 @@ v_1 &amp; v_2 &amp; \cdots &amp; v_n \\
 v_1 &amp; v_2 &amp; \cdots &amp; v_n \\
 \big| &amp; \big| &amp;        &amp; \big|
 \end{array}
-\right)=[I]_E^B\]</span> מההנחה <span class="math inline">\(A=PDP^{-1}\)</span> וטענה <a href="./chapter_7.html#prp-rep-transition">10.64</a> נובע כי <span class="math display">\[.D=P^{-1}AP=([I]_E^B)^{-1}A[I]_E^B=[I]_B^E[T_A]_E^E([I]_B^E)^{-1}=[T_A]_B^B\]</span> נסמן <span class="math display">\[,D=\begin{pmatrix}
+\right)=[I]_E^B\]</span> מההנחה <span class="math inline">\(A=PDP^{-1}\)</span> וטענה <a href="chapter_7.html#prp-rep-transition" class="quarto-xref"><span>10.28</span></a> נובע כי <span class="math display">\[.D=P^{-1}AP=([I]_E^B)^{-1}A[I]_E^B=[I]_B^E[T_A]_E^E([I]_B^E)^{-1}=[T_A]_B^B\]</span> נסמן <span class="math display">\[,D=\begin{pmatrix}
 \lambda_1 &amp; 0 &amp; \cdots &amp; 0 \\
 0 &amp; \lambda_2 &amp;\cdots &amp; 0 \\
 \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
@@ -749,10 +749,10 @@ v_1 &amp; v_2 &amp; \cdots &amp; v_n \\
 </div>
 <p>אם קיים בסיס של וקטורים עצמיים ל- <span class="math inline">\(\mathbb{F}^n\)</span>, איך נמצא אותו? הרעיון הוא קודם כל למצוא בסיס לכל מרחב עצמי, ואחר כך לקחת איחוד של הבסיסים האלה. אבל מה מבטיח שנקבל בסיס בדרך זו? נוכיח את הטענה הבאה ואחר כך נקבל תשובה כמסקנה.</p>
 <div id="prp-distinct-eigenvalues" class="proposition theorem">
-<p><span class="theorem-title"><strong>Proposition 11.3</strong></span> <em>תהי <span class="math inline">\(A\in\mathbb{M}_{n\times n}(\mathbb{F})\)</span>. נניח כי <span class="math inline">\(v_1,...,v_k\)</span> מתאימים לע"ע שונים <span class="math inline">\(\lambda_1,...,\lambda_k\in\mathbb{F}\)</span>. אז בהכרח <span class="math inline">\(\Set{v_1,...,v_k}\)</span> בת"ל.</em></p>
+<div class="theorem-title">טענה 11.8</div><p><em>תהי <span class="math inline">\(A\in\mathbb{M}_{n\times n}(\mathbb{F})\)</span>. נניח כי <span class="math inline">\(v_1,...,v_k\)</span> מתאימים לע"ע שונים <span class="math inline">\(\lambda_1,...,\lambda_k\in\mathbb{F}\)</span>. אז בהכרח <span class="math inline">\(\Set{v_1,...,v_k}\)</span> בת"ל.</em></p>
 </div>
 <div class="proof">
-<p><span class="proof-title"><em>Proof</em>. </span>נניח בשלילה כי <span class="math inline">\(\Set{v_1,...,v_k}\)</span> ת"ל. לפי טענה <a href="./chapter_5.html#prp-linear-dependence">8.49</a> קיים <span class="math inline">\(2\leq i\leq k\)</span> מינימלי כך ש- <span class="math inline">\(v_i\in\mathop{\mathrm{Span}}(v_1,...,v_{i-1})\)</span>, כלומר קיימים <span class="math inline">\(\alpha_1,...,\alpha_{i-1}\in\mathbb{F}\)</span> עבורם מתקיים</p>
+<div class="theorem-title">הוכחה</div><p>נניח בשלילה כי <span class="math inline">\(\Set{v_1,...,v_k}\)</span> ת"ל. לפי טענה <a href="chapter_5.html#prp-linear-dependence" class="quarto-xref"><span>8.15</span></a> קיים <span class="math inline">\(2\leq i\leq k\)</span> מינימלי כך ש- <span class="math inline">\(v_i\in\mathop{\mathrm{Span}}(v_1,...,v_{i-1})\)</span>, כלומר קיימים <span class="math inline">\(\alpha_1,...,\alpha_{i-1}\in\mathbb{F}\)</span> עבורם מתקיים</p>
 <p><span id="eq-eigenvalues-1"><span class="math display">\[
 .v_i=\alpha_1 v_1+...+\alpha_{i-1}v_{i-1}
 \tag{11.1}\]</span></span></p>
@@ -766,40 +766,40 @@ v_1 &amp; v_2 &amp; \cdots &amp; v_n \\
 \tag{11.3}\]</span></span></p>
 <p>לבסוף, נחסיר את משוואה <a href="#eq-eigenvalues-3" class="quarto-xref"><span>11.3</span></a> ממשוואה <a href="#eq-eigenvalues-2" class="quarto-xref"><span>11.2</span></a> ונקבל <span class="math display">\[.\underline{0}=\alpha_1 (\lambda_1-\lambda_i) v_1+...+\alpha_{i-1}(\lambda_{i-1}-\lambda_i) v_{i-1}\]</span> לפי משוואה <a href="#eq-eigenvalues-1" class="quarto-xref"><span>11.1</span></a> קיים <span class="math inline">\(2\leq j\leq i-1\)</span> מקסימלי עבורו <span class="math inline">\(\alpha_j\neq 0\)</span>, כי אחרת <span class="math inline">\(v_i=\underline{0}\)</span> וזו סתירה להגדרה של ו"ע. בנוסף, מתקיים <span class="math inline">\(\lambda_j-\lambda_i\neq 0\)</span> כי הע"ע שונים. אם כן, נבודד את <span class="math inline">\(v_j\)</span> מתוך המשוואה ונקבל <span class="math display">\[.v_j\in\mathop{\mathrm{Span}}(v_1,...,v_{j-1})\]</span> זו סתירה להנחת המינימליות של <span class="math inline">\(i\)</span>. לכן, בהכרח <span class="math inline">\(\Set{v_1,...,v_k}\)</span> בת"ל.&nbsp;◻</p>
 </div>
-<div class="definition">
+<div class="definition"><div class="theorem-title">הגדרה 11.9</div>
 <p>לכל ע"ע <span class="math inline">\(\lambda_i\in\mathbb{F}\)</span> של <span class="math inline">\(A\)</span>, נסמן <span class="math inline">\(g_i=\dim(V_{\lambda_i})\)</span> ונקרא לו הריבוי הגיאומטרי של הע"ע <span class="math inline">\(\lambda_i\)</span>.</p>
 </div>
 <div id="cor-eigenspace-union" class="corollary theorem">
-<p><span class="theorem-title"><strong>Corollary 11.1</strong></span> <em>תהי <span class="math inline">\(A\in\mathbb{M}_{n\times n}(\mathbb{F})\)</span> עם ע"ע שונים <span class="math inline">\(\lambda_1,...,\lambda_k\in\mathbb{F}\)</span>. לכל <span class="math inline">\(1\leq i\leq k\)</span> נניח כי <span class="math display">\[B_i=\Set{v_{i1},...,v_{ig_i}}\]</span> היא בסיס למרחב העצמי <span class="math inline">\(V_{\lambda_i}\)</span>. אז האיחוד <span class="math display">\[\Set{v_{11},...,v_{1g_1},...,v_{k1},...,v_{kg_k}}\]</span> הוא קבוצה בת"ל.</em></p>
+<div class="theorem-title">מסקנה 11.10</div><p><em>תהי <span class="math inline">\(A\in\mathbb{M}_{n\times n}(\mathbb{F})\)</span> עם ע"ע שונים <span class="math inline">\(\lambda_1,...,\lambda_k\in\mathbb{F}\)</span>. לכל <span class="math inline">\(1\leq i\leq k\)</span> נניח כי <span class="math display">\[B_i=\Set{v_{i1},...,v_{ig_i}}\]</span> היא בסיס למרחב העצמי <span class="math inline">\(V_{\lambda_i}\)</span>. אז האיחוד <span class="math display">\[\Set{v_{11},...,v_{1g_1},...,v_{k1},...,v_{kg_k}}\]</span> הוא קבוצה בת"ל.</em></p>
 </div>
 <div class="proof">
-<p><span class="proof-title"><em>Proof</em>. </span>יהיו <span class="math inline">\(\alpha_{11},...,\alpha_{1g_1},....,\alpha_{k1},...,\alpha_{kg_k}\in\mathbb{F}\)</span> כך ש- <span class="math display">\[.\alpha_{11} v_{11}+...+\alpha_{1g_1}v_{1g_1}+...+\alpha_{k1}v_{k1}+...+\alpha_{kg_k}v_{kg_k}=\underline{0}\]</span> לכל <span class="math inline">\(1\leq i\leq k\)</span> נסמן <span class="math display">\[,w_i=\alpha_{i1}v_{i1}+...+\alpha_{ig_i}v_{ig_i}\in V_{\lambda_i}\]</span> ולפי ההנחה נקבל <span class="math display">\[.w_1+...+w_k=\underline{0}\]</span></p>
-<p>לפי טענה <a href="#prp-distinct-eigenvalues">11.19</a>, בהכרח מתקיים <span class="math inline">\(w_1=...=w_k=\underline{0}\)</span> כי אחרת כל וקטור שאינו מתאפס הוא ו"ע, וכך מתקבל סכום של וקטורים בת"ל (ממרחבים עצמיים שונים) שמתאפס - סתירה. אבל לכל <span class="math inline">\(1\leq i\leq k\)</span> הקבוצה <span class="math inline">\(B_i\)</span> בת"ל, ולכן השוויון <span class="math inline">\(w_i=\underline{0}\)</span> גורר <span class="math display">\[.\alpha_{i1}=...=\alpha_{ig_i}=0\]</span> לסיכום, כל הסקלרים מתאפסים ולכן איחוד הבסיסים הוא אכן קבוצה בת"ל.&nbsp;◻</p>
+<div class="theorem-title">הוכחה</div><p>יהיו <span class="math inline">\(\alpha_{11},...,\alpha_{1g_1},....,\alpha_{k1},...,\alpha_{kg_k}\in\mathbb{F}\)</span> כך ש- <span class="math display">\[.\alpha_{11} v_{11}+...+\alpha_{1g_1}v_{1g_1}+...+\alpha_{k1}v_{k1}+...+\alpha_{kg_k}v_{kg_k}=\underline{0}\]</span> לכל <span class="math inline">\(1\leq i\leq k\)</span> נסמן <span class="math display">\[,w_i=\alpha_{i1}v_{i1}+...+\alpha_{ig_i}v_{ig_i}\in V_{\lambda_i}\]</span> ולפי ההנחה נקבל <span class="math display">\[.w_1+...+w_k=\underline{0}\]</span></p>
+<p>לפי טענה <a href="#prp-distinct-eigenvalues" class="quarto-xref"><span>11.8</span></a>, בהכרח מתקיים <span class="math inline">\(w_1=...=w_k=\underline{0}\)</span> כי אחרת כל וקטור שאינו מתאפס הוא ו"ע, וכך מתקבל סכום של וקטורים בת"ל (ממרחבים עצמיים שונים) שמתאפס - סתירה. אבל לכל <span class="math inline">\(1\leq i\leq k\)</span> הקבוצה <span class="math inline">\(B_i\)</span> בת"ל, ולכן השוויון <span class="math inline">\(w_i=\underline{0}\)</span> גורר <span class="math display">\[.\alpha_{i1}=...=\alpha_{ig_i}=0\]</span> לסיכום, כל הסקלרים מתאפסים ולכן איחוד הבסיסים הוא אכן קבוצה בת"ל.&nbsp;◻</p>
 </div>
 <section id="אלגוריתם-הלכסון" class="level3" data-number="11.2.1">
 <h3 data-number="11.2.1" class="anchored" data-anchor-id="אלגוריתם-הלכסון"><span class="header-section-number">11.2.1</span> אלגוריתם הלכסון</h3>
 <p>נרצה לפעול לפי אלגוריתם כדי לקבוע האם מטריצה <span class="math inline">\(A\in\mathbb{M}_{n\times n}(\mathbb{F})\)</span> היא לכסינה. בהנחה שנקבל תשובה חיובית, נרצה שהאלגוריתם יוביל אותנו למטריצות <span class="math inline">\(P,D\in\mathbb{M}_{n\times n}(\mathbb{F})\)</span> עבורן מתקיים <span class="math display">\[.A=PDP^{-1}\]</span></p>
 <p>לפני שנתאר את האלגוריתם, יש צורך בהגדרת מספר נוסף הקשור לע"ע (בדומה לריבוי הגיאומטרי). כאן יש קשר לפירוק לגורמים של הפולינום האופייני:</p>
-<div class="definition">
+<div class="definition"><div class="theorem-title">הגדרה 11.11</div>
 <p>המעריך <span class="math inline">\(a_i\)</span> של <span class="math inline">\(x-\lambda_i\)</span> בפיצול <span class="math display">\[p_A(x)=(x-\lambda_1)^{a_1}\cdots(x-\lambda_i)^{a_i}\dots(x-\lambda_k)^{a_k}\]</span> נקרא הריבוי האלגברי של הע"ע <span class="math inline">\(\lambda_i\)</span>.</p>
 </div>
-<div class="proof remark">
-<p><span class="proof-title"><em>Remark</em>. </span><span class="math inline">\(p_A(x)\)</span> הוא פולינום ממעלה <span class="math inline">\(n\)</span>, כי בפיתוח של <span class="math inline">\(\det(xI_n-A)\)</span> מופיע <span class="math inline">\(x^n\)</span> ולכל שאר האיברים יש מעריכים קטנים יותר כחזקות של <span class="math inline">\(x\)</span>. מצד שני, ניתן לחשב את המעלה לפי הפיצול לגורמים לינאריים. כך נקבל <span class="math display">\[.\sum_{i=1}^k a_i=n\]</span></p>
+<div class="remark">
+<div class="theorem-title">הערה 11.4</div><p><span class="math inline">\(p_A(x)\)</span> הוא פולינום ממעלה <span class="math inline">\(n\)</span>, כי בפיתוח של <span class="math inline">\(\det(xI_n-A)\)</span> מופיע <span class="math inline">\(x^n\)</span> ולכל שאר האיברים יש מעריכים קטנים יותר כחזקות של <span class="math inline">\(x\)</span>. מצד שני, ניתן לחשב את המעלה לפי הפיצול לגורמים לינאריים. כך נקבל <span class="math display">\[.\sum_{i=1}^k a_i=n\]</span></p>
 </div>
-<div class="example">
+<div class="example"><div class="theorem-title">דוגמה 11.6</div>
 <p>עבור <span class="math display">\[A=\begin{pmatrix}
 1 &amp; 1 &amp; 0 \\
 0 &amp; 1 &amp; 1 \\
 0 &amp; 0 &amp; 0
 \end{pmatrix}\]</span> מתקיים <span class="math inline">\(p_A(x)=x(x-1)^2\)</span>. הע"ע הם <span class="math inline">\(\lambda_1=0,\lambda_2=1\)</span> והריבויים האלגבריים המתאימים הם <span class="math inline">\(a_1=1,a_2=2\)</span> בהתאם למעריכים שמופיעים בפיצול.</p>
 </div>
-<p>האלגוריתם מבוסס על משפט הלכסון, טענה <a href="#prp-eigen-det">11.4</a> ומסקנה <a href="#cor-eigenspace-union">11.21</a>. הוא מחולק לשלבים הבאים:</p>
+<p>האלגוריתם מבוסס על משפט הלכסון, טענה <a href="#prp-eigen-det" class="quarto-xref"><span>11.2</span></a> ומסקנה <a href="#cor-eigenspace-union" class="quarto-xref"><span>11.10</span></a>. הוא מחולק לשלבים הבאים:</p>
 <p><u>שלב 1:</u> בודקים האם הפולינום האופייני <span class="math inline">\(p_A(x)\)</span> מתפצל לגורמים לינאריים מעל <span class="math inline">\(\mathbb{F}\)</span>.</p>
-<p>הכוונה בפיצול לגורמים לינאריים היא פירוק לגורמים מהצורה הבאה: <span class="math display">\[p_A(x)=(x-\lambda_1)^{a_1}\cdots (x-\lambda_k)^{a_k}\]</span> כאשר <span class="math inline">\(\lambda_1,...,\lambda_k\)</span> הם שורשי <span class="math inline">\(p_A(x)\)</span>, כלומר <span class="math inline">\(p_A(\lambda_i)=0\)</span> לכל <span class="math inline">\(1\leq i\leq k\)</span>. לפי טענה <a href="#prp-eigen-det">11.4</a>, אלה הע"ע של <span class="math inline">\(A\)</span>.</p>
-<p>כל פולינום מתפצל לגורמים לינאריים מעל <span class="math inline">\(\mathbb{C}\)</span> (לפי משפט שחורג מהקורס), אך לא בהכרח מעל <span class="math inline">\(\mathbb{R}\)</span>. במילים אחרות, ייתכן ש- <span class="math inline">\(A\)</span> לכסינה מעל <span class="math inline">\(\mathbb{C}\)</span> ולא מעל <span class="math inline">\(\mathbb{R}\)</span>. דוגמה <a href="#exm-no-split">11.9</a> מראה שייתכן שלמטריצה ממשית יהיו ע"ע שאינם ממשיים, או באופן שקול: ייתכן שאין פיצול לגורמים לינאריים מעל <span class="math inline">\(\mathbb{R}\)</span>, ולכן היא אינה לכסינה מעל <span class="math inline">\(\mathbb{R}\)</span>. בהמשך נראה שהמטריצה מדוגמה זו היא אכן לכסינה מעל <span class="math inline">\(\mathbb{C}\)</span> (שלב <span class="math inline">\(1\)</span> עוד לא מבטיח לנו זאת).</p>
+<p>הכוונה בפיצול לגורמים לינאריים היא פירוק לגורמים מהצורה הבאה: <span class="math display">\[p_A(x)=(x-\lambda_1)^{a_1}\cdots (x-\lambda_k)^{a_k}\]</span> כאשר <span class="math inline">\(\lambda_1,...,\lambda_k\)</span> הם שורשי <span class="math inline">\(p_A(x)\)</span>, כלומר <span class="math inline">\(p_A(\lambda_i)=0\)</span> לכל <span class="math inline">\(1\leq i\leq k\)</span>. לפי טענה <a href="#prp-eigen-det" class="quarto-xref"><span>11.2</span></a>, אלה הע"ע של <span class="math inline">\(A\)</span>.</p>
+<p>כל פולינום מתפצל לגורמים לינאריים מעל <span class="math inline">\(\mathbb{C}\)</span> (לפי משפט שחורג מהקורס), אך לא בהכרח מעל <span class="math inline">\(\mathbb{R}\)</span>. במילים אחרות, ייתכן ש- <span class="math inline">\(A\)</span> לכסינה מעל <span class="math inline">\(\mathbb{C}\)</span> ולא מעל <span class="math inline">\(\mathbb{R}\)</span>. דוגמה <a href="#exm-no-split" class="quarto-xref"><span>11.3</span></a> מראה שייתכן שלמטריצה ממשית יהיו ע"ע שאינם ממשיים, או באופן שקול: ייתכן שאין פיצול לגורמים לינאריים מעל <span class="math inline">\(\mathbb{R}\)</span>, ולכן היא אינה לכסינה מעל <span class="math inline">\(\mathbb{R}\)</span>. בהמשך נראה שהמטריצה מדוגמה זו היא אכן לכסינה מעל <span class="math inline">\(\mathbb{C}\)</span> (שלב <span class="math inline">\(1\)</span> עוד לא מבטיח לנו זאת).</p>
 <p><u>שלב 2:</u> מחשבים את הע"ע ובודקים אם לכל ע"ע <span class="math inline">\(\lambda_i\)</span> מתקיים <span class="math inline">\(g_i=a_i\)</span>. עושים זאת ע"י מציאת בסיס ל- <span class="math inline">\(V_{\lambda_i}\)</span>.</p>
 <p>בהנחה שהתשובה חיובית, לכל <span class="math inline">\(1\leq i\leq k\)</span> נקבל בסיס ל- <span class="math inline">\(V_{\lambda_i}\)</span> שמורכב מ- <span class="math inline">\(g_i\)</span> וקטורים עצמיים: <span class="math display">\[B_i=\Set{v_{i1},...,v_{ig_i}}\]</span> ניקח איחוד שלהם ונקבל בסיס <span class="math inline">\(B\)</span> לכל <span class="math inline">\(\mathbb{F}^n\)</span>: <span class="math display">\[B=B_1\cup \cdots \cup B_k=\Set{v_{11},...,v_{1g_1},...,v_{k1},...,v_{kg_k}}\]</span></p>
-<p>זהו בסיס לפי משפט "שלישי חינם" ומסקנה <a href="#cor-eigenspace-union">11.21</a>. נציין שמספר הוקטורים העצמיים ב- <span class="math inline">\(B\)</span> הוא <span class="math inline">\(n\)</span> כי מתקיים <span class="math display">\[.\sum_{i=1}^k g_i=\sum_{i=1}^k a_i=n\]</span></p>
+<p>זהו בסיס לפי משפט "שלישי חינם" ומסקנה <a href="#cor-eigenspace-union" class="quarto-xref"><span>11.10</span></a>. נציין שמספר הוקטורים העצמיים ב- <span class="math inline">\(B\)</span> הוא <span class="math inline">\(n\)</span> כי מתקיים <span class="math display">\[.\sum_{i=1}^k g_i=\sum_{i=1}^k a_i=n\]</span></p>
 <p><u>שלב 3:</u> הלכסון <span class="math inline">\(A=PDP^{-1}\)</span> מתקבל עבור המטריצות הבאות: <span class="math display">\[\begin{aligned}
 P&amp;=\begin{pmatrix}
 \big| &amp; \big|        &amp; \big| \\
@@ -812,13 +812,13 @@ D&amp;=\begin{pmatrix}
 0  &amp; \cdots &amp; \lambda_k
 \end{pmatrix}
 \end{aligned}\]</span> כל ע"ע <span class="math inline">\(\lambda_i\)</span> מופיע <span class="math inline">\(g_i=a_i\)</span> פעמים לאורך האלכסון הראשי של <span class="math inline">\(D\)</span>. כל הופעה של <span class="math inline">\(\lambda_i\)</span> מתאימה להופעה של ו"ע מתאים כעמודה של <span class="math inline">\(P\)</span>.</p>
-<div class="proof remark">
-<p><span class="proof-title"><em>Remark</em>. </span>סדר הופעת הע"ע על האלכסון הראשי הוא שרירותי, וגם הסדר של הו"ע הוא שרירותי (שלא לדבר על הבחירה של הבסיס לכל מרחב עצמי, שהיא גם שרירותית). לכן, בהרבה מקרים אין תשובה יחידה ל- <span class="math inline">\(D\)</span> (אלא אם כן כל הע"ע שווים). <span class="math inline">\(P\)</span> אף פעם אינה יחידה, אבל יש לשמור על עקביות ביחס לסדר הע"ע לאורך האלכסון הראשי של <span class="math inline">\(D\)</span>.</p>
+<div class="remark">
+<div class="theorem-title">הערה 11.5</div><p>סדר הופעת הע"ע על האלכסון הראשי הוא שרירותי, וגם הסדר של הו"ע הוא שרירותי (שלא לדבר על הבחירה של הבסיס לכל מרחב עצמי, שהיא גם שרירותית). לכן, בהרבה מקרים אין תשובה יחידה ל- <span class="math inline">\(D\)</span> (אלא אם כן כל הע"ע שווים). <span class="math inline">\(P\)</span> אף פעם אינה יחידה, אבל יש לשמור על עקביות ביחס לסדר הע"ע לאורך האלכסון הראשי של <span class="math inline">\(D\)</span>.</p>
 </div>
-<div class="example">
+<div class="example"><div class="theorem-title">דוגמה 11.7</div>
 <p>&nbsp;</p>
 <ol type="1">
-<li><p>נחזור לדוגמה <a href="#exm-no-split">11.9</a>: <span class="math display">\[A=\begin{pmatrix}
+<li><p>נחזור לדוגמה <a href="#exm-no-split" class="quarto-xref"><span>11.3</span></a>: <span class="math display">\[A=\begin{pmatrix}
 0 &amp; -1 \\
 1 &amp; 0
 \end{pmatrix}\]</span> הע"ע הם <span class="math inline">\(\lambda_{1,2}=\pm i\)</span>, ולפי זה ייתכן לכסון רק מעל <span class="math inline">\(\mathbb{C}\)</span>. כבר מצאנו בסיס לכל מרחב עצמי, ולכן נבחר את הו"ע הבאים: <span class="math display">\[v_1=\begin{pmatrix}1\\-i\end{pmatrix},\quad v_2=\begin{pmatrix}1\\i\end{pmatrix}\]</span> הריבוי הגיאומטרי של כל ע"ע הוא <span class="math inline">\(1\)</span>, וזה גם הריבוי האלגברי כי מתקיים <span class="math display">\[.p_A(x)=x^2+1=(x-i)(x+i)\]</span> קיבלנו כי <span class="math inline">\(A\)</span> לכסינה. יש בסיס <span class="math inline">\(B=\Set{v_1,v_2}\)</span> של ו"ע, ובהתאם אליו נקבל <span class="math display">\[.P=\begin{pmatrix}
@@ -917,10 +917,10 @@ g_1&amp;=\dim(V_2)=\dim\left(\mathop{\mathrm{N}}(2I_3-A)\right)=\dim\left(\matho
 </div>
 <p>נשאלת השאלה: האם זה תנאי הכרחי בשביל לכסינות (לא רק תנאי מספיק) שיתקיים <span class="math inline">\(g_i=a_i\)</span> לכל ע"ע <span class="math inline">\(\lambda_i\)</span>? התשובה היא כן. קודם כל נוכיח טענת עזר - ההוכחה היא <u>לצורך העשרה</u> לסקרנים.</p>
 <div id="prp-geo-alg" class="proposition theorem">
-<p><span class="theorem-title"><strong>Proposition 11.4</strong></span> <em>תהי <span class="math inline">\(A\in\mathbb{M}_{n\times n}(\mathbb{F})\)</span> עם ע"ע <span class="math inline">\(\lambda_1,...,\lambda_k\in\mathbb{F}\)</span>. לכל <span class="math inline">\(1\leq i\leq k\)</span> מתקיים <span class="math display">\[.g_i\leq a_i\]</span></em></p>
+<div class="theorem-title">טענה 11.12</div><p><em>תהי <span class="math inline">\(A\in\mathbb{M}_{n\times n}(\mathbb{F})\)</span> עם ע"ע <span class="math inline">\(\lambda_1,...,\lambda_k\in\mathbb{F}\)</span>. לכל <span class="math inline">\(1\leq i\leq k\)</span> מתקיים <span class="math display">\[.g_i\leq a_i\]</span></em></p>
 </div>
 <div class="proof">
-<p><span class="proof-title"><em>Proof</em>. </span>יהי <span class="math inline">\(1\leq i\leq k\)</span>. קיים בסיס <span class="math display">\[B_i=\Set{v_{i1},...,v_{ig_i}}\]</span> למרחב העצמי <span class="math inline">\(V_{\lambda_i}\)</span>. אם <span class="math inline">\(g_i&lt;n\)</span>, נשלים את <span class="math inline">\(B_i\)</span> לבסיס <span class="math inline">\(B'_i\)</span> לכל <span class="math inline">\(\mathbb{F}^n\)</span> ע"י הוספת וקטורים <span class="math inline">\(w_1,...,w_{m_i}\)</span> כאשר <span class="math inline">\(m_i=n-g_i\)</span>. נסמן <span class="math inline">\(A'=[T_A]_{B'_i}^{B'_i}\)</span>. מתקיים <span class="math display">\[[T_A]_{B'_i}^{B'_i}=\begin{pmatrix}
+<div class="theorem-title">הוכחה</div><p>יהי <span class="math inline">\(1\leq i\leq k\)</span>. קיים בסיס <span class="math display">\[B_i=\Set{v_{i1},...,v_{ig_i}}\]</span> למרחב העצמי <span class="math inline">\(V_{\lambda_i}\)</span>. אם <span class="math inline">\(g_i&lt;n\)</span>, נשלים את <span class="math inline">\(B_i\)</span> לבסיס <span class="math inline">\(B'_i\)</span> לכל <span class="math inline">\(\mathbb{F}^n\)</span> ע"י הוספת וקטורים <span class="math inline">\(w_1,...,w_{m_i}\)</span> כאשר <span class="math inline">\(m_i=n-g_i\)</span>. נסמן <span class="math inline">\(A'=[T_A]_{B'_i}^{B'_i}\)</span>. מתקיים <span class="math display">\[[T_A]_{B'_i}^{B'_i}=\begin{pmatrix}
 \lambda_i &amp; \cdots &amp; 0 &amp; * &amp; \cdots &amp; * \\
 \vdots &amp; \ddots &amp; \vdots &amp; \vdots &amp;\ddots &amp; \vdots \\
 0 &amp; \cdots &amp; \lambda_i &amp; * &amp; \cdots &amp; * \\
@@ -928,7 +928,7 @@ g_1&amp;=\dim(V_2)=\dim\left(\mathop{\mathrm{N}}(2I_3-A)\right)=\dim\left(\matho
 \vdots &amp; \ddots &amp; \vdots &amp; \vdots &amp;\ddots &amp; \vdots \\
 0 &amp; \cdots &amp; 0 &amp; * &amp; \cdots &amp; *
 \end{pmatrix}\]</span></p>
-<p><span class="math inline">\(A'\)</span> דומה ל- <span class="math inline">\(A\)</span> כי מתקיים <span class="math display">\[.A'=[T_A]_{B'_i}^{B'_i}=[I]_{B_i'}^E[T_A]_E^E([I]_{B_i'}^E)^{-1}=[I]_{B_i'}^EA([I]_{B_i'}^E)^{-1}\]</span> לכן, לפי טענה <a href="#prp-char-poly">11.17</a> ותכונות דטרמיננטה (ביחס לשחלוף וכפל שורה בסקלר) מתקיים: <span class="math display">\[\begin{aligned}
+<p><span class="math inline">\(A'\)</span> דומה ל- <span class="math inline">\(A\)</span> כי מתקיים <span class="math display">\[.A'=[T_A]_{B'_i}^{B'_i}=[I]_{B_i'}^E[T_A]_E^E([I]_{B_i'}^E)^{-1}=[I]_{B_i'}^EA([I]_{B_i'}^E)^{-1}\]</span> לכן, לפי טענה <a href="#prp-char-poly" class="quarto-xref"><span>11.6</span></a> ותכונות דטרמיננטה (ביחס לשחלוף וכפל שורה בסקלר) מתקיים: <span class="math display">\[\begin{aligned}
 p_A(x)=p_{A'}(x)&amp;=\det\begin{pmatrix}
 x-\lambda_i &amp; \cdots &amp; 0 &amp; * &amp; \cdots &amp; * \\
 \vdots &amp; \ddots &amp; \vdots &amp; \vdots &amp;\ddots &amp; \vdots \\
@@ -955,15 +955,15 @@ x-\lambda_i &amp; \cdots &amp; 0 &amp; 0 &amp; \cdots &amp; 0 \\
 \end{pmatrix}\]</span> זהו פולינום ממעלה <span class="math inline">\(m_i=n-g_i\)</span>. ייתכן שהוא מתחלק ב- <span class="math inline">\((x-\lambda_i)\)</span> וייתכן שלא, אבל בכל אופן המעריך של <span class="math inline">\(x-\lambda_i\)</span> בפיצול של <span class="math inline">\(p_A(x)\)</span> הוא לפחות <span class="math inline">\(g_i\)</span>. כלומר מתקיים <span class="math display">\[.g_i\leq a_i\]</span>&nbsp;◻</p>
 </div>
 <div id="cor-simple-eigenvalue" class="corollary theorem">
-<p><span class="theorem-title"><strong>Corollary 11.2</strong></span> <em>תהי <span class="math inline">\(A\in\mathbb{M}_{n\times n}(\mathbb{F})\)</span> עם ע"ע <span class="math inline">\(\lambda_i\in\mathbb{F}\)</span>. אם <span class="math inline">\(a_i=1\)</span>, אז <span class="math inline">\(g_i=1\)</span>.</em></p>
+<div class="theorem-title">מסקנה 11.13</div><p><em>תהי <span class="math inline">\(A\in\mathbb{M}_{n\times n}(\mathbb{F})\)</span> עם ע"ע <span class="math inline">\(\lambda_i\in\mathbb{F}\)</span>. אם <span class="math inline">\(a_i=1\)</span>, אז <span class="math inline">\(g_i=1\)</span>.</em></p>
 </div>
 <div class="proof">
-<p><span class="proof-title"><em>Proof</em>. </span>לפי טענה <a href="#prp-geo-alg">11.27</a>, מתקיים <span class="math display">\[.g_i\leq a_i=1\]</span> בהכרח <span class="math inline">\(1\leq g_i\)</span> כי אחרת אין ו"ע המתאים ל- <span class="math inline">\(\lambda_i\)</span> וזו סתירה. אם כן, נובע כי <span class="math inline">\(g_i=1\)</span>.&nbsp;◻</p>
+<div class="theorem-title">הוכחה</div><p>לפי טענה <a href="#prp-geo-alg" class="quarto-xref"><span>11.12</span></a>, מתקיים <span class="math display">\[.g_i\leq a_i=1\]</span> בהכרח <span class="math inline">\(1\leq g_i\)</span> כי אחרת אין ו"ע המתאים ל- <span class="math inline">\(\lambda_i\)</span> וזו סתירה. אם כן, נובע כי <span class="math inline">\(g_i=1\)</span>.&nbsp;◻</p>
 </div>
-<div class="exercise">
+<div class="exercise"><div class="theorem-title">תרגיל 11.4</div>
 <p>תהי <span class="math inline">\(A\in\mathbb{M}_{n\times n}(\mathbb{F})\)</span> עם ע"ע שונים <span class="math inline">\(\lambda_1,...,\lambda_n\in\mathbb{F}\)</span>. הוכיחו כי <span class="math inline">\(A\)</span> לכסינה.</p>
 </div>
-<div class="callout callout-style-default callout-note callout-titled" title="פתרון">
+<div class="callout callout-style-default callout-note callout-titled solution" title="פתרון">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -975,33 +975,33 @@ x-\lambda_i &amp; \cdots &amp; 0 &amp; 0 &amp; \cdots &amp; 0 \\
 </div>
 <div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>נתון כי יש <span class="math inline">\(n\)</span> ע"ע שונים. סכום הריבויים האלגבריים הוא <span class="math inline">\(n\)</span>, ולכן בהכרח כל ריבוי אלגברי שווה ל- <span class="math inline">\(1\)</span>. לפי מסקנה <a href="#cor-simple-eigenvalue">11.28</a> נובע כי לכל <span class="math inline">\(1\leq i\leq n\)</span> מתקיים <span class="math display">\[.g_i=a_i=1\]</span> כך נקבל בסיס <span class="math inline">\(B=\Set{v_1,...,v_n}\)</span> של <span class="math inline">\(n\)</span> ו"ע המתאימים לע"ע שונים. קיבלנו כי <span class="math inline">\(A\)</span> לכסינה לפי משפט הלכסון.</p>
+<p>נתון כי יש <span class="math inline">\(n\)</span> ע"ע שונים. סכום הריבויים האלגבריים הוא <span class="math inline">\(n\)</span>, ולכן בהכרח כל ריבוי אלגברי שווה ל- <span class="math inline">\(1\)</span>. לפי מסקנה <a href="#cor-simple-eigenvalue" class="quarto-xref"><span>11.13</span></a> נובע כי לכל <span class="math inline">\(1\leq i\leq n\)</span> מתקיים <span class="math display">\[.g_i=a_i=1\]</span> כך נקבל בסיס <span class="math inline">\(B=\Set{v_1,...,v_n}\)</span> של <span class="math inline">\(n\)</span> ו"ע המתאימים לע"ע שונים. קיבלנו כי <span class="math inline">\(A\)</span> לכסינה לפי משפט הלכסון.</p>
 </div>
 </div>
 </div>
 <p>יש גרסה שנייה למשפט הלכסון שכבר ניתן להבין מתוך תיאור האלגוריתם:</p>
 <div id="thm-diag2" class="theorem">
-<p><span class="theorem-title"><strong>Theorem 11.2</strong></span> <em>תהי <span class="math inline">\(A\in\mathbb{M}_{n\times n}(\mathbb{F})\)</span>. אז <span class="math inline">\(A\)</span> לכסינה מעל <span class="math inline">\(\mathbb{F}\)</span> אם ורק אם מתקיימים התנאים הבאים:</em></p>
+<div class="theorem-title">משפט 11.14</div><p><em>תהי <span class="math inline">\(A\in\mathbb{M}_{n\times n}(\mathbb{F})\)</span>. אז <span class="math inline">\(A\)</span> לכסינה מעל <span class="math inline">\(\mathbb{F}\)</span> אם ורק אם מתקיימים התנאים הבאים:</em></p>
 <ol type="1">
 <li><p><em><span class="math inline">\(p_A(x)\)</span> מתפצל לגורמים לינאריים מעל <span class="math inline">\(\mathbb{F}\)</span>, כלומר קיים פיצול מהצורה <span class="math display">\[.p_A(x)=(x-\lambda_1)^{a_1}\cdots(x-\lambda_k)^{a_k}\]</span></em></p></li>
 <li><p><em>לכל <span class="math inline">\(1\leq i\leq k\)</span> מתקיים <span class="math display">\[.g_i=a_i\]</span></em></p></li>
 </ol>
 </div>
 <div class="proof">
-<p><span class="proof-title"><em>Proof</em>. </span>כפי שכבר תיארנו בשלב 2 של אלגוריתם הלכסון, שילוב שני התנאים מספיק ללכסינות <span class="math inline">\(A\)</span>. נדגיש שוב: איחוד הבסיסים של המרחבים העצמיים הוא קבוצה בת"ל (לפי מסקנה <a href="#cor-eigenspace-union">11.21</a>) המורכבת מ- <span class="math display">\[\sum_{i=1}^ng_i=\sum_{i=1}^na_i=n\]</span> וקטורים עצמיים. לכן, זהו בסיס ל- <span class="math inline">\(\mathbb{F}^n\)</span> לפי משפט "שלישי חינם", ומכאן נובע כי <span class="math inline">\(A\)</span> לכסינה לפי משפט הלכסון.</p>
-<p>כדי להראות ששני התנאים הכרחיים, נניח כי <span class="math inline">\(A\)</span> לכסינה. כלומר קיימות <span class="math inline">\(P\in\mathbb{M}_{n\times n}(\mathbb{F})\)</span> הפיכה ו- <span class="math inline">\(D\in\mathbb{M}_{n\times n}(\mathbb{F})\)</span> אלכסונית כך ש- <span class="math display">\[.A=PDP^{-1}\]</span> לפי טענה <a href="#prp-char-poly">11.17</a> מתקיים <span class="math display">\[,p_A(x)=p_D(x)=\det\begin{pmatrix}
+<div class="theorem-title">הוכחה</div><p>כפי שכבר תיארנו בשלב 2 של אלגוריתם הלכסון, שילוב שני התנאים מספיק ללכסינות <span class="math inline">\(A\)</span>. נדגיש שוב: איחוד הבסיסים של המרחבים העצמיים הוא קבוצה בת"ל (לפי מסקנה <a href="#cor-eigenspace-union" class="quarto-xref"><span>11.10</span></a>) המורכבת מ- <span class="math display">\[\sum_{i=1}^ng_i=\sum_{i=1}^na_i=n\]</span> וקטורים עצמיים. לכן, זהו בסיס ל- <span class="math inline">\(\mathbb{F}^n\)</span> לפי משפט "שלישי חינם", ומכאן נובע כי <span class="math inline">\(A\)</span> לכסינה לפי משפט הלכסון.</p>
+<p>כדי להראות ששני התנאים הכרחיים, נניח כי <span class="math inline">\(A\)</span> לכסינה. כלומר קיימות <span class="math inline">\(P\in\mathbb{M}_{n\times n}(\mathbb{F})\)</span> הפיכה ו- <span class="math inline">\(D\in\mathbb{M}_{n\times n}(\mathbb{F})\)</span> אלכסונית כך ש- <span class="math display">\[.A=PDP^{-1}\]</span> לפי טענה <a href="#prp-char-poly" class="quarto-xref"><span>11.6</span></a> מתקיים <span class="math display">\[,p_A(x)=p_D(x)=\det\begin{pmatrix}
 x-\lambda_1 &amp; \cdots &amp; 0 \\
 \vdots &amp; \ddots &amp; 0 \\
 0 &amp; \cdots &amp; x-\lambda_k
 \end{pmatrix}=(x-\lambda_1)^{a_1}\cdots(x-\lambda_k)^{a_k}\]</span> כאשר לכל <span class="math inline">\(1\leq i\leq k\)</span> הריבוי האלגברי <span class="math inline">\(a_i\)</span> הוא מספר ההופעות של <span class="math inline">\(\lambda_i\)</span> על האלכסון הראשי של <span class="math inline">\(D\)</span>. אבל זה גם בדיוק הריבוי הגיאומטרי <span class="math inline">\(g_i\)</span>, כי מדובר במספר הו"ע (עמודות <span class="math inline">\(P\)</span>) שמתאימים ל- <span class="math inline">\(\lambda_i\)</span>.&nbsp;◻</p>
 </div>
-<div class="exercise">
+<div class="exercise"><div class="theorem-title">תרגיל 11.5</div>
 <p>לאילו <span class="math inline">\(a,b\in\mathbb{R}\)</span> המטריצה <span class="math display">\[A=\begin{pmatrix}
 a &amp; -b \\
 b &amp; a
 \end{pmatrix}\]</span> לכסינה מעל <span class="math inline">\(\mathbb{R}\)</span>? מעל <span class="math inline">\(\mathbb{C}\)</span>?</p>
 </div>
-<div class="callout callout-style-default callout-note callout-titled" title="פתרון">
+<div class="callout callout-style-default callout-note callout-titled solution" title="פתרון">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -1016,19 +1016,19 @@ b &amp; a
 <p>נחשב פולינום אופייני: <span class="math display">\[p_A(x)=\det\begin{pmatrix}
 x-a &amp; b \\
 -b &amp; x-a
-\end{pmatrix}=(x-a)^2+b^2\]</span> לכל <span class="math inline">\(b\neq 0\)</span> הפולינום האופייני לא מתפצל לגורמים לינאריים מעל <span class="math inline">\(\mathbb{R}\)</span>. שורשיו הם <span class="math inline">\(\lambda_{1,2}=a\pm bi\)</span>, שאינם ממשיים. זה שולל לכסון מעל <span class="math inline">\(\mathbb{R}\)</span>, לפי הגרסה השנייה של משפט הלכסון. לעומת זאת, מעל <span class="math inline">\(\mathbb{C}\)</span> יש לכסון כי הריבוי האלגברי של כל ע"ע הוא <span class="math inline">\(1\)</span>, ולכן בהכרח גם כל ריבוי גיאומטרי שווה ל- <span class="math inline">\(1\)</span> לפי מסקנה <a href="#cor-simple-eigenvalue">11.28</a>. ניתן למצוא את הבסיס של הוקטורים העצמיים, אך זה לא נדרש כאן.</p>
+\end{pmatrix}=(x-a)^2+b^2\]</span> לכל <span class="math inline">\(b\neq 0\)</span> הפולינום האופייני לא מתפצל לגורמים לינאריים מעל <span class="math inline">\(\mathbb{R}\)</span>. שורשיו הם <span class="math inline">\(\lambda_{1,2}=a\pm bi\)</span>, שאינם ממשיים. זה שולל לכסון מעל <span class="math inline">\(\mathbb{R}\)</span>, לפי הגרסה השנייה של משפט הלכסון. לעומת זאת, מעל <span class="math inline">\(\mathbb{C}\)</span> יש לכסון כי הריבוי האלגברי של כל ע"ע הוא <span class="math inline">\(1\)</span>, ולכן בהכרח גם כל ריבוי גיאומטרי שווה ל- <span class="math inline">\(1\)</span> לפי מסקנה <a href="#cor-simple-eigenvalue" class="quarto-xref"><span>11.13</span></a>. ניתן למצוא את הבסיס של הוקטורים העצמיים, אך זה לא נדרש כאן.</p>
 <p>אם <span class="math inline">\(b=0\)</span>, אז <span class="math inline">\(A=aI_2\)</span> היא כבר מטריצה אלכסונית. בפרט, היא לכסינה מעל <span class="math inline">\(\mathbb{R}\)</span> (ולכן גם מעל <span class="math inline">\(\mathbb{C}\)</span>).</p>
 </div>
 </div>
 </div>
 <div id="exr-not-similar" class="exercise theorem">
-<p><span class="theorem-title"><strong>Exercise 11.1</strong></span> יהיו <span class="math inline">\(A,B\in\mathbb{M}_{n\times n}(\mathbb{C})\)</span> כך שמתקיים <span class="math inline">\(p_A(x)=p_B(x)\)</span>.</p>
+<div class="theorem-title">תרגיל 11.6</div><p>יהיו <span class="math inline">\(A,B\in\mathbb{M}_{n\times n}(\mathbb{C})\)</span> כך שמתקיים <span class="math inline">\(p_A(x)=p_B(x)\)</span>.</p>
 <ol type="1">
 <li><p>הוכיחו כי אם <span class="math inline">\(A,B\)</span> לכסינות, אז הן דומות.</p></li>
 <li><p>אם לא נתון כי <span class="math inline">\(A,B\)</span> לכסינות, האם הן בהכרח דומות?</p></li>
 </ol>
 </div>
-<div class="callout callout-style-default callout-note callout-titled" title="פתרון">
+<div class="callout callout-style-default callout-note callout-titled solution" title="פתרון">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -1062,7 +1062,7 @@ x-a &amp; b \\
 <h2 data-number="11.3" class="anchored" data-anchor-id="חישוב-חזקה-של-מטריצה-לכסינה"><span class="header-section-number">11.3</span> חישוב חזקה של מטריצה לכסינה</h2>
 <p>בתחילת הפרק ציינו שאחד השימושים של לכסון הוא חישוב חזקה עם מעריך גבוה. הטענה הבאה מתארת את החישוב הכללי למטריצה לכסינה (החישוב למטריצה לא לכסינה יותר מסובך וחורג מהקורס).</p>
 <div id="prp-matrix-power" class="proposition theorem">
-<p><span class="theorem-title"><strong>Proposition 11.5</strong></span> **</p>
+<div class="theorem-title">טענה 11.15</div><p>**</p>
 <ol type="1">
 <li><p><em>תהי <span class="math inline">\(D\in\mathbb{M}_{n\times n}(\mathbb{F})\)</span> מטריצה אלכסונית מהצורה <span class="math display">\[,D=\begin{pmatrix}
 \lambda_1 &amp; \cdots &amp; 0 \\
@@ -1077,7 +1077,7 @@ x-a &amp; b \\
 </ol>
 </div>
 <div class="proof">
-<p><span class="proof-title"><em>Proof</em>. </span>ההוכחה הפורמלית היא באינדוקציה, אבל נסתפק בתיאור החישוב בכל סעיף. יהי <span class="math inline">\(k\in\mathbb{N}\)</span>.</p>
+<div class="theorem-title">הוכחה</div><p>ההוכחה הפורמלית היא באינדוקציה, אבל נסתפק בתיאור החישוב בכל סעיף. יהי <span class="math inline">\(k\in\mathbb{N}\)</span>.</p>
 <ol type="1">
 <li><p>המשמעות של חזקה עם מעריך <span class="math inline">\(k\)</span> היא שמכפילים את המטריצה בעצמה <span class="math inline">\(k-1\)</span> פעמים (ובסך הכל היא מופיעה <span class="math inline">\(k\)</span> פעמים). בכל שלב מכפילים שתי מטריצות אלכסוניות ומקבלים מטריצה אלכסונית שאיבריה על האלכסון הראשי הם המכפלות המתאימות, כלומר חזקות של הע"ע של <span class="math inline">\(D\)</span>.</p>
 <p><span class="math display">\[\begin{aligned}
@@ -1123,8 +1123,8 @@ A^k&amp;=A^{k-1}\cdot A=(PD^{k-1}P^{-1})(PDP^{-1})=P(D^{k-1}\cdot D)P^{-1}=PD^kP
 </ol>
 <p>&nbsp;◻</p>
 </div>
-<div class="example">
-<p>שוב נחזור לדוגמה <a href="#exm-eigenvalues">11.3</a>. הפעם נרצה לחשב את <span class="math inline">\(A^k\)</span> עבור <span class="math inline">\(k\in\mathbb{N}\)</span> ו- <span class="math display">\[.A=\begin{pmatrix}
+<div class="example"><div class="theorem-title">דוגמה 11.8</div>
+<p>שוב נחזור לדוגמה <a href="#exm-eigenvalues" class="quarto-xref"><span>11.1</span></a>. הפעם נרצה לחשב את <span class="math inline">\(A^k\)</span> עבור <span class="math inline">\(k\in\mathbb{N}\)</span> ו- <span class="math display">\[.A=\begin{pmatrix}
 2 &amp; 1 \\
 1 &amp; 2
 \end{pmatrix}\]</span> ראינו כי מתקיים <span class="math display">\[A=PDP^{-1}\]</span> כאשר <span class="math display">\[.D=\begin{pmatrix}
@@ -1133,7 +1133,7 @@ A^k&amp;=A^{k-1}\cdot A=(PD^{k-1}P^{-1})(PDP^{-1})=P(D^{k-1}\cdot D)P^{-1}=PD^kP
 \end{pmatrix},\quad P=\begin{pmatrix}
 1 &amp; 1 \\
 -1 &amp; 1
-\end{pmatrix}\]</span> לפי טענה <a href="#prp-matrix-power">11.33</a> נובע כי: <span class="math display">\[\begin{aligned}
+\end{pmatrix}\]</span> לפי טענה <a href="#prp-matrix-power" class="quarto-xref"><span>11.15</span></a> נובע כי: <span class="math display">\[\begin{aligned}
 A^k&amp;=PD^kP^{-1}=\begin{pmatrix}
 1 &amp; 1 \\
 -1 &amp; 1
@@ -1157,7 +1157,7 @@ A^k&amp;=PD^kP^{-1}=\begin{pmatrix}
 \end{aligned}\]</span></p>
 </div>
 <div id="exr-matrix-power" class="exercise theorem">
-<p><span class="theorem-title"><strong>Exercise 11.2</strong></span> תהי <span class="math display">\[.A=\begin{pmatrix}
+<div class="theorem-title">תרגיל 11.7</div><p>תהי <span class="math display">\[.A=\begin{pmatrix}
 5 &amp; -2 &amp; -2\\
 2 &amp; 1 &amp; -2\\
 2 &amp; -2 &amp; 1
@@ -1167,7 +1167,7 @@ A^k&amp;=PD^kP^{-1}=\begin{pmatrix}
 <li><p>לכל <span class="math inline">\(k\in\mathbb{N}\)</span> חשבו את <span class="math inline">\(A^k\)</span>.</p></li>
 </ol>
 </div>
-<div class="callout callout-style-default callout-note callout-titled" title="פתרון">
+<div class="callout callout-style-default callout-note callout-titled solution" title="פתרון">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -1218,7 +1218,7 @@ V_3&amp;=\mathop{\mathrm{N}}(3I_3-A)=\mathop{\mathrm{N}}\begin{pmatrix}
 0 &amp; 0 &amp; 0
 \end{pmatrix} \\
 &amp;=\mathop{\mathrm{Span}}\left(\begin{pmatrix}1\\1\\0\end{pmatrix},\begin{pmatrix}1\\0\\1\end{pmatrix}\right)
-\end{aligned}\]</span> לכן, הריבויים הגיאומטריים של <span class="math inline">\(\lambda_1=1,\,\lambda_2=3\)</span> הם <span class="math display">\[g_1=a_1=1,\,g_2=a_2=2\]</span> ותנאי משפט הלכסון (גרסה <a href="#thm-diag2">11.30</a>) מתקיימים. כלומר <span class="math inline">\(A\)</span> לכסינה (ליתר דיוק, מעל <span class="math inline">\(\mathbb{R}\)</span>).</p></li>
+\end{aligned}\]</span> לכן, הריבויים הגיאומטריים של <span class="math inline">\(\lambda_1=1,\,\lambda_2=3\)</span> הם <span class="math display">\[g_1=a_1=1,\,g_2=a_2=2\]</span> ותנאי משפט הלכסון (גרסה <a href="#thm-diag2" class="quarto-xref"><span>11.14</span></a>) מתקיימים. כלומר <span class="math inline">\(A\)</span> לכסינה (ליתר דיוק, מעל <span class="math inline">\(\mathbb{R}\)</span>).</p></li>
 <li><p>מצאנו בסיס של ו"ע. נבחר סדר ונסתכל על המטריצה שאלו עמודותיה: <span class="math display">\[P=\begin{pmatrix}
 1 &amp; 1 &amp; 1 \\
 1 &amp; 1 &amp; 0 \\
@@ -1229,7 +1229,7 @@ V_3&amp;=\mathop{\mathrm{N}}(3I_3-A)=\mathop{\mathrm{N}}\begin{pmatrix}
 -1 &amp; 1 &amp; 1\\
 1 &amp; 0 &amp; -1\\
 1 &amp; -1 &amp; 0
-\end{pmatrix}\]</span> לבסוף, לפי טענה <a href="#prp-matrix-power">11.33</a> נובע כי <span class="math display">\[\begin{aligned}
+\end{pmatrix}\]</span> לבסוף, לפי טענה <a href="#prp-matrix-power" class="quarto-xref"><span>11.15</span></a> נובע כי <span class="math display">\[\begin{aligned}
 A^k&amp;=PD^kP^{-1}=\begin{pmatrix}
 1 &amp; 1 &amp; 1 \\
 1 &amp; 1 &amp; 0 \\
@@ -1254,7 +1254,7 @@ A^k&amp;=PD^kP^{-1}=\begin{pmatrix}
 </div>
 </div>
 </div>
-<div class="example">
+<div class="example"><div class="theorem-title">דוגמה 11.9</div>
 <p>יש מקרים פשוטים יותר בהם אין צורך למצוא את <span class="math inline">\(P^{-1}\)</span>. אלה המקרים בהם קבוצת הע"ע של המטריצה הלכסינה <span class="math inline">\(A\)</span> היא <span class="math inline">\(\Set{-1,0,1}\)</span>, או תת-קבוצה שלה. נסתכל על שני מקרים כאלה:</p>
 <ol type="1">
 <li><p>אם המטריצה האלכסונית המתאימה היא <span class="math display">\[,D=\begin{pmatrix}
@@ -1278,7 +1278,7 @@ A^k&amp;=PD^kP^{-1}=\begin{pmatrix}
 </ol>
 </div>
 <p>ניזכר בהגדרה לפולינום של מטריצה <span class="math inline">\(A\in\mathbb{M}_{n\times n}(\mathbb{F})\)</span>. למעשה, מדובר בצירוף לינארי של חזקות המטריצה, כאשר <span class="math inline">\(A^0=I_n\)</span>.</p>
-<div class="example">
+<div class="example"><div class="theorem-title">דוגמה 11.10</div>
 <p>עבור <span class="math display">\[A=\begin{pmatrix}
 1 &amp; 2 \\
 0 &amp; -1
@@ -1313,14 +1313,14 @@ p(A)&amp;=A^2+3A+2I_2=\begin{pmatrix}
 </div>
 <p>כבר הבנו איך אפשר לחשב חזקות של מטריצה לכסינה. יש הכללה טבעית לפולינום כללי:</p>
 <div id="prp-matrix-poly" class="proposition theorem">
-<p><span class="theorem-title"><strong>Proposition 11.6</strong></span> <em>תהי <span class="math inline">\(A\in\mathbb{M}_{n\times n}(\mathbb{F})\)</span> ויהי <span class="math inline">\(p(x)\)</span> פולינום.</em></p>
+<div class="theorem-title">טענה 11.16</div><p><em>תהי <span class="math inline">\(A\in\mathbb{M}_{n\times n}(\mathbb{F})\)</span> ויהי <span class="math inline">\(p(x)\)</span> פולינום.</em></p>
 <ol type="1">
 <li><p><em>אם <span class="math inline">\(v\in\mathbb{F}^n\)</span> הוא ו"ע של <span class="math inline">\(A\)</span> המתאים לע"ע <span class="math inline">\(\lambda\in\mathbb{F}\)</span>, אז הוא גם ו"ע של <span class="math inline">\(p(A)\)</span> המתאים לע"ע <span class="math inline">\(p(\lambda)\)</span>.</em></p></li>
 <li><p><em>אם <span class="math inline">\(A\)</span> לכסינה כך שקיימות <span class="math inline">\(P,D\in\mathbb{M}_{n\times n}(\mathbb{F})\)</span> אלכסונית והפיכה עבורן <span class="math inline">\(A=PDP^{-1}\)</span>, אז גם <span class="math inline">\(p(A)\)</span> לכסינה ומתקיים <span class="math display">\[.p(A)=P\cdot p(D)\cdot P^{-1}\]</span></em></p></li>
 </ol>
 </div>
 <div class="proof">
-<p><span class="proof-title"><em>Proof</em>. </span>נכתוב <span class="math display">\[p(x)=a_mx^m+....+a_1x+a_0\]</span> כאשר <span class="math inline">\(a_0,a_1,...,a_m\in\mathbb{F}\)</span>.</p>
+<div class="theorem-title">הוכחה</div><p>נכתוב <span class="math display">\[p(x)=a_mx^m+....+a_1x+a_0\]</span> כאשר <span class="math inline">\(a_0,a_1,...,a_m\in\mathbb{F}\)</span>.</p>
 <ol type="1">
 <li><p>לכל <span class="math inline">\(k\in\mathbb{N}\)</span> מתקיים: <span class="math display">\[\begin{aligned}
 Av&amp;=\lambda v \\
@@ -1331,7 +1331,7 @@ A^kv&amp;=A(\lambda^{k-1}v)=\lambda^k v
 p(A)v&amp;=a_mA^mv+...+a_1Av+a_0I_nv=a_m\lambda^mv+...+a_1\lambda v+a_0v \\
 &amp;=(a_m\lambda^m+...+a_1\lambda+a_0)v=p(\lambda)v
 \end{aligned}\]</span> קיבלנו כי <span class="math inline">\(v\)</span> הוא ו"ע של <span class="math inline">\(p(A)\)</span> המתאים לע"ע <span class="math inline">\(p(\lambda)\)</span>.</p></li>
-<li><p>לפי טענה <a href="#prp-matrix-power">11.33</a> מתקיים <span class="math display">\[A^k=PD^kP^{-1}\]</span> לכל <span class="math inline">\(k\in\mathbb{N}\)</span>. נציב זאת בנוסחה של <span class="math inline">\(p(A)\)</span> ונקבל: <span class="math display">\[\begin{aligned}
+<li><p>לפי טענה <a href="#prp-matrix-power" class="quarto-xref"><span>11.15</span></a> מתקיים <span class="math display">\[A^k=PD^kP^{-1}\]</span> לכל <span class="math inline">\(k\in\mathbb{N}\)</span>. נציב זאת בנוסחה של <span class="math inline">\(p(A)\)</span> ונקבל: <span class="math display">\[\begin{aligned}
 p(A)&amp;=a_mA^m+...+a_1A+a_0I_n=a_mPD^mP^{-1}+...+a_1PDP^{-1}+a_0I \\
 &amp;=P(a_mD^m+...+a_1D+a_0I_n)P^{-1}=P\cdot p(D)\cdot P^{-1}
 \end{aligned}\]</span> זה מראה כי <span class="math inline">\(p(A)\)</span> לכסינה כי מתקיים <span class="math display">\[p(D)=\begin{pmatrix}
@@ -1348,12 +1348,12 @@ p(\lambda_1) &amp; 0 &amp; \cdots &amp; 0 \\
 </ol>
 <p>&nbsp;◻</p>
 </div>
-<div class="example">
+<div class="example"><div class="theorem-title">דוגמה 11.11</div>
 <p>נחזור למטריצה <span class="math display">\[A=\begin{pmatrix}
 5 &amp; -2 &amp; -2\\
 2 &amp; 1 &amp; -2\\
 2 &amp; -2 &amp; 1
-\end{pmatrix}\]</span> מתרגיל <a href="#exr-matrix-power">11.35</a>. ראינו כי <span class="math display">\[.A=PDP^{-1}=\begin{pmatrix}
+\end{pmatrix}\]</span> מתרגיל <a href="#exr-matrix-power" class="quarto-xref"><span>11.7</span></a>. ראינו כי <span class="math display">\[.A=PDP^{-1}=\begin{pmatrix}
 1 &amp; 1 &amp; 1 \\
 1 &amp; 1 &amp; 0 \\
 1 &amp; 0 &amp; 1
@@ -1365,7 +1365,7 @@ p(\lambda_1) &amp; 0 &amp; \cdots &amp; 0 \\
 -1 &amp; 1 &amp; 1\\
 1 &amp; 0 &amp; -1\\
 1 &amp; -1 &amp; 0
-\end{pmatrix}\]</span> לכן, לפי טענה <a href="#prp-matrix-poly">11.38</a> נובע כי לכל פולינום <span class="math inline">\(p(x)\)</span> מתקיים <span class="math display">\[.p(A)=PDP^{-1}=\begin{pmatrix}
+\end{pmatrix}\]</span> לכן, לפי טענה <a href="#prp-matrix-poly" class="quarto-xref"><span>11.16</span></a> נובע כי לכל פולינום <span class="math inline">\(p(x)\)</span> מתקיים <span class="math display">\[.p(A)=PDP^{-1}=\begin{pmatrix}
 1 &amp; 1 &amp; 1 \\
 1 &amp; 1 &amp; 0 \\
 1 &amp; 0 &amp; 1
@@ -1398,14 +1398,14 @@ p(A)&amp;=PDP^{-1}=\begin{pmatrix}
 \end{pmatrix}
 \end{aligned}\]</span></p>
 </div>
-<div class="exercise">
+<div class="exercise"><div class="theorem-title">תרגיל 11.8</div>
 <p>יהיו <span class="math inline">\(A\in\mathbb{M}_{n\times n}(\mathbb{C})\)</span> ו- <span class="math inline">\(k\in\mathbb{N}\)</span>. נניח כי <span class="math inline">\(A^k=\mathbf{0}_{n\times n}\)</span>.</p>
 <ol type="1">
 <li><p>הראו כי <span class="math inline">\(0\)</span> הוא הע"ע היחיד של <span class="math inline">\(A\)</span>. מהו הריבוי האלגברי שלו?</p></li>
 <li><p>האם <span class="math inline">\(A\)</span> בהכרח לכסינה?</p></li>
 </ol>
 </div>
-<div class="callout callout-style-default callout-note callout-titled" title="פתרון">
+<div class="callout callout-style-default callout-note callout-titled solution" title="פתרון">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -1424,7 +1424,7 @@ p(A)&amp;=PDP^{-1}=\begin{pmatrix}
 <li><p>התשובה היא לא. ראשית נשים לב שאם <span class="math inline">\(A\)</span> לכסינה, אז היא דומה למטריצה האלכסונית <span class="math inline">\(\mathbf{0}_{n\times n}\)</span> ולכן קיימת <span class="math inline">\(P\in\mathbb{M}_{n\times n}(\mathbb{C})\)</span> כך ש- <span class="math display">\[.A=P\cdot\mathbf{0}_{n\times n}\cdot P^{-1}=\mathbf{0}_{n\times n}\]</span> אם כן, בתור דוגמה נגדית נמצא פתרון לא טריוויאלי למשוואה <span class="math inline">\(A^k=\mathbf{0}_{n\times n}\)</span> עבור <span class="math inline">\(n,k\in\mathbb{N}\)</span> מסוימים. נבחר <span class="math inline">\(n=k=2\)</span> ומטריצה <span class="math display">\[.A=\begin{pmatrix}
 0 &amp; 1 \\
 0 &amp; 0
-\end{pmatrix}\]</span> מתקיים <span class="math inline">\(A^2=\mathbf{0}_{2\times 2}\)</span>, אך <span class="math inline">\(A\)</span> עצמה אינה לכסינה. כבר הראינו זאת בסעיף ב’ של תרגיל <a href="#exr-not-similar">11.32</a>.</p></li>
+\end{pmatrix}\]</span> מתקיים <span class="math inline">\(A^2=\mathbf{0}_{2\times 2}\)</span>, אך <span class="math inline">\(A\)</span> עצמה אינה לכסינה. כבר הראינו זאת בסעיף ב’ של תרגיל <a href="#exr-not-similar" class="quarto-xref"><span>11.6</span></a>.</p></li>
 </ol>
 </div>
 </div>
@@ -1434,298 +1434,6 @@ p(A)&amp;=PDP^{-1}=\begin{pmatrix}
 </section>
 
 </main> <!-- /main -->
-<script>
-
-/* כותרות אוטומטיות + צבע פסטלי לסביבות; טיפול מדויק ב-solution כך שיישאר callout מתקפל */
-
-document.addEventListener('DOMContentLoaded', () => {
-
-
-
-  // מחיקת כותרות ברירת המחדל של Quarto באנגלית (כמו Remark / Proof)
-
-  document.querySelectorAll('.proof-title').forEach(el => el.remove());
-
-
-
-  // --- מספר פרק נוכחי למספור לפי פרק ---
-
-  function chapterNumber() {
-
-    const h1 = document.querySelector('main h1[data-number]');
-
-    if (h1 && h1.getAttribute('data-number')) return h1.getAttribute('data-number').split('.')[0];
-
-    const sec = document.querySelector('.header-section-number');
-
-    if (sec) return sec.textContent.trim().split('.')[0];
-
-    return '1';
-
-  }
-
-  const chap = chapterNumber();
-
-
-
-  // --- מפת סביבות: תווית, צבע, והאם ממוספרת ---
-
-  const envs = {
-
-    definition:  { label: 'הגדרה',   color: 'rgba(255, 99, 71, 0.4)',  numbered: true  },
-
-    example:     { label: 'דוגמה',    color: 'rgba(138, 43, 226, 0.3)', numbered: true  },
-
-    exercise:    { label: 'תרגיל',    color: 'rgba(30, 144, 255, 0.35)',numbered: true  },
-
-    remark:      { label: 'הערה',     color: 'rgba(60, 179, 113, 0.35)', numbered: true  },
-
-    theorem:     { label: 'משפט',     color: 'rgba(255, 165, 0, 0.35)', numbered: true  },
-
-    lemma:       { label: 'למה',      color: 'rgba(255, 165, 0, 0.35)', numbered: true  },
-
-    proposition: { label: 'טענה',     color: 'rgba(255, 165, 0, 0.35)', numbered: true  },
-
-    corollary:   { label: 'מסקנה',    color: 'rgba(255, 165, 0, 0.35)', numbered: true  },
-
-    proof:       { label: 'הוכחה',    color: 'rgba(0, 0, 0, 0.15)', numbered: false },
-
-    solution:    { label: 'פתרון',    color: 'rgba(72, 209, 204, 0.35)',numbered: false } // ללא מספור
-
-  };
-
-
-
-  // --- נרמול פתרון: שמירה כ-callout מתקפל וזיהוי כ-solution ---
-
-  document.querySelectorAll('div.callout.callout-note[title="הצג פתרון"], div.callout.callout-note[title="Solution"]').forEach(div => {
-
-    div.classList.add('solution');          // מוסיפים solution
-
-    div.setAttribute('collapse', 'true');   // קיפול נשמר
-
-    div.setAttribute('title', 'פתרון');     // כותרת callout
-
-  });
-
-
-
-  // --- תיקון כפילות מחלקות: אם יש proof+solution יחד – להסיר proof ---
-
-  document.querySelectorAll('div.solution.proof').forEach(div => div.classList.remove('proof'));
-
-  document.querySelectorAll('div.remark.proof').forEach(div => div.classList.remove('proof'));
-
-
-
-  // --- אם יש solution בלי מבנה callout, נבנה header+body כדי לקבל תיבה מתקפלת ---
-
-  document.querySelectorAll('div.solution:not(.callout)').forEach(div => {
-
-    div.classList.add('callout', 'callout-note');
-
-    div.setAttribute('collapse', 'true');
-
-    // header
-
-    const header = document.createElement('div');
-
-    header.className = 'callout-header';
-
-    const titleWrap = document.createElement('div');
-
-    titleWrap.className = 'callout-title-container';
-
-    const title = document.createElement('div');
-
-    title.className = 'callout-title';
-
-    title.textContent = 'פתרון';
-
-    titleWrap.appendChild(title);
-
-    header.appendChild(titleWrap);
-
-    div.insertBefore(header, div.firstChild);
-
-    // body
-
-    const body = document.createElement('div');
-
-    body.className = 'callout-body';
-
-    while (header.nextSibling) body.appendChild(header.nextSibling);
-
-    div.appendChild(body);
-
-  });
-
-// --- מספור משותף (רץ) לכל הסביבות לפי סדר הופעתן ---
-
-  const boxEnvs = ['definition','example','exercise','remark','theorem','lemma','proposition','corollary','proof'];
-
-  let sharedCounter = 0; // מונה אחד משותף לכולם
-
-  const envMap = {}; // מיפוי id → "טענה 2.7" לצורך רפרנסים אוטומטיים
-
-
-
-  // תופס את כל הסביבות יחד כדי לשמור על סדר ההופעה במסמך
-
-  const allBoxSelector = boxEnvs.map(env => `div.${env}`).join(', ');
-
-  
-
-  document.querySelectorAll(allBoxSelector).forEach(div => {
-
-    // לא לגעת ב-callout (כמו פתרונות)
-
-    if (div.classList.contains('callout')) return;
-
-
-
-    // --- התיקון: מחיקת הכותרת האנגלית המובנית של Quarto ---
-
-    // Quarto שותל את הכותרת שלו בתור תגית span בתוך הפסקה הראשונה
-
-    const quartoNativeTitle = div.querySelector('span.theorem-title');
-
-    if (quartoNativeTitle) {
-
-      quartoNativeTitle.remove(); // מעלים את Theorem 2.1
-
-    }
-
-
-
-    // מזהים איזו סביבה זו מתוך הרשימה שלנו
-
-    const env = boxEnvs.find(e => div.classList.contains(e));
-
-    if (!env) return;
-
-    const meta = envs[env];
-
-
-
-    // הוספת הכותרת שלנו עם המונה המשותף בעברית
-
-    let title = div.querySelector(':scope > div.theorem-title');
-
-    if (!title) {
-
-      title = document.createElement('div');
-
-      title.className = 'theorem-title custom-title';
-
-      if (meta.numbered) {
-
-        sharedCounter += 1; // מקדם את המונה המשותף
-
-        const fullLabel = `${meta.label} ${chap}.${sharedCounter}`;
-
-        title.textContent = fullLabel;
-
-        // שמירה במפה לרפרנסים אוטומטיים
-
-        if (div.id) envMap[div.id] = `${chap}.${sharedCounter}`;
-
-      } else {
-
-        title.textContent = meta.label;
-
-      }
-
-      div.insertBefore(title, div.firstChild);
-
-    }
-
-
-
-    // צבע וצביעת קופסה
-
-    div.style.setProperty('--env-color', meta.color);
-
-    div.classList.add('envbox');
-
-  });
-
-
-
-  // --- רפרנסים אוטומטיים: עדכון לינקים שמצביעים לסביבות ממוספרות ---
-
-  document.querySelectorAll('a[href^="#"]').forEach(link => {
-
-    const targetId = link.getAttribute('href').slice(1);
-
-    if (envMap[targetId] && !link.textContent.trim()) {
-
-      link.textContent = envMap[targetId];
-
-    }
-
-  });
-
-console.log('envMap:', envMap);
-
-  // --- צביעת פתרון כ-callout לפי המפה ---
-
-  document.querySelectorAll('div.callout.solution').forEach(div => {
-
-    div.style.setProperty('--env-color', envs.solution.color);
-
-  });
-
-
-
-});
-
-</script>
-<script>
-
-document.addEventListener('DOMContentLoaded', () => {
-
-  // בחר את כל כותרות הפרקים הראשיים
-
-  const chapters = document.querySelectorAll('main h1[data-number]');
-
-  let counter = 0;
-
-  chapters.forEach(h1 => {
-
-    counter++;
-
-    if (counter <= 3) {
-
-      // שני פרקים ראשונים ברומי
-
-      const roman = ['I','II'][counter-1];
-
-      h1.setAttribute('data-number', roman);
-
-      const numSpan = h1.querySelector('.header-section-number');
-
-      if (numSpan) numSpan.textContent = roman;
-
-    } else {
-
-      // חזרה למספרים רגילים החל מ-1
-
-      const normal = counter - 3;
-
-      h1.setAttribute('data-number', normal);
-
-      const numSpan = h1.querySelector('.header-section-number');
-
-      if (numSpan) numSpan.textContent = normal;
-
-    }
-
-  });
-
-});
-
-</script>
 <script src="tracking.js"></script>
 <style>
 

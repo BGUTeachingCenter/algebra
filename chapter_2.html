@@ -316,27 +316,27 @@ $$
 <section id="משוואה-לינארית-במספר-משתנים" class="level2" data-number="5.1">
 <h2 data-number="5.1" class="anchored" data-anchor-id="משוואה-לינארית-במספר-משתנים"><span class="header-section-number">5.1</span> משוואה לינארית במספר משתנים</h2>
 <p>איך נראית משוואה לינארית כללית? נשתמש במשתנים <span class="math inline">\(x_1,x_{2,}...,x_n\)</span> במקום אותיות רגילות, כי לצורך העניין <span class="math inline">\(n\)</span> יכול להיות גדול בהרבה ממספר האותיות באלף בית הלועזי (<span class="math inline">\(26\)</span>) או בכל שפה אחרת. גם נראה בהמשך שצריך לבחור איזשהו סדר בין המשתנים, אז אם מספרם גדול זה נוח להשתמש באינדקס מספרי כדי להדגיש את הסדר ביניהם. זה נוח גם למספר משתנים לא גדול במיוחד.</p>
-<div class="definition">
+<div class="definition"><div class="theorem-title">הגדרה 5.1</div>
 <p>משוואה לינארית במשתנים <span class="math inline">\(x_1,x_{2,}...,x_n\)</span> היא משוואה מהצורה <span id="eq-linear-eq"><span class="math display">\[
 a_1x_1 + a_2x_2 + a_3x_3 + \cdots + a_n x_n = b
 \tag{5.1}\]</span></span></p>
 <p>כאשר <span class="math inline">\(a_1,...,a_n\)</span> הם סקלרים נתונים שנקראים מקדמים, ו-<span class="math inline">\(b\)</span> הוא סקלר נתון שנקרא קבוע או איבר חופשי. אם כל הסקלרים והמשתנים ממשיים, נאמר שזו משוואה לינארית מעל <span class="math inline">\(\mathbb R\)</span>. אם לפחות סקלר אחד הוא מרוכב ו/או המשתנים מרוכבים, נאמר שזו משוואה לינארית מעל <span class="math inline">\(\mathbb C\)</span>. אם נרצה להכליל בלי לציין שמדובר ב-<span class="math inline">\(\mathbb R\)</span> או <span class="math inline">\(\mathbb C\)</span>, נכתוב <span class="math inline">\(\mathbb F\)</span> ונזכור שקבוצה זו היא או <span class="math inline">\(\mathbb R\)</span> או <span class="math inline">\(\mathbb C\)</span>.</p>
 </div>
-<div class="example">
+<div class="example"><div class="theorem-title">דוגמה 5.1</div>
 <p>א. <span class="math inline">\(x_1-x_2+x_3-x_4=100\)</span> זו משוואה לינארית בארבעה משתנים מעל <span class="math inline">\(\mathbb R\)</span>. דוגמה לפתרון היא <span class="math inline">\((x_1,x_2,x_3,x_4)=(50,0,50,0)\)</span> כי <span class="math inline">\(.50-0+50-0=100\)</span></p>
 <p>ב. <span class="math inline">\(x_1+ix_2-x_3-ix_4+x_5=1+i\)</span> זו משוואה לינארית בחמישה משתנים מעל <span class="math inline">\(\mathbb C\)</span>. דוגמה לפתרון היא <span class="math inline">\((x_1,x_2,x_3,x_4,x_5)=(1,1,0,0,0)\)</span> כי <span class="math inline">\(.1+i\cdot1-0-0+0=1+i\)</span></p>
 <p>ג. <span class="math inline">\(0=0\)</span> זו משוואה לינארית במספר כלשהו של משתנים, מעל <span class="math inline">\(\mathbb R\)</span> או <span class="math inline">\(\mathbb C\)</span>. בכתיבה מלאה עבור <span class="math inline">\(n\)</span> משתנים מדובר על המשוואה <span class="math display">\[.0\cdot x_1+0\cdot x_2+0+...+0\cdot x_n=0\]</span> כל בחירה של סקלרים <span class="math inline">\((x_1,x_2,...,x_n)=(c_1,c_2,...,c_n)\)</span> היא פתרון למשוואה זו, שהיא פסוק אמת שלא תלוי בערכי המשתנים.</p>
 </div>
 <div id="def-F-n" class="definition theorem">
-<p><span class="theorem-title"><strong>Definition 5.1</strong></span> סדרת סקלרים <span class="math inline">\((c_1,c_2,...,c_n)\)</span> נקראת <span class="math inline">\(n\)</span>-יה, או וקטור באורך <span class="math inline">\(n\)</span>. נגדיר את מרחב ה-<span class="math inline">\(n\)</span>-יות מעל <span class="math inline">\(\mathbb R\)</span>: <span class="math display">\[\mathbb R^{n}=\Set{(c_1,c_2,....,c_n)|c_1,c_2,....,c_n\in\mathbb R}.\]</span> וגם את מרחב ה-<span class="math inline">\(n\)</span>-יות מעל <span class="math inline">\(\mathbb C\)</span>: <span class="math display">\[\mathbb C^{n}=\Set{(c_1,c_2,....,c_n)|c_1,c_2,....,c_n\in\mathbb C}.\]</span></p>
+<div class="theorem-title">הגדרה 5.2</div><p>סדרת סקלרים <span class="math inline">\((c_1,c_2,...,c_n)\)</span> נקראת <span class="math inline">\(n\)</span>-יה, או וקטור באורך <span class="math inline">\(n\)</span>. נגדיר את מרחב ה-<span class="math inline">\(n\)</span>-יות מעל <span class="math inline">\(\mathbb R\)</span>: <span class="math display">\[\mathbb R^{n}=\Set{(c_1,c_2,....,c_n)|c_1,c_2,....,c_n\in\mathbb R}.\]</span> וגם את מרחב ה-<span class="math inline">\(n\)</span>-יות מעל <span class="math inline">\(\mathbb C\)</span>: <span class="math display">\[\mathbb C^{n}=\Set{(c_1,c_2,....,c_n)|c_1,c_2,....,c_n\in\mathbb C}.\]</span></p>
 <p>לעיתים נכתוב <span class="math inline">\(\mathbb F^n\)</span> במקום לפרט אם הכוונה היא ל-<span class="math inline">\(\mathbb R^n\)</span> או ל-<span class="math inline">\(\mathbb C^n\)</span>.</p>
 </div>
 <p>יש לנו אינטואיציה גיאומטרית טובה לגבי המישור הדו-מימדי <span class="math inline">\(\mathbb R^2\)</span> והמרחב התלת-מימדי <span class="math inline">\(\mathbb R^3\)</span>. החל מ- <span class="math inline">\(\mathbb R^4\)</span> ו- <span class="math inline">\(\mathbb C^2\)</span> כבר אין לנו יכולת לדמיין את המרחבים האלה באופן מלא, אבל נתרגל גם אליהם מבחינה אלגברית.</p>
-<div class="definition">
+<div class="definition"><div class="theorem-title">הגדרה 5.3</div>
 <p>פתרון של משוואה לינארית הינו <span class="math inline">\(n\)</span>-יה <span class="math inline">\((c_1,c_2,...,c_n)\in\mathbb F^{n}\)</span> כך שבהצבת <span class="math display">\[x_1=c_1,x_2=c_2,...,x_n=c_n.\]</span></p>
 <p>המשוואה מתקיימת.</p>
 </div>
-<div class="example">
+<div class="example"><div class="theorem-title">דוגמה 5.2</div>
 <p>א. משוואה לינארית ב-<span class="math inline">\(5\)</span> משתנים מעל <span class="math inline">\(\mathbb R\)</span></p>
 <p><span class="math display">\[x_1+x_2+x_3+x_4+x_5=100\]</span></p>
 <p>אחד הפתרונות של המשוואה הוא <span class="math display">\[(x_1,x_2,x_3,x_4,x_5)=(20,20,20,20,20)\]</span> פתרון נוסף הוא <span class="math display">\[(x_1,x_2,x_3,x_4,x_5)=(60,10,10,10,10)\]</span> ויש עוד אינסוף אחרים. לעומת זאת, <span class="math display">\[(x_1,x_2,x_3,x_4,x_5)=(0,0,0,0,0)\]</span> אינו פתרון כי ההצבה נותנת <span class="math inline">\(0=100\)</span> וזה כמובן לא מתקיים.</p>
@@ -355,14 +355,14 @@ a_1x_1 + a_2x_2 + a_3x_3 + \cdots + a_n x_n = b
 <p>לכן, קבוצת הפתרונות של המשוואה נתונה בהצגה פרמטרית ע"י <span class="math display">\[.\Set{(\frac{1}{a_1}(b-a_2c_2-a_3c_3-...-a_nc_n),c_2,c_3,...,c_n)|c_1,c_2,...,c_n\in\mathbb F}.\]</span></p>
 <p>נדגיש כי <span class="math inline">\(a_1,a_2,a_3,...,a_n\)</span> נתונים במשוואה כסקלרים קבועים. <span class="math inline">\(c_1,c_2,...,c_n\)</span> הם פרמטרים שרצים על פני הקבוצה <span class="math inline">\(\mathbb F\)</span> (<span class="math inline">\(\mathbb R\)</span> או <span class="math inline">\(\mathbb C\)</span>) כדי ליצור את כל הפתרונות. זו הכללה (כלומר צורה יותר כללית של מקרה מוכר) של הצגה פרמטרית של ישר (פרמטר אחד) ושל מישור (שני פרמטרים) למספר כללי של פרמטרים, שהוא בעצם <span class="math inline">\(n-1\)</span>. בפרט, לכל <span class="math inline">\(n\geq2\)</span> יש אינסוף פתרונות ל<a href="#eq-linear-eq" class="quarto-xref"><span>5.1</span></a> כי ניתן להציב אינסוף אפשרויות במשתנה אחד או יותר.</p>
 <p>שימו לב שהתייחסנו אל <span class="math inline">\(x_1\)</span> כמשתנה תלוי ואל <span class="math inline">\(x_2,x_3,...,x_n\)</span> כמשתנים חופשיים (הצבנו בהם ערכים שרירותיים). אם היינו מבודדים את <span class="math inline">\(x_2\)</span> או משתנה אחר במקום <span class="math inline">\(x_1\)</span>, אז הוא היה המשתנה התלוי וההצגה הפרמטרית הייתה משתנה בהתאם. עדיין, זו רק הצגה חלופית לקבוצת הפתרונות של אותה המשוואה. טבעי לבחור את <span class="math inline">\(x_1\)</span>, אך אין חובה לעשות זאת.</p>
-<div class="example">
+<div class="example"><div class="theorem-title">דוגמה 5.3</div>
 <p>את המשוואה <span class="math display">\[x_1+2x_2+3x_3+4x_4=4\]</span> אפשר לפתור ע"י בידוד אחד מארבעת המשתנים (זה נתון לבחירתנו). מקובל לבודד את <span class="math inline">\(x_1\)</span> ולקבל <span class="math display">\[x_1=4-2x_2-3x_3-4x_4\]</span> בהצבת <span class="math inline">\((x_2,x_3,x_4)=(c_2,c_3,c_4)\)</span> מקבלים את קבוצת הפתרונות <span class="math display">\[\Set{(4-2c_2-3c_3-4c_4,c_2,c_3,c_4)|c_2,c_3,c_4\in\mathbb R}.\]</span> אבל באותה המידה אפשר לבודד משתנה אחר, למשל <span class="math inline">\(x_2\)</span> כך נקבל <span class="math inline">\(2x_2=4-x_1-3x_3-4x_4\)</span> ולאחר חלוקה ב- <span class="math inline">\(2\)</span>: <span class="math display">\[x_2=\frac{1}{2}(4-x_1-3x_3-4x_4)\]</span></p>
 <p>בהצבת סקלרים <span class="math inline">\((x_1,x_3,x_4)=(d_1,d_3,d_4)\)</span> נקבל הצגה פרמטרית חדשה לקבוצת הפתרונות, שנתונה ע"י <span class="math display">\[\Set{(d_1,\frac{1}{2}(4-d_1-3d_3-4d_4),d_3,d_4)|d_1,d_3,d_4\in\mathbb R}.\]</span> בפרט, נובע כי מתקיים שוויון בין שתי הקבוצות. מדובר בשתי הצגות שקולות.</p>
 </div>
-<div class="exercise">
+<div class="exercise"><div class="theorem-title">תרגיל 5.1</div>
 <p>מצאו את קבוצת הפתרונות של המשוואה <span class="math inline">\(2x_1+x_2+3x_3+4x_4=5\)</span>. בדקו איך ההצגה הפרמטרית משתנה כאשר מבודדים את <span class="math inline">\(x_2\)</span> במקום <span class="math inline">\(x_1\)</span>.</p>
 </div>
-<div class="callout callout-style-default callout-note callout-titled" title="פתרון">
+<div class="callout callout-style-default callout-note callout-titled solution" title="פתרון">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -386,7 +386,7 @@ a_1x_1 + a_2x_2 + a_3x_3 + \cdots + a_n x_n = b
 <h2 data-number="5.2" class="anchored" data-anchor-id="מערכות-משוואות-לינאריות"><span class="header-section-number">5.2</span> מערכות משוואות לינאריות</h2>
 <p>בפרק הקודם ראינו הרבה דוגמאות למערכות משוואות לינאריות (ממ"ל) מעל <span class="math inline">\(\mathbb R\)</span> עם שתי משוואות בשני משתנים (לתיאור חיתוך שני ישרים במישור) וגם לממ"ל עם שתי משוואות בשלושה משתנים (לתיאור חיתוך שני מישורים במרחב). באופן כללי, אפשר להתייחס לכל אוסף של משוואות לינאריות כמערכת אחת.</p>
 <p>בהקשר של החוק השני של ניוטון שהזכרו בתחילת הפרק כמשוואה וקטרית מהצורה <span class="math inline">\(\vec{F}=m\vec{a}\)</span>, אפשר לחשוב על ממ"ל במספר כלשהו של משתנים שקשורים לוקטורי התאוצה של מספר גופים ולכוחות הפועלים עליהם. גודל הממ"ל מקשה על האינטואיציה הגיאומטרית ומוסיף חישובים (ייתכן באופן משמעותי), אך עדיין יש גישה אלגברית אחת לפתרון של כל ממ"ל. נפתח אותה בפרק זה.</p>
-<div class="example">
+<div class="example"><div class="theorem-title">דוגמה 5.4</div>
 <p><strong>א.</strong> ממ״ל של שתי משוואות בארבעה משתנים מעל <span class="math inline">\(\mathbb{R}\)</span>:<br>
 <span class="math display">\[
 \begin{cases}
@@ -418,7 +418,7 @@ x &amp;{}+{}&amp;  y &amp;{}+{}&amp; 3z &amp;= 5
 \end{cases}
 \]</span></p>
 </div>
-<div class="definition">
+<div class="definition"><div class="theorem-title">הגדרה 5.4</div>
 <p>מערכת משוואות לינאריות (ממ"ל) במשתנים <span class="math inline">\(x_1,x_{2,}...,x_n\)</span> היא אוסף של מספר כלשהו (<span class="math inline">\(m\)</span>) של משוואות לינאריות מהצורה</p>
 <p><span id="eq-linear-eqs"><span class="math display">\[
 \begin{cases}
@@ -434,10 +434,10 @@ a_{m1}x_1 &amp;{}+{}&amp; a_{m2}x_2 &amp;{}+{}&amp; a_{m3}x_3 &amp;{}+{}&amp; \d
 <p>אם כל המקדמים והקבועים הם מספרים ממשיים, נאמר שהממ"ל מעל <span class="math inline">\(\mathbb R\)</span>. אחרת, נאמר שהממ"ל מעל <span class="math inline">\(\mathbb C\)</span>.</p>
 </div>
 <p>שימו לב לאינדקס הכפול: <span class="math inline">\(a_{ij}\)</span> הוא המקדם של המשתנה <span class="math inline">\(x_{j}\)</span> במשוואה ה- <span class="math inline">\(i\)</span> (כלומר בשורה ה-<span class="math inline">\(i\)</span>). <span class="math inline">\(b_{i}\)</span> הוא הקבוע (איבר חופשי) במשוואה ה- <span class="math inline">\(i\)</span>. צריך להתרגל לכתיבה עם שני אינדקסים, אבל זו הדרך הטבעית להתייחס גם למספר המשתנה וגם למספר המשוואה. נדגיש ש- <span class="math inline">\(ij\)</span> אינו מכפלה וגם לא מספר דו-ספרתי בהקשר זה. בנוסף, כאן <span class="math inline">\(i\)</span> אינו המספר המדומה אלא אינדקס שמתאר את מספר השורה, ואילו <span class="math inline">\(j\)</span> הוא אינדקס שמתאר את מספר העמודה. אלה הסימונים המקובלים בקורס, והכוונה אמורה להיות ברורה כי אינדקס מופיע בכתב תחתי.</p>
-<div class="definition">
+<div class="definition"><div class="theorem-title">הגדרה 5.5</div>
 <p>פתרון של ממ"ל הינו סדרת סקלרים <span class="math inline">\((c_1,c_2,...,c_n)\)</span> כך שבהצבת <span class="math display">\[x_1=c_1,x_2=c_2,...,x_n=c_n\]</span> <u>כל</u> המשוואות בממ"ל מתקיימות.</p>
 </div>
-<div class="example">
+<div class="example"><div class="theorem-title">דוגמה 5.5</div>
 <p>א. נחזור לדוגמה קודמת:</p>
 <p><span class="math display">\[
 \begin{cases}
@@ -491,7 +491,7 @@ a_{32} &amp;= 0,\; a_{31} = a_{33} = a_{34} = 1
 <li><p>מהו מבנה קבוצת הפתרונות?</p></li>
 </ol>
 <p>לפני כן, נראה עוד דוגמאות לממ"ל וגם נחזור אל חלק מהדוגמאות הקודמות. קל לבדוק אם פתרון נתון הוא אכן פתרון ע"י בדיקה שהצבתו מקיימת את כל המשוואות. עבור ממ"ל פשוטה גם לא דרוש הרבה מאמץ כדי למצוא את קבוצת הפתרונות.</p>
-<div class="example">
+<div class="example"><div class="theorem-title">דוגמה 5.6</div>
 <p><strong>א.</strong><br>
 <span class="math display">\[
 \begin{cases}
@@ -608,7 +608,7 @@ x+y &amp;= 1
 </figure>
 </div>
 </div>
-<div class="exercise">
+<div class="exercise"><div class="theorem-title">תרגיל 5.2</div>
 <p>נסתכל על הממ"ל <span class="math display">\[.\begin{cases}
 \begin{aligned}
 x_1 +  x_2 + 2x_3 - x_4+x_5 &amp;= 2 \\[4pt]
@@ -617,7 +617,7 @@ x_1 +  x_2 + 2x_3 - x_4+x_5 &amp;= 2 \\[4pt]
 \end{cases}\]</span></p>
 <p>האם <span class="math inline">\((x_1,x_2,x_3,x_4,x_5)=(1,1,1,2,0)\)</span> הוא פתרון? אם לא, לאיזה ערך של <span class="math inline">\(a\in\mathbb R\)</span> הוקטור <span class="math inline">\((x_1,x_2,x_3,x_4,x_5)=(1-a,1,1,2,a)\)</span> הוא פתרון של הממ"ל?</p>
 </div>
-<div class="callout callout-style-default callout-note callout-titled" title="פתרון">
+<div class="callout callout-style-default callout-note callout-titled solution" title="פתרון">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -648,7 +648,7 @@ x_1 +  x_2 + 2x_3 - x_4+x_5 &amp;= 2 \\[4pt]
 <h2 data-number="5.3" class="anchored" data-anchor-id="מטריצות"><span class="header-section-number">5.3</span> מטריצות</h2>
 <p>ראינו בפרק הקודם, למשל עבור ממ"ל של שתי משוואות בשני נעלמים, שניתן לחבר בין שתי משוואות כדי לנסות לקבל משוואה יותר פשוטה שנובעת מהממ"ל. למעשה, פעולה זו משפיעה רק על המקדמים והקבועים של הממ"ל. כאשר מחברים את שתי המשוואות הראשונות של <a href="#eq-linear-eqs" class="quarto-xref"><span>5.2</span></a> מקבלים <span class="math display">\[(a_{11}+a_{21})x_1+(a_{12}+a_{22})x_2+(a_{13}+a_{23})x_3+...+(a_{1n}+a_{2n})x_n=b_1+b_2\]</span></p>
 <p>לצורך העניין, אפשר לשים את המשתנים בצד ולחזור אליהם בסוף. המידע של הממ"ל אמנם קשור למשתנים, אבל הוא מגולם בסקלרים (מקדמים וקבועים). אז זה שימושי לייצג את הממ"ל כטבלה שבה מופיעים רק הסקלרים. טבלה כזו נקראת מטריצה.</p>
-<div class="definition">
+<div class="definition"><div class="theorem-title">הגדרה 5.6</div>
 <p>מטריצה מסדר <span class="math inline">\(m\times n\)</span> מעל <span class="math inline">\(\mathbb F\)</span> היא טבלה בת <span class="math inline">\(m\)</span> שורות ו-<span class="math inline">\(n\)</span> עמודות כך שבכל משבצת מופיע סקלר ב-<span class="math inline">\(\mathbb F\)</span>. בהקשר של הממ"ל <span class="math display">\[,\begin{cases}
 \begin{alignedat}{7}
 a_{11}x_1 &amp;{}+{}&amp; a_{12}x_2 &amp;{}+{}&amp; a_{13}x_3 &amp;{}+{}&amp; \dots + a_{1n}x_n &amp;= b_1 \\[4pt]
@@ -681,7 +681,7 @@ b_m
 \end{pmatrix}\)</span>. דרך מקוצרת לכתיבת הממ”ל <a href="#eq-linear-eqs" class="quarto-xref"><span>5.2</span></a> היא המשוואה הוקטורית <span class="math inline">\(Ax=b\)</span>.</p>
 </div>
 <p>בפרק הבא נבין יותר לעומק את הסימון <span class="math inline">\(Ax\)</span>. בינתיים זה סימון מקוצר, וגם <span class="math inline">\(x\)</span> הוא סימון נוח עבור וקטור (אין צורך בחץ מעליו).</p>
-<div class="example">
+<div class="example"><div class="theorem-title">דוגמה 5.7</div>
 <p>א. עבור הממ״ל<br>
 <span class="math display">\[
 \begin{cases}
@@ -750,10 +750,10 @@ x &amp;{}+{}&amp;  y &amp;{}+{}&amp; 0\!\cdot\! z &amp;{}+{}&amp;     w &amp;=  
 \right)
 \]</span></p>
 </div>
-<div class="proof remark">
-<p><span class="proof-title"><em>Remark</em>. </span>שימו לב שאם המשתנה ה- <span class="math inline">\(j\)</span> לא מופיע במשוואה ה- <span class="math inline">\(i\)</span>, זה אומר שהמקדם המתאים הוא <span class="math inline">\(0\)</span> ולכן <span class="math inline">\(a_{ij}=0\)</span> במטריצה.</p>
+<div class="remark">
+<div class="theorem-title">הערה 5.1</div><p>שימו לב שאם המשתנה ה- <span class="math inline">\(j\)</span> לא מופיע במשוואה ה- <span class="math inline">\(i\)</span>, זה אומר שהמקדם המתאים הוא <span class="math inline">\(0\)</span> ולכן <span class="math inline">\(a_{ij}=0\)</span> במטריצה.</p>
 </div>
-<div class="exercise">
+<div class="exercise"><div class="theorem-title">תרגיל 5.3</div>
 <p>כתבו את מטריצות המקדמים (מצומצמת ומורחבת) ועמודת הקבועים של הממ"ל <span class="math display">\[.\begin{cases}
 \begin{alignedat}{7}
 x &amp;{}+{}&amp;  y &amp;{}+{}&amp;  z &amp;{}+{}&amp;  w &amp;=  0 \\[4pt]
@@ -762,7 +762,7 @@ x &amp;{}+{}&amp; 2y &amp;{}+{}&amp; 2z &amp;{}+{}&amp; 3w &amp;=  8
 \end{alignedat}
 \end{cases}\]</span></p>
 </div>
-<div class="callout callout-style-default callout-note callout-titled" title="פתרון">
+<div class="callout callout-style-default callout-note callout-titled solution" title="פתרון">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -795,12 +795,12 @@ x &amp;{}+{}&amp; 2y &amp;{}+{}&amp; 2z &amp;{}+{}&amp; 3w &amp;=  8
 <section id="מטריצות-מדורגות-ומדורגות-קנונית" class="level2" data-number="5.4">
 <h2 data-number="5.4" class="anchored" data-anchor-id="מטריצות-מדורגות-ומדורגות-קנונית"><span class="header-section-number">5.4</span> מטריצות מדורגות ומדורגות קנונית</h2>
 <p>כבר נתקלנו בדוגמאות בהן הממ"ל יחסית פשוטה לפתרון, במובן שקל לזהות את המשתנים החופשיים, להציב בהם ערכים שרירותיים ולקבל את הערכים המתאימים של המשתנים התלויים ע"י קצת אלגברה (פעולות חשבון ואולי הצבות). איך מטריצת המקדמים (מצומצמת או מורחבת) נראית במקרים כאלה? לשם כך נועדה ההגדרה הבאה.</p>
-<div class="definition">
+<div class="definition"><div class="theorem-title">הגדרה 5.7</div>
 <p>מטריצה נקראת <u>מדורגת</u> אם:</p>
 <p>א. אם במטריצה יש שורות אפסים, אז הן מופיעות מתחת לכל שאר השורות.</p>
 <p>ב. בכל שורה שאינה שורת אפסים, האיבר הראשון (משמאל) שאינו <span class="math inline">\(0\)</span> נקרא <u>האיבר המוביל</u> של שורה זו, והוא מופיע משמאל לאיבר המוביל של השורה מתחתיו (אם קיימת כזו). בפרט, מתחת לכל איבר מוביל יש אפסים בלבד.</p>
 </div>
-<div class="example">
+<div class="example"><div class="theorem-title">דוגמה 5.8</div>
 <p><strong>א.</strong><br>
 <span class="math display">\[
 \begin{pmatrix}
@@ -842,13 +842,13 @@ x &amp;{}+{}&amp; 2y &amp;{}+{}&amp; 2z &amp;{}+{}&amp; 3w &amp;=  8
 <p>אינה מדורגת כי יש שורת אפסים מעל לשורה שאינה כולה אפסים.</p>
 </div>
 <p>מטריצות מדורגות הן יחסית נוחות, אך יש מטריצות מדורגות מסוג יותר מסוים שהוא עוד יותר נוח בפתרון ממ"ל.</p>
-<div class="definition">
+<div class="definition"><div class="theorem-title">הגדרה 5.8</div>
 <p>מטריצה נקראת <u>מדורגת קנונית</u> אם:</p>
 <p>א. היא מדורגת, כלומר מקיימת את שני תנאי ההגדרה הקודמת.</p>
 <p>ב. האיבר המוביל בכל שורה (אם הוא קיים) הוא <span class="math inline">\(1\)</span>. אפשר גם לקרוא לו אחד מוביל.</p>
 <p>ג. בכל עמודה של אחד מוביל, כל שאר האיברים הם <span class="math inline">\(0\)</span> (מתחת וגם מעל לאחד המוביל).</p>
 </div>
-<div class="example">
+<div class="example"><div class="theorem-title">דוגמה 5.9</div>
 <p><strong>א.</strong><br>
 <span class="math display">\[
 \begin{pmatrix}
@@ -892,16 +892,16 @@ x &amp;{}+{}&amp; 2y &amp;{}+{}&amp; 2z &amp;{}+{}&amp; 3w &amp;=  8
 </figure>
 </div>
 <p>האיברים המובילים מופיעים בעמודות <span class="math inline">\(k_1,k_2,....,k_{r}\)</span>. <span class="math inline">\(r\)</span> הוא גם מספר השורות שאינן כולן אפסים (בכל שורה כזו יש איבר מוביל אחד).</p>
-<div class="definition">
+<div class="definition"><div class="theorem-title">הגדרה 5.9</div>
 <p>נניח שקיבלנו צורה מדורגת קנונית של מטריצת מקדמים מצומצמת <span class="math inline">\(A\)</span> של ממ"ל <span class="math inline">\(Ax=b\)</span>.</p>
 <p>א. כל משתנה שמתאים לעמודה בה מופיע איבר מוביל נקרא משתנה תלוי. שאר המשתנים נקראים חופשיים.</p>
 <p>ב. למספר המשתנים התלויים נקרא הדרגה של הממ"ל/מטריצה. נסמן <span class="math inline">\(\mathop{\mathrm{rank}}(A)\)</span>.</p>
 </div>
-<div class="proof remark">
-<p><span class="proof-title"><em>Remark</em>. </span>נראה בקרוב (שיטת הדירוג של גאוס) שניתן לבצע על כל מטריצה סדרת פעולות (שנקראת דירוג) בין שורותיה, כך שבסוף מתקבלת מטריצה מדורגת קנונית. מטריצה זו היא יחידה (כלומר לא תלויה בדרך הדירוג שניתנת לבחירה) וניתן להשתמש בה כדי לקבוע את קבוצת הפתרונות של הממ"ל המקורית. הדרגה, שהיא כאמור מספר המשתנים התלויים, שווה למספר השורות בצורה המדורגת קנונית שאינן שורת אפסים. זהו גם מספר האיברים המובילים.</p>
+<div class="remark">
+<div class="theorem-title">הערה 5.2</div><p>נראה בקרוב (שיטת הדירוג של גאוס) שניתן לבצע על כל מטריצה סדרת פעולות (שנקראת דירוג) בין שורותיה, כך שבסוף מתקבלת מטריצה מדורגת קנונית. מטריצה זו היא יחידה (כלומר לא תלויה בדרך הדירוג שניתנת לבחירה) וניתן להשתמש בה כדי לקבוע את קבוצת הפתרונות של הממ"ל המקורית. הדרגה, שהיא כאמור מספר המשתנים התלויים, שווה למספר השורות בצורה המדורגת קנונית שאינן שורת אפסים. זהו גם מספר האיברים המובילים.</p>
 </div>
 <p>הרעיון של משתנה תלוי זה שיש משוואה שמתארת את התלות שלו במשתנים החופשיים (או חלקם). ניתן להציב סקלרים שרירותיים במשתנים החופשיים בכל משוואה, ולקבל את הערכים המתאימים של המשתנים התלויים.</p>
-<div class="example">
+<div class="example"><div class="theorem-title">דוגמה 5.10</div>
 <p>נפתור את הממ"ל <span class="math display">\[.\begin{cases}
 \begin{aligned}
 x_1+ix_4&amp;=1+i\\
@@ -923,7 +923,7 @@ x_3=2-t
 <section id="פעולות-שורה-אלמנטריות" class="level2" data-number="5.5">
 <h2 data-number="5.5" class="anchored" data-anchor-id="פעולות-שורה-אלמנטריות"><span class="header-section-number">5.5</span> פעולות שורה אלמנטריות</h2>
 <p>נרצה לפשט ממ"ל כללית, כלומר להעביר את מטריצת המקדמים לצורה מדורגת קנונית בלי לשנות את קבוצת הפתרונות של הממ"ל. זה לא רעיון חדש: כבר במקרה של שתי משוואות בשני משתנים ראינו שאפשר לחבר/לחסר בין המשוואות וגם להשתמש בכפל בסקלר. כל פעולה כזו לא משנה את קבוצת הפתרונות, כי מדובר בפעולה הפיכה (אפשר לשחזר את הממ"ל המקורית מתוך צורתה החדשה). במילים אחרות, פעולות כאלו יוצרות ממ"ל שקולה לממ"ל המקורית, ויש בזה טעם אם היא יותר פשוטה לפתרון כמו במקרה של ממ"ל המתאימה למטריצה מדורגת קנונית.</p>
-<div class="definition">
+<div class="definition"><div class="theorem-title">הגדרה 5.10</div>
 <p>תהי <span class="math display">\[A=\begin{pmatrix}a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n}\\
 a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n}\\
 \vdots &amp; \vdots &amp; \ddots &amp; \vdots\\
@@ -933,7 +933,7 @@ a_{m1} &amp; a_{m2} &amp; \cdots &amp; a_{mn}
 <p>ב. הוספה לשורה <span class="math inline">\(R_{i}\)</span> את הכפולה של השורה <span class="math inline">\(R_{j}\)</span> בסקלר <span class="math inline">\(c\in \mathbb F\)</span> כאשר <span class="math inline">\(i\neq j\)</span>. נסמן <span class="math inline">\(R_{i}+cR_{j}\rightarrow R_{i}\)</span>. השורה <span class="math inline">\(R_{j}\)</span> נשארת ללא שינוי.</p>
 <p>ג. החלפת השורות <span class="math inline">\(R_{i}\)</span> ו-<span class="math inline">\(R_{j}\)</span> עבור <span class="math inline">\(i\neq j\)</span>. נסמן <span class="math inline">\(R_{i}\leftrightarrow R_{j}\)</span>.</p>
 </div>
-<div class="example">
+<div class="example"><div class="theorem-title">דוגמה 5.11</div>
 <p>נדגים כל סוג פעולה על המטריצה <span class="math display">\[
 \begin{pmatrix}
 1 &amp; 2 &amp; 3\\
@@ -981,28 +981,28 @@ a_{m1} &amp; a_{m2} &amp; \cdots &amp; a_{mn}
 \end{pmatrix}
 \]</span> כאן הפעולה ההפוכה היא אותה הפעולה: החלפת השורות <span class="math inline">\(R_2\)</span> ו-<span class="math inline">\(R_3\)</span>.</p>
 </div>
-<div class="proof remark">
-<p><span class="proof-title"><em>Remark</em>. </span>באופן כללי, כל פעולות השורה האלמנטריות הן הפיכות. נבהיר למה הכוונה בכל מקרה:</p>
+<div class="remark">
+<div class="theorem-title">הערה 5.3</div><p>באופן כללי, כל פעולות השורה האלמנטריות הן הפיכות. נבהיר למה הכוונה בכל מקרה:</p>
 <p>א. לכל <span class="math inline">\(c\neq0\)</span> ולכל <span class="math inline">\(1\leq i\leq m\)</span> הפעולה ההפוכה ל-<span class="math inline">\(cR_{i}\rightarrow R_{i}\)</span> היא <span class="math inline">\(\frac{1}{c}R_{i}\rightarrow R_{i}\)</span>.</p>
 <p>ב. לכל <span class="math inline">\(c\in F\)</span> ולכל <span class="math inline">\(i\neq j\)</span> הפעולה ההפוכה ל-<span class="math inline">\(R_{i}+cR_{j}\rightarrow R_{i}\)</span> היא <span class="math inline">\(R_{i}-cR_{j}\rightarrow R_{i}\)</span>. אכן, אם מבצעים את הפעולה הראשונה ואחריה את השנייה (או בסדר הפוך), התוצאה היא <span class="math inline">\(R_{i}+cR_{j}-cR_{j}\rightarrow R_{i}\)</span> או בקיצור <span class="math inline">\(R_{i}\to R_{i}\)</span>. החזרה למקור היא המשמעות של פעולה הפוכה.</p>
 <p>ג. לכל <span class="math inline">\(i\neq j\)</span> הפעולה ההפוכה להחלפה <span class="math inline">\(R_{i}\leftrightarrow R_{j}\)</span> היא אותה ההחלפה <span class="math inline">\(R_{i}\leftrightarrow R_{j}\)</span>.</p>
 </div>
-<div class="definition">
+<div class="definition"><div class="theorem-title">הגדרה 5.11</div>
 <p>מטריצות <span class="math inline">\(A,A'\)</span> נקראות <u>שקולות שורה</u> אם ניתן להגיע מ- <span class="math inline">\(A\)</span> ל- <span class="math inline">\(A'\)</span> ע"י סדרה סופית של פעולות שורה אלמנטריות.</p>
 </div>
-<div class="proof remark">
-<p><span class="proof-title"><em>Remark</em>. </span>זו הגדרה סימטרית. אם ניתן להגיע מ- <span class="math inline">\(A\)</span> ל- <span class="math inline">\(A'\)</span> ע"י סדרה סופית של פעולות שורה אלמנטריות, אז גם ניתן להגיע מ- <span class="math inline">\(A'\)</span> ל- <span class="math inline">\(A\)</span> ע"י סדרת הפעולות ההפוכות.</p>
+<div class="remark">
+<div class="theorem-title">הערה 5.4</div><p>זו הגדרה סימטרית. אם ניתן להגיע מ- <span class="math inline">\(A\)</span> ל- <span class="math inline">\(A'\)</span> ע"י סדרה סופית של פעולות שורה אלמנטריות, אז גם ניתן להגיע מ- <span class="math inline">\(A'\)</span> ל- <span class="math inline">\(A\)</span> ע"י סדרת הפעולות ההפוכות.</p>
 </div>
-<div class="proposition">
+<div class="proposition"><div class="theorem-title">טענה 5.12</div>
 <p>. <em>נסתכל על הממ"ל <span class="math inline">\(Ax=b\)</span> עם מטריצת מקדמים מורחבת <span class="math inline">\((A|b)\)</span>, וגם על הממ"ל <span class="math inline">\(A'x=b'\)</span> עם מטריצת מקדמים מורחבת <span class="math inline">\((A'|b')\)</span>. אם <span class="math inline">\((A|b),(A'|b')\)</span> הן מטריצות שקולות שורה, אז קבוצת הפתרונות של הממ"ל <span class="math inline">\(Ax=b\)</span> שווה לקבוצת הפתרונות של הממ"ל <span class="math inline">\(A'x=b'\)</span>.</em></p>
 </div>
 <p>במילים אחרות, כל <span class="math inline">\(n\)</span>-יה <span class="math inline">\((c_1,c_2,...,c_n)\)</span> היא פתרון של הממ"ל החדשה (שמתקבלת אחרי סדרת פעולות שורה אלמנטריות) אם ורק אם היא פתרון של הממ"ל המקורית.</p>
 <div class="proof">
-<p><span class="proof-title"><em>Proof</em>. </span>לכל ממ"ל <span class="math inline">\(Ax=b\)</span> ולכל פעולת שורה אלמנטרית, כל פתרון של הממ"ל לפני הפעולה נשאר פתרון של הממ"ל שמתקבלת בעקבות הפעולה. ולהיפך, ההפיכות של הפעולה מראה שכל פתרון של הממ"ל החדשה הוא גם פתרון של הממ"ל הקודמת לה. אז קבוצת הפתרונות נשארת ללא שינוי.</p>
+<div class="theorem-title">הוכחה</div><p>לכל ממ"ל <span class="math inline">\(Ax=b\)</span> ולכל פעולת שורה אלמנטרית, כל פתרון של הממ"ל לפני הפעולה נשאר פתרון של הממ"ל שמתקבלת בעקבות הפעולה. ולהיפך, ההפיכות של הפעולה מראה שכל פתרון של הממ"ל החדשה הוא גם פתרון של הממ"ל הקודמת לה. אז קבוצת הפתרונות נשארת ללא שינוי.</p>
 <p>נמשיך כך ונבצע מספר סופי של פעולות שורה אלמנטריות כדי לקבל את הממ"ל <span class="math inline">\(A'x=b'\)</span>. קבוצת הפתרונות תישמר בכל שלב ולכן גם בסוף התהליך היא תישאר זהה לקבוצת הפתרונות המקורית.</p>
 </div>
-<div class="proof remark">
-<p><span class="proof-title"><em>Remark</em>. </span>כפל שורה ב-<span class="math inline">\(0\)</span> אינה פעולה הפיכה. למעשה, הוא הופך את המשוואה המתאימה בממ"ל למשוואה <span class="math inline">\(0=0\)</span> שמתקיימת ללא קשר למשתנים. בדרך כלל זה מוביל לאובדן מידע על המשתנים, מה שישפיע על קבוצת הפתרונות (יגדיל אותה) ולכן יש להימנע מכפל שורה ב-<span class="math inline">\(0\)</span>. הנה דוגמה פשוטה במקרה של שתי משוואות בשני משתנים: <span class="math display">\[\begin{cases}
+<div class="remark">
+<div class="theorem-title">הערה 5.5</div><p>כפל שורה ב-<span class="math inline">\(0\)</span> אינה פעולה הפיכה. למעשה, הוא הופך את המשוואה המתאימה בממ"ל למשוואה <span class="math inline">\(0=0\)</span> שמתקיימת ללא קשר למשתנים. בדרך כלל זה מוביל לאובדן מידע על המשתנים, מה שישפיע על קבוצת הפתרונות (יגדיל אותה) ולכן יש להימנע מכפל שורה ב-<span class="math inline">\(0\)</span>. הנה דוגמה פשוטה במקרה של שתי משוואות בשני משתנים: <span class="math display">\[\begin{cases}
 x=1\\
 y=0
 \end{cases}\]</span></p>
@@ -1020,18 +1020,18 @@ x=1\\
 \end{cases}\]</span></p>
 <p>עכשיו <span class="math inline">\(y\)</span> משתנה חופשי. נציב <span class="math inline">\(y=t\)</span> ונקבל קבוצת פתרונות <span class="math inline">\(\Set{(1,t)|t\in\mathbb R}\)</span>, כלומר התווספו אינסוף פתרונות. הממ"ל החדשה לא שקולה לממ"ל המקורית כי הכפלנו ב-<span class="math inline">\(0\)</span> ובכך מחקנו משוואה.</p>
 </div>
-<div class="definition">
+<div class="definition"><div class="theorem-title">הגדרה 5.13</div>
 <p>כאשר וקטור הקבועים של הממ"ל <span class="math inline">\(Ax=b\)</span> הוא <span class="math inline">\(b=\begin{pmatrix}0\\
 0\\
 \vdots\\
 0
 \end{pmatrix}\)</span>, הממ"ל נקראת <u>הומוגנית</u> וניתן לכתוב <span class="math inline">\(Ax=0\)</span>. הכוונה באגף ימין היא לוקטור האפס באורך <span class="math inline">\(m\)</span> (מספר השורות של <span class="math inline">\(A\)</span>).</p>
 </div>
-<div class="proof remark">
-<p><span class="proof-title"><em>Remark</em>. </span>במקרה של ממ"ל הומוגנית, וקטור הקבועים מיותר מבחינת פעולות השורה האלמנטריות. הסיבה לכך היא שכל פעולת חיבור בין אפסים תיתן 0, וכנ"ל לכפל בסקלר (כי <span class="math inline">\(a\cdot 0=0\)</span> לכל סקלר <span class="math inline">\(a\)</span> ממשי או מרוכב). לכן זה מוצדק להסתפק במטריצת המקדמים המצומצמת במקרה זה (ורק במקרה זה), וכמובן הממ"ל החדשה גם תהיה הומוגנית.</p>
+<div class="remark">
+<div class="theorem-title">הערה 5.6</div><p>במקרה של ממ"ל הומוגנית, וקטור הקבועים מיותר מבחינת פעולות השורה האלמנטריות. הסיבה לכך היא שכל פעולת חיבור בין אפסים תיתן 0, וכנ"ל לכפל בסקלר (כי <span class="math inline">\(a\cdot 0=0\)</span> לכל סקלר <span class="math inline">\(a\)</span> ממשי או מרוכב). לכן זה מוצדק להסתפק במטריצת המקדמים המצומצמת במקרה זה (ורק במקרה זה), וכמובן הממ"ל החדשה גם תהיה הומוגנית.</p>
 </div>
 <div id="exm-gauss" class="example theorem">
-<p><span class="theorem-title"><strong>Example 5.1</strong></span> נסתכל על ממ”ל הומוגנית: <span class="math display">\[\begin{cases}
+<div class="theorem-title">דוגמה 5.12</div><p>נסתכל על ממ”ל הומוגנית: <span class="math display">\[\begin{cases}
 \begin{alignedat}{5}
 x &amp;{}+{}&amp; y &amp;{}+{}&amp; z &amp;= 0 \\[4pt]
 2x &amp;{}{}&amp;    &amp;{}+{}&amp; 2z &amp;= 0 \\[4pt]
@@ -1083,8 +1083,8 @@ a_{m1} &amp; a_{m2} &amp; \cdots &amp; a_{mn}
 <li><p>ממשיכים באופן דומה עם שאר העמודות לפי הסדר, בלי לשנות את העמודות הקודמות.</p></li>
 <li><p>עוצרים אחרי שעברנו על כל העמודות, או כאשר כל השורות מתחת לאחד המוביל האחרון הן שורות אפסים (ואז אין מה לעשות איתן).</p></li>
 </ol>
-<div class="example">
-<p>נחזור לדוגמה <a href="#exm-gauss">5.34</a>, אבל הפעם נעבוד קצת שונה וגם נסביר את בחירת הפעולות. ניתן לבצע מספר פעולות במקביל אם הן בלתי תלויות, כמו להחסיר כפולות של שורה כלשהי משורות אחרות (לכל שורה כפולה משלה).</p>
+<div class="example"><div class="theorem-title">דוגמה 5.13</div>
+<p>נחזור לדוגמה <a href="#exm-gauss" class="quarto-xref"><span>5.12</span></a>, אבל הפעם נעבוד קצת שונה וגם נסביר את בחירת הפעולות. ניתן לבצע מספר פעולות במקביל אם הן בלתי תלויות, כמו להחסיר כפולות של שורה כלשהי משורות אחרות (לכל שורה כפולה משלה).</p>
 <p><span class="math display">\[\begin{aligned}
         \begin{pmatrix}1 &amp; 1 &amp; 1 \\ 2 &amp; 0 &amp; 2 \\ 3 &amp; 5 &amp; 7 \end{pmatrix}
         &amp;\xrightarrow[R_2-2R_1 \to R_2]{R_3-3R_1 \to R_3}
@@ -1103,10 +1103,10 @@ a_{m1} &amp; a_{m2} &amp; \cdots &amp; a_{mn}
 <p>בשלב הרביעי הפכנו את <span class="math inline">\(4\)</span> ל-<span class="math inline">\(1\)</span>. בשלב החמישי איפסנו את שאר האיברים בעמודה השלישית.</p>
 <p>התוצאה היא מטריצה מדורגת קנונית (למעשה מטריצת היחידה) עם אחדות מובילים ואפסים בלבד.</p>
 </div>
-<div class="proof remark">
-<p><span class="proof-title"><em>Remark</em>. </span>כמו בדוגמה לעיל, לרוב יש יותר מדרך אחת לפעול לפי שיטת הדירוג של גאוס. זה גם לגיטימי לעשות פעולה מיותרת או לא אופטימלית (מבחינת מספר הפעולות) כל עוד היא חוקית. כל דרך היא נכונה ובלבד שאין בה כפל שורה ב-<span class="math inline">\(0\)</span> (או טעות חישוב) ומתקבלת בסוף מטריצה מדורגת קנונית. מטריצה זו היא יחידה ולכן אינה תלויה בדרך הדירוג.</p>
+<div class="remark">
+<div class="theorem-title">הערה 5.7</div><p>כמו בדוגמה לעיל, לרוב יש יותר מדרך אחת לפעול לפי שיטת הדירוג של גאוס. זה גם לגיטימי לעשות פעולה מיותרת או לא אופטימלית (מבחינת מספר הפעולות) כל עוד היא חוקית. כל דרך היא נכונה ובלבד שאין בה כפל שורה ב-<span class="math inline">\(0\)</span> (או טעות חישוב) ומתקבלת בסוף מטריצה מדורגת קנונית. מטריצה זו היא יחידה ולכן אינה תלויה בדרך הדירוג.</p>
 </div>
-<div class="example">
+<div class="example"><div class="theorem-title">דוגמה 5.14</div>
 <p>נפתור את הממ"ל הבאה:</p>
 <p><span class="math display">\[\begin{cases}
 \begin{alignedat}{8}
@@ -1176,7 +1176,7 @@ z+17w &amp;= -1
 <p>המשתנה החופשי הוא <span class="math inline">\(w\)</span>. נציב <span class="math inline">\(w=t\)</span> ונבודד את שאר המשתנים כדי לקבל את קבוצת הפתרונות:</p>
 <p><span class="math display">\[\Set{(2-13t,3+8t,-1-17t,t)|t\in\mathbb R}.\]</span></p>
 </div>
-<div class="example">
+<div class="example"><div class="theorem-title">דוגמה 5.15</div>
 <p>נפתור את הממ"ל הבאה מעל <span class="math inline">\(\mathbb C\)</span>:</p>
 <p><span class="math display">\[\begin{cases}
 \begin{aligned}
@@ -1238,28 +1238,28 @@ z=\frac{2-i}{i-1}=\frac{(2-i)(-i-1)}{2}=-\frac{3+i}{2}
 <p>ניתן לאפיין את הקריטריונים לעיל באמצעות הדרגה <span class="math inline">\(\mathop{\mathrm{rank}}(A)\)</span> של מטריצת המקדמים המצומצמת, והדרגה <span class="math inline">\(\mathop{\mathrm{rank}}(A|b)\)</span> של מטריצת המקדמים המורחבת. דירוג קנוני של <span class="math inline">\(A\)</span> מתאים לדירוג קנוני של <span class="math inline">\((A|b)\)</span>, כאשר ההבדל היחיד הוא העמודה הימנית (צריך לבצע עליה את כל פעולות השורה שבחרנו עבור <span class="math inline">\(A\)</span>).</p>
 <p>ראשית נוכיח כמה תכונות של דרגה.</p>
 <div id="prp-rank-ineq" class="proposition theorem">
-<p><span class="theorem-title"><strong>Proposition 5.1</strong></span> א. לכל <span class="math inline">\(A\)</span> מסדר <span class="math inline">\(m\times n\)</span> ולכל <span class="math inline">\(b\in\mathbb F^n\)</span> מתקיים <span class="math inline">\(\mathop{\mathrm{rank}}(A)\leq\mathop{\mathrm{rank}}(A|b)\)</span>.*</p>
-<p>ב. מתקיים <span class="math inline">\(0\leq\mathop{\mathrm{rank}}(A)\leq\min\{m,n\}\)</span> כאשר <span class="math inline">\(\min\{m,n\}\)</span> הוא המספר הקטן מבין <span class="math inline">\(m,n\)</span>.*</p>
+<div class="theorem-title">טענה 5.14</div><p>א. לכל <span class="math inline">\(A\)</span> מסדר <span class="math inline">\(m\times n\)</span> ולכל <span class="math inline">\(b\in\mathbb F^n\)</span> מתקיים <span class="math inline">\(\mathop{\mathrm{rank}}(A)\leq\mathop{\mathrm{rank}}(A|b)\)</span>.</p>
+<p>ב. מתקיים <span class="math inline">\(0\leq\mathop{\mathrm{rank}}(A)\leq\min\{m,n\}\)</span> כאשר <span class="math inline">\(\min\{m,n\}\)</span> הוא המספר הקטן מבין <span class="math inline">\(m,n\)</span>.</p>
 </div>
 <div class="proof">
-<p><span class="proof-title"><em>Proof</em>. </span>&nbsp; א. נניח כי הצורה המדורגת קנונית של <span class="math inline">\((A|b)\)</span> היא <span class="math inline">\((A'|b')\)</span>. אז בפרט, <span class="math inline">\(A'\)</span> היא הצורה המדורגת קנונית של <span class="math inline">\(A\)</span>.</p>
+<div class="theorem-title">הוכחה</div><p>&nbsp; א. נניח כי הצורה המדורגת קנונית של <span class="math inline">\((A|b)\)</span> היא <span class="math inline">\((A'|b')\)</span>. אז בפרט, <span class="math inline">\(A'\)</span> היא הצורה המדורגת קנונית של <span class="math inline">\(A\)</span>.</p>
 <p>בהכרח מתקיים <span class="math inline">\(\mathop{\mathrm{rank}}(A)\leq\mathop{\mathrm{rank}}(A|b)\)</span> כי מספר האיברים המובילים ב- <span class="math inline">\((A'|b')\)</span> הוא לפחות מספר האיברים המובילים ב- <span class="math inline">\(A'\)</span>. או שהדרגות שוות, או שהדרגה של מטריצת המקדמים המורחבת גדולה יותר (ב-<span class="math inline">\(1\)</span>) כתוצאה משורת סתירה שמוסיפה איבר מוביל.</p>
 <p>ב. הדרגה היא מספר טבעי (היא <span class="math inline">\(0\)</span> אם ורק אם כל איברי המטריצה הם <span class="math inline">\(0\)</span>). מאחר שזהו מספר האיברים המובילים בצורה המדורגת קנונית של <span class="math inline">\(A\)</span>, מספר זה הוא לכל היותר <span class="math inline">\(m\)</span> כי כל איבר מוביל מתאים לשורה אחת בלבד (ייתכן שיש גם שורות אפסים ואז הדרגה קטנה מ- <span class="math inline">\(m\)</span>). באופן דומה, כל איבר מוביל לעמודה אחת בלבד (ושוב ייתכן שיש עמודות נוספות). אז הדרגה היא לכל היותר <span class="math inline">\(n\)</span>, ובסך הכל מתקיים <span class="math display">\[.0\leq\mathop{\mathrm{rank}}(A)\leq\min\{m,n\}\]</span></p>
 </div>
 <div id="prp-rank-number" class="proposition theorem">
-<p><span class="theorem-title"><strong>Proposition 5.2</strong></span> לכל מטריצה <span class="math inline">\(A\)</span> מסדר <span class="math inline">\(m\times n\)</span> ולכל <span class="math inline">\(b\in\mathbb R^n\)</span>, מספר הפתרונות לממ”ל <span class="math inline">\(Ax=b\)</span> נקבע באופן הבא:*</p>
+<div class="theorem-title">טענה 5.15</div><p>לכל מטריצה <span class="math inline">\(A\)</span> מסדר <span class="math inline">\(m\times n\)</span> ולכל <span class="math inline">\(b\in\mathbb R^n\)</span>, מספר הפתרונות לממ”ל <span class="math inline">\(Ax=b\)</span> נקבע באופן הבא:*</p>
 <p>א. אם <span class="math inline">\(\mathop{\mathrm{rank}}(A)&lt;\mathop{\mathrm{rank}}(A|b)\)</span>, אז אין לממ"ל פתרון.</p>
 <p>ב. אם <span class="math inline">\(\mathop{\mathrm{rank}}(A)=\mathop{\mathrm{rank}}(A|b)&lt;n\)</span>, אז לממ"ל יש אינסוף פתרונות.</p>
 <p>ג. אם <span class="math inline">\(\mathop{\mathrm{rank}}(A)=\mathop{\mathrm{rank}}(A|b)=n\)</span>, אז לממ"ל יש פתרון יחיד.</p>
 </div>
 <div class="proof">
-<p><span class="proof-title"><em>Proof</em>. </span>בכל מקרה נתרגם את הנתון על הדרגות לשפה של שורת סתירה ומשתנים חופשיים.</p>
+<div class="theorem-title">הוכחה</div><p>בכל מקרה נתרגם את הנתון על הדרגות לשפה של שורת סתירה ומשתנים חופשיים.</p>
 <p>א. במקרה זה יש שורת סתירה ולכן אין פתרון.</p>
 <p>ב. כאן אין שורת סתירה ויש לפחות משתנה חופשי אחד, כי מספר המשתנים התלויים קטן ממספר המשתנים הכולל. אז יש אינסוף פתרונות.</p>
 <p>ג. כאן אין שורת סתירה ואין משתנה חופשי, אז יש פתרון יחיד.</p>
 </div>
 <div id="exm-1-parameter" class="example theorem">
-<p><span class="theorem-title"><strong>Example 5.2</strong></span> נסתכל על ממ”ל שבה חלק מהמקדמים תלויים בפרמטר <span class="math inline">\(a\)</span>, כלומר קבוע (לא משתנה) שערכו אינו ידוע מראש. אפשר לחשוב על ממ"ל עם פרמטר כמשפחה של ממ"ליות - לכל הצבה של ערך הפרמטר נקבל ממ"ל מסוימת במשפחה.</p>
+<div class="theorem-title">דוגמה 5.16</div><p>נסתכל על ממ”ל שבה חלק מהמקדמים תלויים בפרמטר <span class="math inline">\(a\)</span>, כלומר קבוע (לא משתנה) שערכו אינו ידוע מראש. אפשר לחשוב על ממ"ל עם פרמטר כמשפחה של ממ"ליות - לכל הצבה של ערך הפרמטר נקבל ממ"ל מסוימת במשפחה.</p>
 <p><span class="math display">\[\begin{cases}
 \begin{alignedat}{7}
 a x &amp;{}+{}&amp;  y &amp;{}+{}&amp;  z &amp;= 1 \\[4pt]
@@ -1360,24 +1360,24 @@ a &amp; 1 &amp; 1 &amp; 1 \\
 <p>בסוף השתמשנו בחישוב <span class="math display">\[.1-\frac{a}{a+2}-\frac{1}{a+2}=\frac{1}{a+2}\]</span></p>
 <p>נסכם: כאשר <span class="math inline">\(a\notin\{-2,1\}\)</span> מתקבל פתרון יחיד <span class="math display">\[.(x,y,z)=(\frac{1}{a+2},\frac{1}{a+2},\frac{1}{a+2}).\]</span> כאשר <span class="math inline">\(a=1\)</span> מתקבלת קבוצת פתרונות אינסופית <span class="math display">\[.\Set{(1-s-t,s,t)|s,t\in\mathbb R}\]</span> כאשר <span class="math inline">\(a=-2\)</span> אין פתרון.</p>
 </div>
-<div class="proof remark">
-<p><span class="proof-title"><em>Remark</em>. </span>בשאלות שקשורות רק למספר הפתרונות, אין צורך בדירוג קנוני. אפשר להסתפק בדירוג רגיל (חלקי) לחישוב הדרגות.</p>
+<div class="remark">
+<div class="theorem-title">הערה 5.8</div><p>בשאלות שקשורות רק למספר הפתרונות, אין צורך בדירוג קנוני. אפשר להסתפק בדירוג רגיל (חלקי) לחישוב הדרגות.</p>
 </div>
 <p>בניגוד לממ"ל כללית, לממ"ל הומוגנית תמיד קיים לפחות פתרון אחד. הטענה הבאה מראה זאת ומאפיינת את שני המקרים (פתרון יחיד ואינסוף פתרונות).</p>
-<div class="proposition">
+<div class="proposition"><div class="theorem-title">טענה 5.16</div>
 <p>א. לכל ממ"ל הומוגנית <span class="math inline">\(Ax=0\)</span> קיים פתרון טריוויאלי שהוא וקטור האפס <span class="math inline">\(x=0\)</span>, כלומר הפתרון בו כל המשתנים מתאפסים.</p>
 <p>ב. אם <span class="math inline">\(\mathop{\mathrm{rank}}(A)=n\)</span>, אז הפתרון יחיד.</p>
 <p>ג. אם <span class="math inline">\(\mathop{\mathrm{rank}}(A)&lt;n\)</span>, אז יש אינסוף פתרונות. זה בהכרח המקרה אם מתקיים <span class="math inline">\(m&lt;n\)</span>.</p>
 </div>
 <div class="proof">
-<p><span class="proof-title"><em>Proof</em>. </span>א. נציב <span class="math inline">\(x_1=x_2=...=x_n=0\)</span> בממ”ל ונקבל <span class="math display">\[a_{i1}\cdot0+a_{i2}\cdot0+...+a_{in}\cdot 0=0\]</span></p>
+<div class="theorem-title">הוכחה</div><p>א. נציב <span class="math inline">\(x_1=x_2=...=x_n=0\)</span> בממ”ל ונקבל <span class="math display">\[a_{i1}\cdot0+a_{i2}\cdot0+...+a_{in}\cdot 0=0\]</span></p>
 <p>כנדרש לכל <span class="math inline">\(1\leq i\leq n\)</span>.</p>
-<p>ב. אם נחזור למטריצת המקדמים המורחבת (עם אפסים בעמודה הימנית), הדרגה שלה בהכרח שווה לזו של מטריצת המקדמים המצומצמת כי אין אפשרות לאיבר מוביל בעמודה הימנית. נקבל <span class="math display">\[.\mathop{\mathrm{rank}}(A|0)=\mathop{\mathrm{rank}}(A)=n.\]</span> לכן, לפי <a href="#prp-rank-number">טענה 5.40</a> יש פתרון יחיד.</p>
-<p>ג. הפעם מתקיים <span class="math display">\[.\mathop{\mathrm{rank}}(A|0)=\mathop{\mathrm{rank}}(A)&lt;n.\]</span> לכן, לפי <a href="#prp-rank-number">טענה 5.40</a> יש אינסוף פתרונות.</p>
-<p>בהינתן <span class="math inline">\(m&lt;n\)</span>, נובע מ<a href="#prp-rank-ineq">טענה 5.39</a> כי <span class="math inline">\(\mathop{\mathrm{rank}}(A)\leq m&lt;n\)</span>. לכן בהכרח יש אינסוף פתרונות במקרה זה.</p>
+<p>ב. אם נחזור למטריצת המקדמים המורחבת (עם אפסים בעמודה הימנית), הדרגה שלה בהכרח שווה לזו של מטריצת המקדמים המצומצמת כי אין אפשרות לאיבר מוביל בעמודה הימנית. נקבל <span class="math display">\[.\mathop{\mathrm{rank}}(A|0)=\mathop{\mathrm{rank}}(A)=n.\]</span> לכן, לפי <a href="#prp-rank-number" class="quarto-xref">טענה&nbsp;<span>5.2</span></a> יש אינסוף פתרונות.</p>
+<p>ג. הפעם מתקיים <span class="math display">\[.\mathop{\mathrm{rank}}(A|0)=\mathop{\mathrm{rank}}(A)&lt;n.\]</span> לכן, לפי <a href="#prp-rank-number" class="quarto-xref">טענה&nbsp;<span>5.2</span></a> יש אינסוף פתרונות.</p>
+<p>בהינתן <span class="math inline">\(m&lt;n\)</span>, נובע מ@prp-rank-ineq כי <span class="math inline">\(\mathop{\mathrm{rank}}(A)\leq m&lt;n\)</span>. לכן בהכרח יש אינסוף פתרונות במקרה זה.</p>
 </div>
-<div class="exercise">
-<p>נחזור לממ”ל מדוגמה <a href="#exm-1-parameter">5.41</a>, ונחליף את כל הקבועים ב- <span class="math inline">\(0\)</span>, כלומר נסתכל על הממ"ל הבאה:</p>
+<div class="exercise"><div class="theorem-title">תרגיל 5.4</div>
+<p>נחזור לממ”ל מדוגמה <a href="#exm-1-parameter" class="quarto-xref"><span>5.16</span></a>, ונחליף את כל הקבועים ב- <span class="math inline">\(0\)</span>, כלומר נסתכל על הממ"ל הבאה:</p>
 <p><span class="math display">\[\begin{cases}
 \begin{alignedat}{7}
 a x &amp;{}+{}&amp;  y &amp;{}+{}&amp;  z &amp;= 0 \\[4pt]
@@ -1387,7 +1387,7 @@ x &amp;{}+{}&amp;  y &amp;{}+{}&amp;  a z &amp;= 0
 \end{cases}\]</span></p>
 <p>לאילו ערכי <span class="math inline">\(a\in\mathbb R\)</span> יש פתרון יחיד? אינסוף פתרונות?</p>
 </div>
-<div class="callout callout-style-default callout-note callout-titled" title="פתרון">
+<div class="callout callout-style-default callout-note callout-titled solution" title="פתרון">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -1422,298 +1422,6 @@ x &amp;{}+{}&amp;  y &amp;{}+{}&amp;  a z &amp;= 0
 </section>
 
 </main> <!-- /main -->
-<script>
-
-/* כותרות אוטומטיות + צבע פסטלי לסביבות; טיפול מדויק ב-solution כך שיישאר callout מתקפל */
-
-document.addEventListener('DOMContentLoaded', () => {
-
-
-
-  // מחיקת כותרות ברירת המחדל של Quarto באנגלית (כמו Remark / Proof)
-
-  document.querySelectorAll('.proof-title').forEach(el => el.remove());
-
-
-
-  // --- מספר פרק נוכחי למספור לפי פרק ---
-
-  function chapterNumber() {
-
-    const h1 = document.querySelector('main h1[data-number]');
-
-    if (h1 && h1.getAttribute('data-number')) return h1.getAttribute('data-number').split('.')[0];
-
-    const sec = document.querySelector('.header-section-number');
-
-    if (sec) return sec.textContent.trim().split('.')[0];
-
-    return '1';
-
-  }
-
-  const chap = chapterNumber();
-
-
-
-  // --- מפת סביבות: תווית, צבע, והאם ממוספרת ---
-
-  const envs = {
-
-    definition:  { label: 'הגדרה',   color: 'rgba(255, 99, 71, 0.4)',  numbered: true  },
-
-    example:     { label: 'דוגמה',    color: 'rgba(138, 43, 226, 0.3)', numbered: true  },
-
-    exercise:    { label: 'תרגיל',    color: 'rgba(30, 144, 255, 0.35)',numbered: true  },
-
-    remark:      { label: 'הערה',     color: 'rgba(60, 179, 113, 0.35)', numbered: true  },
-
-    theorem:     { label: 'משפט',     color: 'rgba(255, 165, 0, 0.35)', numbered: true  },
-
-    lemma:       { label: 'למה',      color: 'rgba(255, 165, 0, 0.35)', numbered: true  },
-
-    proposition: { label: 'טענה',     color: 'rgba(255, 165, 0, 0.35)', numbered: true  },
-
-    corollary:   { label: 'מסקנה',    color: 'rgba(255, 165, 0, 0.35)', numbered: true  },
-
-    proof:       { label: 'הוכחה',    color: 'rgba(0, 0, 0, 0.15)', numbered: false },
-
-    solution:    { label: 'פתרון',    color: 'rgba(72, 209, 204, 0.35)',numbered: false } // ללא מספור
-
-  };
-
-
-
-  // --- נרמול פתרון: שמירה כ-callout מתקפל וזיהוי כ-solution ---
-
-  document.querySelectorAll('div.callout.callout-note[title="הצג פתרון"], div.callout.callout-note[title="Solution"]').forEach(div => {
-
-    div.classList.add('solution');          // מוסיפים solution
-
-    div.setAttribute('collapse', 'true');   // קיפול נשמר
-
-    div.setAttribute('title', 'פתרון');     // כותרת callout
-
-  });
-
-
-
-  // --- תיקון כפילות מחלקות: אם יש proof+solution יחד – להסיר proof ---
-
-  document.querySelectorAll('div.solution.proof').forEach(div => div.classList.remove('proof'));
-
-  document.querySelectorAll('div.remark.proof').forEach(div => div.classList.remove('proof'));
-
-
-
-  // --- אם יש solution בלי מבנה callout, נבנה header+body כדי לקבל תיבה מתקפלת ---
-
-  document.querySelectorAll('div.solution:not(.callout)').forEach(div => {
-
-    div.classList.add('callout', 'callout-note');
-
-    div.setAttribute('collapse', 'true');
-
-    // header
-
-    const header = document.createElement('div');
-
-    header.className = 'callout-header';
-
-    const titleWrap = document.createElement('div');
-
-    titleWrap.className = 'callout-title-container';
-
-    const title = document.createElement('div');
-
-    title.className = 'callout-title';
-
-    title.textContent = 'פתרון';
-
-    titleWrap.appendChild(title);
-
-    header.appendChild(titleWrap);
-
-    div.insertBefore(header, div.firstChild);
-
-    // body
-
-    const body = document.createElement('div');
-
-    body.className = 'callout-body';
-
-    while (header.nextSibling) body.appendChild(header.nextSibling);
-
-    div.appendChild(body);
-
-  });
-
-// --- מספור משותף (רץ) לכל הסביבות לפי סדר הופעתן ---
-
-  const boxEnvs = ['definition','example','exercise','remark','theorem','lemma','proposition','corollary','proof'];
-
-  let sharedCounter = 0; // מונה אחד משותף לכולם
-
-  const envMap = {}; // מיפוי id → "טענה 2.7" לצורך רפרנסים אוטומטיים
-
-
-
-  // תופס את כל הסביבות יחד כדי לשמור על סדר ההופעה במסמך
-
-  const allBoxSelector = boxEnvs.map(env => `div.${env}`).join(', ');
-
-  
-
-  document.querySelectorAll(allBoxSelector).forEach(div => {
-
-    // לא לגעת ב-callout (כמו פתרונות)
-
-    if (div.classList.contains('callout')) return;
-
-
-
-    // --- התיקון: מחיקת הכותרת האנגלית המובנית של Quarto ---
-
-    // Quarto שותל את הכותרת שלו בתור תגית span בתוך הפסקה הראשונה
-
-    const quartoNativeTitle = div.querySelector('span.theorem-title');
-
-    if (quartoNativeTitle) {
-
-      quartoNativeTitle.remove(); // מעלים את Theorem 2.1
-
-    }
-
-
-
-    // מזהים איזו סביבה זו מתוך הרשימה שלנו
-
-    const env = boxEnvs.find(e => div.classList.contains(e));
-
-    if (!env) return;
-
-    const meta = envs[env];
-
-
-
-    // הוספת הכותרת שלנו עם המונה המשותף בעברית
-
-    let title = div.querySelector(':scope > div.theorem-title');
-
-    if (!title) {
-
-      title = document.createElement('div');
-
-      title.className = 'theorem-title custom-title';
-
-      if (meta.numbered) {
-
-        sharedCounter += 1; // מקדם את המונה המשותף
-
-        const fullLabel = `${meta.label} ${chap}.${sharedCounter}`;
-
-        title.textContent = fullLabel;
-
-        // שמירה במפה לרפרנסים אוטומטיים
-
-        if (div.id) envMap[div.id] = `${chap}.${sharedCounter}`;
-
-      } else {
-
-        title.textContent = meta.label;
-
-      }
-
-      div.insertBefore(title, div.firstChild);
-
-    }
-
-
-
-    // צבע וצביעת קופסה
-
-    div.style.setProperty('--env-color', meta.color);
-
-    div.classList.add('envbox');
-
-  });
-
-
-
-  // --- רפרנסים אוטומטיים: עדכון לינקים שמצביעים לסביבות ממוספרות ---
-
-  document.querySelectorAll('a[href^="#"]').forEach(link => {
-
-    const targetId = link.getAttribute('href').slice(1);
-
-    if (envMap[targetId] && !link.textContent.trim()) {
-
-      link.textContent = envMap[targetId];
-
-    }
-
-  });
-
-console.log('envMap:', envMap);
-
-  // --- צביעת פתרון כ-callout לפי המפה ---
-
-  document.querySelectorAll('div.callout.solution').forEach(div => {
-
-    div.style.setProperty('--env-color', envs.solution.color);
-
-  });
-
-
-
-});
-
-</script>
-<script>
-
-document.addEventListener('DOMContentLoaded', () => {
-
-  // בחר את כל כותרות הפרקים הראשיים
-
-  const chapters = document.querySelectorAll('main h1[data-number]');
-
-  let counter = 0;
-
-  chapters.forEach(h1 => {
-
-    counter++;
-
-    if (counter <= 3) {
-
-      // שני פרקים ראשונים ברומי
-
-      const roman = ['I','II'][counter-1];
-
-      h1.setAttribute('data-number', roman);
-
-      const numSpan = h1.querySelector('.header-section-number');
-
-      if (numSpan) numSpan.textContent = roman;
-
-    } else {
-
-      // חזרה למספרים רגילים החל מ-1
-
-      const normal = counter - 3;
-
-      h1.setAttribute('data-number', normal);
-
-      const numSpan = h1.querySelector('.header-section-number');
-
-      if (numSpan) numSpan.textContent = normal;
-
-    }
-
-  });
-
-});
-
-</script>
 <script src="tracking.js"></script>
 <style>
 
