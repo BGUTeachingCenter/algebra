@@ -47,8 +47,10 @@ PROOF_TITLE_RE = re.compile(
     r'<p><span class="proof-title">(?:<em>)?([A-Za-z]+)(?:</em>)?\.?\s*</span>\s*')
 
 def title_block(label, num=None):
+    # בלי <strong>: ה-CSS של .theorem-title כבר מבליט. <strong> מוסיף
+    # font-weight:bolder של bootstrap וגורם ל-fallback של פונט בעברית.
     text = f"{label} {num}" if num else label
-    return f'<div class="theorem-title"><strong>{text}</strong></div>'
+    return f'<div class="theorem-title">{text}</div>'
 
 def chapter_files():
     files = sorted(glob.glob(os.path.join(OUT_DIR, "*.html")))
@@ -90,27 +92,15 @@ def main():
             region = html[dm.end():nxt if nxt != -1 else dm.end() + 800]
 
             # סביבות בסגנון הוכחה: Proof / Remark (כך Quarto מרנדר ::: remark)
+            # הוכחה/פתרון (::: proof) — class="proof" בלבד, כותרת עברית ללא מספור
             if classes == ["proof"]:
                 pm = PROOF_TITLE_RE.search(region)
-                kind = pm.group(1) if pm else "Proof"
-                if kind == "Remark":
-                    counters["remark"] += 1
-                    num = f"{chap}.{counters['remark']}"
-                    # class חדש כדי לקבל צבע של הערה (ובלי ריבוע QED של הוכחה)
-                    edits.append((dm.start(1) + cm.start(1), dm.start(1) + cm.end(1),
-                                  "remark"))
-                    if pm:
-                        edits.append((dm.end() + pm.start(), dm.end() + pm.end(),
-                                      title_block("הערה", num) + "<p>"))
-                    else:
-                        edits.append((dm.end(), dm.end(), title_block("הערה", num)))
-                else:  # Proof או Solution — כותרת עברית, בלי מספור
-                    heb = "הוכחה" if kind == "Proof" else "פתרון"
-                    if pm:
-                        edits.append((dm.end() + pm.start(), dm.end() + pm.end(),
-                                      title_block(heb) + "<p>"))
-                    else:
-                        edits.append((dm.end(), dm.end(), title_block(heb)))
+                heb = "פתרון" if (pm and pm.group(1) == "Solution") else "הוכחה"
+                if pm:
+                    edits.append((dm.end() + pm.start(), dm.end() + pm.end(),
+                                  title_block(heb) + "<p>"))
+                else:
+                    edits.append((dm.end(), dm.end(), title_block(heb)))
                 continue
 
             env = next((c for c in classes if c in ENV_CLASSES and c != "theorem"), None)
@@ -128,12 +118,21 @@ def main():
             if im:
                 ref_map[im.group(1)] = (label, num)
 
-            # רק סביבה "נייטיב" (עם id מוכר ל-Quarto) מקבלת כותרת מ-Quarto
+            # הערה מגיעה מ-Quarto כ-class="proof remark" עם span של proof-title ("Remark").
+            # מסירים את class "proof" (למניעת ריבוע QED וצבע ירוק) ומחליפים את ה-span.
+            is_remark_style = "proof" in classes and env == "remark"
+            if is_remark_style:
+                edits.append((dm.start(1) + cm.start(1), dm.start(1) + cm.end(1), "remark"))
+
             tm = THM_TITLE_RE.search(region) if "theorem" in classes else None
-            if tm:  # סביבה עם כותרת של Quarto — משכתבים ומוציאים לבלוק נפרד
+            pm = PROOF_TITLE_RE.search(region) if (tm is None and is_remark_style) else None
+            if tm:    # סביבה נייטיב עם כותרת של Quarto — משכתבים אותה
                 edits.append((dm.end() + tm.start(), dm.end() + tm.end(),
                               title_block(label, num) + "<p>"))
-            else:   # סביבה בלי id — מזריקים כותרת חדשה
+            elif pm:  # הערה — מחליפים את "Remark" בכותרת עברית ממוספרת
+                edits.append((dm.end() + pm.start(), dm.end() + pm.end(),
+                              title_block(label, num) + "<p>"))
+            else:     # סביבה בלי כותרת מובנית — מזריקים כותרת חדשה
                 edits.append((dm.end(), dm.end(), title_block(label, num)))
 
         for start, end, rep in sorted(edits, reverse=True):
