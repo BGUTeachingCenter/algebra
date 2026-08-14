@@ -1,1 +1,19 @@
 /.quarto/
+/_book/
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.toc
+*.out
+*.synctex.gz
+
+# generated outputs (rebuilt by quarto render / generate_summary.py)
+/index.tex
+/index.pdf
+/summary.tex
+/summary.pdf
+preview.ps
+
+# editor/backup junk
+*.bak
