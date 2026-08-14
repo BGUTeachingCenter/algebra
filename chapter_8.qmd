@@ -72,7 +72,7 @@ a_1^k & 0 & \cdots & 0 \\
     &\iff (\lambda I_n-A)v=\underline{0} \iff v\in\mathop{\mathrm{N}}(\lambda I_n-A)
     \end{aligned}$$ קיבלנו כי $V_{\lambda}=\mathop{\mathrm{N}}(\lambda I_n-A)$. בפרט, זהו תת-מרחב של $\mathbb{F}^n$.
 
-2.  לפי ההגדרה, $\lambda$ הוא ע\"ע של $A$ אם ורק אם קיים $v\neq\underline{0}$ כך ש- $Av=\lambda v$. התנאי האחרון בדיוק שקול לתנאי $V_{\lambda}\neq\Set{\underline{0}}$. לפי הסעיף הקודם ומשפט [6.75](chapter_3.qmd#thm-invertible) עבור המטריצה $\lambda I_n-A$, מתקיים: $$\begin{aligned}
+2.  לפי ההגדרה, $\lambda$ הוא ע\"ע של $A$ אם ורק אם קיים $v\neq\underline{0}$ כך ש- $Av=\lambda v$. התנאי האחרון בדיוק שקול לתנאי $V_{\lambda}\neq\Set{\underline{0}}$. לפי הסעיף הקודם ומשפט -@thm-invertible עבור המטריצה $\lambda I_n-A$, מתקיים: $$\begin{aligned}
     V_{\lambda}\neq\Set{\underline{0}} &\iff \mathop{\mathrm{N}}(\lambda I_n-A)\neq {\underline{0}} \iff \text{אינה הפיכה} \, \lambda I_n-A \\
     &\iff \det(\lambda I_n-A)=0
     \end{aligned}$$
@@ -80,7 +80,7 @@ a_1^k & 0 & \cdots & 0 \\
  ◻
 :::
 ::: example
-נחזור לדוגמה [11.3](#exm-eigenvalues). הראינו כי $\lambda_1=1,\,\lambda_2=3$ הם ע\"ע של $A$, אבל איך ניתן היה למצוא אותם? ראשית נחשב את הדטרמיננטה של המטריצה $\lambda I_2-A$:
+נחזור לדוגמה -@exm-eigenvalues. הראינו כי $\lambda_1=1,\,\lambda_2=3$ הם ע\"ע של $A$, אבל איך ניתן היה למצוא אותם? ראשית נחשב את הדטרמיננטה של המטריצה $\lambda I_2-A$:
 
 $$\det(\lambda I_2-A)=\det\begin{pmatrix}
 \lambda-2 & -1 \\
@@ -113,7 +113,7 @@ $$V_3=\mathop{\mathrm{N}}(3\cdot I_2-A)=\mathop{\mathrm{N}}\begin{pmatrix}
 תהי $A\in\mathbb{M}_{n\times n}(\mathbb{F})$. הוכיחו כי $0$ הוא ע\"ע של $A$ אם ורק אם $A$ אינה הפיכה.
 :::
 ::: proof
-לפי משפט [6.75](chapter_3.qmd#thm-invertible2) מתקיים: $$\text{$A$ אינה הפיכה} \iff \exists\thinspace v\neq\underline{0}\,:\,Av=\underline{0}=0\cdot v\iff \text{$0$
+לפי משפט -@thm-invertible מתקיים: $$\text{$A$ אינה הפיכה} \iff \exists\thinspace v\neq\underline{0}\,:\,Av=\underline{0}=0\cdot v\iff \text{$0$
 הוא ע"ע של
 $A$}$$ ◻
 :::
@@ -121,7 +121,7 @@ $A$}$$ ◻
 תהי $A\in\mathbb{M}_{n\times n}(\mathbb{F})$. נגדיר $p_A(x)=\det(x I_n-A)$ ונקרא לו הפולינום האופייני של $A$.
 :::
 ::: remark
-זהו פולינום ממעלה $n$ כי בחישוב הדטרמיננטה מופיע סכום (עם סימנים מתחלפים) של מכפלות של איברי המטריצה. יש בדיוק מכפלה אחת בפיתוח שהיא ממעלה $n$, והיא זו המתאימה לאיברי האלכסון הראשי. לפי טענה [11.4](#prp-eigen-det), שורשי הפולינום הם בדיוק הע\"ע של $A$. נדגיש שהם לא בהכרח ממשיים גם אם $\mathbb{F}=\mathbb{R}$.
+זהו פולינום ממעלה $n$ כי בחישוב הדטרמיננטה מופיע סכום (עם סימנים מתחלפים) של מכפלות של איברי המטריצה. יש בדיוק מכפלה אחת בפיתוח שהיא ממעלה $n$, והיא זו המתאימה לאיברי האלכסון הראשי. לפי טענה -@prp-eigen-det, שורשי הפולינום הם בדיוק הע\"ע של $A$. נדגיש שהם לא בהכרח ממשיים גם אם $\mathbb{F}=\mathbb{R}$.
 
 אין חשיבות לאות, אבל מקובל להשתמש ב- $x$ עבור המשתנה של הפולינום וב- $\lambda$ עבור הע\"ע.
 :::
@@ -257,7 +257,7 @@ $A\in\mathbb{M}_{n\times n}(\mathbb{F})$ נקראת לכסינה אם היא ד�
     1 & 1  
     \end{pmatrix}=A$$
 
-2.  בדוגמה [11.13](#exm-similar) ראינו כי $$A=\begin{pmatrix}
+2.  בדוגמה -@exm-similar ראינו כי $$A=\begin{pmatrix}
     2 & -1 \\
     -1 & 2
     \end{pmatrix},\quad B=\begin{pmatrix}
@@ -310,9 +310,9 @@ $A\in\mathbb{M}_{n\times n}(\mathbb{F})$ נקראת לכסינה אם היא ד�
 
 1.  יהי $\lambda\in\mathbb{F}$. מתקיים $$.P(\lambda I_n-B)P^{-1}=\lambda PP^{-1}-PBP^{-1}=\lambda I_n-A$$ לכן, שתי המטריצות דומות.
 
-2.  זו מסקנה מהסעיף הקודם ותרגיל [7.19](chapter_4.qmd#exr-similar-det). דטרמיננטות של מטריצות דומות הן שוות, ולכן $$.p_A(x)=\det(xI_n-A)=\det(xI_n-B)=p_B(x)$$
+2.  זו מסקנה מהסעיף הקודם ותרגיל -@exr-similar-det. דטרמיננטות של מטריצות דומות הן שוות, ולכן $$.p_A(x)=\det(xI_n-A)=\det(xI_n-B)=p_B(x)$$
 
-3.  לפי הסעיף הקודם וטענה [11.4](#prp-eigen-det), נובע כי $$.\text{$\lambda$
+3.  לפי הסעיף הקודם וטענה -@prp-eigen-det, נובע כי $$.\text{$\lambda$
     הוא ע"ע של
     $A$} \iff p_A(\lambda)=0 \iff p_B(\lambda)=0 \iff \text{$\lambda$
     הוא ע"ע של
@@ -337,7 +337,7 @@ $A\in\mathbb{M}_{n\times n}(\mathbb{F})$ נקראת לכסינה אם היא ד�
 0 & \lambda_2 & \cdots & 0 \\
 \vdots & \vdots & \ddots & \vdots \\
 0 & 0 & \cdots & \lambda_n
-\end{pmatrix}$$ זו מטריצה אלכסונית. נשתמש במסקנה [10.65](chapter_7.qmd#cor-rep-similar): $$A=[T_A]_E^E=[I]_E^B[T_A]_B^B([I]_E^B)^{-1}$$ נסמן $P=[I]_E^B,\,D=[T]_B^B$. קיבלנו כי $A=PDP^{-1}$ בנוסף, מתקיים $$.P=[I]_E^B=
+\end{pmatrix}$$ זו מטריצה אלכסונית. נשתמש במסקנה -@cor-rep-similar: $$A=[T_A]_E^E=[I]_E^B[T_A]_B^B([I]_E^B)^{-1}$$ נסמן $P=[I]_E^B,\,D=[T]_B^B$. קיבלנו כי $A=PDP^{-1}$ בנוסף, מתקיים $$.P=[I]_E^B=
 \left(
 \begin{array}{cccc}
 \big| & \big| &        & \big| \\
@@ -385,7 +385,7 @@ v_1 & v_2 & \cdots & v_n \\
 v_1 & v_2 & \cdots & v_n \\
 \big| & \big| &        & \big|
 \end{array}
-\right)=[I]_E^B$$ מההנחה $A=PDP^{-1}$ וטענה [10.64](chapter_7.qmd#prp-rep-transition) נובע כי $$.D=P^{-1}AP=([I]_E^B)^{-1}A[I]_E^B=[I]_B^E[T_A]_E^E([I]_B^E)^{-1}=[T_A]_B^B$$ נסמן $$,D=\begin{pmatrix}
+\right)=[I]_E^B$$ מההנחה $A=PDP^{-1}$ וטענה -@prp-rep-transition נובע כי $$.D=P^{-1}AP=([I]_E^B)^{-1}A[I]_E^B=[I]_B^E[T_A]_E^E([I]_B^E)^{-1}=[T_A]_B^B$$ נסמן $$,D=\begin{pmatrix}
 \lambda_1 & 0 & \cdots & 0 \\
 0 & \lambda_2 &\cdots & 0 \\
 \vdots & \vdots & \ddots & \vdots \\
@@ -409,7 +409,7 @@ v_1 & v_2 & \cdots & v_n \\
 *תהי $A\in\mathbb{M}_{n\times n}(\mathbb{F})$. נניח כי $v_1,...,v_k$ מתאימים לע\"ע שונים $\lambda_1,...,\lambda_k\in\mathbb{F}$. אז בהכרח $\Set{v_1,...,v_k}$ בת\"ל.*
 :::
 ::: proof
-נניח בשלילה כי $\Set{v_1,...,v_k}$ ת\"ל. לפי טענה [8.49](chapter_5.qmd#prp-linear-dependence) קיים $2\leq i\leq k$ מינימלי כך ש- $v_i\in\mathop{\mathrm{Span}}(v_1,...,v_{i-1})$, כלומר קיימים $\alpha_1,...,\alpha_{i-1}\in\mathbb{F}$ עבורם מתקיים
+נניח בשלילה כי $\Set{v_1,...,v_k}$ ת\"ל. לפי טענה -@prp-linear-dependence קיים $2\leq i\leq k$ מינימלי כך ש- $v_i\in\mathop{\mathrm{Span}}(v_1,...,v_{i-1})$, כלומר קיימים $\alpha_1,...,\alpha_{i-1}\in\mathbb{F}$ עבורם מתקיים
 
 $$
 .v_i=\alpha_1 v_1+...+\alpha_{i-1}v_{i-1}
@@ -438,7 +438,7 @@ $$ {#eq-eigenvalues-3}
 ::: proof
 יהיו $\alpha_{11},...,\alpha_{1g_1},....,\alpha_{k1},...,\alpha_{kg_k}\in\mathbb{F}$ כך ש- $$.\alpha_{11} v_{11}+...+\alpha_{1g_1}v_{1g_1}+...+\alpha_{k1}v_{k1}+...+\alpha_{kg_k}v_{kg_k}=\underline{0}$$ לכל $1\leq i\leq k$ נסמן $$,w_i=\alpha_{i1}v_{i1}+...+\alpha_{ig_i}v_{ig_i}\in V_{\lambda_i}$$ ולפי ההנחה נקבל $$.w_1+...+w_k=\underline{0}$$
 
-לפי טענה [11.19](#prp-distinct-eigenvalues), בהכרח מתקיים $w_1=...=w_k=\underline{0}$ כי אחרת כל וקטור שאינו מתאפס הוא ו\"ע, וכך מתקבל סכום של וקטורים בת\"ל (ממרחבים עצמיים שונים) שמתאפס - סתירה. אבל לכל $1\leq i\leq k$ הקבוצה $B_i$ בת\"ל, ולכן השוויון $w_i=\underline{0}$ גורר $$.\alpha_{i1}=...=\alpha_{ig_i}=0$$ לסיכום, כל הסקלרים מתאפסים ולכן איחוד הבסיסים הוא אכן קבוצה בת\"ל. ◻
+לפי טענה -@prp-distinct-eigenvalues, בהכרח מתקיים $w_1=...=w_k=\underline{0}$ כי אחרת כל וקטור שאינו מתאפס הוא ו\"ע, וכך מתקבל סכום של וקטורים בת\"ל (ממרחבים עצמיים שונים) שמתאפס - סתירה. אבל לכל $1\leq i\leq k$ הקבוצה $B_i$ בת\"ל, ולכן השוויון $w_i=\underline{0}$ גורר $$.\alpha_{i1}=...=\alpha_{ig_i}=0$$ לסיכום, כל הסקלרים מתאפסים ולכן איחוד הבסיסים הוא אכן קבוצה בת\"ל. ◻
 :::
 ### אלגוריתם הלכסון
 
@@ -459,19 +459,19 @@ $p_A(x)$ הוא פולינום ממעלה $n$, כי בפיתוח של $\det(xI_n
 0 & 0 & 0
 \end{pmatrix}$$ מתקיים $p_A(x)=x(x-1)^2$. הע\"ע הם $\lambda_1=0,\lambda_2=1$ והריבויים האלגבריים המתאימים הם $a_1=1,a_2=2$ בהתאם למעריכים שמופיעים בפיצול.
 :::
-האלגוריתם מבוסס על משפט הלכסון, טענה [11.4](#prp-eigen-det) ומסקנה [11.21](#cor-eigenspace-union). הוא מחולק לשלבים הבאים:
+האלגוריתם מבוסס על משפט הלכסון, טענה -@prp-eigen-det ומסקנה -@cor-eigenspace-union. הוא מחולק לשלבים הבאים:
 
 [שלב 1:]{.underline} בודקים האם הפולינום האופייני $p_A(x)$ מתפצל לגורמים לינאריים מעל $\mathbb{F}$.
 
-הכוונה בפיצול לגורמים לינאריים היא פירוק לגורמים מהצורה הבאה: $$p_A(x)=(x-\lambda_1)^{a_1}\cdots (x-\lambda_k)^{a_k}$$ כאשר $\lambda_1,...,\lambda_k$ הם שורשי $p_A(x)$, כלומר $p_A(\lambda_i)=0$ לכל $1\leq i\leq k$. לפי טענה [11.4](#prp-eigen-det), אלה הע\"ע של $A$.
+הכוונה בפיצול לגורמים לינאריים היא פירוק לגורמים מהצורה הבאה: $$p_A(x)=(x-\lambda_1)^{a_1}\cdots (x-\lambda_k)^{a_k}$$ כאשר $\lambda_1,...,\lambda_k$ הם שורשי $p_A(x)$, כלומר $p_A(\lambda_i)=0$ לכל $1\leq i\leq k$. לפי טענה -@prp-eigen-det, אלה הע\"ע של $A$.
 
-כל פולינום מתפצל לגורמים לינאריים מעל $\mathbb{C}$ (לפי משפט שחורג מהקורס), אך לא בהכרח מעל $\mathbb{R}$. במילים אחרות, ייתכן ש- $A$ לכסינה מעל $\mathbb{C}$ ולא מעל $\mathbb{R}$. דוגמה [11.9](#exm-no-split) מראה שייתכן שלמטריצה ממשית יהיו ע\"ע שאינם ממשיים, או באופן שקול: ייתכן שאין פיצול לגורמים לינאריים מעל $\mathbb{R}$, ולכן היא אינה לכסינה מעל $\mathbb{R}$. בהמשך נראה שהמטריצה מדוגמה זו היא אכן לכסינה מעל $\mathbb{C}$ (שלב $1$ עוד לא מבטיח לנו זאת).
+כל פולינום מתפצל לגורמים לינאריים מעל $\mathbb{C}$ (לפי משפט שחורג מהקורס), אך לא בהכרח מעל $\mathbb{R}$. במילים אחרות, ייתכן ש- $A$ לכסינה מעל $\mathbb{C}$ ולא מעל $\mathbb{R}$. דוגמה -@exm-no-split מראה שייתכן שלמטריצה ממשית יהיו ע\"ע שאינם ממשיים, או באופן שקול: ייתכן שאין פיצול לגורמים לינאריים מעל $\mathbb{R}$, ולכן היא אינה לכסינה מעל $\mathbb{R}$. בהמשך נראה שהמטריצה מדוגמה זו היא אכן לכסינה מעל $\mathbb{C}$ (שלב $1$ עוד לא מבטיח לנו זאת).
 
 [שלב 2:]{.underline} מחשבים את הע\"ע ובודקים אם לכל ע\"ע $\lambda_i$ מתקיים $g_i=a_i$. עושים זאת ע\"י מציאת בסיס ל- $V_{\lambda_i}$.
 
 בהנחה שהתשובה חיובית, לכל $1\leq i\leq k$ נקבל בסיס ל- $V_{\lambda_i}$ שמורכב מ- $g_i$ וקטורים עצמיים: $$B_i=\Set{v_{i1},...,v_{ig_i}}$$ ניקח איחוד שלהם ונקבל בסיס $B$ לכל $\mathbb{F}^n$: $$B=B_1\cup \cdots \cup B_k=\Set{v_{11},...,v_{1g_1},...,v_{k1},...,v_{kg_k}}$$
 
-זהו בסיס לפי משפט \"שלישי חינם\" ומסקנה [11.21](#cor-eigenspace-union). נציין שמספר הוקטורים העצמיים ב- $B$ הוא $n$ כי מתקיים $$.\sum_{i=1}^k g_i=\sum_{i=1}^k a_i=n$$
+זהו בסיס לפי משפט \"שלישי חינם\" ומסקנה -@cor-eigenspace-union. נציין שמספר הוקטורים העצמיים ב- $B$ הוא $n$ כי מתקיים $$.\sum_{i=1}^k g_i=\sum_{i=1}^k a_i=n$$
 
 [שלב 3:]{.underline} הלכסון $A=PDP^{-1}$ מתקבל עבור המטריצות הבאות: $$\begin{aligned}
 P&=\begin{pmatrix}
@@ -492,7 +492,7 @@ D&=\begin{pmatrix}
 ::: example
  
 
-1.  נחזור לדוגמה [11.9](#exm-no-split): $$A=\begin{pmatrix}
+1.  נחזור לדוגמה -@exm-no-split: $$A=\begin{pmatrix}
     0 & -1 \\
     1 & 0
     \end{pmatrix}$$ הע\"ע הם $\lambda_{1,2}=\pm i$, ולפי זה ייתכן לכסון רק מעל $\mathbb{C}$. כבר מצאנו בסיס לכל מרחב עצמי, ולכן נבחר את הו\"ע הבאים: $$v_1=\begin{pmatrix}1\\-i\end{pmatrix},\quad v_2=\begin{pmatrix}1\\i\end{pmatrix}$$ הריבוי הגיאומטרי של כל ע\"ע הוא $1$, וזה גם הריבוי האלגברי כי מתקיים $$.p_A(x)=x^2+1=(x-i)(x+i)$$ קיבלנו כי $A$ לכסינה. יש בסיס $B=\Set{v_1,v_2}$ של ו\"ע, ובהתאם אליו נקבל $$.P=\begin{pmatrix}
@@ -608,7 +608,7 @@ D&=\begin{pmatrix}
 0 & \cdots & 0 & * & \cdots & *
 \end{pmatrix}$$
 
-$A'$ דומה ל- $A$ כי מתקיים $$.A'=[T_A]_{B'_i}^{B'_i}=[I]_{B_i'}^E[T_A]_E^E([I]_{B_i'}^E)^{-1}=[I]_{B_i'}^EA([I]_{B_i'}^E)^{-1}$$ לכן, לפי טענה [11.17](#prp-char-poly) ותכונות דטרמיננטה (ביחס לשחלוף וכפל שורה בסקלר) מתקיים: $$\begin{aligned}
+$A'$ דומה ל- $A$ כי מתקיים $$.A'=[T_A]_{B'_i}^{B'_i}=[I]_{B_i'}^E[T_A]_E^E([I]_{B_i'}^E)^{-1}=[I]_{B_i'}^EA([I]_{B_i'}^E)^{-1}$$ לכן, לפי טענה -@prp-char-poly ותכונות דטרמיננטה (ביחס לשחלוף וכפל שורה בסקלר) מתקיים: $$\begin{aligned}
 p_A(x)=p_{A'}(x)&=\det\begin{pmatrix}
 x-\lambda_i & \cdots & 0 & * & \cdots & * \\
 \vdots & \ddots & \vdots & \vdots &\ddots & \vdots \\
@@ -638,13 +638,13 @@ x-\lambda_i & \cdots & 0 & 0 & \cdots & 0 \\
 *תהי $A\in\mathbb{M}_{n\times n}(\mathbb{F})$ עם ע\"ע $\lambda_i\in\mathbb{F}$. אם $a_i=1$, אז $g_i=1$.*
 :::
 ::: proof
-לפי טענה [11.27](#prp-geo-alg), מתקיים $$.g_i\leq a_i=1$$ בהכרח $1\leq g_i$ כי אחרת אין ו\"ע המתאים ל- $\lambda_i$ וזו סתירה. אם כן, נובע כי $g_i=1$. ◻
+לפי טענה -@prp-geo-alg, מתקיים $$.g_i\leq a_i=1$$ בהכרח $1\leq g_i$ כי אחרת אין ו\"ע המתאים ל- $\lambda_i$ וזו סתירה. אם כן, נובע כי $g_i=1$. ◻
 :::
 ::: exercise
 תהי $A\in\mathbb{M}_{n\times n}(\mathbb{F})$ עם ע\"ע שונים $\lambda_1,...,\lambda_n\in\mathbb{F}$. הוכיחו כי $A$ לכסינה.
 :::
 ::: {.callout-note collapse="true" title="פתרון"}
-נתון כי יש $n$ ע\"ע שונים. סכום הריבויים האלגבריים הוא $n$, ולכן בהכרח כל ריבוי אלגברי שווה ל- $1$. לפי מסקנה [11.28](#cor-simple-eigenvalue) נובע כי לכל $1\leq i\leq n$ מתקיים $$.g_i=a_i=1$$ כך נקבל בסיס $B=\Set{v_1,...,v_n}$ של $n$ ו\"ע המתאימים לע\"ע שונים. קיבלנו כי $A$ לכסינה לפי משפט הלכסון.
+נתון כי יש $n$ ע\"ע שונים. סכום הריבויים האלגבריים הוא $n$, ולכן בהכרח כל ריבוי אלגברי שווה ל- $1$. לפי מסקנה -@cor-simple-eigenvalue נובע כי לכל $1\leq i\leq n$ מתקיים $$.g_i=a_i=1$$ כך נקבל בסיס $B=\Set{v_1,...,v_n}$ של $n$ ו\"ע המתאימים לע\"ע שונים. קיבלנו כי $A$ לכסינה לפי משפט הלכסון.
 :::
 יש גרסה שנייה למשפט הלכסון שכבר ניתן להבין מתוך תיאור האלגוריתם:
 
@@ -656,9 +656,9 @@ x-\lambda_i & \cdots & 0 & 0 & \cdots & 0 \\
 2.  *לכל $1\leq i\leq k$ מתקיים $$.g_i=a_i$$*
 :::
 ::: proof
-כפי שכבר תיארנו בשלב 2 של אלגוריתם הלכסון, שילוב שני התנאים מספיק ללכסינות $A$. נדגיש שוב: איחוד הבסיסים של המרחבים העצמיים הוא קבוצה בת\"ל (לפי מסקנה [11.21](#cor-eigenspace-union)) המורכבת מ- $$\sum_{i=1}^ng_i=\sum_{i=1}^na_i=n$$ וקטורים עצמיים. לכן, זהו בסיס ל- $\mathbb{F}^n$ לפי משפט \"שלישי חינם\", ומכאן נובע כי $A$ לכסינה לפי משפט הלכסון.
+כפי שכבר תיארנו בשלב 2 של אלגוריתם הלכסון, שילוב שני התנאים מספיק ללכסינות $A$. נדגיש שוב: איחוד הבסיסים של המרחבים העצמיים הוא קבוצה בת\"ל (לפי מסקנה -@cor-eigenspace-union) המורכבת מ- $$\sum_{i=1}^ng_i=\sum_{i=1}^na_i=n$$ וקטורים עצמיים. לכן, זהו בסיס ל- $\mathbb{F}^n$ לפי משפט \"שלישי חינם\", ומכאן נובע כי $A$ לכסינה לפי משפט הלכסון.
 
-כדי להראות ששני התנאים הכרחיים, נניח כי $A$ לכסינה. כלומר קיימות $P\in\mathbb{M}_{n\times n}(\mathbb{F})$ הפיכה ו- $D\in\mathbb{M}_{n\times n}(\mathbb{F})$ אלכסונית כך ש- $$.A=PDP^{-1}$$ לפי טענה [11.17](#prp-char-poly) מתקיים $$,p_A(x)=p_D(x)=\det\begin{pmatrix}
+כדי להראות ששני התנאים הכרחיים, נניח כי $A$ לכסינה. כלומר קיימות $P\in\mathbb{M}_{n\times n}(\mathbb{F})$ הפיכה ו- $D\in\mathbb{M}_{n\times n}(\mathbb{F})$ אלכסונית כך ש- $$.A=PDP^{-1}$$ לפי טענה -@prp-char-poly מתקיים $$,p_A(x)=p_D(x)=\det\begin{pmatrix}
 x-\lambda_1 & \cdots & 0 \\
 \vdots & \ddots & 0 \\
 0 & \cdots & x-\lambda_k
@@ -674,7 +674,7 @@ b & a
 נחשב פולינום אופייני: $$p_A(x)=\det\begin{pmatrix}
 x-a & b \\
 -b & x-a
-\end{pmatrix}=(x-a)^2+b^2$$ לכל $b\neq 0$ הפולינום האופייני לא מתפצל לגורמים לינאריים מעל $\mathbb{R}$. שורשיו הם $\lambda_{1,2}=a\pm bi$, שאינם ממשיים. זה שולל לכסון מעל $\mathbb{R}$, לפי הגרסה השנייה של משפט הלכסון. לעומת זאת, מעל $\mathbb{C}$ יש לכסון כי הריבוי האלגברי של כל ע\"ע הוא $1$, ולכן בהכרח גם כל ריבוי גיאומטרי שווה ל- $1$ לפי מסקנה [11.28](#cor-simple-eigenvalue). ניתן למצוא את הבסיס של הוקטורים העצמיים, אך זה לא נדרש כאן.
+\end{pmatrix}=(x-a)^2+b^2$$ לכל $b\neq 0$ הפולינום האופייני לא מתפצל לגורמים לינאריים מעל $\mathbb{R}$. שורשיו הם $\lambda_{1,2}=a\pm bi$, שאינם ממשיים. זה שולל לכסון מעל $\mathbb{R}$, לפי הגרסה השנייה של משפט הלכסון. לעומת זאת, מעל $\mathbb{C}$ יש לכסון כי הריבוי האלגברי של כל ע\"ע הוא $1$, ולכן בהכרח גם כל ריבוי גיאומטרי שווה ל- $1$ לפי מסקנה -@cor-simple-eigenvalue. ניתן למצוא את הבסיס של הוקטורים העצמיים, אך זה לא נדרש כאן.
 
 אם $b=0$, אז $A=aI_2$ היא כבר מטריצה אלכסונית. בפרט, היא לכסינה מעל $\mathbb{R}$ (ולכן גם מעל $\mathbb{C}$).
 :::
@@ -770,7 +770,7 @@ x-a & b \\
  ◻
 :::
 ::: example
-שוב נחזור לדוגמה [11.3](#exm-eigenvalues). הפעם נרצה לחשב את $A^k$ עבור $k\in\mathbb{N}$ ו- $$.A=\begin{pmatrix}
+שוב נחזור לדוגמה -@exm-eigenvalues. הפעם נרצה לחשב את $A^k$ עבור $k\in\mathbb{N}$ ו- $$.A=\begin{pmatrix}
 2 & 1 \\
 1 & 2
 \end{pmatrix}$$ ראינו כי מתקיים $$A=PDP^{-1}$$ כאשר $$.D=\begin{pmatrix}
@@ -779,7 +779,7 @@ x-a & b \\
 \end{pmatrix},\quad P=\begin{pmatrix}
 1 & 1 \\
 -1 & 1
-\end{pmatrix}$$ לפי טענה [11.33](#prp-matrix-power) נובע כי: $$\begin{aligned}
+\end{pmatrix}$$ לפי טענה -@prp-matrix-power נובע כי: $$\begin{aligned}
 A^k&=PD^kP^{-1}=\begin{pmatrix}
 1 & 1 \\
 -1 & 1
@@ -852,7 +852,7 @@ A^k&=PD^kP^{-1}=\begin{pmatrix}
     0 & 0 & 0
     \end{pmatrix} \\
     &=\mathop{\mathrm{Span}}\left(\begin{pmatrix}1\\1\\0\end{pmatrix},\begin{pmatrix}1\\0\\1\end{pmatrix}\right)
-    \end{aligned}$$ לכן, הריבויים הגיאומטריים של $\lambda_1=1,\,\lambda_2=3$ הם $$g_1=a_1=1,\,g_2=a_2=2$$ ותנאי משפט הלכסון (גרסה [11.30](#thm-diag2)) מתקיימים. כלומר $A$ לכסינה (ליתר דיוק, מעל $\mathbb{R}$).
+    \end{aligned}$$ לכן, הריבויים הגיאומטריים של $\lambda_1=1,\,\lambda_2=3$ הם $$g_1=a_1=1,\,g_2=a_2=2$$ ותנאי משפט הלכסון (גרסה -@thm-diag2) מתקיימים. כלומר $A$ לכסינה (ליתר דיוק, מעל $\mathbb{R}$).
 
 2.  מצאנו בסיס של ו\"ע. נבחר סדר ונסתכל על המטריצה שאלו עמודותיה: $$P=\begin{pmatrix}
     1 & 1 & 1 \\ 
@@ -865,7 +865,7 @@ A^k&=PD^kP^{-1}=\begin{pmatrix}
     -1 & 1 & 1\\
     1 & 0 & -1\\
     1 & -1 & 0
-    \end{pmatrix}$$ לבסוף, לפי טענה [11.33](#prp-matrix-power) נובע כי $$\begin{aligned}
+    \end{pmatrix}$$ לבסוף, לפי טענה -@prp-matrix-power נובע כי $$\begin{aligned}
     A^k&=PD^kP^{-1}=\begin{pmatrix}
     1 & 1 & 1 \\ 
     1 & 1 & 0 \\
@@ -967,7 +967,7 @@ p(A)&=A^2+3A+2I_2=\begin{pmatrix}
     &=(a_m\lambda^m+...+a_1\lambda+a_0)v=p(\lambda)v
     \end{aligned}$$ קיבלנו כי $v$ הוא ו\"ע של $p(A)$ המתאים לע\"ע $p(\lambda)$.
 
-2.  לפי טענה [11.33](#prp-matrix-power) מתקיים $$A^k=PD^kP^{-1}$$ לכל $k\in\mathbb{N}$. נציב זאת בנוסחה של $p(A)$ ונקבל: $$\begin{aligned}
+2.  לפי טענה -@prp-matrix-power מתקיים $$A^k=PD^kP^{-1}$$ לכל $k\in\mathbb{N}$. נציב זאת בנוסחה של $p(A)$ ונקבל: $$\begin{aligned}
     p(A)&=a_mA^m+...+a_1A+a_0I_n=a_mPD^mP^{-1}+...+a_1PDP^{-1}+a_0I \\
     &=P(a_mD^m+...+a_1D+a_0I_n)P^{-1}=P\cdot p(D)\cdot P^{-1}
     \end{aligned}$$ זה מראה כי $p(A)$ לכסינה כי מתקיים $$p(D)=\begin{pmatrix}
@@ -989,7 +989,7 @@ p(A)&=A^2+3A+2I_2=\begin{pmatrix}
 5 & -2 & -2\\
 2 & 1 & -2\\
 2 & -2 & 1
-\end{pmatrix}$$ מתרגיל [11.35](#exr-matrix-power). ראינו כי $$.A=PDP^{-1}=\begin{pmatrix}
+\end{pmatrix}$$ מתרגיל -@exr-matrix-power. ראינו כי $$.A=PDP^{-1}=\begin{pmatrix}
 1 & 1 & 1 \\ 
 1 & 1 & 0 \\
 1 & 0 & 1
@@ -1001,7 +1001,7 @@ p(A)&=A^2+3A+2I_2=\begin{pmatrix}
 -1 & 1 & 1\\
 1 & 0 & -1\\
 1 & -1 & 0
-\end{pmatrix}$$ לכן, לפי טענה [11.38](#prp-matrix-poly) נובע כי לכל פולינום $p(x)$ מתקיים $$.p(A)=PDP^{-1}=\begin{pmatrix}
+\end{pmatrix}$$ לכן, לפי טענה -@prp-matrix-poly נובע כי לכל פולינום $p(x)$ מתקיים $$.p(A)=PDP^{-1}=\begin{pmatrix}
 1 & 1 & 1 \\ 
 1 & 1 & 0 \\
 1 & 0 & 1
@@ -1051,5 +1051,5 @@ p(A)&=PDP^{-1}=\begin{pmatrix}
 2.  התשובה היא לא. ראשית נשים לב שאם $A$ לכסינה, אז היא דומה למטריצה האלכסונית $\mathbf{0}_{n\times n}$ ולכן קיימת $P\in\mathbb{M}_{n\times n}(\mathbb{C})$ כך ש- $$.A=P\cdot\mathbf{0}_{n\times n}\cdot P^{-1}=\mathbf{0}_{n\times n}$$ אם כן, בתור דוגמה נגדית נמצא פתרון לא טריוויאלי למשוואה $A^k=\mathbf{0}_{n\times n}$ עבור $n,k\in\mathbb{N}$ מסוימים. נבחר $n=k=2$ ומטריצה $$.A=\begin{pmatrix}
     0 & 1 \\
     0 & 0
-    \end{pmatrix}$$ מתקיים $A^2=\mathbf{0}_{2\times 2}$, אך $A$ עצמה אינה לכסינה. כבר הראינו זאת בסעיף ב' של תרגיל [11.32](#exr-not-similar).
+    \end{pmatrix}$$ מתקיים $A^2=\mathbf{0}_{2\times 2}$, אך $A$ עצמה אינה לכסינה. כבר הראינו זאת בסעיף ב' של תרגיל -@exr-not-similar.
 :::
