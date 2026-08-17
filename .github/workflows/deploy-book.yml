@@ -85,9 +85,8 @@ jobs:
           done
           [ "$STATUS" = "Success" ] || { echo "timed out waiting for publish"; exit 1; }
 
-      - name: Verify public URL
-        run: |
-          URL="https://d1k0jrp2uzj5vo.cloudfront.net/books/$BOOK_NAME/"
-          CODE=$(curl -s -o /dev/null -w '%{http_code}' "$URL")
-          echo "$URL -> $CODE"
-          [ "$CODE" = "200" ] || exit 1
+      # NOTE: no external curl of the public URL here - CloudFront is geo-restricted to Israel
+      # and GitHub runners are abroad (-> 403 false negative). sync-book.sh already verifies
+      # the book is served locally on the server ("[books] serving check OK" above).
+      - name: Done
+        run: echo "published: https://d1k0jrp2uzj5vo.cloudfront.net/books/$BOOK_NAME/  (verify from Israel)"
