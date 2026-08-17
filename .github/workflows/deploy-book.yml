@@ -89,4 +89,5 @@ jobs:
       # and GitHub runners are abroad (-> 403 false negative). sync-book.sh already verifies
       # the book is served locally on the server ("[books] serving check OK" above).
       - name: Done
-        run: echo "published: https://d1k0jrp2uzj5vo.cloudfront.net/books/$BOOK_NAME/  (verify from Israel)"
+        run: |
+          echo "published: https://d1k0jrp2uzj5vo.cloudfront.net/books/$BOOK_NAME/  (verify from Israel)"
