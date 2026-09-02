@@ -4,6 +4,7 @@
 format:
   pdf:
     documentclass: scrbook
+    dir: rtl                       # כיוון בסיס RTL — יישור פסקאות לימין (בלעדיו הטקסט צמוד לשמאל)
     pdf-engine: lualatex
     mainfont: "Frank Ruehl CLM"
     sansfont: "Frank Ruehl CLM"
