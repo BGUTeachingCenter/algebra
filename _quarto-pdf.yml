@@ -10,6 +10,7 @@ format:
     sansfont: "Frank Ruehl CLM"
     monofont: "Frank Ruehl CLM"
     toc: true
+    toc-title: "תוכן העניינים"   # אחרת ברירת המחדל היא "Table of contents" באנגלית
     number-sections: true
     suppress-bibliography: true   # אין ציטוטים בפועל; מונע CSLReferences ריק שקורס ב-LaTeX
     fig-pos: 'H'
