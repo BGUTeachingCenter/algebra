@@ -1,18 +1,20 @@
-% pdf-solution-hint.tex — define and style solution/hint environments
+% pdf-solution-hint.tex — הגדרה ועיצוב של סביבות solution/hint ל-PDF.
+% חשוב: הכול נדחה ל-\AtBeginDocument כדי שההגדרות של Quarto (למשל solution מתוך
+% תצורת ה-theorems) יירשמו קודם; אנחנו רק משלימים מה שחסר ועוטפים ב-tcolorbox.
 \makeatletter
-% Define unnumbered theorem-like environments if they don't exist
-\@ifundefined{solution}{%
-  \theoremstyle{definition}
-  \newtheorem*{solution}{פתרון}
-}{}
-\@ifundefined{hint}{%
-  \theoremstyle{definition}
-  \newtheorem*{hint}{רמז}
-}{}
+\AtBeginDocument{%
+  \@ifundefined{solution}{%
+    \theoremstyle{definition}%
+    \newtheorem*{solution}{פתרון}%
+  }{}%
+  \@ifundefined{hint}{%
+    \theoremstyle{definition}%
+    \newtheorem*{hint}{רמז}%
+  }{}%
+  % עטיפה כתיבה צבעונית אם tcolorbox זמין (נטען ב-pdf-env-boxes.tex)
+  \@ifundefined{tcolorboxenvironment}{}{%
+    \tcolorboxenvironment{solution}{enhanced, breakable, title={פתרון}, colframe=black!60, colback=white, colbacktitle=black!10, borderline south={0.4pt}{0pt}{black!60}}%
+    \tcolorboxenvironment{hint}{enhanced, breakable, title={רמז}, colframe=black!60, colback=white, colbacktitle=black!10, borderline south={0.4pt}{0pt}{black!60}}%
+  }%
+}
 \makeatother
-
-% If tcolorbox is available (it is in pdf-env-boxes.tex), wrap solution/hint as boxes
-\IfFileExists{tcolorbox.sty}{%
-  \tcolorboxenvironment{solution}{enhanced, breakable, title={פתרון}, colframe=black!60, colback=white, colbacktitle=black!10, borderline south={0.4pt}{0pt}{black!60}}
-  \tcolorboxenvironment{hint}{enhanced, breakable, title={רמז}, colframe=black!60, colback=white, colbacktitle=black!10, borderline south={0.4pt}{0pt}{black!60}}
-}{}

@@ -1,0 +1,13 @@
+% math-macros.tex — מקבילת LaTeX ל-math-macros.html (המאקרו של MathJax קיימים רק ב-HTML).
+% נטען ב-include-in-header עבור פורמט ה-PDF כדי שאותן פקודות מתמטיות יעבדו גם בהדפסה.
+% שימוש ב-\ensuremath: כדי שגם שימוש חשוף בטקסט (כמו "מתייחס ל \N") לא יפיל את הקומפילציה
+% אלא יעבור אוטומטית ל-math mode — MathJax סלחני לזה ב-HTML, ו-\ensuremath משחזר זאת ב-PDF.
+\providecommand{\R}{\ensuremath{\mathbb{R}}}
+\providecommand{\N}{\ensuremath{\mathbb{N}}}
+\providecommand{\Z}{\ensuremath{\mathbb{Z}}}
+\providecommand{\Q}{\ensuremath{\mathbb{Q}}}
+\providecommand{\C}{\ensuremath{\mathbb{C}}}
+\providecommand{\F}{\ensuremath{\mathbb{F}}}
+\providecommand{\M}{\ensuremath{\mathbb{M}}}
+\providecommand{\0}{\ensuremath{\mathbf{0}}}
+\providecommand{\Set}[1]{\ensuremath{\left\{#1\right\}}}

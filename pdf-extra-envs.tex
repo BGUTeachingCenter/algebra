@@ -1,0 +1,22 @@
+% pdf-extra-envs.tex — סביבות LaTeX גולמיות שמופיעות במקור אך אינן מוגדרות בפרוייקט.
+% דוגמה: \begin{teacher}...\end{teacher} — חומר למורה (הוכחות/הרחבות). ב-HTML הבלוק
+% הזה מועבר כ-LaTeX גולמי ולרוב נשמט מהאתר; ב-PDF נגדיר אותו כתיבה ממוסגרת מסומנת.
+% חבילות שהמקור משתמש בהן בתוכן (למשל \alph* ברשימות) ואינן נטענות ע"י תבנית ברירת המחדל:
+\usepackage{enumitem}
+\usepackage{mathtools}
+\makeatletter
+\AtBeginDocument{%
+  % הביבליוגרפיה ריקה (אין ציטוטים) → CSLReferences ריק קורס ב-LaTeX ("missing \item").
+  % הופכים אותו לסביבה שקופה שסובלת ריקנות. (אם יתווספו ציטוטים בעתיד — יש להסיר תיקון זה.)
+  \@ifundefined{CSLReferences}{}{\renewenvironment{CSLReferences}[2]{\par}{\par}}%
+  \@ifundefined{teacher}{%
+    \@ifundefined{tcbuselibrary}{%
+      \newenvironment{teacher}{\par\noindent\textbf{למורה:}\par}{\par}%
+    }{%
+      \newtcolorbox{teacher}{enhanced, breakable, sharp corners,
+        colframe=gray!55, colback=gray!5, coltitle=black,
+        fonttitle=\bfseries\small, title={למורה}, before skip=10pt, after skip=10pt}%
+    }%
+  }{}%
+}
+\makeatother

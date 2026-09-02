@@ -1,0 +1,25 @@
+# פרופיל PDF — מרנדר את אותם קובצי QMD של האתר ל-PDF.
+# הפעלה:  quarto render --profile pdf --to pdf
+# מנוע lualatex + babel (עברית RTL), פונט Frank Ruehl CLM, ותיבות המשפט הצבעוניות הקיימות.
+format:
+  pdf:
+    documentclass: scrbook
+    pdf-engine: lualatex
+    mainfont: "Frank Ruehl CLM"
+    sansfont: "Frank Ruehl CLM"
+    monofont: "Frank Ruehl CLM"
+    toc: true
+    number-sections: true
+    suppress-bibliography: true   # אין ציטוטים בפועל; מונע CSLReferences ריק שקורס ב-LaTeX
+    fig-pos: 'H'
+    include-in-header:
+      - math-macros.tex
+      - pdf-env-boxes.tex
+      - pdf-solution-hint.tex
+      - pdf-extra-envs.tex
+    filters:
+      - wrap-bare-math.lua
+      - pdf-sim-placeholder.lua
+      - div-to-theorem-env.lua
+      - uncollapse-for-pdf.lua
+      - env-to-callout.lua
