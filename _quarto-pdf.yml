@@ -25,6 +25,7 @@ format:
       - pdf-solution-hint.tex
       - pdf-extra-envs.tex
     filters:
+      - pdf-callout-to-mdframed.lua
       - wrap-bare-math.lua
       - pdf-sim-placeholder.lua
       - div-to-theorem-env.lua
