@@ -1,6 +1,11 @@
 # פרופיל PDF — מרנדר את אותם קובצי QMD של האתר ל-PDF.
 # הפעלה:  quarto render --profile pdf --to pdf
 # מנוע lualatex + babel (עברית RTL), פונט Frank Ruehl CLM, ותיבות המשפט הצבעוניות הקיימות.
+#
+# חשוב: ב-_quarto.yml השפה מוגדרת כ-book.language, ואין lang עליון. בלי lang עליון,
+# pandoc לא מעביר את השפה ל-babel, ולכן babel לא הופך את עברית לשפה הראשית והמסמך יוצא
+# LTR (טקסט צמוד לשמאל). ה-lang כאן מפעיל את babel עם עברית כשפה ראשית = כיוון RTL אמיתי.
+lang: he
 format:
   pdf:
     documentclass: scrbook
