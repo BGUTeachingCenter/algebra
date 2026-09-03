@@ -17,3 +17,5 @@ preview.ps
 
 # editor/backup junk
 *.bak
+
+**/*.quarto_ipynb

@@ -1,0 +1,19 @@
+{
+  "name": "Quarto Book",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {
+      "version": "release",
+      "installTinyTex": "false"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["quarto.quarto"]
+    }
+  },
+  "forwardPorts": [4848],
+  "portsAttributes": {
+    "4848": { "label": "Quarto Preview" }
+  }
+}
