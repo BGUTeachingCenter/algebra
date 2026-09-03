@@ -1,6 +1,4 @@
-% pdf-extra-envs.tex — סביבות LaTeX גולמיות שמופיעות במקור אך אינן מוגדרות בפרוייקט.
-% דוגמה: \begin{teacher}...\end{teacher} — חומר למורה (הוכחות/הרחבות). ב-HTML הבלוק
-% הזה מועבר כ-LaTeX גולמי ולרוב נשמט מהאתר; ב-PDF נגדיר אותו כתיבה ממוסגרת מסומנת.
+% pdf-extra-envs.tex — סביבות/חבילות נוספות ל-PDF שאינן מוגדרות אחרת בפרוייקט.
 % חבילות שהמקור משתמש בהן בתוכן (למשל \alph* ברשימות) ואינן נטענות ע"י תבנית ברירת המחדל:
 \usepackage{enumitem}
 \usepackage{mathtools}
@@ -9,13 +7,14 @@
   % הביבליוגרפיה ריקה (אין ציטוטים) → CSLReferences ריק קורס ב-LaTeX ("missing \item").
   % הופכים אותו לסביבה שקופה שסובלת ריקנות. (אם יתווספו ציטוטים בעתיד — יש להסיר תיקון זה.)
   \@ifundefined{CSLReferences}{}{\renewenvironment{CSLReferences}[2]{\par}{\par}}%
+  % \begin{teacher}...\end{teacher} — חומר למורה. מוגדר כמסגרת אפורה (mdframed תומך RTL).
   \@ifundefined{teacher}{%
-    \@ifundefined{tcbuselibrary}{%
+    \@ifundefined{newmdenv}{%
       \newenvironment{teacher}{\par\noindent\textbf{למורה:}\par}{\par}%
     }{%
-      \newtcolorbox{teacher}{enhanced, breakable, sharp corners,
-        colframe=gray!55, colback=gray!5, coltitle=black,
-        fonttitle=\bfseries\small, title={למורה}, before skip=10pt, after skip=10pt}%
+      \newmdenv[linecolor=gray!55, backgroundcolor=gray!5, linewidth=0.5pt,
+        leftmargin=0pt, rightmargin=0pt, innerleftmargin=8pt, innerrightmargin=8pt,
+        innertopmargin=6pt, innerbottommargin=6pt, skipabove=10pt, skipbelow=10pt]{teacher}%
     }%
   }{}%
 }

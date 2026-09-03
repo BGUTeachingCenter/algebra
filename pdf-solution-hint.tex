@@ -1,6 +1,5 @@
-% pdf-solution-hint.tex — הגדרה ועיצוב של סביבות solution/hint ל-PDF.
-% חשוב: הכול נדחה ל-\AtBeginDocument כדי שההגדרות של Quarto (למשל solution מתוך
-% תצורת ה-theorems) יירשמו קודם; אנחנו רק משלימים מה שחסר ועוטפים ב-tcolorbox.
+% pdf-solution-hint.tex — הגדרה ועיצוב של סביבות solution/hint ל-PDF (מסגרות mdframed).
+% נדחה ל-\AtBeginDocument כדי שהגדרות Quarto (למשל solution מתוך תצורת ה-theorems) יירשמו קודם.
 \makeatletter
 \AtBeginDocument{%
   \@ifundefined{solution}{%
@@ -11,10 +10,14 @@
     \theoremstyle{definition}%
     \newtheorem*{hint}{רמז}%
   }{}%
-  % עטיפה כתיבה צבעונית אם tcolorbox זמין (נטען ב-pdf-env-boxes.tex)
-  \@ifundefined{tcolorboxenvironment}{}{%
-    \tcolorboxenvironment{solution}{enhanced, breakable, title={פתרון}, colframe=black!60, colback=white, colbacktitle=black!10, borderline south={0.4pt}{0pt}{black!60}}%
-    \tcolorboxenvironment{hint}{enhanced, breakable, title={רמז}, colframe=black!60, colback=white, colbacktitle=black!10, borderline south={0.4pt}{0pt}{black!60}}%
+  % עטיפה במסגרת אפורה (mdframed תומך RTL, בשונה מ-tcolorbox)
+  \@ifundefined{surroundwithmdframed}{}{%
+    \surroundwithmdframed[linecolor=black!55, backgroundcolor=black!4, linewidth=0.5pt,
+      leftmargin=0pt, rightmargin=0pt, innerleftmargin=8pt, innerrightmargin=8pt,
+      innertopmargin=6pt, innerbottommargin=6pt, skipabove=10pt, skipbelow=10pt]{solution}%
+    \surroundwithmdframed[linecolor=black!55, backgroundcolor=black!4, linewidth=0.5pt,
+      leftmargin=0pt, rightmargin=0pt, innerleftmargin=8pt, innerrightmargin=8pt,
+      innertopmargin=6pt, innerbottommargin=6pt, skipabove=10pt, skipbelow=10pt]{hint}%
   }%
 }
 \makeatother
