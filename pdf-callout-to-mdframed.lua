@@ -15,13 +15,15 @@ function Callout(c)
   if title == "" and c.title then title = pandoc.utils.stringify(c.title) end
   if title == "" then title = "פתרון" end
 
-  local out = pandoc.List()
+  -- pandoc.Blocks מנרמל את c.content בין אם הוא Block יחיד ובין אם רשימת בלוקים
+  local out = pandoc.Blocks({})
   out:insert(pandoc.RawBlock("latex",
     "\\begin{mdframed}[linecolor=black!55,backgroundcolor=black!4,linewidth=0.5pt," ..
     "leftmargin=0pt,rightmargin=0pt,innerleftmargin=8pt,innerrightmargin=8pt," ..
     "innertopmargin=6pt,innerbottommargin=6pt,skipabove=10pt,skipbelow=10pt]"))
   out:insert(pandoc.Para({ pandoc.Strong({ pandoc.Str(title) }) }))
-  out:insert(c.content)  -- Block יחיד (בדרך כלל Div העוטף את גוף ה-callout)
+  out:extend(pandoc.Blocks(c.content))  -- משטח לרשימת בלוקים תקינה
   out:insert(pandoc.RawBlock("latex", "\\end{mdframed}"))
-  return out
+  -- handler של Callout דורש Block/Blocks — Div שקוף העוטף רשימת בלוקים שטוחה
+  return pandoc.Div(out)
 end
