@@ -1,8 +1,9 @@
-% pdf-env-boxes.tex — עטיפת סביבות LaTeX קיימות עם tcolorbox, מותאם לצבעי HTML
+% pdf-env-boxes.tex — עטיפת סביבות המשפט של הספר במסגרות צבעוניות ל-PDF, מותאם לצבעי HTML.
+% משתמשים ב-mdframed ולא ב-tcolorbox: tcolorbox אינו ממקם נכון תחת כיוון RTL (התיבה נדחפת
+% מחוץ לעמוד והטקסט גולש), ואילו mdframed עוטף נכון סביבות עבריות מימין לשמאל.
 \usepackage{amsthm}
-\usepackage[most]{tcolorbox}
-\tcbuselibrary{theorems,skins,breakable,hooks}
 \usepackage{xcolor}
+\usepackage[framemethod=default]{mdframed}
 
 % ==== שמות בעברית ====
 \providecommand{\definitionname}{הגדרה}
@@ -15,26 +16,22 @@
 \providecommand{\corollaryname}{מסקנה}
 \renewcommand{\proofname}{הוכחה}
 
-% ==== צבעים (בהתאם ל-CSS: rgba) ====
+% ==== צבעים (בהתאם ל-CSS) ====
 \definecolor{envDefinitionRGB}{RGB}{255,99,71}    % tomato
 \definecolor{envExampleRGB}{RGB}{138,43,226}      % blueviolet
 \definecolor{envExerciseRGB}{RGB}{30,144,255}     % dodgerblue
-\definecolor{envRemarkRGB}{RGB}{0,0,0}            % black (עם שקיפות נמוכה)
+\definecolor{envRemarkRGB}{RGB}{90,90,90}         % gray
 \definecolor{envTheoremRGB}{RGB}{255,165,0}       % orange
 \definecolor{envProofRGB}{RGB}{60,179,113}        % mediumseagreen
 
-% ==== סגנון בסיסי לכל התיבות ====
-\tcbset{
-  envbox/.style={
-    enhanced, breakable, sharp corners,
-    boxrule=0.4pt,
-    colback=white,
-    fonttitle=\bfseries\small,
-    coltitle=black,
-    title filled,
-    left=8pt,right=8pt,top=6pt,bottom=6pt,
-    before skip=10pt, after skip=10pt
-  },
+% ==== סגנון בסיסי לכל המסגרות (mdframed) ====
+% מסגרת צבעונית + רקע מוברש קל, שוברת עמודים, צמודה לרוחב הטקסט המלא.
+\mdfdefinestyle{envbase}{%
+  linewidth=0.6pt,
+  leftmargin=0pt, rightmargin=0pt,
+  innerleftmargin=8pt, innerrightmargin=8pt,
+  innertopmargin=6pt, innerbottommargin=6pt,
+  skipabove=10pt, skipbelow=10pt%
 }
 
 \makeatletter
@@ -63,67 +60,14 @@
   \EnsureNewTheorem{proposition}{\propositionname}
   \EnsureNewTheorem{corollary}{\corollaryname}
 
-  % ==== עטיפות עם צבעי HTML ====
-  \tcolorboxenvironment{definition}{envbox,
-    colframe=envDefinitionRGB,
-    colbacktitle=envDefinitionRGB,
-    colback=envDefinitionRGB!10,
-    borderline south={0.4pt}{0pt}{envDefinitionRGB},
-    title={\definitionname}}
-
-  \tcolorboxenvironment{example}{envbox,
-    colframe=envExampleRGB,
-    colbacktitle=envExampleRGB,
-    colback=envExampleRGB!10,
-    borderline south={0.4pt}{0pt}{envExampleRGB},
-    title={\examplename}}
-
-  \tcolorboxenvironment{exercise}{envbox,
-    colframe=envExerciseRGB,
-    colbacktitle=envExerciseRGB,
-    colback=envExerciseRGB!10,
-    borderline south={0.4pt}{0pt}{envExerciseRGB},
-    title={\exercisename}}
-
-  \tcolorboxenvironment{remark}{envbox,
-    colframe=envRemarkRGB,
-    colbacktitle=envRemarkRGB,
-    colback=envRemarkRGB!10,
-    borderline south={0.4pt}{0pt}{envRemarkRGB},
-    title={\remarkname}}
-
-  \tcolorboxenvironment{theorem}{envbox,
-    colframe=envTheoremRGB,
-    colbacktitle=envTheoremRGB,
-    colback=envTheoremRGB!10,
-    borderline south={0.4pt}{0pt}{envTheoremRGB},
-    title={\theoremname}}
-
-  \tcolorboxenvironment{lemma}{envbox,
-    colframe=envTheoremRGB,
-    colbacktitle=envTheoremRGB,
-    colback=envTheoremRGB!10,
-    borderline south={0.4pt}{0pt}{envTheoremRGB},
-    title={\lemmaname}}
-
-  \tcolorboxenvironment{proposition}{envbox,
-    colframe=envTheoremRGB,
-    colbacktitle=envTheoremRGB,
-    colback=envTheoremRGB!10,
-    borderline south={0.4pt}{0pt}{envTheoremRGB},
-    title={\propositionname}}
-
-  \tcolorboxenvironment{corollary}{envbox,
-    colframe=envTheoremRGB,
-    colbacktitle=envTheoremRGB,
-    colback=envTheoremRGB!10,
-    borderline south={0.4pt}{0pt}{envTheoremRGB},
-    title={\corollaryname}}
-
-  \tcolorboxenvironment{proof}{envbox,
-    colframe=envProofRGB,
-    colbacktitle=envProofRGB,
-    colback=envProofRGB!10,
-    borderline south={0.4pt}{0pt}{envProofRGB},
-    title={\proofname}}
+  % ==== עטיפה במסגרות צבעוניות ====
+  \surroundwithmdframed[style=envbase,linecolor=envDefinitionRGB,backgroundcolor=envDefinitionRGB!8]{definition}
+  \surroundwithmdframed[style=envbase,linecolor=envExampleRGB,backgroundcolor=envExampleRGB!8]{example}
+  \surroundwithmdframed[style=envbase,linecolor=envExerciseRGB,backgroundcolor=envExerciseRGB!8]{exercise}
+  \surroundwithmdframed[style=envbase,linecolor=envRemarkRGB,backgroundcolor=envRemarkRGB!6]{remark}
+  \surroundwithmdframed[style=envbase,linecolor=envTheoremRGB,backgroundcolor=envTheoremRGB!8]{theorem}
+  \surroundwithmdframed[style=envbase,linecolor=envTheoremRGB,backgroundcolor=envTheoremRGB!8]{lemma}
+  \surroundwithmdframed[style=envbase,linecolor=envTheoremRGB,backgroundcolor=envTheoremRGB!8]{proposition}
+  \surroundwithmdframed[style=envbase,linecolor=envTheoremRGB,backgroundcolor=envTheoremRGB!8]{corollary}
+  \surroundwithmdframed[style=envbase,linecolor=envProofRGB,backgroundcolor=envProofRGB!8]{proof}
 }
