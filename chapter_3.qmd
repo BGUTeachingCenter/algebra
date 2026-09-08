@@ -59,11 +59,29 @@ $$S+M=\left(
 ::: definition
 נגדיר את קבוצת כל המטריצות מסדר $m\times n$ מעל $\mathbb{F}$ (כאשר $\mathbb{F}=\mathbb{R}$ או $\mathbb{F}=\mathbb{C}$ ) ע\"י
 
-$$.\mathbb{M}_{m\times n}(\mathbb{F})=\Set{\begin{pmatrix}a_{11} & a_{12} & \cdots & a_{1n}\\
+$$
+::: definition
+נגדיר את קבוצת כל המטריצות מסדר $m\times n$ מעל $\mathbb{F}$ (כאשר $\mathbb{F}=\mathbb{R}$ או $\mathbb{F}=\mathbb{C}$ ) ע\"י
+
+$$
+.\mathbb{M}_{m\times n}(\mathbb{F})
+=
+\left\{
+\begin{pmatrix}
+a_{11} & a_{12} & \cdots & a_{1n}\\
 a_{21} & a_{22} & \cdots & a_{2n}\\
 \vdots & \vdots & \ddots & \vdots\\
 a_{m1} & a_{m2} & \cdots & a_{mn}
-\end{pmatrix}|\forall 1\leq i\leq m \quad \forall 1\leq j\leq n \quad a_{ij}\in \mathbb{F}}.$$
+\end{pmatrix}
+\middle|
+\forall\,1\leq i\leq m
+\quad
+\forall\,1\leq j\leq n
+\quad
+a_{ij}\in\mathbb{F}
+\right\}
+$$
+
 :::
 
 ::: remark
@@ -712,7 +730,7 @@ $$.x=v_0+y\in\Set{x_0+y|y\in\mathbb{F}^n,Ay=0}.$$ ◻
 
     כל מחובר $(M)_{1k}(M)_{k1}$ שתורם $1$ לסכום, מתאר מסלול $p_1\to p_k\to p_1$ עם תחנת ביניים $p_k$. לכן, הסכום מתאר את מספר המסלולים מ- $p_1$ לעצמו באורך $2$.
 
-    ובהכללה: לכל $k\in\mathbb{N}$ אפשר לחשב את החזקה $M^k=\underbrace{M \cdot M \cdot \ldots \cdot M}_{\text{פעמים} \ k}$ ואז $(M^k)_{ij}$ שווה למספר המסלולים באורך $k$ מ- $p_i$ ל- $p_j$, כאשר אין הגבלה על תחנות הביניים (יכולה להיות חזרה על קודקוד אחד או יותר). רעיון זה תקף לכל גרף, והוא דוגמה טובה לשימוש של כפל מטריצות.
+    ובהכללה: לכל $k\in\mathbb{N}$ אפשר לחשב את החזקה $M^k=\underbrace{M \cdot M \cdot \ldots \cdot M}_{k}$ ואז $(M^k)_{ij}$ שווה למספר המסלולים באורך $k$ מ- $p_i$ ל- $p_j$, כאשר אין הגבלה על תחנות הביניים (יכולה להיות חזרה על קודקוד אחד או יותר). רעיון זה תקף לכל גרף, והוא דוגמה טובה לשימוש של כפל מטריצות.
 :::
 
 ::: remark
@@ -1948,7 +1966,18 @@ $(\text{ה}) \implies (\text{א})$: אם תמיד קיים פתרון לממ\"ל
 משפט זה מראה שיש משהו מיוחד לגבי מטריצות ריבועיות שהן שקולות שורה למטריצת יחידה. נראה שיש דרך חלופית להגדיר אותן, שקשורה לכפל מטריצות. בהתחלה ההגדרה תיראה שונה, ובסוף נוכיח שזו הגדרה שקולה.
 
 ::: definition
-מטריצה $A\in\mathbb{M}_{n\times n}(\mathbb{F})$ נקראת הפיכה משמאל אם קיימת $B\in\mathbb{M}_{n\times n}(\mathbb{F})$ כך ש- $BA=I_n$. $A$ נקראת הפיכה מימין אם קיימת $C\in\mathbb{M}_{n\times n}(\mathbb{F})$ כך ש- $AC=I_n$. אם שני התנאים מתקיימים, $A$ נקראת הפיכה.
+מטריצה
+ $A\in\mathbb{M}_{n\times n}(\mathbb{F})$
+ נקראת הפיכה משמאל אם קיימת
+ $B\in\mathbb{M}_{n\times n}(\mathbb{F})$
+  כך ש- $BA=I_n$.
+
+$A$
+ נקראת הפיכה מימין אם קיימת
+$C\in\mathbb{M}_{n\times n}(\mathbb{F})$
+ כך ש- $AC=I_n$.
+
+ אם שני התנאים מתקיימים, $A$ נקראת הפיכה.
 :::
 
 נראה שהפיכות מימין והפיכות משמאל, הן למעשה שני תנאים שקולים (עבור מטריצה ריבועית). יותר מכך:
@@ -1958,7 +1987,7 @@ $(\text{ה}) \implies (\text{א})$: אם תמיד קיים פתרון לממ\"ל
 
 א.  *$A$ שקולת שורה ל- $I_n$.*
 
-ב.  *$\mathop{\mathrm{rank}}(A)=n$*
+ב.  *$\mathop{\mathrm{rank}}(A)=n$.*
 
 ג.  *לממ\"ל $Ax=0$ יש פתרון יחיד.*
 
