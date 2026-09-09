@@ -1904,7 +1904,7 @@ $$.EA=
 
 1.  *$A'=I_n$*
 
-2.  *$\mathop{\mathrm{rank}}(A')=n$*
+2.  *$.\mathop{\mathrm{rank}}(A')=n$*
 
 3.  *לממ\"ל $A'x=0$ יש פתרון יחיד.*
 
@@ -1950,7 +1950,7 @@ $(\text{ה}) \implies (\text{א})$: אם תמיד קיים פתרון לממ\"ל
 
 א.  *$A$ שקולת שורה ל- $I_n$.*
 
-ב.  *$\mathop{\mathrm{rank}}(A)=n$*
+ב.  *$.\mathop{\mathrm{rank}}(A)=n$*
 
 ג.  *לממ\"ל $Ax=0$ יש פתרון יחיד.*
 
@@ -1987,7 +1987,7 @@ $C\in\mathbb{M}_{n\times n}(\mathbb{F})$
 
 א.  *$A$ שקולת שורה ל- $I_n$.*
 
-ב.  *$\mathop{\mathrm{rank}}(A)=n$.*
+ב.  *$.\mathop{\mathrm{rank}}(A)=n$*
 
 ג.  *לממ\"ל $Ax=0$ יש פתרון יחיד.*
 
