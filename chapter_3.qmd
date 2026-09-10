@@ -87,12 +87,12 @@ $$
 ::: example
  
 
-1.  מתקיים $$.A=\begin{pmatrix} 10 & 9 & 1 & -7\\
+א.  מתקיים $$.A=\begin{pmatrix} 10 & 9 & 1 & -7\\
     1 & 2 & 3 & 4\\
     0 & 4 & -3 & -5
     \end{pmatrix}\in\mathbb{M}_{3\times 4}(\mathbb{R})$$
 
-2.  מתקיים $$.B=\begin{pmatrix} i & 1 \\
+ב.  מתקיים $$.B=\begin{pmatrix} i & 1 \\
     1 & 1+i\\
     0 & 2i 
     \end{pmatrix}\in\mathbb{M}_{3\times 2}(\mathbb{C})$$
@@ -112,15 +112,15 @@ $$
 ::: definition
 עבור וקטורים $v=(a_1,...,a_n)\in\mathbb{F}^n,w=(b_1,...,b_n)\in\mathbb{F}^n$ וסקלר $c\in\mathbb{F}$ נגדיר את הפעולות הבאות:
 
-1.  פעולת החיבור: $$v+w=(a_1+b_1,...,a_n+b_n)$$
+א.  פעולת החיבור: $$v+w=(a_1+b_1,...,a_n+b_n)$$
 
-2.  פעולת כפל בסקלר: $$c \cdot v=(c\cdot a_1,\dots,c\cdot a_n)$$
+ב.  פעולת כפל בסקלר: $$c \cdot v=(c\cdot a_1,\dots,c\cdot a_n)$$
 :::
 
 ::: definition
 עבור $A,B\in\mathbb{M}_{m\times n}(\mathbb{F})$ וסקלר $c\in\mathbb{F}$ נגדיר את הפעולות הבאות:
 
-1.  פעולת החיבור: $$\begin{aligned}
+א.  פעולת החיבור: $$\begin{aligned}
     A+B&=\begin{pmatrix}a_{11} & \cdots & a_{1n}\\
     a_{21} & \cdots & a_{2n}\\
     \vdots  & \ddots & \vdots\\
@@ -136,7 +136,7 @@ $$
     \end{pmatrix}
     \end{aligned}$$
 
-2.  פעולת כפל בסקלר: $$c A=\begin{pmatrix}ca_{11} & ca_{12} & \cdots & ca_{1n}\\
+ב.  פעולת כפל בסקלר: $$c A=\begin{pmatrix}ca_{11} & ca_{12} & \cdots & ca_{1n}\\
     ca_{21} & ca_{22} & \cdots & ca_{2n}\\
     \vdots & \vdots & \ddots & \vdots\\
     ca_{m1} & ca_{m2} & \cdots & ca_{mn}
@@ -147,7 +147,7 @@ $$
 
 ::: example
 
-1.  חיבור של מטריצות מסדר $2\times 2$ מעל $\mathbb{R}$: $$\begin{aligned}
+א.  חיבור של מטריצות מסדר $2\times 2$ מעל $\mathbb{R}$: $$\begin{aligned}
     &\begin{pmatrix} 3 & 7 \\
     5 & -2 
     \end{pmatrix}+\begin{pmatrix} -10 & 5 \\
@@ -160,7 +160,7 @@ $$
     \end{pmatrix}
     \end{aligned}$$
 
-2.  חיבור של מטריצות מסדר $3\times 4$ מעל $\mathbb{R}$: $$\begin{aligned}
+ב.  חיבור של מטריצות מסדר $3\times 4$ מעל $\mathbb{R}$: $$\begin{aligned}
     &\begin{pmatrix} 10 & 9 & 1 & -7\\
     1 & 2 & 3 & 4\\
     0 & 4 & -3 & -5
@@ -178,7 +178,7 @@ $$
     \end{pmatrix}
     \end{aligned}$$
 
-3.  חיבור של מטריצות מסדר $2\times 2$ מעל $\mathbb{C}$: אם
+ג.  חיבור של מטריצות מסדר $2\times 2$ מעל $\mathbb{C}$: אם
 
     $$A = \begin{pmatrix} 1 & i \\
     2-3i & 3-2i 
@@ -219,7 +219,7 @@ $$(c A)_{ij}=c(A)_{ij}$$
 
 ::: example
 (דוגמאות נוספות)
-1.  כפל בסקלר של מטריצה מסדר $3\times 3$ מעל $\mathbb{C}$: $$\begin{aligned}
+א.  כפל בסקלר של מטריצה מסדר $3\times 3$ מעל $\mathbb{C}$: $$\begin{aligned}
     &i\begin{pmatrix} 1 & i & 1+i \\ 
     1-i & 2i & 3 \\
     2+3i & 3-2i & 5
@@ -233,7 +233,7 @@ $$(c A)_{ij}=c(A)_{ij}$$
     \end{pmatrix}
     \end{aligned}$$
 
-2.  שילוב של כפל בסקלר וחיבור מטריצות מסדר $2\times 2$ מעל $\mathbb{R}$: $$\begin{aligned}
+ב.  שילוב של כפל בסקלר וחיבור מטריצות מסדר $2\times 2$ מעל $\mathbb{R}$: $$\begin{aligned}
     &2 \begin{pmatrix} 11 & 2 \\
     -2 & 4 
     \end{pmatrix}+3\begin{pmatrix} -4 & 5 \\
@@ -260,21 +260,21 @@ $$(c A)_{ij}=c(A)_{ij}$$
 ::: proposition
  *יהיו $A,B,C\in\mathbb{M}_{m\times n}(\mathbb{F})$ ו- $\alpha,\beta\in\mathbb{F}$. אז מתקיימים הכללים הבאים:*
 
-1.  *חוק החילוף (קומוטטיביות): $$A+B=B+A$$*
+א.  *חוק החילוף (קומוטטיביות): $$A+B=B+A$$*
 
-2.  *חוק הקיבוץ (אסוציאטיביות): $$(A+B)+C=A+(B+C)$$*
+ב.  *חוק הקיבוץ (אסוציאטיביות): $$(A+B)+C=A+(B+C)$$*
 
-3.  *חוק הקיבוץ לכפל בסקלר: $$(\alpha\beta)A=\alpha(\beta A)$$*
+ג.  *חוק הקיבוץ לכפל בסקלר: $$(\alpha\beta)A=\alpha(\beta A)$$*
 
-4.  *חוק הפילוג (דיסטריביוטיביות): $$\alpha(A+B)=\alpha A+\alpha B$$*
+ד.  *חוק הפילוג (דיסטריביוטיביות): $$\alpha(A+B)=\alpha A+\alpha B$$*
 
-5.  *ניטרליות היחידה: $$1\cdot A=A$$*
+ה.  *ניטרליות היחידה: $$1\cdot A=A$$*
 
-6.  *$$0\cdot A=\mathbf{0}_{m\times n}$$*
+ו.  *$$0\cdot A=\mathbf{0}_{m\times n}$$*
 
-7.  *ניטרליות מטריצת האפס: $$A+\mathbf{0}_{m\times n}=A$$*
+ז.  *ניטרליות מטריצת האפס: $$A+\mathbf{0}_{m\times n}=A$$*
 
-8.  *$$A-A=0$$*
+ח.  *$$A-A=0$$*
 :::
 
 ::: proof
@@ -369,7 +369,7 @@ y_m
 ::: example
  
 
-1.  ניקח $$A = \begin{pmatrix}
+א.  ניקח $$A = \begin{pmatrix}
     2 & -1 \\
     3 & 4
     \end{pmatrix}, \quad 
@@ -395,11 +395,11 @@ y_m
     23
     \end{pmatrix}$$
 
-2.  $$\begin{pmatrix}a_1 &b_1 &c_1\end{pmatrix}\begin{pmatrix}a_2 \\ b_2 \\ c_2\end{pmatrix}=a_1a_2+b_1b_2+c_1c_2$$
+ב.  $$\begin{pmatrix}a_1 &b_1 &c_1\end{pmatrix}\begin{pmatrix}a_2 \\ b_2 \\ c_2\end{pmatrix}=a_1a_2+b_1b_2+c_1c_2$$
 
     לכל $a_1,b_1,c_1,a_2,b_2,c_2\in\mathbb{F}$. במקרה של $\mathbb{F}=\mathbb{R}$ מדובר על המכפלה הסקלרית של $$.\begin{pmatrix}a_1 \\ b_1 \\ c_1\end{pmatrix},\begin{pmatrix}a_2 \\ b_2 \\ c_2\end{pmatrix}\in\mathbb{R}^3$$
 
-3.  $$\begin{pmatrix}
+ג.  $$\begin{pmatrix}
     1 & 0 & 2 \\
     -2 & 3 & 1 \\
     4 & -1 & 0
@@ -422,7 +422,7 @@ y_m
     10
     \end{pmatrix}$$
 
-4.  $$\begin{pmatrix}
+ד.  $$\begin{pmatrix}
     1+i & 2 \\
     3i & 4-i
     \end{pmatrix}\begin{pmatrix}
@@ -475,11 +475,11 @@ $$Ax=\begin{pmatrix}
 ::: {.proposition #prp-matrix-vector}
 *יהיו $A,B\in\mathbb{M}_{m\times n}(\mathbb{F})$, $v,w\in\mathbb{F}^n$ ו- $\alpha\in\mathbb{F}$.*
 
-1.  *$$A(v+w)=Av+Aw$$*
+א.  *$$A(v+w)=Av+Aw$$*
 
-2.  *$$(A+B)v=Av+Bv$$*
+ב.  *$$(A+B)v=Av+Bv$$*
 
-3.  *$$A(\alpha v)=\alpha(Av)$$*
+ג.  *$$A(\alpha v)=\alpha(Av)$$*
 :::
 
 ::: proof
@@ -496,14 +496,14 @@ $$Ax=\begin{pmatrix}
  w_n 
  \end{pmatrix}$$
 
-1.  $$(A(v+w))_i=\sum_{j=1}^n (A)_{ij}(v+w)_j=\sum_{j=1}^n (A)_{ij}v_j+\sum_{j=1}^n (A)_{ij}w_j=(Av)_i+(Aw)_i$$ בשביל השוויון השני השתמשנו בחוק הפילוג ב- $\mathbb{F}$, וגם פיצלנו את הסכום לפי חוק החילוף (אין חשיבות לסדר הסכימה).
+א.  $$(A(v+w))_i=\sum_{j=1}^n (A)_{ij}(v+w)_j=\sum_{j=1}^n (A)_{ij}v_j+\sum_{j=1}^n (A)_{ij}w_j=(Av)_i+(Aw)_i$$ בשביל השוויון השני השתמשנו בחוק הפילוג ב- $\mathbb{F}$, וגם פיצלנו את הסכום לפי חוק החילוף (אין חשיבות לסדר הסכימה).
 
-2.  $$\begin{aligned}
+ב.  $$\begin{aligned}
     ((A+B)v)_i&=\sum_{j=1}^n ((A)_{ij}+(B)_{ij})v_j=\sum_{j=1}^n (A)_{ij}v_j+\sum_{j=1}^n (B)_{ij}v_j\\
     &=(Av)_i+(Bv)_i=(Av+Bv)_i
     \end{aligned}$$
 
-3.  $$(A(\alpha v))_i=\sum_{j=1}^n (A)_{ij}(\alpha v_j)=\alpha\sum_{j=1}^n (A)_{ij}v_j=\alpha(Av)_i=(\alpha Av)_i$$ בשוויון השני השתמשנו בחוק הפילוג ב- $\mathbb{F}$, לפיו אפשר להוציא גורם משותף מחוץ לסכימה.
+ג.  $$(A(\alpha v))_i=\sum_{j=1}^n (A)_{ij}(\alpha v_j)=\alpha\sum_{j=1}^n (A)_{ij}v_j=\alpha(Av)_i=(\alpha Av)_i$$ בשוויון השני השתמשנו בחוק הפילוג ב- $\mathbb{F}$, לפיו אפשר להוציא גורם משותף מחוץ לסכימה.
 
  ◻
 :::
@@ -536,17 +536,17 @@ $$Ax=\begin{pmatrix}
 ::: proposition
  *תהי $Ax=0$ ממ\"ל הומוגנית.*
 
-1.  *קבוצת הפתרונות סגורה לחיבור, כלומר לכל שני פתרונות $v,w\in\mathbb{F}^n$ גם $v+w$ הוא פתרון.*
+א.  *קבוצת הפתרונות סגורה לחיבור, כלומר לכל שני פתרונות $v,w\in\mathbb{F}^n$ גם $v+w$ הוא פתרון.*
 
-2.  *קבוצת הפתרונות סגורה לכפל בסקלר, כלומר לכל פתרון $v\in\mathbb{F}^n$ ולכל $\alpha\in\mathbb{F}$ גם $\alpha v$ הוא פתרון.*
+ב.  *קבוצת הפתרונות סגורה לכפל בסקלר, כלומר לכל פתרון $v\in\mathbb{F}^n$ ולכל $\alpha\in\mathbb{F}$ גם $\alpha v$ הוא פתרון.*
 :::
 
 ::: proof
 יהיו $v,w\in\mathbb{F}^n$ פתרונות של הממ\"ל.
 
-1.  לפי טענה -@prp-matrix-vector מתקיים $$.A(v+w)=Av+Aw=0+0=0.$$ כלומר $v+w$ הוא פתרון של הממ\"ל.
+א.  לפי טענה -@prp-matrix-vector מתקיים $$.A(v+w)=Av+Aw=0+0=0.$$ כלומר $v+w$ הוא פתרון של הממ\"ל.
 
-2.  שוב, לפי טענה -@prp-matrix-vector לכל $\alpha\in\mathbb{F}$ מתקיים
+ב.  שוב, לפי טענה -@prp-matrix-vector לכל $\alpha\in\mathbb{F}$ מתקיים
 
     $$.A(\alpha v)=\alpha Av=\alpha\cdot 0=0.$$ כלומר $\alpha v$ הוא פתרון של הממ\"ל.
 
@@ -606,7 +606,7 @@ $$.x=v_0+y\in\Set{x_0+y|y\in\mathbb{F}^n,Ay=0}.$$ ◻
 ::: example
  
 
-1.  עבור $A=\begin{pmatrix}
+א.  עבור $A=\begin{pmatrix}
     2 & 3 \\
     1 & 4
     \end{pmatrix},B=
@@ -643,7 +643,7 @@ $$.x=v_0+y\in\Set{x_0+y|y\in\mathbb{F}^n,Ay=0}.$$ ◻
     22 & 53
     \end{pmatrix}$$ אז במקרה זה $AB\neq BA$.
 
-2.  עבור $C=\begin{pmatrix}
+ב.  עבור $C=\begin{pmatrix}
     1 & 2 & 3 \\
     4 & 5 & 6
     \end{pmatrix},\quad D=
@@ -664,7 +664,7 @@ $$.x=v_0+y\in\Set{x_0+y|y\in\mathbb{F}^n,Ay=0}.$$ ◻
     \end{pmatrix}
     \end{aligned}$$
 
-3.  עבור $E=\begin{pmatrix}
+ג.  עבור $E=\begin{pmatrix}
     1+i & 2 \\
     3 & 4-i
     \end{pmatrix}, \quad
@@ -687,7 +687,7 @@ $$.x=v_0+y\in\Set{x_0+y|y\in\mathbb{F}^n,Ay=0}.$$ ◻
     \end{pmatrix}
     \end{aligned}$$
 
-4.  המכפלה $$\begin{pmatrix}
+ד.  המכפלה $$\begin{pmatrix}
     2 &3 &1 \\
     0 &-1 &-2
     \end{pmatrix}
@@ -698,7 +698,7 @@ $$.x=v_0+y\in\Set{x_0+y|y\in\mathbb{F}^n,Ay=0}.$$ ◻
 
     אינה מוגדרת, כי מספר העמודות של המטריצה השמאלית $(3)$ שונה ממספר השורות של המטריצה הימנית $(2)$.
 
-5.  נסתכל על דוגמה שיש לה קשר לתורת הגרפים (שחורגת מהקורס). גרף הוא קבוצת קודקודים שחלקם מחוברים ביניהם ע\"י צלעות. לדוגמה:
+ה.  נסתכל על דוגמה שיש לה קשר לתורת הגרפים (שחורגת מהקורס). גרף הוא קבוצת קודקודים שחלקם מחוברים ביניהם ע\"י צלעות. לדוגמה:
 
     ![ריבוע עם אחד מאלכסוניו](images/Adjacency.png){#fig-Adjacency width="40%" fig-align="center"}
 
@@ -794,15 +794,15 @@ $$.(AB)_{ij}=\sum_{l=1}^k (A)_{il}(B)_{lj}=\sum_{l=1}^k A_{il}b_{lj}=(Av_j)_i.$$
 ::: {.proposition #prp-matrix-multiplication}
 *יהיו $A_1,A_2\in\mathbb{M}_{m\times n}(\mathbb{F})$, $B_1,B_2\in\mathbb{M}_{n\times p}(\mathbb{F})$, $C\in\mathbb{M}_{p\times q}(\mathbb{F})$ ו- $\alpha\in\mathbb{F}$. אז מתקיים*
 
-1.  *$$(A_1+A_2)B_1=A_1B_1+A_2B_1$$*
+א.  *$$(A_1+A_2)B_1=A_1B_1+A_2B_1$$*
 
-2.  *$$A_1(B_1+B_2)=A_1B_1+A_1B_2$$*
+ב.  *$$A_1(B_1+B_2)=A_1B_1+A_1B_2$$*
 
-3.  *$$A_1(B_1C)=(A_1B_1)C$$*
+ג.  *$$A_1(B_1C)=(A_1B_1)C$$*
 
-4.  *$$(\alpha A_1)B_1=\alpha(A_1B_1)=A_1(\alpha B_1)$$*
+ד.  *$$(\alpha A_1)B_1=\alpha(A_1B_1)=A_1(\alpha B_1)$$*
 
-5.  *$$\mathbf{0}_{m\times n} B_1=\mathbf{0}_{m\times p}=A_1\mathbf{0}_{n\times p}$$*
+ה.  *$$\mathbf{0}_{m\times n} B_1=\mathbf{0}_{m\times p}=A_1\mathbf{0}_{n\times p}$$*
 :::
 
 ::: proof
@@ -845,17 +845,17 @@ $$\begin{aligned}
 ::: example
  
 
-1.  $$I_1=\begin{pmatrix}1\end{pmatrix}$$
+א.  $$I_1=\begin{pmatrix}1\end{pmatrix}$$
 
     זהו בעצם הסקלר $1$, עם הבדל פורמלי של סוגריים.
 
-2.  $$I_2=
+ב.  $$I_2=
     \begin{pmatrix}
     1 &0 \\
     0 &1
     \end{pmatrix}$$
 
-3.  $$I_3=
+ג.  $$I_3=
     \begin{pmatrix}
     1 &0 &0 \\
     0 &1 &0 \\
@@ -904,14 +904,14 @@ $A^t$ זה סימון מיוחד, לא סימון חזקה. כאן $t$ זה מל
 ::: example
  
 
-1.  עבור וקטור שורה $v=(\alpha_1,\alpha_2,...,\alpha_n)$ נקבל $$.v^t=\begin{pmatrix}
+א.  עבור וקטור שורה $v=(\alpha_1,\alpha_2,...,\alpha_n)$ נקבל $$.v^t=\begin{pmatrix}
     \alpha_1\\
     \alpha_2\\
     \vdots \\
     \alpha_n
     \end{pmatrix}$$
 
-2.  עבור $$A=\begin{pmatrix}
+ב.  עבור $$A=\begin{pmatrix}
     a &b\\
     c & d
     \end{pmatrix}$$ נקבל $$.A^t=\begin{pmatrix}
@@ -919,7 +919,7 @@ $A^t$ זה סימון מיוחד, לא סימון חזקה. כאן $t$ זה מל
     b & d
     \end{pmatrix}$$
 
-3.  עבור $$B=\begin{pmatrix}
+ג.  עבור $$B=\begin{pmatrix}
     1 &2\\
     3 & 4\\
     5 & 6
@@ -932,25 +932,25 @@ $A^t$ זה סימון מיוחד, לא סימון חזקה. כאן $t$ זה מל
 ::: {.proposition #prp-transpose}
 *לכל $A,B\in\mathbb{M}_{m\times n}(\mathbb{F}), C\in\mathbb{M}_{n\times k}(\mathbb{F})$ ולכל $\alpha\in\mathbb{F}$ מתקיים:*
 
-1.  *$$(A^t)^t=A$$*
+א.  *$$(A^t)^t=A$$*
 
-2.  *$$(A+B)^t=A^t+B^t$$*
+ב.  *$$(A+B)^t=A^t+B^t$$*
 
-3.  *$$(\alpha A)^t=\alpha A^t$$*
+ג.  *$$(\alpha A)^t=\alpha A^t$$*
 
-4.  *$$(AC)^t=C^tA^t$$*
+ד.  *$$(AC)^t=C^tA^t$$*
 :::
 
 ::: proof
 נראה שוויון בין האיברים הכלליים של המטריצות בשני האגפים של כל סעיף.
 
-1.  שתי המטריצות מסדר $m\times n$ ולכל $1\leq i\leq m, 1\leq j\leq n$ מתקיים $$.((A^t)^t)_{ij}=(A^t)_{ji}=(A)_{ij}.$$
+א.  שתי המטריצות מסדר $m\times n$ ולכל $1\leq i\leq m, 1\leq j\leq n$ מתקיים $$.((A^t)^t)_{ij}=(A^t)_{ji}=(A)_{ij}.$$
 
-2.  שתי המטריצות מסדר $n\times m$ ולכל $1\leq i\leq n, 1\leq j\leq m$ מתקיים $$.(A+B)^t_{ij}=(A+B)_{ji}=(A)_{ji}+(B)_{ji}=(A^t)_{ij}+(B^t)_{ij}=(A^t+B^t)_{ij}.$$
+ב.  שתי המטריצות מסדר $n\times m$ ולכל $1\leq i\leq n, 1\leq j\leq m$ מתקיים $$.(A+B)^t_{ij}=(A+B)_{ji}=(A)_{ji}+(B)_{ji}=(A^t)_{ij}+(B^t)_{ij}=(A^t+B^t)_{ij}.$$
 
-3.  שתי המטריצות מסדר $n\times m$ ולכל $1\leq i\leq n, 1\leq j\leq m$ מתקיים $$.((\alpha A)^t)_{ij}=(\alpha A)_{ji}=\alpha (A)_{ji}=\alpha (A^t)_{ij}=(\alpha A^t)_{ij}$$
+ג.  שתי המטריצות מסדר $n\times m$ ולכל $1\leq i\leq n, 1\leq j\leq m$ מתקיים $$.((\alpha A)^t)_{ij}=(\alpha A)_{ji}=\alpha (A)_{ji}=\alpha (A^t)_{ij}=(\alpha A^t)_{ij}$$
 
-4.  כאן $AC$ מסדר $m\times k$ ולכן $(AC)^t$ מסדר $k\times m$. באופן דומה, $C^t$ מסדר $k\times n$ ו- $A^t$ מסדר $n\times m$. אז גם $C^tA^t$ מסדר $k\times m$, ולכל $1\leq i\leq k, 1\leq j\leq m$ מתקיים: $$\begin{aligned}
+ד.  כאן $AC$ מסדר $m\times k$ ולכן $(AC)^t$ מסדר $k\times m$. באופן דומה, $C^t$ מסדר $k\times n$ ו- $A^t$ מסדר $n\times m$. אז גם $C^tA^t$ מסדר $k\times m$, ולכל $1\leq i\leq k, 1\leq j\leq m$ מתקיים: $$\begin{aligned}
     &((AC)^t)_{ij}=(AC)_{ji}=\sum_{l=1}^n (A)_{jl}(C)_{li}=\sum_{l=1}^n (A^t)_{lj}(C^t)_{il}=\sum_{l=1}^n (C^t)_{il}(A^t)_{lj} \\
     &=(C^tA^t)_{ij}
     \end{aligned}$$ לקראת הסוף השתמשנו בחוק החילוף כדי להתאים את סדר הכפל בתוך הסכום לתבנית של $C^tA^t$.
@@ -1196,15 +1196,15 @@ $$B\cdot B=B\cdot 0 \nRightarrow B=0$$
 
 ::: definition
 
-1.  $A$ נקראת סימטרית אם מתקיים $A^t=A$, או באופן שקול: $$\forall 1\leq i,j\leq n \quad (A)_{ji}=(A)_{ij}$$
+א.  $A$ נקראת סימטרית אם מתקיים $A^t=A$, או באופן שקול: $$\forall 1\leq i,j\leq n \quad (A)_{ji}=(A)_{ij}$$
 
-2.  $A$ נקראת אנטי-סימטרית אם מתקיים $A^t=-A$, או באופן שקול: $$\forall 1\leq i,j\leq n \quad (A)_{ji}=-(A)_{ij}$$
+ב.  $A$ נקראת אנטי-סימטרית אם מתקיים $A^t=-A$, או באופן שקול: $$\forall 1\leq i,j\leq n \quad (A)_{ji}=-(A)_{ij}$$
 :::
 
 ::: example
  
 
-1.  המטריצות הבאות הן סימטריות: $$\begin{pmatrix}
+א.  המטריצות הבאות הן סימטריות: $$\begin{pmatrix}
     1 &2\\
     2 &3
     \end{pmatrix}, \begin{pmatrix}
@@ -1213,7 +1213,7 @@ $$B\cdot B=B\cdot 0 \nRightarrow B=0$$
     0 &-1 &5
     \end{pmatrix}$$
 
-2.  המטריצות הבאות הן אנטי-סימטריות: $$\begin{pmatrix}
+ב.  המטריצות הבאות הן אנטי-סימטריות: $$\begin{pmatrix}
     0 &1\\
     -1 &0
     \end{pmatrix}, \begin{pmatrix}
@@ -1226,25 +1226,25 @@ $$B\cdot B=B\cdot 0 \nRightarrow B=0$$
 ::: {.proposition #prp-sym-antisym}
 תהי $P\in\mathbb{M}_{n\times n}(\mathbb{F})$ מטריצה ריבועית.
 
-1.  *אם $P$ אנטי-סימטרית, אז כל איבריה על האלכסון הראשי שווים ל- $0$.*
+א.  *אם $P$ אנטי-סימטרית, אז כל איבריה על האלכסון הראשי שווים ל- $0$.*
 
-2.  *אם $P$ סימטרית וגם אנטי-סימטרית, אז $P=0$.*
+ב.  *אם $P$ סימטרית וגם אנטי-סימטרית, אז $P=0$.*
 
-3.  *לכל $B\in\mathbb{M}_{n\times n}(\mathbb{F})$ קיימות $S\in\mathbb{M}_{n\times n}(\mathbb{F})$ סימטרית ו- $A\in\mathbb{M}_{n\times n}(\mathbb{F})$ אנטי-סימטרית כך שמתקיים $B=S+A$.*
+ג.  *לכל $B\in\mathbb{M}_{n\times n}(\mathbb{F})$ קיימות $S\in\mathbb{M}_{n\times n}(\mathbb{F})$ סימטרית ו- $A\in\mathbb{M}_{n\times n}(\mathbb{F})$ אנטי-סימטרית כך שמתקיים $B=S+A$.*
 :::
 
 ::: proof
 
 
-1.  $$\forall 1\leq i\leq n\quad(P)_{ii}=-(P)_{ii} \implies (P)_{ii}=0$$ כלומר יש רק אפסים על האלכסון הראשי של $P$.
+א.  $$\forall 1\leq i\leq n\quad(P)_{ii}=-(P)_{ii} \implies (P)_{ii}=0$$ כלומר יש רק אפסים על האלכסון הראשי של $P$.
 
-2.  מצד אחד $P^t=P$ ומצד שני $.P^t=-P$ לכן
+ב.  מצד אחד $P^t=P$ ומצד שני $.P^t=-P$ לכן
 
     $$P=-P \implies P+P=-P+P \implies 2P=0 \implies P=0$$
 
     למעשה, השתמשנו באלגברה רגילה כדי לקבל $P=0$ כמו עבור משוואה במשתנה סקלרי. מותר לחלק בסקלר $2$, שזה כמו להכפיל בסקלר $\frac{1}{2}$.
 
-3.  ניקח $$.S=\frac{1}{2}(B+B^t), \quad A=\frac{1}{2}(B-B^t)$$ אז לפי טענה -@prp-transpose מתקיים $$\begin{aligned}
+ג.  ניקח $$.S=\frac{1}{2}(B+B^t), \quad A=\frac{1}{2}(B-B^t)$$ אז לפי טענה -@prp-transpose מתקיים $$\begin{aligned}
     S^t&=\frac{1}{2}(B+B^t)^t=\frac{1}{2}(B^t+B)=S \\
     A^t&=\frac{1}{2}(B-B^t)^t=\frac{1}{2}(B^t-B)=-A \\
     B&=\frac{1}{2}(B+B^t)+\frac{1}{2}(B-B^t)=S+A
@@ -1326,18 +1326,18 @@ $$AB=\begin{pmatrix}
 ::: exercise
  
 
-1.  לכל $A,B\in\mathbb{M}_{n\times n}(\mathbb{F})$ סימטריות ולכל $\alpha\in\mathbb{F}$ מתקיים שהמטריצות $A+B,\alpha A$ הן סימטריות.
+א.  לכל $A,B\in\mathbb{M}_{n\times n}(\mathbb{F})$ סימטריות ולכל $\alpha\in\mathbb{F}$ מתקיים שהמטריצות $A+B,\alpha A$ הן סימטריות.
 
-2.  לכל $A,B\in\mathbb{M}_{n\times n}(\mathbb{F})$ אנטי-סימטריות ולכל $\alpha\in\mathbb{F}$ מתקיים שהמטריצות $A+B,\alpha A$ הן אנטי-סימטריות.
+ב.  לכל $A,B\in\mathbb{M}_{n\times n}(\mathbb{F})$ אנטי-סימטריות ולכל $\alpha\in\mathbb{F}$ מתקיים שהמטריצות $A+B,\alpha A$ הן אנטי-סימטריות.
 :::
 
 ::: {.callout-note collapse="true" title="פתרון"}
-1.  לכל $A,B\in\mathbb{M}_{n\times n}(\mathbb{F})$ סימטריות ולכל $\alpha\in\mathbb{F}$ נקבל לפי טענה -@prp-transpose $$\begin{aligned}
+א.  לכל $A,B\in\mathbb{M}_{n\times n}(\mathbb{F})$ סימטריות ולכל $\alpha\in\mathbb{F}$ נקבל לפי טענה -@prp-transpose $$\begin{aligned}
     (A+B)^t&=A^t+B^t=A+B \\
     (\alpha A)^t&=\alpha A^t=\alpha A
     \end{aligned}$$ ולכן אלו מטריצות סימטריות.
 
-2.  הפעם נקבל
+ב.  הפעם נקבל
 
     $$\begin{aligned}
     (A+B)^t&=A^t+B^t=-A-B=-(A+B) \\
@@ -1350,17 +1350,17 @@ $$AB=\begin{pmatrix}
 ::: definition
 מטריצה $A\in\mathbb{M}_{n\times n}(\mathbb{F})$ נקראת:
 
-1.  אלכסונית אם לכל $i\neq j$ מתקיים $(A)_{ij}=0$, כלומר כל האיברים מחוץ לאלכסון הראשי שווים ל- $0$.
+א.  אלכסונית אם לכל $i\neq j$ מתקיים $(A)_{ij}=0$, כלומר כל האיברים מחוץ לאלכסון הראשי שווים ל- $0$.
 
-2.  משולשית עליונה אם לכל $i>j$ מתקיים $(A)_{ij}=0$, כלומר כל האיברים מתחת לאלכסון הראשי שווים ל- $0$.
+ב.  משולשית עליונה אם לכל $i>j$ מתקיים $(A)_{ij}=0$, כלומר כל האיברים מתחת לאלכסון הראשי שווים ל- $0$.
 
-3.  משולשית תחתונה אם לכל $i<j$ מתקיים $(A)_{ij}=0$, כלומר כל האיברים מעל לאלכסון הראשי שווים ל- $0$.
+ג.  משולשית תחתונה אם לכל $i<j$ מתקיים $(A)_{ij}=0$, כלומר כל האיברים מעל לאלכסון הראשי שווים ל- $0$.
 :::
 
 ::: example
  
 
-1.  המטריצות הבאות הן אלכסוניות: $$\begin{pmatrix}
+א.  המטריצות הבאות הן אלכסוניות: $$\begin{pmatrix}
     1 &0 \\
     0 &2
     \end{pmatrix}, \begin{pmatrix}
@@ -1374,7 +1374,7 @@ $$AB=\begin{pmatrix}
     0 &0 &0 &0
     \end{pmatrix}$$
 
-2.  המטריצות הבאות הן משולשיות עליונות: $$\begin{pmatrix}
+ב.  המטריצות הבאות הן משולשיות עליונות: $$\begin{pmatrix}
     1 &3 \\
     0 &2
     \end{pmatrix}, \begin{pmatrix}
@@ -1388,7 +1388,7 @@ $$AB=\begin{pmatrix}
     0 &0 &0 &0
     \end{pmatrix}$$
 
-3.  המטריצות הבאות הן משולשיות תחתונות: $$\begin{pmatrix}
+ג.  המטריצות הבאות הן משולשיות תחתונות: $$\begin{pmatrix}
     1 &0 \\
     -4 &2
     \end{pmatrix}, \begin{pmatrix}
@@ -1406,34 +1406,34 @@ $$AB=\begin{pmatrix}
 ::: remark
 נשים לב שלפי ההגדרות, לכל $A$ ריבועית מתקיים:
 
-1.  $A$ משולשית עליונה וגם משולשית תחתונה $\iff$ $A$ אלכסונית.
+א.  $A$ משולשית עליונה וגם משולשית תחתונה $\iff$ $A$ אלכסונית.
 
-2.  $A$ משולשית עליונה $\iff$ $A^t$ משולשית תחתונה.
+ב.  $A$ משולשית עליונה $\iff$ $A^t$ משולשית תחתונה.
 
-3.  $A$ משולשית תחתונה $\iff$ $A^t$ משולשית עליונה.
+ג.  $A$ משולשית תחתונה $\iff$ $A^t$ משולשית עליונה.
 :::
 
 ::: proposition
  *יהיו $A,B\in\mathbb{M}_{n\times n}(\mathbb{F})$.*
 
-1.  *אם $A,B$ משולשיות עליונות, אז $AB$ גם משולשית עליונה.*
+א.  *אם $A,B$ משולשיות עליונות, אז $AB$ גם משולשית עליונה.*
 
-2.  *אם $A,B$ משולשיות תחתונות, אז $AB$ גם משולשית תחתונה.*
+ב.  *אם $A,B$ משולשיות תחתונות, אז $AB$ גם משולשית תחתונה.*
 
-3.  *אם $A,B$ אלכסוניות, אז $AB$ גם אלכסונית.*
+ג.  *אם $A,B$ אלכסוניות, אז $AB$ גם אלכסונית.*
 :::
 
 ::: proof
 
-1.  לכל $j<i$ נסתכל על האיבר הכללי של המכפלה:
+א.  לכל $j<i$ נסתכל על האיבר הכללי של המכפלה:
 
     $$(AB)_{ij}=\sum_{l=1}^n (A)_{il}(B)_{lj}$$
 
     עבור $l< i$ מתקיים $(A)_{il}=0$ כי $A$ משולשית עליונה. אז $i-1$ המכפלות הראשונות בסכום מתאפסות. עבור $l\geq i>j$ מתקיים $(B)_{lj}=0$ כי $B$ משולשית עליונה. אז גם המכפלות הנותרות בסכום מתאפסות, ולכן $(AB)_{ij}=0$ כנדרש.
 
-2.  אפשר לחקות את ההוכחה של הסעיף הקודם, אבל יש קיצור דרך: אם $A,B$ משולשיות תחתונות, אז $A^t,B^t$ משולשיות עליונות. לפי הסעיף הקודם, נובע כי $B^tA^t=(AB)^t$ משולשית עליונה ולכן $AB$ משולשית תחתונה.
+ב.  אפשר לחקות את ההוכחה של הסעיף הקודם, אבל יש קיצור דרך: אם $A,B$ משולשיות תחתונות, אז $A^t,B^t$ משולשיות עליונות. לפי הסעיף הקודם, נובע כי $B^tA^t=(AB)^t$ משולשית עליונה ולכן $AB$ משולשית תחתונה.
 
-3.  שוב אפשר להשתמש בסעיפים הקודמים. אם $A,B$ אלכסוניות, אז הן גם משולשיות עליונות וגם משולשיות תחתונות. לכן, לפי הסעיפים הקודמים $AB$ גם משולשית עליונה וגם משולשית תחתונה, כלומר היא אלכסונית.
+ג.  שוב אפשר להשתמש בסעיפים הקודמים. אם $A,B$ אלכסוניות, אז הן גם משולשיות עליונות וגם משולשיות תחתונות. לכן, לפי הסעיפים הקודמים $AB$ גם משולשית עליונה וגם משולשית תחתונה, כלומר היא אלכסונית.
 
  ◻
 :::
@@ -1518,7 +1518,7 @@ $$.BA=B(\alpha I_n)=\alpha(BI_n)=\alpha B.$$
 ::: example
  
 
-1.  המטריצות הבאות הן אלמנטריות כי הן מתאימות להחלפה בין שורות של מטריצת יחידה:
+א.  המטריצות הבאות הן אלמנטריות כי הן מתאימות להחלפה בין שורות של מטריצת יחידה:
 
     $$\begin{aligned}
     S=(R_1\leftrightarrow R_2) \implies S(I_2)&=\begin{pmatrix}
@@ -1538,7 +1538,7 @@ $$.BA=B(\alpha I_n)=\alpha(BI_n)=\alpha B.$$
     \end{pmatrix}
     \end{aligned}$$
 
-2.  המטריצות הבאות הן אלמנטריות כי הן מתאימות לכפל בסקלר של שורה אחת של מטריצת יחידה:
+ב.  המטריצות הבאות הן אלמנטריות כי הן מתאימות לכפל בסקלר של שורה אחת של מטריצת יחידה:
 
     $$\begin{aligned}
     S=(2R_1\to R_1)\implies S(I_2)&=\begin{pmatrix}
@@ -1558,7 +1558,7 @@ $$.BA=B(\alpha I_n)=\alpha(BI_n)=\alpha B.$$
     \end{pmatrix}
     \end{aligned}$$
 
-3.  המטריצות הבאות הן אלמנטריות כי הן מתאימות להוספת כפולה בסקלר של שורה אחת לשורה אחרת במטריצת יחידה:
+ג.  המטריצות הבאות הן אלמנטריות כי הן מתאימות להוספת כפולה בסקלר של שורה אחת לשורה אחרת במטריצת יחידה:
 
     $$\begin{aligned}
     S=(R_2+2R_1\to R_2)\implies S(I_2)&=\begin{pmatrix}
@@ -1578,7 +1578,7 @@ $$.BA=B(\alpha I_n)=\alpha(BI_n)=\alpha B.$$
     \end{pmatrix}
     \end{aligned}$$
 
-4.  המטריצות הבאות [אינן]{.underline} אלמנטריות כי הן מתקבלות ממטריצת יחידה ע\"י יותר מפש\"א אחת:
+ד.  המטריצות הבאות [אינן]{.underline} אלמנטריות כי הן מתקבלות ממטריצת יחידה ע\"י יותר מפש\"א אחת:
 
     $$\begin{pmatrix}
     2 & 0\\
@@ -1604,7 +1604,7 @@ $$.BA=B(\alpha I_n)=\alpha(BI_n)=\alpha B.$$
 ::: example
  
 
-1.  $$\begin{pmatrix}
+א.  $$\begin{pmatrix}
     0 &0 &1 \\
     0 & 1 &0 \\
     1 &0 &0
@@ -1618,7 +1618,7 @@ $$.BA=B(\alpha I_n)=\alpha(BI_n)=\alpha B.$$
     a &b &c 
     \end{pmatrix}$$
 
-2.  $$\begin{pmatrix}
+ב.  $$\begin{pmatrix}
     1 &0 &0 \\
     0 & 3 &0 \\
     0 &0 &1
@@ -1632,7 +1632,7 @@ $$.BA=B(\alpha I_n)=\alpha(BI_n)=\alpha B.$$
     g &h &r
     \end{pmatrix}$$
 
-3.  $$\begin{pmatrix}
+ג.  $$\begin{pmatrix}
     1 &0 &0 \\
     3 & 1 &0 \\
     0 &0 &1
@@ -1650,13 +1650,13 @@ $$.BA=B(\alpha I_n)=\alpha(BI_n)=\alpha B.$$
 ::: proof
 נסמן $E=S(I_m)$ עם איברים $e_{ij}=(E)_{ij}$. נראה ש- $EA$ מתקבלת מ- $A$ בדיוק ע\"י הפעלת $S$ על שורות $A$. נחלק לשלושה מקרים:
 
-1.  $S=(R_i\leftrightarrow R_j)$
+א.  $S=(R_i\leftrightarrow R_j)$
 
     $E$ מזכירה את מטריצת היחידה, אבל יש ארבעה הבדלים: $$e_{ii}=e_{jj}=0, \quad e_{ij}=e_{ji}=1$$
 
     נחשב: $$(EA)_{rk} = \sum_{l=1}^m e_{rl} a_{lk}.$$ אם $r \notin \{i,j\}$, אז $e_{rk}$ הוא בדיוק כמו במטריצת היחידה: $1$ עבור $r=k$, אחרת $0$. לכן השורה ה- $r$ נשארת כפי שהיא. לעומת זאת, אם $r=i$ נקבל $(EA)_{ik} = a_{jk}$. אם $r=j$ נקבל $(EA)_{jk} = a_{ik}$. כלומר החלפנו בין השורות ה- $i,j$ של $A$, ולכן קיבלנו את $S(A)$.
 
-2.  $S=(\alpha R_i\to R_i)$ עבור $\alpha\neq 0$.
+ב.  $S=(\alpha R_i\to R_i)$ עבור $\alpha\neq 0$.
 
     כאן $E$ היא כמעט כמו מטריצת היחידה, עם הבדל אחד: $.e_{ii} = \alpha$
 
@@ -1668,7 +1668,7 @@ $$.BA=B(\alpha I_n)=\alpha(BI_n)=\alpha B.$$
     \alpha a_{ik}, & r = i
     \end{cases}$$ כלומר השורה ה- $i$ של $A$ הוכפלה ב־ $\alpha$ ושאר השורות לא השתנו. קיבלנו את $S(A)$.
 
-3.  $S=(R_i+\alpha R_j\to R_i)$ עבור $i\neq j$. כאן $$,E = I_m + \alpha P(i,j)$$ כאשר $P(i,j)$ היא המטריצה שכל ערכיה הם $0$ פרט ל- $(P(i,j))_{ij}=1$. נחשב: $$.EA = (I_m + \alpha P(i,j))A = A + \alpha (P(i,j)A)$$ אבל $$(P(i,j)A)_{rk} = \sum_{l=1}^m (P(i,j))_{rl} a_{lk} = \begin{cases}
+ג.  $S=(R_i+\alpha R_j\to R_i)$ עבור $i\neq j$. כאן $$,E = I_m + \alpha P(i,j)$$ כאשר $P(i,j)$ היא המטריצה שכל ערכיה הם $0$ פרט ל- $(P(i,j))_{ij}=1$. נחשב: $$.EA = (I_m + \alpha P(i,j))A = A + \alpha (P(i,j)A)$$ אבל $$(P(i,j)A)_{rk} = \sum_{l=1}^m (P(i,j))_{rl} a_{lk} = \begin{cases}
     0, & r \neq i\\
     a_{jk}, & r = i
     \end{cases}$$ ולכן $$(EA)_{rk} =
@@ -1898,15 +1898,15 @@ $$.EA=
 ::: {.proposition #prp-RREF}
 *אם $A'\in\mathbb{M}_{n\times n}(\mathbb{F})$ מדורגת קנונית, אז התנאים הבאים שקולים:*
 
-1.  *$.A'=I_n$*
+א.  *$.A'=I_n$*
 
-2.  *$.\mathop{\mathrm{rank}}(A')=n$*
+ב.  *$.\mathop{\mathrm{rank}}(A')=n$*
 
-3.  *לממ\"ל $A'x=0$ יש פתרון יחיד.*
+ג.  *לממ\"ל $A'x=0$ יש פתרון יחיד.*
 
-4.  *לכל $b'\in\mathbb{F}^n$ יש פתרון יחיד לממ\"ל $A'x=b'$.*
+ד.  *לכל $b'\in\mathbb{F}^n$ יש פתרון יחיד לממ\"ל $A'x=b'$.*
 
-5.  *לכל $b'\in\mathbb{F}^n$ יש פתרון לממ\"ל $A'x=b'$.*
+ה.  *לכל $b'\in\mathbb{F}^n$ יש פתרון לממ\"ל $A'x=b'$.*
 :::
 
 ::: proof
@@ -2079,25 +2079,25 @@ x_n
 ::: {.exercise #exr-inverse-product}
 יהיו $A,B\in\mathbb{M}_{n\times n}(\mathbb{F})$ הפיכות ו- $0\neq \alpha\in\mathbb{F}$. אז מתקיים:
 
-1.  $A^{-1}$ הפיכה ומתקיים $$.(A^{-1})^{-1}=A.$$
+א.  $A^{-1}$ הפיכה ומתקיים $$.(A^{-1})^{-1}=A.$$
 
-2.  $\alpha A$ הפיכה ומתקיים $$.(\alpha A)^{-1}=\frac{1}{\alpha}A^{-1}.$$
+ב.  $\alpha A$ הפיכה ומתקיים $$.(\alpha A)^{-1}=\frac{1}{\alpha}A^{-1}.$$
 
-3.  $AB$ הפיכה ומתקיים $$.(AB)^{-1}=B^{-1}A^{-1}.$$
+ג.  $AB$ הפיכה ומתקיים $$.(AB)^{-1}=B^{-1}A^{-1}.$$
 
-4.  $A^t$ הפיכה ומתקיים $$.(A^t)^{-1}=(A^{-1})^t.$$
+ד.  $A^t$ הפיכה ומתקיים $$.(A^t)^{-1}=(A^{-1})^t.$$
 :::
 
 ::: {.callout-note collapse="true" title="פתרון"}
  בכל סעיף נחשב את אחת משתי המכפלות ונראה שהיא שווה ל- $I_n$.
 
-1.  בהינתן $AA^{-1}=A^{-1}A=I_n$ נובע כי גם $A^{-1}$ הפיכה וההופכית שלה היא $A$.
+א.  בהינתן $AA^{-1}=A^{-1}A=I_n$ נובע כי גם $A^{-1}$ הפיכה וההופכית שלה היא $A$.
 
-2.  מתקיים $$.(\frac{1}{\alpha}A^{-1})(\alpha A)=(\frac{1}{\alpha}\alpha)A^{-1}A=1\cdot I_n=I_n$$ לכן $\alpha A$ הפיכה ומתקיים $.(\alpha A)^{-1}=\frac{1}{\alpha}A^{-1}$
+ב.  מתקיים $$.(\frac{1}{\alpha}A^{-1})(\alpha A)=(\frac{1}{\alpha}\alpha)A^{-1}A=1\cdot I_n=I_n$$ לכן $\alpha A$ הפיכה ומתקיים $.(\alpha A)^{-1}=\frac{1}{\alpha}A^{-1}$
 
-3.  מתקיים $$.(AB)(B^{-1}A^{-1})=A(BB^{-1})A^{-1}=A(I_nA^{-1})=AA^{-1}=I_n$$ לכן $AB$ הפיכה ומתקיים $(AB)^{-1}=B^{-1}A^{-1}$.
+ג.  מתקיים $$.(AB)(B^{-1}A^{-1})=A(BB^{-1})A^{-1}=A(I_nA^{-1})=AA^{-1}=I_n$$ לכן $AB$ הפיכה ומתקיים $(AB)^{-1}=B^{-1}A^{-1}$.
 
-4.  מתקיים $$.A^t(A^{-1})^t=(A^{-1}A)^t=I_n^t=I_n$$
+ד.  מתקיים $$.A^t(A^{-1})^t=(A^{-1}A)^t=I_n^t=I_n$$
 
     לכן $A^t$ הפיכה ומתקיים $.(A^t)^{-1}=(A^{-1})^t$
 :::
@@ -2115,16 +2115,16 @@ x_n
 הבנו שכל מטריצה $A\in\mathbb{M}_{n\times n}(\mathbb{F})$ הפיכה שקולת שורה ל- $I_n$. יותר מכך, לפי ההוכחה של מסקנה -@cor-left יש התאמה בין $A^{-1}$ לבין הפש\"אות שמובילות ל- $I_n$ בדירוג של $A$. נחדד את נקודה זו כמסקנה נוספת:
 
 ::: {.corollary #cor-elementary-product}
-1.  *תהי $A\in\mathbb{M}_{n\times n}(\mathbb{F})$ הפיכה. אז מתקיים $$.A^{-1}=E_kE_{k-1}\cdots E_1.$$ כאשר $E_1,E_2,...,E_k$ הן המטריצות האלמנטריות המתאימות לפש\"אות $S_1,S_2,...,S_k$ בדירוג הקנוני של $A$.*
+א.  *תהי $A\in\mathbb{M}_{n\times n}(\mathbb{F})$ הפיכה. אז מתקיים $$.A^{-1}=E_kE_{k-1}\cdots E_1.$$ כאשר $E_1,E_2,...,E_k$ הן המטריצות האלמנטריות המתאימות לפש\"אות $S_1,S_2,...,S_k$ בדירוג הקנוני של $A$.*
 
-2.  *$A$ היא מכפלה של מטריצות אלמנטריות: $$.A=E_1^{-1}E_2^{-1}\cdots E_k^{-1}.$$*
+ב.  *$A$ היא מכפלה של מטריצות אלמנטריות: $$.A=E_1^{-1}E_2^{-1}\cdots E_k^{-1}.$$*
 :::
 
 ::: proof
 
-1.  זהו מקרה פרטי של מסקנה -@cor-left עבור $A'=I_n$. כאן $B=A^{-1}$.
+א.  זהו מקרה פרטי של מסקנה -@cor-left עבור $A'=I_n$. כאן $B=A^{-1}$.
 
-2.  לפי תרגיל -@exr-inverse-product הפעולה של הפיכת מטריצה הופכת את סדר המטריצות במכפלה. אפשר להבין זאת מחישוב הדרגתי:
+ב.  לפי תרגיל -@exr-inverse-product הפעולה של הפיכת מטריצה הופכת את סדר המטריצות במכפלה. אפשר להבין זאת מחישוב הדרגתי:
 
     $$\begin{aligned}
     A^{-1}&=E_kE_{k-1}\cdots E_1 \\
@@ -2147,7 +2147,7 @@ $$(A\mid I_n)\rightarrow (E_1A\mid E_1)\rightarrow (E_2E_1A\mid E_2E_1)\rightarr
 
 ::: example
 
-1.  ניקח את $$A=\begin{pmatrix}
+א.  ניקח את $$A=\begin{pmatrix}
     1 & 2 & 1 \\
     0 & 1 & 1 \\
     2 & 3 & 4 
@@ -2243,7 +2243,7 @@ $$(A\mid I_n)\rightarrow (E_1A\mid E_1)\rightarrow (E_2E_1A\mid E_2E_1)\rightarr
     -\frac{2}{3} & \frac{1}{3} & \frac{1}{3}
     \end{pmatrix}$$
 
-2.  ניקח את $$B=\begin{pmatrix}
+ב.  ניקח את $$B=\begin{pmatrix}
     1+i & 2 \\
     3 & 4-i
     \end{pmatrix}$$ ונחשב את ההופכית ע\"י דירוג קנוני של $(B \mid I_2)$:
@@ -2301,12 +2301,12 @@ $$(A\mid I_n)\rightarrow (E_1A\mid E_1)\rightarrow (E_2E_1A\mid E_2E_1)\rightarr
 ::: exercise
  
 
-1.  חשבו את $A^{-1}$ עבור $$.A=\begin{pmatrix}
+א.  חשבו את $A^{-1}$ עבור $$.A=\begin{pmatrix}
     1 & 2 \\
     3 & 4
     \end{pmatrix}$$
 
-2.  עבור $A$ הקודמת, מצאו $B\in\mathbb{M}_{2\times 2}(\mathbb{R})$ עבורה מתקיים $AB=C$ כאשר $$.C=\begin{pmatrix}
+ב.  עבור $A$ הקודמת, מצאו $B\in\mathbb{M}_{2\times 2}(\mathbb{R})$ עבורה מתקיים $AB=C$ כאשר $$.C=\begin{pmatrix}
     3 & -5 \\
     -9 & 1
     \end{pmatrix}$$
@@ -2314,7 +2314,7 @@ $$(A\mid I_n)\rightarrow (E_1A\mid E_1)\rightarrow (E_2E_1A\mid E_2E_1)\rightarr
 
 ::: {.callout-note collapse="true" title="פתרון"}
 
-1.  נדרג את $(A|I_2)$:
+א.  נדרג את $(A|I_2)$:
 
     $$\begin{aligned}
     \left(A \mid I_2\right)
@@ -2358,7 +2358,7 @@ $$(A\mid I_n)\rightarrow (E_1A\mid E_1)\rightarrow (E_2E_1A\mid E_2E_1)\rightarr
     \tfrac32 & -\tfrac12
     \end{pmatrix}$$
 
-2.  נכפיל משמאל ב- $A^{-1}$ את שני אגפי המשוואה $AB=C$ ונקבל:
+ב.  נכפיל משמאל ב- $A^{-1}$ את שני אגפי המשוואה $AB=C$ ונקבל:
 
     $$.B=A^{-1}C=\begin{pmatrix}
     -2 & 1\\
