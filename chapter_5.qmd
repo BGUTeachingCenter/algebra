@@ -1704,7 +1704,13 @@ u=\alpha_1w_1+...+\alpha_kw_k &\iff [u]_B=[\alpha_1w_1+...+\alpha_kw_k]_B \\
 :::
 
 :::: {.theorem #thm-test-by-coordinates}
-*`\label{thm:test-by-coordinates}`{=latex} יהיו $V$ מ\"ו מעל $\mathbb{F}$, $B=\Set{b_1,...,b_n}$ בסיס סדור ל- $V$, ו- $v_1,...,v_k\in V$.*
+*`\label{thm:test-by-coordinates}`{=latex} יהיו
+ $V$
+  מ\"ו מעל
+$\mathbb{F}$,
+$B=\Set{b_1,...,b_n}$
+ בסיס סדור ל-$V$,
+ו- $v_1,...,v_k\in V$.*
 
 א. *$\Set{v_1,...,v_k}$ בת\"ל ב- $V$ אם ורק אם $\Set{[v_1]_B,...,[v_k]_B}$ בת\"ל ב- $\mathbb{F}^n$.*
 
@@ -1828,7 +1834,15 @@ $$\begin{aligned}
 המסקנה הבאה היא הכללה של מסקנה -@cor-size-dim למרחבים וקטוריים כלליים:
 
 ::: {.corollary #cor-size-dim2}
- *`\label{cor:size-dim2}`{=latex} יהיו $V$ מ\"ו מעל $\mathbb{F}$, $B=\Set{b_1,...,b_n}$ בסיס ל- $V$ ו- $v_1,...,v_k\in V$.*
+ *`\label{cor:size-dim2}`{=latex} 
+ יהיו
+$V$ 
+מ\"ו
+ מעל
+$\mathbb{F}$,
+$B=\Set{b_1,...,b_n}$
+ בסיס ל-$V$
+ ו- $v_1,...,v_k\in V$.*
 
 א. *אם $\Set{v_1,...,v_k}$ בת\"ל, אז $k\leq n$.*
 
@@ -1934,7 +1948,15 @@ i & 1
 כעת נוכיח הכללה של משפט -@thm-3-for-2 (\"שלישי חינם\") למרחבים וקטוריים כלליים:
 
 :::: {.theorem #thm-3-for-2-V}
-*`\label{thm:3-for-2-V}`{=latex} יהי $V$ מ\"ו מעל $\mathbb{F}$ כך ש- $\dim(V)=n$, ותהי $S\subseteq V$. אז כל שניים מהתנאים הבאים גוררים את התנאי השלישי:*
+*`\label{thm:3-for-2-V}`{=latex} 
+יהי
+$V$
+ מ\"ו
+ מעל
+  $\mathbb{F}$
+  כך ש- $\dim(V)=n$,
+  ותהי $S\subseteq V$.
+ אז כל שניים מהתנאים הבאים גוררים את התנאי השלישי:*
 
 א. *$S$ בת\"ל.*
 
