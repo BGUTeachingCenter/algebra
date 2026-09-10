@@ -1689,7 +1689,12 @@ b_n
 :::
 
 ::: {.corollary #cor-span-coordinates}
- *`\label{cor:span-coordinates}`{=latex} יהיו $V$ מ\"ו מעל $\mathbb{F}$, $B=\Set{v_1,...,v_n}$ בסיס סדור ל- $V$, ו- $u,w_1,...,w_k\in V$. אז מתקיים $$.u\in\mathop{\mathrm{Span}}(w_1,...,w_k) \iff [u]_B\in\mathop{\mathrm{Span}}([w_1]_B,...,[w_k]_B)$$*
+ *`\label{cor:span-coordinates}`{=latex} יהי
+$V$
+ מ\"ו מעל $\mathbb{F}$,
+ ויהיו
+$B=\Set{v_1,...,v_n}$ בסיס סדור ל- $V$ ו- $u,w_1,...,w_k\in V$.
+ אז מתקיים $$.u\in\mathop{\mathrm{Span}}(w_1,...,w_k) \iff [u]_B\in\mathop{\mathrm{Span}}([w_1]_B,...,[w_k]_B)$$*
 :::
 
 ::: proof
@@ -1704,12 +1709,13 @@ u=\alpha_1w_1+...+\alpha_kw_k &\iff [u]_B=[\alpha_1w_1+...+\alpha_kw_k]_B \\
 :::
 
 :::: {.theorem #thm-test-by-coordinates}
-*`\label{thm:test-by-coordinates}`{=latex} יהיו
+*`\label{thm:test-by-coordinates}`{=latex}יהיו
  $V$
   מ\"ו מעל
 $\mathbb{F}$,
+ויהיו
 $B=\Set{b_1,...,b_n}$
- בסיס סדור ל-$V$,
+ בסיס סדור ל-$V$
 ו- $v_1,...,v_k\in V$.*
 
 א. *$\Set{v_1,...,v_k}$ בת\"ל ב- $V$ אם ורק אם $\Set{[v_1]_B,...,[v_k]_B}$ בת\"ל ב- $\mathbb{F}^n$.*
@@ -1835,11 +1841,12 @@ $$\begin{aligned}
 
 ::: {.corollary #cor-size-dim2}
  *`\label{cor:size-dim2}`{=latex} 
- יהיו
+ יהי
 $V$ 
 מ\"ו
  מעל
-$\mathbb{F}$,
+$\mathbb{F}$, 
+ויהיו
 $B=\Set{b_1,...,b_n}$
  בסיס ל-$V$
  ו- $v_1,...,v_k\in V$.*
