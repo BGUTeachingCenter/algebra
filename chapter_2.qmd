@@ -1114,7 +1114,7 @@ z=\frac{2-i}{i-1}=\frac{(2-i)(-i-1)}{2}=-\frac{3+i}{2}
 :::
 
 ::: {.proposition #prp-rank-number}
-לכל מטריצה $A$ מסדר $m\times n$ ולכל $b\in\mathbb R^n$, מספר הפתרונות לממ"ל $Ax=b$ נקבע באופן הבא:*
+לכל מטריצה $A$ מסדר $m\times n$ ולכל $b\in\mathbb R^n$, מספר הפתרונות לממ"ל $Ax=b$ נקבע באופן הבא:
 
 א. אם $\mathop{\mathrm{rank}}(A)<\mathop{\mathrm{rank}}(A|b)$, אז אין לממ\"ל פתרון.
 
