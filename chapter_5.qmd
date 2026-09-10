@@ -292,7 +292,7 @@ B=\begin{pmatrix}
 :::
 
 <figure id="fig:Span2D">
-<img src="images/Span2D.png" style="width:40.0%" />
+<img src="images/Span2D.png" style="width:60.0%" />
 <figcaption>פרישה של שני וקטורים לדוגמה במישור ע"י שני וקטורים נתונים, כאשר בכחול מסומן הישר הנפרש ע"י וקטור אחד</figcaption>
 </figure>
 
@@ -330,7 +330,7 @@ $(1,2,3,0)\in \mathbb{R}^4$ הוא צ\"ל של שלושת הוקטורים $$(1,
 :::
 
 <figure id="fig:Span3D">
-<img src="images/Span3D.png" style="width:40.0%" />
+<img src="images/Span3D.png" style="width:60.0%" />
 <figcaption>פרישה של שני וקטורים לדוגמה במרחב ע"י שלושה וקטורים נתונים, כאשר בכחול מסומן הישר הנפרש ע"י וקטור אחד ובירוק מסומן המישור הנפרש ע"י שני וקטורים</figcaption>
 </figure>
 ::: {#fig:Span3D .figure}
