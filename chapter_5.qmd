@@ -2593,17 +2593,17 @@ $$\begin{aligned}
     2 \\
     2
     \end{pmatrix}\right) \\
-    &=\Set{\begin{pmatrix}
+    &=\left\{\begin{pmatrix}
     s \\
     t \\
     -s+2t \\
     2t
-    \end{pmatrix}|s,t\in\mathbb{R}}=\Set{\begin{pmatrix}
+    \end{pmatrix}\middle|s,t\in\mathbb{R}\right\}=\left\{\begin{pmatrix}
     x \\
     y \\
     z \\
     w
-    \end{pmatrix}\in\mathbb{R}^4|\begin{aligned}z&=-x+2y\\w&=2y\end{aligned}}
+    \end{pmatrix}\in\mathbb{R}^4\middle|\begin{aligned}z&=-x+2y\\w&=2y\end{aligned}\right\}
     \end{aligned}$$
 
 לכן, לאחר העברת אגפים שוב נובע כי $W=N(A)$ עבור
