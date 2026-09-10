@@ -60,10 +60,6 @@ $$S+M=\left(
 נגדיר את קבוצת כל המטריצות מסדר $m\times n$ מעל $\mathbb{F}$ (כאשר $\mathbb{F}=\mathbb{R}$ או $\mathbb{F}=\mathbb{C}$ ) ע\"י
 
 $$
-::: definition
-נגדיר את קבוצת כל המטריצות מסדר $m\times n$ מעל $\mathbb{F}$ (כאשר $\mathbb{F}=\mathbb{R}$ או $\mathbb{F}=\mathbb{C}$ ) ע\"י
-
-$$
 .\mathbb{M}_{m\times n}(\mathbb{F})
 =
 \left\{
