@@ -218,7 +218,6 @@ $$(c A)_{ij}=c(A)_{ij}$$
 :::
 
 ::: example
-(דוגמאות נוספות)
 א.  כפל בסקלר של מטריצה מסדר $3\times 3$ מעל $\mathbb{C}$: $$\begin{aligned}
     &i\begin{pmatrix} 1 & i & 1+i \\ 
     1-i & 2i & 3 \\
