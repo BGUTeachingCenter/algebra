@@ -1709,7 +1709,7 @@ u=\alpha_1w_1+...+\alpha_kw_k &\iff [u]_B=[\alpha_1w_1+...+\alpha_kw_k]_B \\
 :::
 
 :::: {.theorem #thm-test-by-coordinates}
-*`\label{thm:test-by-coordinates}`{=latex}יהיו
+*`\label{thm:test-by-coordinates}`{=latex}יהי
  $V$
   מ\"ו מעל
 $\mathbb{F}$,
@@ -1737,7 +1737,7 @@ $B=\Set{b_1,...,b_n}$
     \end{pmatrix}
     \end{aligned}$$ לכן, $\Set{v_1,...,v_k}$ בת\"ל ב- $V$ אם ורק אם $\Set{[v_1]_B,...,[v_k]_B}$ בת\"ל ב- $\mathbb{F}^n$.
 
-ב. לפי -@cor-span-coordinates, לכל $v\in V$ מתקיים $$.v\in\mathop{\mathrm{Span}}(v_1,...,v_k) \iff [v]_B\in\mathop{\mathrm{Span}}([v_1]_B,...,[v_k]_B)$$
+ב. לפי מסקנה -@cor-span-coordinates, לכל $v\in V$ מתקיים $$.v\in\mathop{\mathrm{Span}}(v_1,...,v_k) \iff [v]_B\in\mathop{\mathrm{Span}}([v_1]_B,...,[v_k]_B)$$
 
  כל וקטור ב-$\mathbb{F}^n$ הוא מהצורה $[v]_B$, ולכן נובע כי:
 $$V=\mathop{\mathrm{Span}}(v_1,...,v_k) \iff \mathbb{F}^n=\mathop{\mathrm{Span}}([v_1]_B,...,[v_k]_B)$$
