@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>לומדת תרגול — אלגברה לינארית</title>
+
+  <!-- הגדרת MathJax לפני הטעינה -->
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [["\\(", "\\)"]], displayMath: [["$$", "$$"]] },
+      options: { skipHtmlTags: ["script", "noscript", "style", "textarea", "pre", "code"] }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js" id="MathJax-script" async></script>
+  <!-- math.js לבדיקת תשובות (שברים, שורשים, שקילות נומרית) -->
+  <script src="https://cdn.jsdelivr.net/npm/mathjs@12/lib/browser/math.min.js"></script>
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="site-head">
+      <h1>לומדת תרגול — אלגברה לינארית</h1>
+      <span id="score-badge">נפתרו 0 מתוך 0</span>
+      <p class="subtitle">
+        גרסת ניסוי (POC). התרגול רץ כולו בדפדפן — מיידי, בלי המתנה לשרת.
+        לחיצה על «שאלה חדשה» מגרילה מספרים חדשים.
+      </p>
+    </header>
+
+    <main id="questions"><!-- הכרטיסים נבנים ב-JS --></main>
+
+    <footer class="site-foot">
+      לומדה ניסיונית · תרגול STACK בצד הלקוח · אלגברה לינארית
+    </footer>
+  </div>
+
+  <!-- מנוע SCORM (no-op כשאין LMS), פרסור, שאלות, ובקר -->
+  <script src="assets/js/scorm.js"></script>
+  <script src="assets/js/parse.js"></script>
+  <script src="assets/js/questions.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
