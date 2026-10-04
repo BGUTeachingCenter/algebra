@@ -717,7 +717,7 @@ $(\text{א})\impliedby(\text{ג})+(\text{ב})$: לפי ההנחות מתקיים
 כעת נראה שבמקרה הפרטי של העתקות לינאריות המוגדרות ע\"י מטריצות, ההרכבה (אם היא מוגדרת) מתאימה לכפל מטריצות.
 
 ::: {.proposition #prp-homeo}
-*יהיו $A\in\mathbb{M}_{m\times n}(\mathbb{F}),B\in\mathbb{M}_{n\times k}(\mathbb{F})$. עבור $T_A:\mathbb{F}^n\to\mathbb{F}^m,T_B:\mathbb{F}^k\to\mathbb{F}^n$ ההרכבה $T_B\circ T_A:\mathbb{F}^k\to\mathbb{F}^m$ מוגדרת ומתקיים $$.T_A\circ T_B=T_{AB}$$*
+*יהיו $A\in\mathbb{M}_{m\times n}(\mathbb{F}),B\in\mathbb{M}_{n\times k}(\mathbb{F})$. עבור $T_A:\mathbb{F}^n\to\mathbb{F}^m,T_B:\mathbb{F}^k\to\mathbb{F}^n$ ההרכבה $T_A\circ T_B:\mathbb{F}^k\to\mathbb{F}^m$ מוגדרת ומתקיים $$.T_A\circ T_B=T_{AB}$$*
 :::
 ::: proof
 לכל $v\in\mathbb{F}^k$ מתקיים $$.(T_A\circ T_B)(v)=T_A(T_B(v))=T_A(Bv)=A(Bv)=(AB)v=T_{AB}(v)$$ ולכן $$.T_A\circ T_B=T_{AB}$$ ◻
