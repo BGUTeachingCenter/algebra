@@ -240,7 +240,8 @@ T\begin{pmatrix}x\\y\end{pmatrix}&=T\left(x\cdot\begin{pmatrix}1\\0\end{pmatrix}
 ראינו כי במקרה הפרטי של ה\"ל $T:\mathbb{F}^n\to\mathbb{F}^m$, הערכים $T(e_1),...,T(e_n)$ קובעים את $T$ ביחידות - ואף הצלחנו לבטא את הקשר ע\"י מטריצה בטענה -@prp-unique-matrix. נרצה להוכיח משפט כללי יותר על ה\"ל בין מרחבים וקטוריים שאינם בהכרח מהצורה $\mathbb{F}^k$, וגם עבור ערכים המתאימים לוקטורי בסיס שאינו בהכרח סטנדרטי. המשפט הבא נקרא \"משפט ההגדרה של ה\"ל\".
 
 ::: {.theorem #thm-exist-unique}
-*יהיו $V,W$ מרחבים וקטוריים מעל $\mathbb{F}$, $B=\Set{v_1,...,v_n}$ בסיס ל- $V$ ו- $\Set{w_1,...,w_n}\subseteq W$ תת-קבוצה כלשהי. אז קיימת ויחידה ה\"ל $T:V\to W$ המקיימת $$.T(v_1)=w_1,...,T(v_n)=w_n$$*
+*יהיו $V,W$ מרחבים וקטוריים מעל $\mathbb{F}$, ויהיו
+ $B=\Set{v_1,...,v_n}$ בסיס ל- $V$ ו- $\Set{w_1,...,w_n}\subseteq W$ תת-קבוצה כלשהי. אז קיימת ויחידה ה\"ל $T:V\to W$ המקיימת $$.T(v_1)=w_1,...,T(v_n)=w_n$$*
 :::
 ::: proof
 יהי $v\in V$. נסמן $$.[v]_B=\begin{pmatrix}\alpha_1\\ \vdots \\ \alpha_n\end{pmatrix}$$ בתור התחלה, נניח שקיימת ה\"ל $T:V\to W$ השולחת כל $v_k$ ל- $w_k$ המתאים. אז לפי טענה -@prp-more-linearity בהכרח מתקיים $$.T(v)=T(\sum_{k=1}^n \alpha_k v_k)=\sum_{k=1}^n \alpha_k T(v_k)=\sum_{k=1}^n \alpha_k w_k$$ אם כך, נפעל בכיוון ההפוך: נגדיר $$,T(v)=\sum_{k=1}^n \alpha_k w_k$$ ונוכיח לינאריות. אם נצליח, הרי ש- $T$ היא הה\"ל היחידה שמקיימת את הדרישות. ובכן, יהי $w\in V$ ונסמן $$.[w]_B=\begin{pmatrix}\beta_1\\ \vdots \\ \beta_n\end{pmatrix}$$ מתקיים $$,[v+w]_B=\begin{pmatrix}\alpha_1+\beta_1\\ \vdots \\ \alpha_n +\beta_n\end{pmatrix}$$ ומכאן נקבל לפי הגדרת $T$: $$\begin{aligned}
