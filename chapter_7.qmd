@@ -1330,7 +1330,7 @@ $$[S\circ T]_D^B=[S]_D^C[T]_C^B=\begin{pmatrix}
 החישוב של מטריצה מייצגת עלול להיות ארוך אם לפחות אחד מהבסיסים אינו סטנדרטי. הכלי הבא עשוי לקצר את החישובים, ונראה בהמשך שיש לו חשיבות גם מעבר לכך.
 
 ::: definition
-יהי $V$ מ\"ו נוצר סופית מעל $\mathbb{F}$ עם בסיסים סדורים $B=\Set{v_1,...,v_n},C$. מטריצת המעבר בין הבסיסים $B$ ו- $C$ מוגדרת ע\"י $$.[I]_C^B=[\mathop{\mathrm{Id}}_{V}]_C^B=\begin{pmatrix}
+יהי $V$ מ\"ו נוצר סופית מעל $\mathbb{F}$ עם בסיסים סדורים $B=\Set{v_1,...,v_n},C$. מטריצת המעבר בין הבסיסים $B$ ו- $C$ מוגדרת ע\"י $$.[I]_C^B=[\mathrm{Id}_{V}]_C^B=\begin{pmatrix}
 \begin{array}{c}
 |\\[-0.4ex]
 [v_1]_C\\[-0.4ex]
@@ -1361,13 +1361,13 @@ $$[S\circ T]_D^B=[S]_D^C[T]_C^B=\begin{pmatrix}
     [I]_B^B&=\begin{pmatrix}
     \begin{array}{c}
     |\\[-0.4ex]
-    [\mathop{\mathrm{Id}}_{V}(v_1)]_B\\[-0.4ex]
+    [\mathrm{Id}_{V}(v_1)]_B\\[-0.4ex]
     |
     \end{array}
     &
     \begin{array}{c}
     |\\[-0.4ex]
-    [\mathop{\mathrm{Id}}_{V}(v_2)]_B\\[-0.4ex]
+    [\mathrm{Id}_{V}(v_2)]_B\\[-0.4ex]
     |
     \end{array}
     &
@@ -1375,7 +1375,7 @@ $$[S\circ T]_D^B=[S]_D^C[T]_C^B=\begin{pmatrix}
     &
     \begin{array}{c}
     |\\[-0.4ex]
-    [\mathop{\mathrm{Id}}_{V}(v_n)]_B\\[-0.4ex]
+    [\mathrm{Id}_{V}(v_n)]_B\\[-0.4ex]
     |
     \end{array}
     \end{pmatrix}\\
@@ -1482,7 +1482,7 @@ $$[I]_B^E=\begin{pmatrix}
 *יהי $V$ מ\"ו מעל $\mathbb{F}$, ויהיו $B,C$ בסיסים סדורים ל- $V$. אז $[I]_C^B,[I]_B^C$ הפיכות ומתקיים $$.([I]_C^B)^{-1}=[I]_B^C$$*
 :::
 ::: proof
-נניח כי $\dim(V)=n$. לפי טענה -@prp-rep-matrix מתקיים $$.[I]_B^C[I]_C^B=[\mathop{\mathrm{Id}}_{V}]_B^C[\mathop{\mathrm{Id}}_{V}]_C^B=[\mathop{\mathrm{Id}}_{V}\circ\mathop{\mathrm{Id}}_V]_B^B=[\mathop{\mathrm{Id}}_{V}]_B^B=I_n$$ לכן, שתי המטריצות הפיכות ומתקיים $$.([I]_C^B)^{-1}=[I]_B^C$$ ◻
+נניח כי $\dim(V)=n$. לפי טענה -@prp-rep-matrix מתקיים $$.[I]_B^C[I]_C^B=[\mathrm{Id}_{V}]_B^C[\mathrm{Id}_{V}]_C^B=[\mathrm{Id}_{V}\circ\mathrm{Id}_V]_B^B=[\mathrm{Id}_{V}]_B^B=I_n$$ לכן, שתי המטריצות הפיכות ומתקיים $$.([I]_C^B)^{-1}=[I]_B^C$$ ◻
 :::
 ::: remark
 בפרט, כאשר אחד הבסיסים הוא סטנדרטי (למשל $C=E$) קל לקבל את $[I]_E^B$ בלי דירוג, ואז נחשב את המטריצה ההופכית ונקבל $$.[I]_B^E=([I]_E^B)^{-1}$$
@@ -1494,8 +1494,8 @@ $$[I]_B^E=\begin{pmatrix}
 :::
 ::: proof
 לפי טענה -@prp-rep-matrix מתקיים: $$\begin{aligned}
-[T]_{C_2}^{B_2}&=[(\mathop{\mathrm{Id}}_{W}\circ T)\circ \mathop{\mathrm{Id}}_{V}]_{C_2}^{B_2}=[\mathop{\mathrm{Id}}_{W}\circ T]_{C_2}^{B_1}[\mathop{\mathrm{Id}}_{V}]_{B_1}^{B_2} \\
-&=[\mathop{\mathrm{Id}}_{W}]_{C_2}^{C_1}[T]_{C_1}^{B_1}[\mathop{\mathrm{Id}}_{V}]_{B_1}^{B_2}=[I]_{C_2}^{C_1}[T]_{C_1}^{B_1}[I]_{B_1}^{B_2}
+[T]_{C_2}^{B_2}&=[(\mathrm{Id}_{W}\circ T)\circ \mathrm{Id}_{V}]_{C_2}^{B_2}=[\mathrm{Id}_{W}\circ T]_{C_2}^{B_1}[\mathrm{Id}_{V}]_{B_1}^{B_2} \\
+&=[\mathrm{Id}_{W}]_{C_2}^{C_1}[T]_{C_1}^{B_1}[\mathrm{Id}_{V}]_{B_1}^{B_2}=[I]_{C_2}^{C_1}[T]_{C_1}^{B_1}[I]_{B_1}^{B_2}
 \end{aligned}$$ ◻
 :::
 כמסקנה, נקבל מקרה פרטי שיהיה רלוונטי במיוחד בפרק הבא:
@@ -1630,7 +1630,7 @@ $$[I]_B^E=\begin{pmatrix}
 בכיוון השני, נניח כי $T$ היא איזומורפיזם. בפרט, מתקיים $$.\dim(W)=\dim(V)=n$$ כדי להראות כי $\Set{T(v_1),...,T(v_n)}$ היא בסיס ל- $W$, די להראות כי היא קבוצה פורשת. ובכן: $$\mathop{\mathrm{Span}}(T(v_1),...,T(v_n))=\mathop{\mathrm{Im}}(T)=W$$ כלומר היא אכן קבוצה פורשת, ולכן היא בסיס לפי משפט \"שלישי חינם\" לבסיסים. ◻
 :::
 ::: definition
-ה״ל $T:V\to W$ נקראת הפיכה אם קיימת ה״ל $T^{-1}:W\to V$ כך ש- $$.T\circ T^{-1}=\mathop{\mathrm{Id}}_{W},\quad T^{-1}\circ T=\mathop{\mathrm{Id}}_{V}$$
+ה״ל $T:V\to W$ נקראת הפיכה אם קיימת ה״ל $T^{-1}:W\to V$ כך ש- $$.T\circ T^{-1}=\mathrm{Id}_{W},\quad T^{-1}\circ T=\mathrm{Id}_{V}$$
 :::
 $T^{-1}$ נקראת העתקה הופכית. המשמעות המעשית של ההגדרה היא הקשר הבא: $$T(v)=w \iff v=T^{-1}(w)$$ או במילים: $v=T^{-1}(w)$ הוא הפתרון היחיד למשוואה $T(v)=w$ עבור $w$ נתון.
 
@@ -1639,18 +1639,18 @@ $T^{-1}$ נקראת העתקה הופכית. המשמעות המעשית של ה
 ההגדרה של ה\"ל הפיכה אנלוגית לזו של מטריצה הפיכה. גם במקרה זה ניתן לוותר על אחת מהדרישות של ההגדרה, לפחות כאשר נתון שוויון מימדים בין התחום לטווח.
 
 ::: {.proposition #prp-inverse-simplified}
-*יהיו $T:V\to W$ ו- $S:W\to V$ ה\"ל כך ש- $\dim(W)=\dim(V)$. אז מתקיים $$.S\circ T=\mathop{\mathrm{Id}}_{V} \iff T\circ S=\mathop{\mathrm{Id}}_{W}$$*
+*יהיו $T:V\to W$ ו- $S:W\to V$ ה\"ל כך ש- $\dim(W)=\dim(V)$. אז מתקיים $$.S\circ T=\mathrm{Id}_{V} \iff T\circ S=\mathrm{Id}_{W}$$*
 :::
 ::: proof
-נניח כי $S\circ T=\mathop{\mathrm{Id}}_{V}$ ונוכיח כי $T\circ S=\mathop{\mathrm{Id}}_{W}$ (הכיוון השני דומה מטעמי סימטריה). לפי תרגיל -@exr-composition, $T$ חח״ע כי $S\circ T$ חח״ע בתור העתקת הזהות. לכן, $T$ גם על לפי משפט \"שלישי חינם\" לאיזומורפיזמים. לבסוף, יהי $w\in W$. קיים $v\in V$ כך ש- $w=T(v)$, ובהתאם נקבל $$.(T\circ S)(w)=(T\circ S)(T(v))=T((S\circ T)(v))=T(\mathop{\mathrm{Id}}_{V}(v))=T(v)=w$$ כלומר $T\circ S=\mathop{\mathrm{Id}}_{W}$, כנדרש. ◻
+נניח כי $S\circ T=\mathrm{Id}_{V}$ ונוכיח כי $T\circ S=\mathrm{Id}_{W}$ (הכיוון השני דומה מטעמי סימטריה). לפי תרגיל -@exr-composition, $T$ חח״ע כי $S\circ T$ חח״ע בתור העתקת הזהות. לכן, $T$ גם על לפי משפט \"שלישי חינם\" לאיזומורפיזמים. לבסוף, יהי $w\in W$. קיים $v\in V$ כך ש- $w=T(v)$, ובהתאם נקבל $$.(T\circ S)(w)=(T\circ S)(T(v))=T((S\circ T)(v))=T(\mathrm{Id}_{V}(v))=T(v)=w$$ כלומר $T\circ S=\mathrm{Id}_{W}$, כנדרש. ◻
 :::
 ::: {.proposition #prp-iso-invertible}
 *ה\"ל $T:V\to W$ היא איזומורפיזם אם ורק אם היא הפיכה.*
 :::
 ::: proof
-בכיוון אחד, נניח כי $T$ היא איזומורפיזם. בפרט, מתקיים $\dim(V)=\dim(W)$. יהי $B=\Set{v_1,...,v_n}$ בסיס ל- $V$. לפי טענה -@prp-iso-by-basis, נובע כי $\Set{T(v_1),...,T(v_n)}$ היא בסיס ל- $W$. לכן, לפי משפט ההגדרה (משפט -@thm-exist-unique) קיימת ויחידה ה\"ל $S:W\to V$ המקיימת לכל $1\leq j\leq n$ את הדרישה $$.S(T(v_j))=v_j$$ באופן שקול, לכל $1\leq j\leq n$ מתקיים $$,(S\circ T)(v_j)=\mathop{\mathrm{Id}}_V(v_j)$$ ולכן $$S\circ T=\mathop{\mathrm{Id}}_V$$ שוב לפי משפט ההגדרה. מטענה -@prp-inverse-simplified נובע כי גם מתקיים $$.T\circ S=\mathop{\mathrm{Id}}_{W}$$ לסיכום, קיבלנו כי $T$ הפיכה ומתקיים $S=T^{-1}$.
+בכיוון אחד, נניח כי $T$ היא איזומורפיזם. בפרט, מתקיים $\dim(V)=\dim(W)$. יהי $B=\Set{v_1,...,v_n}$ בסיס ל- $V$. לפי טענה -@prp-iso-by-basis, נובע כי $\Set{T(v_1),...,T(v_n)}$ היא בסיס ל- $W$. לכן, לפי משפט ההגדרה (משפט -@thm-exist-unique) קיימת ויחידה ה\"ל $S:W\to V$ המקיימת לכל $1\leq j\leq n$ את הדרישה $$.S(T(v_j))=v_j$$ באופן שקול, לכל $1\leq j\leq n$ מתקיים $$,(S\circ T)(v_j)=\mathrm{Id}_V(v_j)$$ ולכן $$S\circ T=\mathrm{Id}_V$$ שוב לפי משפט ההגדרה. מטענה -@prp-inverse-simplified נובע כי גם מתקיים $$.T\circ S=\mathrm{Id}_{W}$$ לסיכום, קיבלנו כי $T$ הפיכה ומתקיים $S=T^{-1}$.
 
-בכיוון השני, נניח כי $T$ הפיכה. אז קיימת $T^{-1}:W\to V$ כך ש- $$.T^{-1}\circ T=\mathop{\mathrm{Id}}_{V},\quad T\circ T^{-1}=\mathop{\mathrm{Id}}_{W}$$ לפי תרגיל -@exr-composition, נובע מהשוויון $T^{-1}\circ T=\mathop{\mathrm{Id}}_{V}$ כי $T$ חח״ע. מהשוויון השני נובע כי היא על (וגם ממשפט \"שלישי חינם\"). לסיכום, $T$ היא איזומורפיזם. ◻
+בכיוון השני, נניח כי $T$ הפיכה. אז קיימת $T^{-1}:W\to V$ כך ש- $$.T^{-1}\circ T=\mathrm{Id}_{V},\quad T\circ T^{-1}=\mathrm{Id}_{W}$$ לפי תרגיל -@exr-composition, נובע מהשוויון $T^{-1}\circ T=\mathrm{Id}_{V}$ כי $T$ חח״ע. מהשוויון השני נובע כי היא על (וגם ממשפט \"שלישי חינם\"). לסיכום, $T$ היא איזומורפיזם. ◻
 :::
 בהינתן איזומורפיזם $T:V\to W$, איך מוצאים את $T^{-1}:W\to V$? הוכחת המשפט לעיל מסבירה את הרעיון הכללי: לוקחים בסיס $B=\Set{v_1,...,v_n}$ ל- $V$ ומקבלים את הבסיס המתאים ל- $W$: $$C=\Set{T(v_1),...,T(v_n)}$$ ההעתקה ההופכית $T^{-1}$ היא ההעתקה הלינארית היחידה השולחת כל וקטור ב- $C$ למקור שלו ב- $B$.
 
@@ -1668,7 +1668,7 @@ x+y
 1 & 1
 \end{pmatrix}$$
 
-לפי טענה -@prp-homeo, לכל $B\in\mathbb{M}_{2\times 2}(\mathbb{R})$ מתקיים $$.T_A T_B=T_{AB}$$ נראה בהמשך כי $A$ הפיכה. בהנחה שזה נכון, נוכל להציב $B=A^{-1}$ ולקבל $$.T_A T_{A^{-1}}=T_{I_2}=\mathop{\mathrm{Id}}_{\mathbb{R}^2}$$ מכאן נסיק כי $T_A$ הפיכה, ולכן היא איזומורפיזם לפי טענה -@prp-iso-invertible. בנוסף, מתקיים $$.(T_{A})^{-1}=T_{A^{-1}}$$
+לפי טענה -@prp-homeo, לכל $B\in\mathbb{M}_{2\times 2}(\mathbb{R})$ מתקיים $$.T_A T_B=T_{AB}$$ נראה בהמשך כי $A$ הפיכה. בהנחה שזה נכון, נוכל להציב $B=A^{-1}$ ולקבל $$.T_A T_{A^{-1}}=T_{I_2}=\mathrm{Id}_{\mathbb{R}^2}$$ מכאן נסיק כי $T_A$ הפיכה, ולכן היא איזומורפיזם לפי טענה -@prp-iso-invertible. בנוסף, מתקיים $$.(T_{A})^{-1}=T_{A^{-1}}$$
 
 נסיים את הפתרון ע\"י חישוב $\det(A)$ ושימוש בנוסחה למטריצה הופכית מסדר $2\times 2$: $$\det(A)=\begin{pmatrix}
 3 & 2 \\
@@ -1686,13 +1686,13 @@ x+y
 -1 & 3
 \end{pmatrix}\begin{pmatrix}x\\y\end{pmatrix}=\begin{pmatrix}x-2y\\-x+3y\end{pmatrix}$$
 
-ניתן לבדוק באופן ישיר (בלי מטריצות) כי אכן $$.T\circ T^{-1}=T^{-1}\circ T=\mathop{\mathrm{Id}}_{\mathbb{R}^2}$$
+ניתן לבדוק באופן ישיר (בלי מטריצות) כי אכן $$.T\circ T^{-1}=T^{-1}\circ T=\mathrm{Id}_{\mathbb{R}^2}$$
 :::
 ::: {.proposition #prp-iso-by-matrix}
 *תהי $T:V\to W$ ה\"ל, ויהיו $B,C$ בסיסים סדורים ל- $V,W$ בהתאמה. אז $T$ היא איזומורפיזם אם ורק אם $[T]_C^B$ הפיכה, ובמקרה זה מתקיים $$.[T^{-1}]_B^C=([T]_C^B)^{-1}$$*
 :::
 ::: proof
-בכיוון אחד, נניח כי $T$ היא איזומורפיזם. לכן, היא הפיכה לפי טענה -@prp-iso-invertible. פירוש הדבר שקיימת $T^{-1}$ כך ש- $$.T\circ T^{-1}=\mathop{\mathrm{Id}}_{W}$$ נסמן $n=\dim(V)=\dim(W)$. לפי טענה -@prp-rep-transition נובע כי $$.[T]_C^B[T^{-1}]_B^C=[T\circ T^{-1}]_C^C=[\mathop{\mathrm{Id}}_{W}]_C^C=I_{n}$$ המטריצה המייצגת $[T]_C^B$ היא מטריצה ריבועית מסדר $n\times n$, ולכן היא הפיכה לפי החישוב לעיל וטענה -@prp-invertible. בנוסף, קיבלנו כי $$.([T]_C^B)^{-1}=[T^{-1}]_B^C$$
+בכיוון אחד, נניח כי $T$ היא איזומורפיזם. לכן, היא הפיכה לפי טענה -@prp-iso-invertible. פירוש הדבר שקיימת $T^{-1}$ כך ש- $$.T\circ T^{-1}=\mathrm{Id}_{W}$$ נסמן $n=\dim(V)=\dim(W)$. לפי טענה -@prp-rep-transition נובע כי $$.[T]_C^B[T^{-1}]_B^C=[T\circ T^{-1}]_C^C=[\mathrm{Id}_{W}]_C^C=I_{n}$$ המטריצה המייצגת $[T]_C^B$ היא מטריצה ריבועית מסדר $n\times n$, ולכן היא הפיכה לפי החישוב לעיל וטענה -@prp-invertible. בנוסף, קיבלנו כי $$.([T]_C^B)^{-1}=[T^{-1}]_B^C$$
 
 בכיוון השני, נניח כי $T$ אינה איזומורפיזם ונראה כי $[T]_C^B$ אינה הפיכה. ניתן להניח כי $\dim(V)=\dim(W)$, שכן אחרת המטריצה המייצגת אינה ריבועית ובפרט אינה הפיכה. אם כן, ההנחה ש- $T$ אינה איזומורפיזם פירושה שהיא אינה חח״ע (לפי משפט \"שלישי חינם\"). אז קיים $0_V\neq v\in \mathop{\mathrm{Ker}}(T)$, ולכן נובע מטענה -@prp-ker-image-rep כי $$.\underline{0}\neq[v]_B\in \mathop{\mathrm{N}}([T]_C^B)$$ זה מראה כי $[T]_C^B$ אינה הפיכה לפי משפט -@thm-invertible. ◻
 :::
