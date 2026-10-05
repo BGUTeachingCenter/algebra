@@ -22,3 +22,9 @@ body {
 .sidebar, .sidebar nav, .sidebar .sidebar-item, .sidebar .sidebar-header {
   text-align: right;
 }
+
+/* Ensure MathJax itself stays LTR inside RTL pages */
+mjx-container {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
