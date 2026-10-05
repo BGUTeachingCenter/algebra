@@ -442,32 +442,32 @@ $$\begin{aligned}
 נגדיר את העתקת האפס $\mathbf{0}_{V,W}:V\to W$ ע\"י $$,\mathbf{0}_{V,W}(v)=0_W$$ כלומר ההעתקה הקבועה ששולחת כל וקטור ב- $V$ לוקטור האפס ב- $W$.
 :::
 ::: remark
-עבור $V=\mathbb{F}^n, W=\mathbb{F}^m$ מתקיים $$\mathop{\mathrm{Id}}_{V}=T_{I},\quad \mathbf{0}_{V,W}=T_{\mathbf{0}}$$ כאשר $I=I_n,\,\mathbf{0}=\mathbf{0}_{m\times n}$. כלומר, העתקת הזהות מתאימה למטריצת הזהות בגודל המתאים, והעתקת האפס מתאימה למטריצת האפס בגודל המתאים.
+עבור $V=\mathbb{F}^n, W=\mathbb{F}^m$ מתקיים $$\mathrm{Id}_{V}=T_{I},\quad \mathbf{0}_{V,W}=T_{\mathbf{0}}$$ כאשר $I=I_n,\,\mathbf{0}=\mathbf{0}_{m\times n}$. כלומר, העתקת הזהות מתאימה למטריצת הזהות בגודל המתאים, והעתקת האפס מתאימה למטריצת האפס בגודל המתאים.
 :::
 ::: exercise
 יהיו $V,W$ מרחבים וקטוריים מעל $\mathbb{F}$.
 
-1.  הראו כי ההעתקות $\mathbf{0}_{V,W},\mathop{\mathrm{Id}}_{V}$ הן לינאריות.
+1.  הראו כי ההעתקות $\mathbf{0}_{V,W},\mathrm{Id}_{V}$ הן לינאריות.
 
 2.  הראו כי מתקיים: $$\begin{aligned}
-    \mathop{\mathrm{Ker}}(\mathop{\mathrm{Id}}_{V})      &= \Set{0_V},      & \quad \mathop{\mathrm{Im}}(\mathop{\mathrm{Id}}_{V})      &= V \\
+    \mathop{\mathrm{Ker}}(\mathrm{Id}_{V})      &= \Set{0_V},      & \quad \mathop{\mathrm{Im}}(\mathrm{Id}_{V})      &= V \\
     \mathop{\mathrm{Ker}}(\mathbf{0}_{V,W})   &= V,            & \quad \mathop{\mathrm{Im}}(\mathbf{0}_{V,W})   &= \Set{0_W}
     \end{aligned}$$
 :::
 ::: {.callout-note collapse="true" title="פתרון"}
 1.  יהיו $v_1,v_2\in V,\alpha\in\mathbb{F}$ מתקיים: $$\begin{aligned}
-    \mathop{\mathrm{Id}}_{V}(v_1+v_2)&=v_1+v_2=\mathop{\mathrm{Id}}_{V}(v_1)+\mathop{\mathrm{Id}}_{V}(v_2) \\
+    \mathrm{Id}_{V}(v_1+v_2)&=v_1+v_2=\mathrm{Id}_{V}(v_1)+\mathrm{Id}_{V}(v_2) \\
     \mathbf{0}_{V,W}(v_1+v_2)&=0_W=0_W+0_W=\mathbf{0}_{V,W}(v_1)+\mathbf{0}_{V,W}(v_2)
     \end{aligned}$$
 
     בנוסף: $$\begin{aligned}
-    \mathop{\mathrm{Id}}_{V}(\alpha v_1)&=\alpha v_1=\alpha\mathop{\mathrm{Id}}_{V}(v_1) \\
+    \mathrm{Id}_{V}(\alpha v_1)&=\alpha v_1=\alpha\mathrm{Id}_{V}(v_1) \\
     \mathbf{0}_{V,W}(\alpha v_1)&=0_W=\alpha\cdot 0_W=\alpha\mathbf{0}_{V,W}(v_1)
     \end{aligned}$$
 
 2.  עבור העתקת הזהות: $$\begin{aligned}
-    \mathop{\mathrm{Ker}}(\mathop{\mathrm{Id}}_{V})&=\Set{v\in V|\mathop{\mathrm{Id}}_{V}(v)=0_V}=\Set{v\in V|v=0_V}=\Set{0_V} \\
-    \mathop{\mathrm{Im}}(\mathop{\mathrm{Id}}_{V})&=\Set{\mathop{\mathrm{Id}}_{V}(v)|v\in V}=\Set{v|v\in V}=V
+    \mathop{\mathrm{Ker}}(\mathrm{Id}_{V})&=\Set{v\in V|\mathrm{Id}_{V}(v)=0_V}=\Set{v\in V|v=0_V}=\Set{0_V} \\
+    \mathop{\mathrm{Im}}(\mathrm{Id}_{V})&=\Set{\mathrm{Id}_{V}(v)|v\in V}=\Set{v|v\in V}=V
     \end{aligned}$$
 
     עבור העתקת האפס: $$\begin{aligned}
