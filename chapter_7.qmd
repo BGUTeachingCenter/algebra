@@ -487,7 +487,10 @@ $$\begin{aligned}
 יש אפיון יותר פשוט להעתקה לינארית חח״ע:
 
 ::: {.proposition #prp-injective}
-*תהי $T:V\to W$ ה\"ל. אז מתקיים $$.\mathop{\mathrm{Ker}}(T)=\Set{0_V} \iff \text{$T$ חח״ע}$$*
+*תהי $T:V\to W$ ה\"ל. אז מתקיים 
+$$
+\operatorname{Ker}(T)=\Set{0_V}\iff T\;\text{חח״ע}
+$$*
 :::
 ::: proof
 הכיוון $\impliedby$: נניח כי $T$ חח״ע. נזכור כי $T(0_V)=0_W$ לפי טענה -@prp-more-linearity. לכן: $$,v\in\mathop{\mathrm{Ker}}(T) \iff T(v)=0_W \iff T(v)=T(0_V) \iff v=0_V$$ ומכאן $\mathop{\mathrm{Ker}}(T)=\Set{0_V}$.
