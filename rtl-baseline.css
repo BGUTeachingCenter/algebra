@@ -22,3 +22,16 @@ body {
 .sidebar, .sidebar nav, .sidebar .sidebar-item, .sidebar .sidebar-header {
   text-align: right;
 }
+
+/* Keep math left-to-right */
+.math.inline, .math.display {
+  direction: ltr;
+  unicode-bidi: embed;
+  text-align: left;
+}
+
+/* Hebrew text inside math */
+mjx-container mjx-mtext {
+  direction: rtl;
+  unicode-bidi: isolate;
+}
