@@ -29,9 +29,3 @@ body {
   unicode-bidi: embed;
   text-align: left;
 }
-
-/* Hebrew text inside math */
-mjx-container mjx-mtext {
-  direction: rtl;
-  unicode-bidi: isolate;
-}
