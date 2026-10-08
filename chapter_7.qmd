@@ -489,7 +489,7 @@ $$\begin{aligned}
 ::: {.proposition #prp-injective}
 *תהי $T:V\to W$ ה\"ל. אז מתקיים 
 $$
-.\operatorname{Ker}(T)=\Set{0_V}\iff \text{חח״ע}\;T
+.\operatorname{Ker}(T)=\Set{0_V}\iff \text{$T$ חח"ע}
 $$*
 :::
 ::: proof
