@@ -88,14 +88,14 @@ $$
  
 
 א.  מתקיים $$.A=\begin{pmatrix} 10 & 9 & 1 & -7\\
-    1 & 2 & 3 & 4\\
-    0 & 4 & -3 & -5
-    \end{pmatrix}\in\mathbb{M}_{3\times 4}(\mathbb{R})$$
+1 & 2 & 3 & 4\\
+0 & 4 & -3 & -5
+\end{pmatrix}\in\mathbb{M}_{3\times 4}(\mathbb{R})$$
 
 ב.  מתקיים $$.B=\begin{pmatrix} i & 1 \\
-    1 & 1+i\\
-    0 & 2i 
-    \end{pmatrix}\in\mathbb{M}_{3\times 2}(\mathbb{C})$$
+1 & 1+i\\
+0 & 2i 
+\end{pmatrix}\in\mathbb{M}_{3\times 2}(\mathbb{C})$$
 
 :::
 
@@ -121,78 +121,78 @@ $$
 עבור $A,B\in\mathbb{M}_{m\times n}(\mathbb{F})$ וסקלר $c\in\mathbb{F}$ נגדיר את הפעולות הבאות:
 
 א.  פעולת החיבור: $$\begin{aligned}
-    A+B&=\begin{pmatrix}a_{11} & \cdots & a_{1n}\\
-    a_{21} & \cdots & a_{2n}\\
-    \vdots  & \ddots & \vdots\\
-    a_{m1}  & \cdots & a_{mn}
-    \end{pmatrix}+\begin{pmatrix}b_{11} & \cdots & b_{1n}\\
-    b_{21} & \cdots & b_{2n}\\
-    \vdots & \ddots & \vdots\\
-    b_{m1} & \cdots & b_{mn}
-    \end{pmatrix}\\
-    &=\begin{pmatrix}a_{11}+b_{11} & \cdots & a_{1n}+b_{1n} \\ a_{21}+b_{21} & \cdots & a_{2n}+b_{2n}\\
-    \vdots & \ddots & \vdots\\
-    a_{m1}+b_{m1} & \cdots & a_{mn}+b_{mn}
-    \end{pmatrix}
-    \end{aligned}$$
+A+B&=\begin{pmatrix}a_{11} & \cdots & a_{1n}\\
+a_{21} & \cdots & a_{2n}\\
+\vdots  & \ddots & \vdots\\
+a_{m1}  & \cdots & a_{mn}
+\end{pmatrix}+\begin{pmatrix}b_{11} & \cdots & b_{1n}\\
+b_{21} & \cdots & b_{2n}\\
+\vdots & \ddots & \vdots\\
+b_{m1} & \cdots & b_{mn}
+\end{pmatrix}\\
+&=\begin{pmatrix}a_{11}+b_{11} & \cdots & a_{1n}+b_{1n} \\ a_{21}+b_{21} & \cdots & a_{2n}+b_{2n}\\
+\vdots & \ddots & \vdots\\
+a_{m1}+b_{m1} & \cdots & a_{mn}+b_{mn}
+\end{pmatrix}
+\end{aligned}$$
 
 ב.  פעולת כפל בסקלר: $$c A=\begin{pmatrix}ca_{11} & ca_{12} & \cdots & ca_{1n}\\
-    ca_{21} & ca_{22} & \cdots & ca_{2n}\\
-    \vdots & \vdots & \ddots & \vdots\\
-    ca_{m1} & ca_{m2} & \cdots & ca_{mn}
-    \end{pmatrix}$$
+ca_{21} & ca_{22} & \cdots & ca_{2n}\\
+\vdots & \vdots & \ddots & \vdots\\
+ca_{m1} & ca_{m2} & \cdots & ca_{mn}
+\end{pmatrix}$$
 
-    בפרט, נגדיר $-A=(-1)\cdot A$ ובהתאמה $B-A=B+(-1)\cdot A$.
+בפרט, נגדיר $-A=(-1)\cdot A$ ובהתאמה $B-A=B+(-1)\cdot A$.
 :::
 
 ::: example
 
 א.  חיבור של מטריצות מסדר $2\times 2$ מעל $\mathbb{R}$: $$\begin{aligned}
-    &\begin{pmatrix} 3 & 7 \\
-    5 & -2 
-    \end{pmatrix}+\begin{pmatrix} -10 & 5 \\
-    -4 & -3 
-    \end{pmatrix}\\
-    &=\begin{pmatrix} 3-10 & 7+5 \\
-    5-4 & -2-3 
-    \end{pmatrix}=\begin{pmatrix} -7 & 12 \\
-    1 & -5 
-    \end{pmatrix}
-    \end{aligned}$$
+&\begin{pmatrix} 3 & 7 \\
+5 & -2 
+\end{pmatrix}+\begin{pmatrix} -10 & 5 \\
+-4 & -3 
+\end{pmatrix}\\
+&=\begin{pmatrix} 3-10 & 7+5 \\
+5-4 & -2-3 
+\end{pmatrix}=\begin{pmatrix} -7 & 12 \\
+1 & -5 
+\end{pmatrix}
+\end{aligned}$$
 
 ב.  חיבור של מטריצות מסדר $3\times 4$ מעל $\mathbb{R}$: $$\begin{aligned}
-    &\begin{pmatrix} 10 & 9 & 1 & -7\\
-    1 & 2 & 3 & 4\\
-    0 & 4 & -3 & -5
-    \end{pmatrix}+\begin{pmatrix} 3 & -2 & 0 & 6\\
-    5 & -2 & 4 & -4\\
-    10 & -6 & 3 & 1
-    \end{pmatrix}\\
-    &=\begin{pmatrix} 10+3 & 9-2 & 1+0 & -7+6\\
-    1+5 & 2-2 & 3+4 & 4-4\\
-    0+10 & 4-6 & -3+3 & -5+1
-    \end{pmatrix}\\
-    &=\begin{pmatrix} 13 & 7 & 1 & -1\\
-    6 & 0 & 7 & 0\\
-    10 & -2 & 0 & -4
-    \end{pmatrix}
-    \end{aligned}$$
+&\begin{pmatrix} 10 & 9 & 1 & -7\\
+1 & 2 & 3 & 4\\
+0 & 4 & -3 & -5
+\end{pmatrix}+\begin{pmatrix} 3 & -2 & 0 & 6\\
+5 & -2 & 4 & -4\\
+10 & -6 & 3 & 1
+\end{pmatrix}\\
+&=\begin{pmatrix} 10+3 & 9-2 & 1+0 & -7+6\\
+1+5 & 2-2 & 3+4 & 4-4\\
+0+10 & 4-6 & -3+3 & -5+1
+\end{pmatrix}\\
+&=\begin{pmatrix} 13 & 7 & 1 & -1\\
+6 & 0 & 7 & 0\\
+10 & -2 & 0 & -4
+\end{pmatrix}
+\end{aligned}$$
 
 ג.  חיבור של מטריצות מסדר $2\times 2$ מעל $\mathbb{C}$: אם
 
-    $$A = \begin{pmatrix} 1 & i \\
-    2-3i & 3-2i 
-    \end{pmatrix},\quad  B = \begin{pmatrix} 7-5i & 2+7i \\
-    -6 & 3+10i 
-    \end{pmatrix}$$
+$$A = \begin{pmatrix} 1 & i \\
+2-3i & 3-2i 
+\end{pmatrix},\quad  B = \begin{pmatrix} 7-5i & 2+7i \\
+-6 & 3+10i 
+\end{pmatrix}$$
 
-    אז $$\begin{aligned}
-    A+B&=\begin{pmatrix} 1+7-5i & i+2+7i \\
-    2-3i-6 & 3-2i+3+10i 
-    \end{pmatrix}=\begin{pmatrix} 8-5i & 2+8i \\
-    -4-3i & 6+8i 
-    \end{pmatrix}
-    \end{aligned}$$
+אז $$\begin{aligned}
+A+B&=\begin{pmatrix} 1+7-5i & i+2+7i \\
+2-3i-6 & 3-2i+3+10i 
+\end{pmatrix}=\begin{pmatrix} 8-5i & 2+8i \\
+-4-3i & 6+8i 
+\end{pmatrix}
+\end{aligned}$$
 :::
 
 ::: {.definition #def-entry-formula}
@@ -219,33 +219,33 @@ $$(c A)_{ij}=c(A)_{ij}$$
 
 ::: example
 א.  כפל בסקלר של מטריצה מסדר $3\times 3$ מעל $\mathbb{C}$: $$\begin{aligned}
-    &i\begin{pmatrix} 1 & i & 1+i \\ 
-    1-i & 2i & 3 \\
-    2+3i & 3-2i & 5
-    \end{pmatrix}=\begin{pmatrix} i\cdot1 & i\cdot i & i(1+i) \\ 
-    i(1-i) & i\cdot 2i & i\cdot3 \\
-    i(2+3i) & i(3-2i) & i\cdot5
-    \end{pmatrix}\\
-    &=\begin{pmatrix}i & -1 & -1+i \\ 
-    1+i & -2 & 3i \\
-    -3+2i & 2+3i & 5i
-    \end{pmatrix}
-    \end{aligned}$$
+&i\begin{pmatrix} 1 & i & 1+i \\ 
+1-i & 2i & 3 \\
+2+3i & 3-2i & 5
+\end{pmatrix}=\begin{pmatrix} i\cdot1 & i\cdot i & i(1+i) \\ 
+i(1-i) & i\cdot 2i & i\cdot3 \\
+i(2+3i) & i(3-2i) & i\cdot5
+\end{pmatrix}\\
+&=\begin{pmatrix}i & -1 & -1+i \\ 
+1+i & -2 & 3i \\
+-3+2i & 2+3i & 5i
+\end{pmatrix}
+\end{aligned}$$
 
 ב.  שילוב של כפל בסקלר וחיבור מטריצות מסדר $2\times 2$ מעל $\mathbb{R}$: $$\begin{aligned}
-    &2 \begin{pmatrix} 11 & 2 \\
-    -2 & 4 
-    \end{pmatrix}+3\begin{pmatrix} -4 & 5 \\
-    6 & -3 
-    \end{pmatrix}=\begin{pmatrix} 22 & 4 \\
-    -4 & 8 
-    \end{pmatrix}+\begin{pmatrix} -12 & 15 \\
-    18 & -9 
-    \end{pmatrix}\\
-    &=\begin{pmatrix} 22-12 & 4+15 \\
-    -4+18 & 8-9 
-    \end{pmatrix}
-    \end{aligned}$$
+&2 \begin{pmatrix} 11 & 2 \\
+-2 & 4 
+\end{pmatrix}+3\begin{pmatrix} -4 & 5 \\
+6 & -3 
+\end{pmatrix}=\begin{pmatrix} 22 & 4 \\
+-4 & 8 
+\end{pmatrix}+\begin{pmatrix} -12 & 15 \\
+18 & -9 
+\end{pmatrix}\\
+&=\begin{pmatrix} 22-12 & 4+15 \\
+-4+18 & 8-9 
+\end{pmatrix}
+\end{aligned}$$
 :::
 
 ::: definition
@@ -369,73 +369,73 @@ y_m
  
 
 א.  ניקח $$A = \begin{pmatrix}
-    2 & -1 \\
-    3 & 4
-    \end{pmatrix}, \quad 
-    x = \begin{pmatrix}
-    1 \\
-    5
-    \end{pmatrix}$$ ונקבל $$.\begin{pmatrix}
-    2 & -1 \\
-    3 & 4
-    \end{pmatrix}
-    \begin{pmatrix}
-    1 \\
-    5
-    \end{pmatrix}
-    =
-    \begin{pmatrix}
-    2\cdot1 + (-1)5 \\
-    3\cdot1 + 4\cdot5
-    \end{pmatrix}
-    =
-    \begin{pmatrix}
-    -3 \\
-    23
-    \end{pmatrix}$$
+2 & -1 \\
+3 & 4
+\end{pmatrix}, \quad 
+x = \begin{pmatrix}
+1 \\
+5
+\end{pmatrix}$$ ונקבל $$.\begin{pmatrix}
+2 & -1 \\
+3 & 4
+\end{pmatrix}
+\begin{pmatrix}
+1 \\
+5
+\end{pmatrix}
+=
+\begin{pmatrix}
+2\cdot1 + (-1)5 \\
+3\cdot1 + 4\cdot5
+\end{pmatrix}
+=
+\begin{pmatrix}
+-3 \\
+23
+\end{pmatrix}$$
 
 ב.  $$\begin{pmatrix}a_1 &b_1 &c_1\end{pmatrix}\begin{pmatrix}a_2 \\ b_2 \\ c_2\end{pmatrix}=a_1a_2+b_1b_2+c_1c_2$$
 
-    לכל $a_1,b_1,c_1,a_2,b_2,c_2\in\mathbb{F}$. במקרה של $\mathbb{F}=\mathbb{R}$ מדובר על המכפלה הסקלרית של $$.\begin{pmatrix}a_1 \\ b_1 \\ c_1\end{pmatrix},\begin{pmatrix}a_2 \\ b_2 \\ c_2\end{pmatrix}\in\mathbb{R}^3$$
+לכל $a_1,b_1,c_1,a_2,b_2,c_2\in\mathbb{F}$. במקרה של $\mathbb{F}=\mathbb{R}$ מדובר על המכפלה הסקלרית של $$.\begin{pmatrix}a_1 \\ b_1 \\ c_1\end{pmatrix},\begin{pmatrix}a_2 \\ b_2 \\ c_2\end{pmatrix}\in\mathbb{R}^3$$
 
 ג.  $$\begin{pmatrix}
-    1 & 0 & 2 \\
-    -2 & 3 & 1 \\
-    4 & -1 & 0
-    \end{pmatrix}
-    \begin{pmatrix}
-    3 \\
-    2 \\
-    -1
-    \end{pmatrix}
-    =
-    \begin{pmatrix}
-    1\cdot3 + 0\cdot2 + 2(-1) \\
-    -2\cdot3 + 3\cdot 2 + 1(-1) \\
-    4\cdot3 + (-1)2 + 0(-1)
-    \end{pmatrix}
-    =
-    \begin{pmatrix}
-    1 \\
-    -1 \\
-    10
-    \end{pmatrix}$$
+1 & 0 & 2 \\
+-2 & 3 & 1 \\
+4 & -1 & 0
+\end{pmatrix}
+\begin{pmatrix}
+3 \\
+2 \\
+-1
+\end{pmatrix}
+=
+\begin{pmatrix}
+1\cdot3 + 0\cdot2 + 2(-1) \\
+-2\cdot3 + 3\cdot 2 + 1(-1) \\
+4\cdot3 + (-1)2 + 0(-1)
+\end{pmatrix}
+=
+\begin{pmatrix}
+1 \\
+-1 \\
+10
+\end{pmatrix}$$
 
 ד.  $$\begin{pmatrix}
-    1+i & 2 \\
-    3i & 4-i
-    \end{pmatrix}\begin{pmatrix}
-    2 \\
-    1-i
-    \end{pmatrix}=\begin{pmatrix}
-    (1+i)2 + 2(1-i) \\
-    (3i)2 + (4-i)(1-i)
-    \end{pmatrix}
-    =
-    \begin{pmatrix}
-    4 \\
-    3 + i
-    \end{pmatrix}$$
+1+i & 2 \\
+3i & 4-i
+\end{pmatrix}\begin{pmatrix}
+2 \\
+1-i
+\end{pmatrix}=\begin{pmatrix}
+(1+i)2 + 2(1-i) \\
+(3i)2 + (4-i)(1-i)
+\end{pmatrix}
+=
+\begin{pmatrix}
+4 \\
+3 + i
+\end{pmatrix}$$
 :::
 
 ::: exercise
@@ -498,9 +498,9 @@ $$Ax=\begin{pmatrix}
 א.  $$(A(v+w))_i=\sum_{j=1}^n (A)_{ij}(v+w)_j=\sum_{j=1}^n (A)_{ij}v_j+\sum_{j=1}^n (A)_{ij}w_j=(Av)_i+(Aw)_i$$ בשביל השוויון השני השתמשנו בחוק הפילוג ב- $\mathbb{F}$, וגם פיצלנו את הסכום לפי חוק החילוף (אין חשיבות לסדר הסכימה).
 
 ב.  $$\begin{aligned}
-    ((A+B)v)_i&=\sum_{j=1}^n ((A)_{ij}+(B)_{ij})v_j=\sum_{j=1}^n (A)_{ij}v_j+\sum_{j=1}^n (B)_{ij}v_j\\
-    &=(Av)_i+(Bv)_i=(Av+Bv)_i
-    \end{aligned}$$
+((A+B)v)_i&=\sum_{j=1}^n ((A)_{ij}+(B)_{ij})v_j=\sum_{j=1}^n (A)_{ij}v_j+\sum_{j=1}^n (B)_{ij}v_j\\
+&=(Av)_i+(Bv)_i=(Av+Bv)_i
+\end{aligned}$$
 
 ג.  $$(A(\alpha v))_i=\sum_{j=1}^n (A)_{ij}(\alpha v_j)=\alpha\sum_{j=1}^n (A)_{ij}v_j=\alpha(Av)_i=(\alpha Av)_i$$ בשוויון השני השתמשנו בחוק הפילוג ב- $\mathbb{F}$, לפיו אפשר להוציא גורם משותף מחוץ לסכימה.
 
@@ -547,7 +547,7 @@ $$Ax=\begin{pmatrix}
 
 ב.  שוב, לפי טענה -@prp-matrix-vector לכל $\alpha\in\mathbb{F}$ מתקיים
 
-    $$.A(\alpha v)=\alpha Av=\alpha\cdot 0=0.$$ כלומר $\alpha v$ הוא פתרון של הממ\"ל.
+$$.A(\alpha v)=\alpha Av=\alpha\cdot 0=0.$$ כלומר $\alpha v$ הוא פתרון של הממ\"ל.
 
 :::
 
@@ -606,126 +606,126 @@ $$.x=v_0+y\in\Set{x_0+y|y\in\mathbb{F}^n,Ay=0}.$$ ◻
  
 
 א.  עבור $A=\begin{pmatrix}
-    2 & 3 \\
-    1 & 4
-    \end{pmatrix},B=
-    \begin{pmatrix}
-    5 & 6 \\
-    7 & 8
-    \end{pmatrix}$ נקבל $$AB=\begin{pmatrix}
-    2\cdot5 + 3\cdot7 & 2\cdot6 + 3\cdot8 \\
-    1\cdot5 + 4\cdot7 & 1\cdot6 + 4\cdot8
-    \end{pmatrix}
-    =
-    \begin{pmatrix}
-    31 & 36 \\
-    33 & 38
-    \end{pmatrix}$$
+2 & 3 \\
+1 & 4
+\end{pmatrix},B=
+\begin{pmatrix}
+5 & 6 \\
+7 & 8
+\end{pmatrix}$ נקבל $$AB=\begin{pmatrix}
+2\cdot5 + 3\cdot7 & 2\cdot6 + 3\cdot8 \\
+1\cdot5 + 4\cdot7 & 1\cdot6 + 4\cdot8
+\end{pmatrix}
+=
+\begin{pmatrix}
+31 & 36 \\
+33 & 38
+\end{pmatrix}$$
 
-    לעומת זאת, אם נחשב את המכפלה בסדר הפוך נקבל
+לעומת זאת, אם נחשב את המכפלה בסדר הפוך נקבל
 
-    $$BA=\begin{pmatrix}
-    5 & 6 \\
-    7 & 8
-    \end{pmatrix}\begin{pmatrix}
-    2 & 3 \\
-    1 & 4
-    \end{pmatrix}
-    =
-    \begin{pmatrix}
-    5\cdot2+6\cdot1 & 5\cdot3+6\cdot4 \\
-    7\cdot2+8\cdot1 & 7\cdot3+8\cdot4
-    \end{pmatrix}
-    =
-    \begin{pmatrix}
-    16 & 39 \\
-    22 & 53
-    \end{pmatrix}$$ אז במקרה זה $AB\neq BA$.
+$$BA=\begin{pmatrix}
+5 & 6 \\
+7 & 8
+\end{pmatrix}\begin{pmatrix}
+2 & 3 \\
+1 & 4
+\end{pmatrix}
+=
+\begin{pmatrix}
+5\cdot2+6\cdot1 & 5\cdot3+6\cdot4 \\
+7\cdot2+8\cdot1 & 7\cdot3+8\cdot4
+\end{pmatrix}
+=
+\begin{pmatrix}
+16 & 39 \\
+22 & 53
+\end{pmatrix}$$ אז במקרה זה $AB\neq BA$.
 
 ב.  עבור $C=\begin{pmatrix}
-    1 & 2 & 3 \\
-    4 & 5 & 6
-    \end{pmatrix},\quad D=
-    \begin{pmatrix}
-    1 & 0 & 2 \\
-    -1 & 3 & 1 \\
-    0 & 4 & 5
-    \end{pmatrix}$ נקבל $$\begin{aligned}
-    CD&=
-    \begin{pmatrix}
-    1\cdot1 + 2(-1) + 3\cdot0 & 1\cdot0 + 2\cdot3 + 3\cdot4 & 1\cdot2 + 2\cdot 1 + 3\cdot5 \\
-    4\cdot1 + 5(-1) + 6\cdot0 & 4\cdot0 + 5\cdot3 + 6\cdot4 & 4\cdot2 + 5\cdot1 + 6\cdot5
-    \end{pmatrix}\\
-    &=
-    \begin{pmatrix}
-    -1 & 18 & 19 \\
-    -1 & 39 & 43
-    \end{pmatrix}
-    \end{aligned}$$
+1 & 2 & 3 \\
+4 & 5 & 6
+\end{pmatrix},\quad D=
+\begin{pmatrix}
+1 & 0 & 2 \\
+-1 & 3 & 1 \\
+0 & 4 & 5
+\end{pmatrix}$ נקבל $$\begin{aligned}
+CD&=
+\begin{pmatrix}
+1\cdot1 + 2(-1) + 3\cdot0 & 1\cdot0 + 2\cdot3 + 3\cdot4 & 1\cdot2 + 2\cdot 1 + 3\cdot5 \\
+4\cdot1 + 5(-1) + 6\cdot0 & 4\cdot0 + 5\cdot3 + 6\cdot4 & 4\cdot2 + 5\cdot1 + 6\cdot5
+\end{pmatrix}\\
+&=
+\begin{pmatrix}
+-1 & 18 & 19 \\
+-1 & 39 & 43
+\end{pmatrix}
+\end{aligned}$$
 
 ג.  עבור $E=\begin{pmatrix}
-    1+i & 2 \\
-    3 & 4-i
-    \end{pmatrix}, \quad
-    F=\begin{pmatrix}
-    2 & i \\
-    1-i & 3
-    \end{pmatrix}$ נקבל $$\begin{aligned}
-    EF&=\begin{pmatrix}
-    (1+i)2 + 2(1-i) & (1+i)i + 2\cdot3 \\
-    3\cdot2 + (4-i)(1-i) & 3\cdot i + (4-i)3
-    \end{pmatrix}\\
-    &=
-    \begin{pmatrix}
-    2+2i + 2 - 2i & i - 1 + 6 \\
-    6 + 4 - 4i - i - 1 & 3i + 12 - 3i
-    \end{pmatrix}=
-    \begin{pmatrix}
-    4 & 5 + i \\
-    9 - 5i & 12
-    \end{pmatrix}
-    \end{aligned}$$
+1+i & 2 \\
+3 & 4-i
+\end{pmatrix}, \quad
+F=\begin{pmatrix}
+2 & i \\
+1-i & 3
+\end{pmatrix}$ נקבל $$\begin{aligned}
+EF&=\begin{pmatrix}
+(1+i)2 + 2(1-i) & (1+i)i + 2\cdot3 \\
+3\cdot2 + (4-i)(1-i) & 3\cdot i + (4-i)3
+\end{pmatrix}\\
+&=
+\begin{pmatrix}
+2+2i + 2 - 2i & i - 1 + 6 \\
+6 + 4 - 4i - i - 1 & 3i + 12 - 3i
+\end{pmatrix}=
+\begin{pmatrix}
+4 & 5 + i \\
+9 - 5i & 12
+\end{pmatrix}
+\end{aligned}$$
 
 ד.  המכפלה $$\begin{pmatrix}
-    2 &3 &1 \\
-    0 &-1 &-2
-    \end{pmatrix}
-    \begin{pmatrix}
-    10 &-5 \\
-    3 &-1 
-    \end{pmatrix}$$
+2 &3 &1 \\
+0 &-1 &-2
+\end{pmatrix}
+\begin{pmatrix}
+10 &-5 \\
+3 &-1 
+\end{pmatrix}$$
 
-    אינה מוגדרת, כי מספר העמודות של המטריצה השמאלית $(3)$ שונה ממספר השורות של המטריצה הימנית $(2)$.
+אינה מוגדרת, כי מספר העמודות של המטריצה השמאלית $(3)$ שונה ממספר השורות של המטריצה הימנית $(2)$.
 
 ה.  נסתכל על דוגמה שיש לה קשר לתורת הגרפים (שחורגת מהקורס). גרף הוא קבוצת קודקודים שחלקם מחוברים ביניהם ע\"י צלעות. לדוגמה:
 
-    ![ריבוע עם אחד מאלכסוניו](images/Adjacency.png){#fig-Adjacency width="40%" fig-align="center"}
+![ריבוע עם אחד מאלכסוניו](images/Adjacency.png){#fig-Adjacency width="40%" fig-align="center"}
 
-    ניתן לקודד את כל המידע הרלוונטי לגרף זה במטריצה $M$ (שנקראת מטריצת השכנויות). אם קיימת צלע בין $p_i$ ל- $p_j$, נכתוב $(M)_{ij}=1$. אם לא קיימת צלע ביניהם, נכתוב $(M)_{ij}=0$. כך נקבל $$.M=
-    \begin{pmatrix}
-    0 & 1 & 1 & 1 \\
-    1 & 0 & 1 & 0 \\
-    1 & 1 & 0 & 1 \\
-    1 & 0 & 1 & 0
-    \end{pmatrix}$$
+ניתן לקודד את כל המידע הרלוונטי לגרף זה במטריצה $M$ (שנקראת מטריצת השכנויות). אם קיימת צלע בין $p_i$ ל- $p_j$, נכתוב $(M)_{ij}=1$. אם לא קיימת צלע ביניהם, נכתוב $(M)_{ij}=0$. כך נקבל $$.M=
+\begin{pmatrix}
+0 & 1 & 1 & 1 \\
+1 & 0 & 1 & 0 \\
+1 & 1 & 0 & 1 \\
+1 & 0 & 1 & 0
+\end{pmatrix}$$
 
-    מה המשמעות של כפל? נחשב את $M^2=M\cdot M$ ונקבל $$.M^2=
-    \begin{pmatrix}
-    3 & 1 & 2 & 1 \\
-    1 & 2 & 1 & 2 \\
-    2 & 1 & 3 & 1 \\
-    1 & 2 & 1 & 2
-    \end{pmatrix}$$
+מה המשמעות של כפל? נחשב את $M^2=M\cdot M$ ונקבל $$.M^2=
+\begin{pmatrix}
+3 & 1 & 2 & 1 \\
+1 & 2 & 1 & 2 \\
+2 & 1 & 3 & 1 \\
+1 & 2 & 1 & 2
+\end{pmatrix}$$
 
-    אם המטריצה $M$ מתארת מספרי מסלולים באורך $1$, אז המטריצה $M^2$ מתארת מספרי מסלולים באורך $2$. למשל, בין $p_1$ לעצמו יש $3$ מסלולים באורך $2$, שהם: $$p_1\to p_2\to p_1, \quad p_1\to p_3\to p_1,\quad p_1\to p_4\to p_1$$
+אם המטריצה $M$ מתארת מספרי מסלולים באורך $1$, אז המטריצה $M^2$ מתארת מספרי מסלולים באורך $2$. למשל, בין $p_1$ לעצמו יש $3$ מסלולים באורך $2$, שהם: $$p_1\to p_2\to p_1, \quad p_1\to p_3\to p_1,\quad p_1\to p_4\to p_1$$
 
-    זה מתאים לחישוב הבא:
+זה מתאים לחישוב הבא:
 
-    $$.(M^2)_{11}=\sum_{k=1}^4 (M)_{1k}(M)_{k1}=0\cdot0+1\cdot1+1\cdot1+1\cdot1=3$$
+$$.(M^2)_{11}=\sum_{k=1}^4 (M)_{1k}(M)_{k1}=0\cdot0+1\cdot1+1\cdot1+1\cdot1=3$$
 
-    כל מחובר $(M)_{1k}(M)_{k1}$ שתורם $1$ לסכום, מתאר מסלול $p_1\to p_k\to p_1$ עם תחנת ביניים $p_k$. לכן, הסכום מתאר את מספר המסלולים מ- $p_1$ לעצמו באורך $2$.
+כל מחובר $(M)_{1k}(M)_{k1}$ שתורם $1$ לסכום, מתאר מסלול $p_1\to p_k\to p_1$ עם תחנת ביניים $p_k$. לכן, הסכום מתאר את מספר המסלולים מ- $p_1$ לעצמו באורך $2$.
 
-    ובהכללה: לכל $k\in\mathbb{N}$ אפשר לחשב את החזקה $M^k=\underbrace{M \cdot M \cdot \ldots \cdot M}_{\text{םימעפ}\, k}$ ואז $(M^k)_{ij}$ שווה למספר המסלולים באורך $k$ מ- $p_i$ ל- $p_j$, כאשר אין הגבלה על תחנות הביניים (יכולה להיות חזרה על קודקוד אחד או יותר). רעיון זה תקף לכל גרף, והוא דוגמה טובה לשימוש של כפל מטריצות.
+ובהכללה: לכל $k\in\mathbb{N}$ אפשר לחשב את החזקה $M^k=\underbrace{M \cdot M \cdot \ldots \cdot M}_{\text{םימעפ}\, k}$ ואז $(M^k)_{ij}$ שווה למספר המסלולים באורך $k$ מ- $p_i$ ל- $p_j$, כאשר אין הגבלה על תחנות הביניים (יכולה להיות חזרה על קודקוד אחד או יותר). רעיון זה תקף לכל גרף, והוא דוגמה טובה לשימוש של כפל מטריצות.
 :::
 
 ::: remark
@@ -813,13 +813,13 @@ $$.(AB)_{ij}=\sum_{l=1}^k (A)_{il}(B)_{lj}=\sum_{l=1}^k A_{il}b_{lj}=(Av_j)_i.$$
 
 $$(B_1C)_{kj} = \sum_{l=1}^{p} b_{kl} c_{lj},$$ ולכן $$ 
 .(A_1(B_1C))_{ij} = \sum_{k=1}^{n}a_{ik}(B_1C)_{kj}
-             = \sum_{k=1}^{n} a_{ik} \left( \sum_{l=1}^{p} b_{kl} c_{lj} \right)
-             = \sum_{k=1}^{n} \sum_{l=1}^{p}a_{ik}b_{kl}c_{lj}.$$ {#eq-associativity1}
+ = \sum_{k=1}^{n} a_{ik} \left( \sum_{l=1}^{p} b_{kl} c_{lj} \right)
+ = \sum_{k=1}^{n} \sum_{l=1}^{p}a_{ik}b_{kl}c_{lj}.$$ {#eq-associativity1}
 
 כעת נחשב את $((A_1B_1)C)_{ij}$: $$(A_1B_1)_{il} = \sum_{k=1}^{n}a_{ik}b_{kl},$$ ולכן $$
 .((A_1B_1)C)_{ij} = \sum_{l=1}^{p}(A_1B_1)_{il}c_{l j}
-              = \sum_{l=1}^{p} \left( \sum_{k=1}^{n}a_{ik}b_{kl}\right) c_{l j}
-              = \sum_{l=1}^{p}\sum_{k=1}^{n} a_{ik}b_{kl}c_{lj}.$$  {#eq-associativity2}
+  = \sum_{l=1}^{p} \left( \sum_{k=1}^{n}a_{ik}b_{kl}\right) c_{l j}
+  = \sum_{l=1}^{p}\sum_{k=1}^{n} a_{ik}b_{kl}c_{lj}.$$  {#eq-associativity2}
 
 נשים לב כי יש שוויון בין שני הביטויים בצד ימין של [-@eq-associativity1] ו-[-@eq-associativity2] כי לפי חוק החילוף אין חשיבות לסדר הסכימה (אפשר לסכום קודם לפי $l$ או קודם לפי $k$ בלי לשנות את הסכום). לכן, לכל $i,j$ מתקיים $(A_1(B_1C))_{ij}=((A_1B_1)C)_{ij}$, ומכאן $$.A_1(B_1C)=(A_1B_1)C$$ ◻
 :::
@@ -846,20 +846,20 @@ $$\begin{aligned}
 
 א.  $$I_1=\begin{pmatrix}1\end{pmatrix}$$
 
-    זהו בעצם הסקלר $1$, עם הבדל פורמלי של סוגריים.
+זהו בעצם הסקלר $1$, עם הבדל פורמלי של סוגריים.
 
 ב.  $$I_2=
-    \begin{pmatrix}
-    1 &0 \\
-    0 &1
-    \end{pmatrix}$$
+\begin{pmatrix}
+1 &0 \\
+0 &1
+\end{pmatrix}$$
 
 ג.  $$I_3=
-    \begin{pmatrix}
-    1 &0 &0 \\
-    0 &1 &0 \\
-    0 &0 &1
-    \end{pmatrix}$$
+\begin{pmatrix}
+1 &0 &0 \\
+0 &1 &0 \\
+0 &0 &1
+\end{pmatrix}$$
 :::
 
 מטריצת היחידה (מכל סדר) משחקת את התפקיד של הסקלר $1$ במובן של ניטרליות ביחס לכפל. ליתר דיוק:
@@ -904,28 +904,28 @@ $A^t$ זה סימון מיוחד, לא סימון חזקה. כאן $t$ זה מל
  
 
 א.  עבור וקטור שורה $v=(\alpha_1,\alpha_2,...,\alpha_n)$ נקבל $$.v^t=\begin{pmatrix}
-    \alpha_1\\
-    \alpha_2\\
-    \vdots \\
-    \alpha_n
-    \end{pmatrix}$$
+\alpha_1\\
+\alpha_2\\
+\vdots \\
+\alpha_n
+\end{pmatrix}$$
 
 ב.  עבור $$A=\begin{pmatrix}
-    a &b\\
-    c & d
-    \end{pmatrix}$$ נקבל $$.A^t=\begin{pmatrix}
-    a &c\\
-    b & d
-    \end{pmatrix}$$
+a &b\\
+c & d
+\end{pmatrix}$$ נקבל $$.A^t=\begin{pmatrix}
+a &c\\
+b & d
+\end{pmatrix}$$
 
 ג.  עבור $$B=\begin{pmatrix}
-    1 &2\\
-    3 & 4\\
-    5 & 6
-    \end{pmatrix}$$ נקבל $$.B^t=\begin{pmatrix}
-    1 &3 &5\\
-    2 & 4 &6
-    \end{pmatrix}$$
+1 &2\\
+3 & 4\\
+5 & 6
+\end{pmatrix}$$ נקבל $$.B^t=\begin{pmatrix}
+1 &3 &5\\
+2 & 4 &6
+\end{pmatrix}$$
 :::
 
 ::: {.proposition #prp-transpose}
@@ -950,9 +950,9 @@ $A^t$ זה סימון מיוחד, לא סימון חזקה. כאן $t$ זה מל
 ג.  שתי המטריצות מסדר $n\times m$ ולכל $1\leq i\leq n, 1\leq j\leq m$ מתקיים $$.((\alpha A)^t)_{ij}=(\alpha A)_{ji}=\alpha (A)_{ji}=\alpha (A^t)_{ij}=(\alpha A^t)_{ij}$$
 
 ד.  כאן $AC$ מסדר $m\times k$ ולכן $(AC)^t$ מסדר $k\times m$. באופן דומה, $C^t$ מסדר $k\times n$ ו- $A^t$ מסדר $n\times m$. אז גם $C^tA^t$ מסדר $k\times m$, ולכל $1\leq i\leq k, 1\leq j\leq m$ מתקיים: $$\begin{aligned}
-    &((AC)^t)_{ij}=(AC)_{ji}=\sum_{l=1}^n (A)_{jl}(C)_{li}=\sum_{l=1}^n (A^t)_{lj}(C^t)_{il}=\sum_{l=1}^n (C^t)_{il}(A^t)_{lj} \\
-    &=(C^tA^t)_{ij}
-    \end{aligned}$$ לקראת הסוף השתמשנו בחוק החילוף כדי להתאים את סדר הכפל בתוך הסכום לתבנית של $C^tA^t$.
+&((AC)^t)_{ij}=(AC)_{ji}=\sum_{l=1}^n (A)_{jl}(C)_{li}=\sum_{l=1}^n (A^t)_{lj}(C^t)_{il}=\sum_{l=1}^n (C^t)_{il}(A^t)_{lj} \\
+&=(C^tA^t)_{ij}
+\end{aligned}$$ לקראת הסוף השתמשנו בחוק החילוף כדי להתאים את סדר הכפל בתוך הסכום לתבנית של $C^tA^t$.
 
  ◻
 :::
@@ -1204,22 +1204,22 @@ $$B\cdot B=B\cdot 0 \nRightarrow B=0$$
  
 
 א.  המטריצות הבאות הן סימטריות: $$\begin{pmatrix}
-    1 &2\\
-    2 &3
-    \end{pmatrix}, \begin{pmatrix}
-    1 &i &0\\
-    i &3 &-1  \\
-    0 &-1 &5
-    \end{pmatrix}$$
+1 &2\\
+2 &3
+\end{pmatrix}, \begin{pmatrix}
+1 &i &0\\
+i &3 &-1  \\
+0 &-1 &5
+\end{pmatrix}$$
 
 ב.  המטריצות הבאות הן אנטי-סימטריות: $$\begin{pmatrix}
-    0 &1\\
-    -1 &0
-    \end{pmatrix}, \begin{pmatrix}
-    0 &i &-2\\
-    -i &0 &-1  \\
-    2 &1 &0
-    \end{pmatrix}$$
+0 &1\\
+-1 &0
+\end{pmatrix}, \begin{pmatrix}
+0 &i &-2\\
+-i &0 &-1  \\
+2 &1 &0
+\end{pmatrix}$$
 :::
 
 ::: {.proposition #prp-sym-antisym}
@@ -1239,17 +1239,17 @@ $$B\cdot B=B\cdot 0 \nRightarrow B=0$$
 
 ב.  מצד אחד $P^t=P$ ומצד שני $.P^t=-P$ לכן
 
-    $$P=-P \implies P+P=-P+P \implies 2P=0 \implies P=0$$
+$$P=-P \implies P+P=-P+P \implies 2P=0 \implies P=0$$
 
-    למעשה, השתמשנו באלגברה רגילה כדי לקבל $P=0$ כמו עבור משוואה במשתנה סקלרי. מותר לחלק בסקלר $2$, שזה כמו להכפיל בסקלר $\frac{1}{2}$.
+למעשה, השתמשנו באלגברה רגילה כדי לקבל $P=0$ כמו עבור משוואה במשתנה סקלרי. מותר לחלק בסקלר $2$, שזה כמו להכפיל בסקלר $\frac{1}{2}$.
 
 ג.  ניקח $$.S=\frac{1}{2}(B+B^t), \quad A=\frac{1}{2}(B-B^t)$$ אז לפי טענה -@prp-transpose מתקיים $$\begin{aligned}
-    S^t&=\frac{1}{2}(B+B^t)^t=\frac{1}{2}(B^t+B)=S \\
-    A^t&=\frac{1}{2}(B-B^t)^t=\frac{1}{2}(B^t-B)=-A \\
-    B&=\frac{1}{2}(B+B^t)+\frac{1}{2}(B-B^t)=S+A
-    \end{aligned}$$
+S^t&=\frac{1}{2}(B+B^t)^t=\frac{1}{2}(B^t+B)=S \\
+A^t&=\frac{1}{2}(B-B^t)^t=\frac{1}{2}(B^t-B)=-A \\
+B&=\frac{1}{2}(B+B^t)+\frac{1}{2}(B-B^t)=S+A
+\end{aligned}$$
 
-    לכן $S$ סימטרית ו- $A$ אנטי-סימטרית כנדרש.
+לכן $S$ סימטרית ו- $A$ אנטי-סימטרית כנדרש.
 
  ◻
 :::
@@ -1332,16 +1332,16 @@ $$AB=\begin{pmatrix}
 
 ::: {.callout-note collapse="true" title="פתרון"}
 א.  לכל $A,B\in\mathbb{M}_{n\times n}(\mathbb{F})$ סימטריות ולכל $\alpha\in\mathbb{F}$ נקבל לפי טענה -@prp-transpose $$\begin{aligned}
-    (A+B)^t&=A^t+B^t=A+B \\
-    (\alpha A)^t&=\alpha A^t=\alpha A
-    \end{aligned}$$ ולכן אלו מטריצות סימטריות.
+(A+B)^t&=A^t+B^t=A+B \\
+(\alpha A)^t&=\alpha A^t=\alpha A
+\end{aligned}$$ ולכן אלו מטריצות סימטריות.
 
 ב.  הפעם נקבל
 
-    $$\begin{aligned}
-    (A+B)^t&=A^t+B^t=-A-B=-(A+B) \\
-    (\alpha A)^t&=\alpha A^t=\alpha(-A)=-(\alpha A)
-    \end{aligned}$$ ולכן אלו מטריצות אנטי-סימטריות.
+$$\begin{aligned}
+(A+B)^t&=A^t+B^t=-A-B=-(A+B) \\
+(\alpha A)^t&=\alpha A^t=\alpha(-A)=-(\alpha A)
+\end{aligned}$$ ולכן אלו מטריצות אנטי-סימטריות.
 :::
 
 ### מטריצות אלכסוניות ומטריצות משולשיות
@@ -1360,46 +1360,46 @@ $$AB=\begin{pmatrix}
  
 
 א.  המטריצות הבאות הן אלכסוניות: $$\begin{pmatrix}
-    1 &0 \\
-    0 &2
-    \end{pmatrix}, \begin{pmatrix}
-    -1 &0 &0 \\
-    0 &2 &0 \\
-    0 &0 &i
-    \end{pmatrix}, \begin{pmatrix}
-    4 &0 &0 &0 \\
-    0 &6 &0 &0 \\
-    0 &0 &8 &0 \\
-    0 &0 &0 &0
-    \end{pmatrix}$$
+1 &0 \\
+0 &2
+\end{pmatrix}, \begin{pmatrix}
+-1 &0 &0 \\
+0 &2 &0 \\
+0 &0 &i
+\end{pmatrix}, \begin{pmatrix}
+4 &0 &0 &0 \\
+0 &6 &0 &0 \\
+0 &0 &8 &0 \\
+0 &0 &0 &0
+\end{pmatrix}$$
 
 ב.  המטריצות הבאות הן משולשיות עליונות: $$\begin{pmatrix}
-    1 &3 \\
-    0 &2
-    \end{pmatrix}, \begin{pmatrix}
-    -1 &-i &3 \\
-    0 &2 &7 \\
-    0 &0 &i
-    \end{pmatrix}, \begin{pmatrix}
-    4 &5 &20 &0 \\
-    0 &6 &7 &13 \\
-    0 &0 &8 &5 \\
-    0 &0 &0 &0
-    \end{pmatrix}$$
+1 &3 \\
+0 &2
+\end{pmatrix}, \begin{pmatrix}
+-1 &-i &3 \\
+0 &2 &7 \\
+0 &0 &i
+\end{pmatrix}, \begin{pmatrix}
+4 &5 &20 &0 \\
+0 &6 &7 &13 \\
+0 &0 &8 &5 \\
+0 &0 &0 &0
+\end{pmatrix}$$
 
 ג.  המטריצות הבאות הן משולשיות תחתונות: $$\begin{pmatrix}
-    1 &0 \\
-    -4 &2
-    \end{pmatrix}, \begin{pmatrix}
-    -1 &0 &0 \\
-    1 &2 &0 \\
-    3 &2i &i
-    \end{pmatrix}, \begin{pmatrix}
-    4 &0 &0 &0 \\
-    -2 &6 &0 &0 \\
-    3 &7 &8 &0 \\
-    4 &-5 &6 &0
-    \end{pmatrix}$$
+1 &0 \\
+-4 &2
+\end{pmatrix}, \begin{pmatrix}
+-1 &0 &0 \\
+1 &2 &0 \\
+3 &2i &i
+\end{pmatrix}, \begin{pmatrix}
+4 &0 &0 &0 \\
+-2 &6 &0 &0 \\
+3 &7 &8 &0 \\
+4 &-5 &6 &0
+\end{pmatrix}$$
 :::
 
 ::: remark
@@ -1426,9 +1426,9 @@ $$AB=\begin{pmatrix}
 
 א.  לכל $j<i$ נסתכל על האיבר הכללי של המכפלה:
 
-    $$(AB)_{ij}=\sum_{l=1}^n (A)_{il}(B)_{lj}$$
+$$(AB)_{ij}=\sum_{l=1}^n (A)_{il}(B)_{lj}$$
 
-    עבור $l< i$ מתקיים $(A)_{il}=0$ כי $A$ משולשית עליונה. אז $i-1$ המכפלות הראשונות בסכום מתאפסות. עבור $l\geq i>j$ מתקיים $(B)_{lj}=0$ כי $B$ משולשית עליונה. אז גם המכפלות הנותרות בסכום מתאפסות, ולכן $(AB)_{ij}=0$ כנדרש.
+עבור $l< i$ מתקיים $(A)_{il}=0$ כי $A$ משולשית עליונה. אז $i-1$ המכפלות הראשונות בסכום מתאפסות. עבור $l\geq i>j$ מתקיים $(B)_{lj}=0$ כי $B$ משולשית עליונה. אז גם המכפלות הנותרות בסכום מתאפסות, ולכן $(AB)_{ij}=0$ כנדרש.
 
 ב.  אפשר לחקות את ההוכחה של הסעיף הקודם, אבל יש קיצור דרך: אם $A,B$ משולשיות תחתונות, אז $A^t,B^t$ משולשיות עליונות. לפי הסעיף הקודם, נובע כי $B^tA^t=(AB)^t$ משולשית עליונה ולכן $AB$ משולשית תחתונה.
 
@@ -1519,79 +1519,79 @@ $$.BA=B(\alpha I_n)=\alpha(BI_n)=\alpha B.$$
 
 א.  המטריצות הבאות הן אלמנטריות כי הן מתאימות להחלפה בין שורות של מטריצת יחידה:
 
-    $$\begin{aligned}
-    S=(R_1\leftrightarrow R_2) \implies S(I_2)&=\begin{pmatrix}
-    0 &1 \\
-    1 & 0
-    \end{pmatrix} \\
-    S=(R_1\leftrightarrow R_3)\implies S(I_3)&=\begin{pmatrix}
-    0 &0 &1 \\
-    0 & 1 &0 \\
-    1 &0 &0
-    \end{pmatrix} \\
-    S=(R_2\leftrightarrow R_4) \implies S(I_4)&=\begin{pmatrix}
-    1 &0 &0 &0 \\
-    0 & 0 &0 &1 \\
-    0 &0 &1 &0 \\
-    0 &1 &0 &0
-    \end{pmatrix}
-    \end{aligned}$$
+$$\begin{aligned}
+S=(R_1\leftrightarrow R_2) \implies S(I_2)&=\begin{pmatrix}
+0 &1 \\
+1 & 0
+\end{pmatrix} \\
+S=(R_1\leftrightarrow R_3)\implies S(I_3)&=\begin{pmatrix}
+0 &0 &1 \\
+0 & 1 &0 \\
+1 &0 &0
+\end{pmatrix} \\
+S=(R_2\leftrightarrow R_4) \implies S(I_4)&=\begin{pmatrix}
+1 &0 &0 &0 \\
+0 & 0 &0 &1 \\
+0 &0 &1 &0 \\
+0 &1 &0 &0
+\end{pmatrix}
+\end{aligned}$$
 
 ב.  המטריצות הבאות הן אלמנטריות כי הן מתאימות לכפל בסקלר של שורה אחת של מטריצת יחידה:
 
-    $$\begin{aligned}
-    S=(2R_1\to R_1)\implies S(I_2)&=\begin{pmatrix}
-    2 & 0\\
-    0 & 1
-    \end{pmatrix} \\
-    S=(3R_2\to R_2)\implies S(I_3)&=\begin{pmatrix}
-    1 &0 &0 \\
-    0 & 3 &0 \\
-    0 &0 &1
-    \end{pmatrix} \\
-    S=(4R_3\to R_3)\implies S(I_4)&=\begin{pmatrix}
-    1 &0 &0 &0 \\
-    0 & 1 &0 &0 \\
-    0 &0 &4 &0 \\
-    0 &0 &0 &1
-    \end{pmatrix}
-    \end{aligned}$$
+$$\begin{aligned}
+S=(2R_1\to R_1)\implies S(I_2)&=\begin{pmatrix}
+2 & 0\\
+0 & 1
+\end{pmatrix} \\
+S=(3R_2\to R_2)\implies S(I_3)&=\begin{pmatrix}
+1 &0 &0 \\
+0 & 3 &0 \\
+0 &0 &1
+\end{pmatrix} \\
+S=(4R_3\to R_3)\implies S(I_4)&=\begin{pmatrix}
+1 &0 &0 &0 \\
+0 & 1 &0 &0 \\
+0 &0 &4 &0 \\
+0 &0 &0 &1
+\end{pmatrix}
+\end{aligned}$$
 
 ג.  המטריצות הבאות הן אלמנטריות כי הן מתאימות להוספת כפולה בסקלר של שורה אחת לשורה אחרת במטריצת יחידה:
 
-    $$\begin{aligned}
-    S=(R_2+2R_1\to R_2)\implies S(I_2)&=\begin{pmatrix}
-    1 & 0\\
-    2 & 1
-    \end{pmatrix} \\
-    S=(R_2+3R_1\to R_2)\implies S(I_3)&=\begin{pmatrix}
-    1 &0 &0 \\
-    3 & 1 &0 \\
-    0 &0 &1
-    \end{pmatrix} \\
-    S=(R_3+4R_2\to R_3)\implies S(I_4)&=\begin{pmatrix}
-    1 &0 &0 &0 \\
-    0 & 1 &0 &0 \\
-    0 &4 &1 &0 \\
-    0 &0 &0 &1
-    \end{pmatrix}
-    \end{aligned}$$
+$$\begin{aligned}
+S=(R_2+2R_1\to R_2)\implies S(I_2)&=\begin{pmatrix}
+1 & 0\\
+2 & 1
+\end{pmatrix} \\
+S=(R_2+3R_1\to R_2)\implies S(I_3)&=\begin{pmatrix}
+1 &0 &0 \\
+3 & 1 &0 \\
+0 &0 &1
+\end{pmatrix} \\
+S=(R_3+4R_2\to R_3)\implies S(I_4)&=\begin{pmatrix}
+1 &0 &0 &0 \\
+0 & 1 &0 &0 \\
+0 &4 &1 &0 \\
+0 &0 &0 &1
+\end{pmatrix}
+\end{aligned}$$
 
 ד.  המטריצות הבאות [אינן]{.underline} אלמנטריות כי הן מתקבלות ממטריצת יחידה ע\"י יותר מפש\"א אחת:
 
-    $$\begin{pmatrix}
-    2 & 0\\
-    0 & 3
-    \end{pmatrix}, \begin{pmatrix}
-    1 &0 &0 \\
-    1 & 1 &0 \\
-    1 &0 &1
-    \end{pmatrix}, \begin{pmatrix}
-    0 &0 &0 &1 \\
-    0 & 0 &1 &0 \\
-    0 &1 &0 &0 \\
-    1 &0 &0 &0
-    \end{pmatrix}$$ למעשה, במטריצה אלמנטרית רק שורה אחת שונה מהשורה המתאימה ב- $I_n$, אלא אם כן זו מטריצה שמתאימה להחלפת שורות. אבל גם אז יש הבדל רק בשתי שורות וקל לזהות את ההחלפה, בניגוד למטריצה השמאלית לעיל שהיא בפירוש לא קשורה להחלפה.
+$$\begin{pmatrix}
+2 & 0\\
+0 & 3
+\end{pmatrix}, \begin{pmatrix}
+1 &0 &0 \\
+1 & 1 &0 \\
+1 &0 &1
+\end{pmatrix}, \begin{pmatrix}
+0 &0 &0 &1 \\
+0 & 0 &1 &0 \\
+0 &1 &0 &0 \\
+1 &0 &0 &0
+\end{pmatrix}$$ למעשה, במטריצה אלמנטרית רק שורה אחת שונה מהשורה המתאימה ב- $I_n$, אלא אם כן זו מטריצה שמתאימה להחלפת שורות. אבל גם אז יש הבדל רק בשתי שורות וקל לזהות את ההחלפה, בניגוד למטריצה השמאלית לעיל שהיא בפירוש לא קשורה להחלפה.
 :::
 
 ::: {.proposition #prp-elementary}
@@ -1604,46 +1604,46 @@ $$.BA=B(\alpha I_n)=\alpha(BI_n)=\alpha B.$$
  
 
 א.  $$\begin{pmatrix}
-    0 &0 &1 \\
-    0 & 1 &0 \\
-    1 &0 &0
-    \end{pmatrix}\begin{pmatrix}
-    a &b &c \\
-    d & e &f \\
-    g &h &r
-    \end{pmatrix}=\begin{pmatrix}
-    g &h &r \\
-    d & e &f \\
-    a &b &c 
-    \end{pmatrix}$$
+0 &0 &1 \\
+0 & 1 &0 \\
+1 &0 &0
+\end{pmatrix}\begin{pmatrix}
+a &b &c \\
+d & e &f \\
+g &h &r
+\end{pmatrix}=\begin{pmatrix}
+g &h &r \\
+d & e &f \\
+a &b &c 
+\end{pmatrix}$$
 
 ב.  $$\begin{pmatrix}
-    1 &0 &0 \\
-    0 & 3 &0 \\
-    0 &0 &1
-    \end{pmatrix}\begin{pmatrix}
-    a &b &c \\
-    d & e &f \\
-    g &h &r
-    \end{pmatrix}=\begin{pmatrix}
-    a &b &c \\
-    3d & 3e &3f \\
-    g &h &r
-    \end{pmatrix}$$
+1 &0 &0 \\
+0 & 3 &0 \\
+0 &0 &1
+\end{pmatrix}\begin{pmatrix}
+a &b &c \\
+d & e &f \\
+g &h &r
+\end{pmatrix}=\begin{pmatrix}
+a &b &c \\
+3d & 3e &3f \\
+g &h &r
+\end{pmatrix}$$
 
 ג.  $$\begin{pmatrix}
-    1 &0 &0 \\
-    3 & 1 &0 \\
-    0 &0 &1
-    \end{pmatrix}\begin{pmatrix}
-    a &b &c \\
-    d & e &f \\
-    g &h &r
-    \end{pmatrix}=\begin{pmatrix}
-    a &b &c \\
-    3a+d & 3b+e &3c+f \\
-    g &h &r
-    \end{pmatrix}$$
+1 &0 &0 \\
+3 & 1 &0 \\
+0 &0 &1
+\end{pmatrix}\begin{pmatrix}
+a &b &c \\
+d & e &f \\
+g &h &r
+\end{pmatrix}=\begin{pmatrix}
+a &b &c \\
+3a+d & 3b+e &3c+f \\
+g &h &r
+\end{pmatrix}$$
 :::
 
 ::: proof
@@ -1651,30 +1651,30 @@ $$.BA=B(\alpha I_n)=\alpha(BI_n)=\alpha B.$$
 
 א.  $S=(R_i\leftrightarrow R_j)$
 
-    $E$ מזכירה את מטריצת היחידה, אבל יש ארבעה הבדלים: $$e_{ii}=e_{jj}=0, \quad e_{ij}=e_{ji}=1$$
+$E$ מזכירה את מטריצת היחידה, אבל יש ארבעה הבדלים: $$e_{ii}=e_{jj}=0, \quad e_{ij}=e_{ji}=1$$
 
-    נחשב: $$(EA)_{rk} = \sum_{l=1}^m e_{rl} a_{lk}.$$ אם $r \notin \{i,j\}$, אז $e_{rk}$ הוא בדיוק כמו במטריצת היחידה: $1$ עבור $r=k$, אחרת $0$. לכן השורה ה- $r$ נשארת כפי שהיא. לעומת זאת, אם $r=i$ נקבל $(EA)_{ik} = a_{jk}$. אם $r=j$ נקבל $(EA)_{jk} = a_{ik}$. כלומר החלפנו בין השורות ה- $i,j$ של $A$, ולכן קיבלנו את $S(A)$.
+נחשב: $$(EA)_{rk} = \sum_{l=1}^m e_{rl} a_{lk}.$$ אם $r \notin \{i,j\}$, אז $e_{rk}$ הוא בדיוק כמו במטריצת היחידה: $1$ עבור $r=k$, אחרת $0$. לכן השורה ה- $r$ נשארת כפי שהיא. לעומת זאת, אם $r=i$ נקבל $(EA)_{ik} = a_{jk}$. אם $r=j$ נקבל $(EA)_{jk} = a_{ik}$. כלומר החלפנו בין השורות ה- $i,j$ של $A$, ולכן קיבלנו את $S(A)$.
 
 ב.  $S=(\alpha R_i\to R_i)$ עבור $\alpha\neq 0$.
 
-    כאן $E$ היא כמעט כמו מטריצת היחידה, עם הבדל אחד: $.e_{ii} = \alpha$
+כאן $E$ היא כמעט כמו מטריצת היחידה, עם הבדל אחד: $.e_{ii} = \alpha$
 
-    נשתמש בנוסחה מפוצלת כי יש פה שני מקרים:
+נשתמש בנוסחה מפוצלת כי יש פה שני מקרים:
 
-    $$(EA)_{rk} = \sum_{l=1}^m e_{rl} a_{lk} =
-    \begin{cases}
-    a_{rk}, & r \neq i\\
-    \alpha a_{ik}, & r = i
-    \end{cases}$$ כלומר השורה ה- $i$ של $A$ הוכפלה ב־ $\alpha$ ושאר השורות לא השתנו. קיבלנו את $S(A)$.
+$$(EA)_{rk} = \sum_{l=1}^m e_{rl} a_{lk} =
+\begin{cases}
+a_{rk}, & r \neq i\\
+\alpha a_{ik}, & r = i
+\end{cases}$$ כלומר השורה ה- $i$ של $A$ הוכפלה ב־ $\alpha$ ושאר השורות לא השתנו. קיבלנו את $S(A)$.
 
 ג.  $S=(R_i+\alpha R_j\to R_i)$ עבור $i\neq j$. כאן $$,E = I_m + \alpha P(i,j)$$ כאשר $P(i,j)$ היא המטריצה שכל ערכיה הם $0$ פרט ל- $(P(i,j))_{ij}=1$. נחשב: $$.EA = (I_m + \alpha P(i,j))A = A + \alpha (P(i,j)A)$$ אבל $$(P(i,j)A)_{rk} = \sum_{l=1}^m (P(i,j))_{rl} a_{lk} = \begin{cases}
-    0, & r \neq i\\
-    a_{jk}, & r = i
-    \end{cases}$$ ולכן $$(EA)_{rk} =
-    \begin{cases}
-    a_{rk}, & r \neq i\\
-    a_{ik} + \alpha a_{jk}, & r = i
-    \end{cases}$$ כלומר השורה $R_i$ הוחלפה ב־ $R_i + \alpha R_j$. שוב קיבלנו את $S(A)$.
+0, & r \neq i\\
+a_{jk}, & r = i
+\end{cases}$$ ולכן $$(EA)_{rk} =
+\begin{cases}
+a_{rk}, & r \neq i\\
+a_{ik} + \alpha a_{jk}, & r = i
+\end{cases}$$ כלומר השורה $R_i$ הוחלפה ב־ $R_i + \alpha R_j$. שוב קיבלנו את $S(A)$.
 
  ◻
 :::
@@ -1881,11 +1881,11 @@ $$.EA=
 
 ::: exercise
 לכל $$x=\begin{pmatrix}
-    a_1 \\
-    a_2 \\
-    \vdots \\
-    a_n
-    \end{pmatrix}$$ מתקיים $$.x=\sum_{j=1}^n a_je_j.$$
+a_1 \\
+a_2 \\
+\vdots \\
+a_n
+\end{pmatrix}$$ מתקיים $$.x=\sum_{j=1}^n a_je_j.$$
 :::
 
 ::: {.callout-note collapse="true" title="פתרון"}
@@ -2146,227 +2146,228 @@ $$(A\mid I_n)\rightarrow (E_1A\mid E_1)\rightarrow (E_2E_1A\mid E_2E_1)\rightarr
 
 ::: example
 
-א.  ניקח את $$A=\begin{pmatrix}
-    1 & 2 & 1 \\
-    0 & 1 & 1 \\
-    2 & 3 & 4 
-    \end{pmatrix}$$ ונחשב את ההופכית ע\"י דירוג קנוני של $(A \mid I_3)$:
+א.  ניקח את 
+$$A=\begin{pmatrix}
+1 & 2 & 1 \\
+0 & 1 & 1 \\
+2 & 3 & 4 
+\end{pmatrix}$$
+ונחשב את ההופכית ע\"י דירוג קנוני של $(A \mid I_3)$:
+$$\begin{aligned}
+(A\mid I_3)
+&=\left(
+\begin{array}{ccc|ccc}
+1 & 2 & 1 & 1 & 0 & 0\\
+0 & 1 & 1 & 0 & 1 & 0\\
+2 & 3 & 4 & 0 & 0 & 1
+\end{array}
+\right)
+\\[4pt]
+&\xrightarrow{R_3-2R_1\to R_3}
+\left(
+\begin{array}{ccc|ccc}
+1 & 2 & 1 & 1 & 0 & 0\\
+0 & 1 & 1 & 0 & 1 & 0\\
+0 & -1 & 2 & -2 & 0 & 1
+\end{array}
+\right)
+\\[4pt]
+&\xrightarrow{R_2\leftrightarrow R_3}
+\left(
+\begin{array}{ccc|ccc}
+1 & 2 & 1 & 1 & 0 & 0\\
+0 & -1 & 2 & -2 & 0 & 1\\
+0 & 1 & 1 & 0 & 1 & 0
+\end{array}
+\right)
+\\[4pt]
+&\xrightarrow{-R_2\to R_2}
+\left(
+\begin{array}{ccc|ccc}
+1 & 2 & 1 & 1 & 0 & 0\\
+0 & 1 & -2 & 2 & 0 & -1\\
+0 & 1 & 1 & 0 & 1 & 0
+\end{array}
+\right)
+\\[4pt]
+&\xrightarrow{R_1-2R_2\to R_1}
+\left(
+\begin{array}{ccc|ccc}
+1 & 0 & 5 & -3 & 0 & 2\\
+0 & 1 & -2 & 2 & 0 & -1\\
+0 & 1 & 1 & 0 & 1 & 0
+\end{array}
+\right)
+\\[4pt]
+&\xrightarrow{R_3-R_2\to R_3}
+\left(
+\begin{array}{ccc|ccc}
+1 & 0 & 5 & -3 & 0 & 2\\
+0 & 1 & -2 & 2 & 0 & -1\\
+0 & 0 & 3 & -2 & 1 & 1
+\end{array}
+\right)
+\\[4pt]
+&\xrightarrow{\tfrac13 R_3\to R_3}
+\left(
+\begin{array}{ccc|ccc}
+1 & 0 & 5 & -3 & 0 & 2\\
+0 & 1 & -2 & 2 & 0 & -1\\
+0 & 0 & 1 & -\tfrac23 & \tfrac13 & \tfrac13
+\end{array}
+\right)
+\\[4pt]
+&\xrightarrow{R_1-5R_3\to R_1}
+\left(
+\begin{array}{ccc|ccc}
+1 & 0 & 0 & \tfrac13 & -\tfrac53 & \tfrac13\\
+0 & 1 & -2 & 2 & 0 & -1\\
+0 & 0 & 1 & -\tfrac23 & \tfrac13 & \tfrac13
+\end{array}
+\right)
+\\[4pt]
+&\xrightarrow{R_2+2R_3\to R_2}
+\left(
+\begin{array}{ccc|ccc}
+1 & 0 & 0 & \tfrac13 & -\tfrac53 & \tfrac13\\
+0 & 1 & 0 & \tfrac23 & \tfrac23 & -\tfrac13\\
+0 & 0 & 1 & -\tfrac23 & \tfrac13 & \tfrac13
+\end{array}
+\right)
+\end{aligned}$$
 
-    $$\begin{aligned}
-    (A\mid I_3)
-    &=\left(
-    \begin{array}{ccc|ccc}
-    1 & 2 & 1 & 1 & 0 & 0\\
-    0 & 1 & 1 & 0 & 1 & 0\\
-    2 & 3 & 4 & 0 & 0 & 1
-    \end{array}
-    \right)
-    \\[4pt]
-    &\xrightarrow{R_3-2R_1\to R_3}
-    \left(
-    \begin{array}{ccc|ccc}
-    1 & 2 & 1 & 1 & 0 & 0\\
-    0 & 1 & 1 & 0 & 1 & 0\\
-    0 & -1 & 2 & -2 & 0 & 1
-    \end{array}
-    \right)
-    \\[4pt]
-    &\xrightarrow{R_2\leftrightarrow R_3}
-    \left(
-    \begin{array}{ccc|ccc}
-    1 & 2 & 1 & 1 & 0 & 0\\
-    0 & -1 & 2 & -2 & 0 & 1\\
-    0 & 1 & 1 & 0 & 1 & 0
-    \end{array}
-    \right)
-    \\[4pt]
-    &\xrightarrow{-R_2\to R_2}
-    \left(
-    \begin{array}{ccc|ccc}
-    1 & 2 & 1 & 1 & 0 & 0\\
-    0 & 1 & -2 & 2 & 0 & -1\\
-    0 & 1 & 1 & 0 & 1 & 0
-    \end{array}
-    \right)
-    \\[4pt]
-    &\xrightarrow{R_1-2R_2\to R_1}
-    \left(
-    \begin{array}{ccc|ccc}
-    1 & 0 & 5 & -3 & 0 & 2\\
-    0 & 1 & -2 & 2 & 0 & -1\\
-    0 & 1 & 1 & 0 & 1 & 0
-    \end{array}
-    \right)
-    \\[4pt]
-    &\xrightarrow{R_3-R_2\to R_3}
-    \left(
-    \begin{array}{ccc|ccc}
-    1 & 0 & 5 & -3 & 0 & 2\\
-    0 & 1 & -2 & 2 & 0 & -1\\
-    0 & 0 & 3 & -2 & 1 & 1
-    \end{array}
-    \right)
-    \\[4pt]
-    &\xrightarrow{\tfrac13 R_3\to R_3}
-    \left(
-    \begin{array}{ccc|ccc}
-    1 & 0 & 5 & -3 & 0 & 2\\
-    0 & 1 & -2 & 2 & 0 & -1\\
-    0 & 0 & 1 & -\tfrac23 & \tfrac13 & \tfrac13
-    \end{array}
-    \right)
-    \\[4pt]
-    &\xrightarrow{R_1-5R_3\to R_1}
-    \left(
-    \begin{array}{ccc|ccc}
-    1 & 0 & 0 & \tfrac13 & -\tfrac53 & \tfrac13\\
-    0 & 1 & -2 & 2 & 0 & -1\\
-    0 & 0 & 1 & -\tfrac23 & \tfrac13 & \tfrac13
-    \end{array}
-    \right)
-    \\[4pt]
-    &\xrightarrow{R_2+2R_3\to R_2}
-    \left(
-    \begin{array}{ccc|ccc}
-    1 & 0 & 0 & \tfrac13 & -\tfrac53 & \tfrac13\\
-    0 & 1 & 0 & \tfrac23 & \tfrac23 & -\tfrac13\\
-    0 & 0 & 1 & -\tfrac23 & \tfrac13 & \tfrac13
-    \end{array}
-    \right)
-    \end{aligned}$$
-
-    אז קיבלנו $$.A^{-1}=
-    \begin{pmatrix}
-    \frac{1}{3} & -\frac{5}{3} & \frac{1}{3}\\
-    \frac{2}{3} & \frac{2}{3} & -\frac{1}{3}\\
-    -\frac{2}{3} & \frac{1}{3} & \frac{1}{3}
-    \end{pmatrix}$$
+אז קיבלנו $$.A^{-1}=
+\begin{pmatrix}
+\frac{1}{3} & -\frac{5}{3} & \frac{1}{3}\\
+\frac{2}{3} & \frac{2}{3} & -\frac{1}{3}\\
+-\frac{2}{3} & \frac{1}{3} & \frac{1}{3}
+\end{pmatrix}$$
 
 ב.  ניקח את $$B=\begin{pmatrix}
-    1+i & 2 \\
-    3 & 4-i
-    \end{pmatrix}$$ ונחשב את ההופכית ע\"י דירוג קנוני של $(B \mid I_2)$:
+1+i & 2 \\
+3 & 4-i
+\end{pmatrix}$$ ונחשב את ההופכית ע\"י דירוג קנוני של $(B \mid I_2)$:
 
-    $$\begin{aligned}
-    (B\mid I_2)
-    &=\left(
-    \begin{array}{cc|cc}
-    1+i & 2 & 1 & 0 \\
-    3 & 4-i & 0 & 1
-    \end{array}
-    \right)
-    \\[4pt]
-    &\xrightarrow{R_2-\tfrac{3}{1+i}R_1\to R_2}
-    \left(
-    \begin{array}{cc|cc}
-    1+i & 2 & 1 & 0\\
-    0 & 4-i - \tfrac{6}{1+i} & -\tfrac{3}{1+i} & 1
-    \end{array}
-    \right)
-    \\[4pt]
-    &\xrightarrow{\tfrac{1}{1+i}R_1\to R_1}
-    \left(
-    \begin{array}{cc|cc}
-    1 & \tfrac{2}{1+i} & \tfrac{1}{1+i} & 0\\
-    0 & \tfrac{-1+3i}{1+i} & -\tfrac{3}{1+i} & 1
-    \end{array}
-    \right)
-    \\[4pt]
-    &\xrightarrow{\tfrac{1+i}{-1+3i}R_2\to R_2}
-    \left(
-    \begin{array}{cc|cc}
-    1 & 1-i & \tfrac{1-i}{2} & 0\\
-    0 & 1 & \tfrac{3}{1-3i} & \tfrac{1+i}{-1+3i}
-    \end{array}
-    \right)
-    \\[4pt]
-    &\xrightarrow{R_1-(1-i)R_2\to R_1}
-    \left(
-    \begin{array}{cc|cc}
-    1 & 0 & \tfrac{1-i}{2}-\tfrac{(3+9i)(1-i)}{10} & -\tfrac{(1-i)(1-2i)}{5} \\
-    0 & 1 & \tfrac{3+9i}{10} & \tfrac{1-2i}{5}
-    \end{array}
-    \right)
-    \end{aligned}$$
+$$\begin{aligned}
+(B\mid I_2)
+&=\left(
+\begin{array}{cc|cc}
+1+i & 2 & 1 & 0 \\
+3 & 4-i & 0 & 1
+\end{array}
+\right)
+\\[4pt]
+&\xrightarrow{R_2-\tfrac{3}{1+i}R_1\to R_2}
+\left(
+\begin{array}{cc|cc}
+1+i & 2 & 1 & 0\\
+0 & 4-i - \tfrac{6}{1+i} & -\tfrac{3}{1+i} & 1
+\end{array}
+\right)
+\\[4pt]
+&\xrightarrow{\tfrac{1}{1+i}R_1\to R_1}
+\left(
+\begin{array}{cc|cc}
+1 & \tfrac{2}{1+i} & \tfrac{1}{1+i} & 0\\
+0 & \tfrac{-1+3i}{1+i} & -\tfrac{3}{1+i} & 1
+\end{array}
+\right)
+\\[4pt]
+&\xrightarrow{\tfrac{1+i}{-1+3i}R_2\to R_2}
+\left(
+\begin{array}{cc|cc}
+1 & 1-i & \tfrac{1-i}{2} & 0\\
+0 & 1 & \tfrac{3}{1-3i} & \tfrac{1+i}{-1+3i}
+\end{array}
+\right)
+\\[4pt]
+&\xrightarrow{R_1-(1-i)R_2\to R_1}
+\left(
+\begin{array}{cc|cc}
+1 & 0 & \tfrac{1-i}{2}-\tfrac{(3+9i)(1-i)}{10} & -\tfrac{(1-i)(1-2i)}{5} \\
+0 & 1 & \tfrac{3+9i}{10} & \tfrac{1-2i}{5}
+\end{array}
+\right)
+\end{aligned}$$
 
-    נפשט את המטריצה האחרונה שקיבלנו בצד ימין:
+נפשט את המטריצה האחרונה שקיבלנו בצד ימין:
 
-    $$B^{-1}=\begin{pmatrix}
-    -\tfrac{7+11i}{10} & \tfrac{1+3i}{5} \\
-    \tfrac{3+9i}{10} & \tfrac{1-2i}{5}
-    \end{pmatrix}$$
+$$B^{-1}=\begin{pmatrix}
+-\tfrac{7+11i}{10} & \tfrac{1+3i}{5} \\
+\tfrac{3+9i}{10} & \tfrac{1-2i}{5}
+\end{pmatrix}$$
 :::
 
 ::: exercise
  
 
 א.  חשבו את $A^{-1}$ עבור $$.A=\begin{pmatrix}
-    1 & 2 \\
-    3 & 4
-    \end{pmatrix}$$
+1 & 2 \\
+3 & 4
+\end{pmatrix}$$
 
 ב.  עבור $A$ הקודמת, מצאו $B\in\mathbb{M}_{2\times 2}(\mathbb{R})$ עבורה מתקיים $AB=C$ כאשר $$.C=\begin{pmatrix}
-    3 & -5 \\
-    -9 & 1
-    \end{pmatrix}$$
+3 & -5 \\
+-9 & 1
+\end{pmatrix}$$
 :::
 
 ::: {.callout-note collapse="true" title="פתרון"}
 
 א.  נדרג את $(A|I_2)$:
 
-    $$\begin{aligned}
-    \left(A \mid I_2\right)
-    &=
-    \left(
-    \begin{array}{cc|cc}
-    1 & 2 & 1 & 0\\
-    3 & 4 & 0 & 1
-    \end{array}
-    \right)
-    \\[4pt]
-    &\xrightarrow{R_2-3R_1\to R_2}
-    \left(
-    \begin{array}{cc|cc}
-    1 & 2 & 1 & 0\\
-    0 & -2 & -3 & 1
-    \end{array}
-    \right)
-    \\[4pt]
-    &\xrightarrow{-\tfrac12 R_2\to R_2}
-    \left(
-    \begin{array}{cc|cc}
-    1 & 2 & 1 & 0\\
-    0 & 1 & \tfrac32 & -\tfrac12
-    \end{array}
-    \right)
-    \\[4pt]
-    &\xrightarrow{R_1-2R_2\to R_1}
-    \left(
-    \begin{array}{cc|cc}
-    1 & 0 & -2 & 1\\
-    0 & 1 & \tfrac32 & -\tfrac12
-    \end{array}
-    \right)
-    \end{aligned}$$
+$$\begin{aligned}
+\left(A \mid I_2\right)
+&=
+\left(
+\begin{array}{cc|cc}
+1 & 2 & 1 & 0\\
+3 & 4 & 0 & 1
+\end{array}
+\right)
+\\[4pt]
+&\xrightarrow{R_2-3R_1\to R_2}
+\left(
+\begin{array}{cc|cc}
+1 & 2 & 1 & 0\\
+0 & -2 & -3 & 1
+\end{array}
+\right)
+\\[4pt]
+&\xrightarrow{-\tfrac12 R_2\to R_2}
+\left(
+\begin{array}{cc|cc}
+1 & 2 & 1 & 0\\
+0 & 1 & \tfrac32 & -\tfrac12
+\end{array}
+\right)
+\\[4pt]
+&\xrightarrow{R_1-2R_2\to R_1}
+\left(
+\begin{array}{cc|cc}
+1 & 0 & -2 & 1\\
+0 & 1 & \tfrac32 & -\tfrac12
+\end{array}
+\right)
+\end{aligned}$$
 
-    אז קיבלנו
+אז קיבלנו
 
-    $$.A^{-1}=\begin{pmatrix}
-    -2 & 1\\
-    \tfrac32 & -\tfrac12
-    \end{pmatrix}$$
+$$.A^{-1}=\begin{pmatrix}
+-2 & 1\\
+\tfrac32 & -\tfrac12
+\end{pmatrix}$$
 
 ב.  נכפיל משמאל ב- $A^{-1}$ את שני אגפי המשוואה $AB=C$ ונקבל:
 
-    $$.B=A^{-1}C=\begin{pmatrix}
-    -2 & 1\\
-    \tfrac32 & -\tfrac12
-    \end{pmatrix}\begin{pmatrix}
-    3 & -5 \\
-    -9 & 1
-    \end{pmatrix}=\begin{pmatrix}
-    -15 & 11 \\
-    9 & -8 
-    \end{pmatrix}$$
+$$.B=A^{-1}C=\begin{pmatrix}
+-2 & 1\\
+\tfrac32 & -\tfrac12
+\end{pmatrix}\begin{pmatrix}
+3 & -5 \\
+-9 & 1
+\end{pmatrix}=\begin{pmatrix}
+-15 & 11 \\
+9 & -8 
+\end{pmatrix}$$
 :::
