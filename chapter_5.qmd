@@ -1147,17 +1147,17 @@ v_1 & v_2 & \cdots & v_k \\
 ::: proof
  יש שלושה כיוונים להוכיח (אחד לכל זוג).
 
-$:\text{(ג)}\impliedby \text{(ב)}+\text{(א)}$ הוכחנו זאת במסקנה -@cor-size-dim.
+$:(\text{ג})\impliedby (\text{ב})+(\text{א})$ הוכחנו זאת במסקנה -@cor-size-dim.
 
-בשביל שני הכיוונים האחרים, נניח תחילה את $\text{(ג)}$ ונסמן $B=\Set{v_1,...,v_n}$. נסתכל על המטריצה $$.A=\begin{pmatrix}
+בשביל שני הכיוונים האחרים, נניח תחילה את $(\text{ג})$ ונסמן $B=\Set{v_1,...,v_n}$. נסתכל על המטריצה $$.A=\begin{pmatrix}
 | & | & & | \\
 v_1 & v_2 & \cdots & v_n \\
 | & | & & |
 \end{pmatrix}$$
 
 סעיפים $(\text{י})$,$(\text{יא})$ במשפט -@thm-invertible2 הם שקולים, ולכן מתקיים: $$\begin{aligned}
-\text{(ב)}\impliedby\text{(ג)}+\text{(א)} \\
-\text{(א)}\impliedby\text{(ג)}+\text{(ב)}
+$(\text{ב})$\impliedby$(\text{ג})$+$(\text{א})$ \\
+(\text{א})\impliedby(\text{ג})+(\text{ב})
 \end{aligned}$$ ◻
 :::
 
