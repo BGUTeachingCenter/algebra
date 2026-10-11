@@ -692,7 +692,7 @@ t
 -1\\
 0\\
 1
-\end{pmatrix}|s,t\in\mathbb{R}}\\
+\end{pmatrix}:s,t\in\mathbb{R}}\\
 &=\mathop{\mathrm{Span}}\left(\begin{pmatrix}
 1\\
 -1\\
