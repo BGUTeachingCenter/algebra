@@ -13,7 +13,9 @@ def has_hebrew(s):
 
 
 def find_matching_brace(text, start):
-    """start points immediately after the opening {"""
+    """
+    start points immediately after the opening {
+    """
     depth = 1
     i = start
 
@@ -38,6 +40,7 @@ def split_math_and_text(content):
     """
     Split content such as:
         $T$ חח״ע
+
     or:
         אם $T$ הפיכה
 
@@ -53,6 +56,7 @@ def split_math_and_text(content):
                 parts.append(("text", content[start:i]))
 
             j = i + 1
+
             while j < len(content):
                 if content[j] == "$" and content[j - 1] != "\\":
                     break
@@ -94,13 +98,13 @@ def fix_text_content(content):
     parts = split_math_and_text(content)
 
     # No embedded $...$: only fix direction of Hebrew text
-if parts is None or not any(kind == "math" for kind, _ in parts):
-    stripped = content.strip()
+    if parts is None or not any(kind == "math" for kind, _ in parts):
+        stripped = content.strip()
 
-    if stripped.startswith(RLI) and stripped.endswith(PDI):
-        return r"\text{" + content + "}"
+        if stripped.startswith(RLI) and stripped.endswith(PDI):
+            return r"\text{" + content + "}"
 
-    return r"\text{" + RLI + content + PDI + "}"
+        return r"\text{" + RLI + content + PDI + "}"
 
     # The content is logically RTL.
     # Reverse its top-level text/math pieces for embedding in LTR mathematics.
@@ -144,10 +148,10 @@ def process_html(text):
         replacement = fix_text_content(content)
 
         if replacement is None:
-    result.append(text[idx:content_end + 1])
-else:
-    result.append(replacement)
-    changed += 1
+            result.append(text[idx:content_end + 1])
+        else:
+            result.append(replacement)
+            changed += 1
 
         pos = content_end + 1
 
