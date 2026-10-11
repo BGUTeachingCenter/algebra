@@ -519,7 +519,7 @@ $$\alpha_i=0$$ שהרי $\|v_i\|\neq 0$ כי $v_i\neq 0$ לפי הנתון. לכ
 
 יהי $W\subseteq\mathbb{R}^n$ תת-מרחב בעל בסיס $\Set{w_1,...,w_m}$. אז לכל $v\in\mathbb{R}^n$ מתקיים: $$\forall w\in W\thinspace :\thinspace v\perp w \iff \forall 1\leq i\leq m \thinspace :\thinspace v\perp w_m$$
 
-או במילים: $v$ מאונך לכל וקטור ב- $W$ אם ורק אם הוא מאונך לכל וקטורי הבסיס.
+ובמילים: $v$ מאונך לכל וקטור ב- $W$ אם ורק אם הוא מאונך לכל וקטורי הבסיס.
 :::
 
 ::: {.callout-note collapse="true" title="פתרון"}
@@ -698,7 +698,7 @@ w_j\cdot w_m&=w_j\cdot(v_m-\sum_{i=1}^{m-1}\frac{v_m\cdot w_i}{w_i\cdot w_i}w_i)
 ::: proof
 שלושת התנאים הראשונים שקולים לפי משפט -@thm-invertible.
 
-נראה כי $\text{(ד)}$ שקול ל- $\text{(ב)}$. נסמן $$.P=\begin{pmatrix}
+נראה כי $(\text{ד})$ שקול ל- $(\text{ב})$. נסמן $$.P=\begin{pmatrix}
 \begin{array}{c}
 |\\[-0.4ex]
 v_1\\[-0.4ex]
@@ -767,9 +767,9 @@ v_n\\[-0.4ex]
 0, & i\neq j
 \end{cases} \\
 &\iff P^tP=I_n
-\end{aligned}$$ מכאן מקבלים כי $\text{(ב)}$ שקול ל- $\text{(ד)}$ לפי מסקנה -@cor-orthogonal-basis.
+\end{aligned}$$ מכאן מקבלים כי $(\text{ב})$ שקול ל- $(\text{ד})$ לפי מסקנה -@cor-orthogonal-basis.
 
-כדי להוכיח את השקילות בין $\text{(ג)}$ ל- $\text{(ה)}$ נסתכל על המטריצה $P^t$ שעמודותיה הן שורות $P$ עד כדי שחלוף. לפי השקילות בין $\text{(ב)}$ ל- $\text{(ד)}$, נובע כי $\text{(ה)}$ שקול ל- $$,(P^t)^tP^t=I_n$$ שהוא שכתוב קל של $\text{(ג)}$. ◻
+כדי להוכיח את השקילות בין $(\text{ג})$ ל- $(\text{ה})$ נסתכל על המטריצה $P^t$ שעמודותיה הן שורות $P$ עד כדי שחלוף. לפי השקילות בין $(\text{ב})$ ל- $(\text{ד})$, נובע כי $(\text{ה})$ שקול ל- $$,(P^t)^tP^t=I_n$$ שהוא שכתוב קל של $(\text{ג})$. ◻
 :::
 
 ::: {.exercise #exr-orthogonal-det}
