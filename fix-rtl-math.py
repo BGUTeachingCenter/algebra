@@ -144,14 +144,10 @@ def process_html(text):
         replacement = fix_text_content(content)
 
         if replacement is None:
-            result.append(text[idx:content_end + 1])
-        else:
-            # If replacement already contains \text{...}, don't wrap again
-            if replacement.startswith(r"\text{"):
-                result.append(replacement)
-            else:
-                result.append(r"\text{" + replacement + "}")
-            changed += 1
+    result.append(text[idx:content_end + 1])
+else:
+    result.append(replacement)
+    changed += 1
 
         pos = content_end + 1
 
