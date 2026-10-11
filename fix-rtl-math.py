@@ -94,13 +94,13 @@ def fix_text_content(content):
     parts = split_math_and_text(content)
 
     # No embedded $...$: only fix direction of Hebrew text
-    if parts is None or not any(kind == "math" for kind, _ in parts):
-        stripped = content.strip()
+if parts is None or not any(kind == "math" for kind, _ in parts):
+    stripped = content.strip()
 
-        if stripped.startswith(RLI) and stripped.endswith(PDI):
-            return None
+    if stripped.startswith(RLI) and stripped.endswith(PDI):
+        return r"\text{" + content + "}"
 
-        return RLI + content + PDI
+    return r"\text{" + RLI + content + PDI + "}"
 
     # The content is logically RTL.
     # Reverse its top-level text/math pieces for embedding in LTR mathematics.
