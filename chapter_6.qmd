@@ -433,8 +433,7 @@ $$B_2=\Set{T(i,j)|1\leq i<j\leq n}$$ כאשר $T(i,j)$ היא המטריצה ש�
 ::: {.callout-note collapse="true" title="פתרון"}
 
 א. לפי מסקנה -@cor-subspace-dim, מתקיים $$,W_1+W_2=\mathbb{C}^4 \iff \dim(W_1+W_2)=4$$ ולפי נוסחת המימדים נובע כי $$.\dim(W_1+W_2)=4 \iff 2+2-\dim(W_1\cap W_2)=4 \iff \dim(W_1\cap W_2)=0$$
-
-    לכן, מתקיים $$.W_1+W_2=\mathbb{C}^4 \iff W_1\cap W_2=\Set{0}$$
+ לכן, מתקיים $$.W_1+W_2=\mathbb{C}^4 \iff W_1\cap W_2=\Set{0}$$
 
 ב. מתקיים $$,3=\dim(W_1)\leq \dim(W_1+W_2)\leq 4$$ ולפי נוסחת המימדים (לאחר העברת אגפים) נובע כי $$.1=5-4\leq \dim(W_1\cap W_2)=3+2-\dim(W_1+W_2)\leq 5-3=2$$ האפשרות ל- $\dim(W_1\cap W_2)=1$ מתקבלת (למשל) עבור $$.W_1=\mathop{\mathrm{Span}}(e_1,e_2,e_3),W_2=(e_3,e_4) \implies W_1\cap W_2=\mathop{\mathrm{Span}}(e_3)$$ באופן דומה, האפשרות ל- $\dim(W_1\cap W_2)=2$ מתקבלת (למשל) עבור $$.W_1=\mathop{\mathrm{Span}}(e_1,e_2,e_3),W_2=\mathop{\mathrm{Span}}(e_2,e_3) \implies W_1\cap W_2=W_2$$ כדוגמה לאפשרות האחרונה, ניתן לבחור כל $W_1$ ממימד $3$ וכל $W_2\subseteq W_1$ ממימד $2$.
 :::
