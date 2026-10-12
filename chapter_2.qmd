@@ -1278,7 +1278,8 @@ $$\begin{aligned}
  
 ג. הפעם מתקיים $$.\mathop{\mathrm{rank}}(A|0)=\mathop{\mathrm{rank}}(A)<n.$$ לכן, לפי @prp-rank-number יש אינסוף פתרונות.
  
-בהינתן $m<n$, לפי @prp-rank-ineq כי נובע $\mathop{\mathrm{rank}}(A)\leq m<n$. לכן בהכרח יש אינסוף פתרונות במקרה זה.
+בהינתן $m<n$, לפי @prp-rank-ineq נובע כי
+$\mathop{\mathrm{rank}}(A)\leq m<n$. לכן בהכרח יש אינסוף פתרונות במקרה זה.
  
  
 :::
