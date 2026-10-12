@@ -346,3 +346,7 @@ a[href*="typo-report"],
 #typo-report-btn {
   background: #fff !important;
 }
+
+.exercise.theorem {
+  --env-color: rgba(30, 144, 255, 0.35);
+}
