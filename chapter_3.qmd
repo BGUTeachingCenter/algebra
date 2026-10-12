@@ -1229,7 +1229,7 @@ i &3 &-1  \\
 
 ב.  *אם $P$ סימטרית וגם אנטי-סימטרית, אז $P=0$.*
 
-ג.  *לכל $B\in\mathbb{M}_{n\times n}(\mathbb{F})$ קיימות $S\in\mathbb{M}_{n\times n}(\mathbb{F})$ סימטרית ו- $A\in\mathbb{M}_{n\times n}(\mathbb{F})$ אנטי-סימטרית כך שמתקיים $B=S+A$.*
+ג.  *לכל $B\in\mathbb{M}_{n\times n}(\mathbb{F})$ קיימות $S\in\mathbb{M}_{n\times n}(\mathbb{F})$ סימטרית ו- $A\in\mathbb{M}_{n\times n}(\mathbb{F})$ אנטי-סימטרית כך שמתקיים $$.B=S+A$$*
 :::
 
 ::: proof
