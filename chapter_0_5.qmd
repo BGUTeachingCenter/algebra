@@ -67,7 +67,7 @@ e. $1$ נייטרלי ביחס לכפל: $z\cdot1=z$ לכל $z\in\mathbb{C}$.
 ::: {.proof}
 ישירות מן ההגדרות של חיבור וכפל תוך שימוש בחוקים המוכרים למספרים ממשיים. נסתפק בהוכחת חוק החילוף לכפל: ראשית נסמן $z_{1}=a+bi,\,z_{2}=c+di$. לפי הגדרת הכפל מתקיים
 $$
-.\,\begin{cases}
+\begin{cases}
 z_{1}z_{2}=(a+bi)(c+di)=ac-bd+(ad+bc)i\\
 z_{2}z_{1}=(c+di)(a+bi)=ca-db+(cb+da)i
 \end{cases}
@@ -84,7 +84,7 @@ $$
 
 ::: {.callout-note collapse="true" title="פתרון"}
 $$
-.\,\begin{cases}
+\begin{cases}
 z_{1}+z_{2}=(a+bi)+(c+di)=a+c+(b+d)i\\
 z_{2}+z_{1}=(c+di)+(a+bi)=c+a+(d+b)i
 \end{cases}
@@ -92,7 +92,7 @@ $$
 
 חוק החילוף מתקיים לחיבור בין מספרים ממשיים. בפרט, מתקיים
 $$
-.\,a+c=c+a, \quad b+d=d+b
+a+c=c+a, \quad b+d=d+b
 $$
 ולכן $z_1+z_2=z_2+z_1$ כנדרש.
 :::
@@ -112,7 +112,7 @@ b. $\overline{z_{1}z_{2}}=\overline{z_{1}}\cdot\overline{z_{2}}$
 a. $\overline{z_{1}+z_{2}}=\overline{a+c+(b+d)i}=a+c-(b+d)i=a-bi+c-di=\overline{z_{1}}+\overline{z_{2}}$
 b. 
 $$
-.\,\begin{aligned}
+\begin{aligned}
 \overline{z_{1}z_{2}}&=\overline{ac-bd+(ad+bc)i} \\
 &=ac-bd-(ad+bc)i=(a-bi)(c-di)=\overline{z_{1}}\cdot\overline{z_{2}}
 \end{aligned}
@@ -217,7 +217,7 @@ $$.\,e^{i\alpha}e^{i\beta}=e^{i(\alpha+\beta)}$$
 
 ::: {.proof}
 $$
-.\,\begin{aligned}
+\begin{aligned}
 e^{i\alpha}e^{i\beta}&=(\cos(\alpha)+i\sin(\alpha))(\cos(\beta)+i\sin(\beta)) \\
 &=\cos(\alpha)\cos(\beta)-\sin(\alpha)\sin(\beta)+i(\cos(\alpha)\sin(\beta)+\sin(\alpha)\cos(\beta)) \\
 &=\cos(\alpha+\beta)+i\sin(\alpha+\beta)=e^{i(\alpha+\beta)}
@@ -295,7 +295,7 @@ $$
 ::: {.proposition #prp-roots}
 יהי $w\in\mathbb{C}$ מספר נתון השונה מ-$0$, יהי $n\in\mathbb{N}$, $n\geq1$, ונניח כי $w=re^{i\theta}$ בהצגה פולרית. אז למשוואה $z^{n}=w$ יש בדיוק $n$ שורשים (פתרונות) מרוכבים בנעלם $z$ הנתונים ע"י
 $$
-.\,z_{k}=\sqrt[n]{r}e^{i\frac{\theta+2\pi k}{n}}
+z_{k}=\sqrt[n]{r}e^{i\frac{\theta+2\pi k}{n}}
 $$
 עבור $k\in\Set{0,1,...,n-1}$.
 :::
@@ -329,7 +329,7 @@ $$
 ::: {.callout-note collapse="true" title="פתרון"}
 זה נובע מכך ששינוי סימן מתאים לסיבוב ב-$\pi$ ($180^{\circ}$) נגד כיוון השעון, כי 
 $$
-.\,e^{i\pi}=\cos(\pi)+i\sin(\pi)=-1
+e^{i\pi}=\cos(\pi)+i\sin(\pi)=-1
 $$
 לכן, נובע מטענות [-@prp-roots] ו-[-@prp-angle-addition] כי
 $$
