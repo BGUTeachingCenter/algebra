@@ -46,7 +46,7 @@ z_{1}z_{2}&=(1+2i)(3-4i)=11+2i\\
 $$
 
 $$
-.\,\frac{z_1}{z_2}=\frac{(1+2i)(3+4i)}{(3-4i)(3+4i)}=\frac{-5+10i}{25}=\frac{-1+2i}{5}
+\frac{z_1}{z_2}=\frac{(1+2i)(3+4i)}{(3-4i)(3+4i)}=\frac{-5+10i}{25}=\frac{-1+2i}{5}
 $$
 :::
 
@@ -333,7 +333,7 @@ e^{i\pi}=\cos(\pi)+i\sin(\pi)=-1
 $$
 לכן, נובע מטענות [-@prp-roots] ו-[-@prp-angle-addition] כי
 $$
-.\,z_1=\sqrt{r}e^{i\frac{\theta+2\pi}{2}}=\sqrt{r}e^{i\frac{\theta}{2}}\cdot e^{i\pi}=-\sqrt{r}e^{i\frac{\theta}{2}}=-z_0
+z_1=\sqrt{r}e^{i\frac{\theta+2\pi}{2}}=\sqrt{r}e^{i\frac{\theta}{2}}\cdot e^{i\pi}=-\sqrt{r}e^{i\frac{\theta}{2}}=-z_0
 $$
 
 כנדרש.
