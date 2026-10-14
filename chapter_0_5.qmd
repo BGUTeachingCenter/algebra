@@ -292,8 +292,8 @@ $$
 ::: {.proposition #prp-roots}
 יהי $w\in\mathbb{C}$ מספר נתון השונה מ-$0$, יהי $n\in\mathbb{N}$, $n\geq1$, ונניח כי $w=re^{i\theta}$ בהצגה פולרית. אז למשוואה $z^{n}=w$ יש בדיוק $n$ שורשים (פתרונות) מרוכבים בנעלם $z$ הנתונים ע"י
 $$
-z_{k}=\sqrt[n]{r}e^{i\frac{\theta+2\pi k}{n}}.
-$$
+z_{k}=\sqrt[n]{r}e^{i\frac{\theta+2\pi k}{n}}
+$$.
 עבור $k\in\Set{0,1,...,n-1}$.
 :::
 
