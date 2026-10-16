@@ -12,10 +12,12 @@ body {
 }
 
 /* Keep math left-to-right */
-.math.inline, .math.display {
+/* Inline math: isolated LTR unit inside RTL text */
+.math.inline {
   direction: ltr;
-  unicode-bidi: embed;
-  text-align: left;
+  unicode-bidi: isolate;
+  display: inline-block;
+  text-align: initial;
 }
 
 /* Optional: keep sidebar text right-aligned */
@@ -24,8 +26,9 @@ body {
 }
 
 /* Keep math left-to-right */
-.math.inline, .math.display {
+/* Display math stays LTR */
+.math.display {
   direction: ltr;
-  unicode-bidi: embed;
+  unicode-bidi: isolate;
   text-align: left;
 }
