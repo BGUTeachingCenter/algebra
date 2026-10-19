@@ -621,8 +621,8 @@ $L_1 \cap L_2 = \Set{(1,1)}$.
 
 $$
 \begin{aligned}
-L_1&=\Set{(x,y)\in\mathbb{R}^2|2x+5y=7},\\
-L_3&=\Set{(x,y)\in\mathbb{R}^2|4x+10y=14}.
+L_1&=\Set{(x,y)\in\mathbb{R}^2|2x+5y=7}\\
+L_3&=\Set{(x,y)\in\mathbb{R}^2|4x+10y=14}
 \end{aligned}
 $$
 
@@ -641,8 +641,8 @@ $$
 
 $$
 \begin{aligned}
-L_1&=\Set{(x,y)\in\mathbb{R}^2|2x+5y=7},\\
-L_3&=\Set{(x,y)\in\mathbb{R}^2|6x+15y=20}.
+L_1&=\Set{(x,y)\in\mathbb{R}^2|2x+5y=7}\\
+L_3&=\Set{(x,y)\in\mathbb{R}^2|6x+15y=20}
 \end{aligned}
 $$
 
@@ -662,7 +662,7 @@ $$
 
 $$
 \begin{aligned}
-L_1&=\Set{(x,y)\in\mathbb{R}^2|3x-2y=1},\\
+L_1&=\Set{(x,y)\in\mathbb{R}^2|3x-2y=1}\\
 L_2&=\Set{(x,y)\in\mathbb{R}^2|15x-10y=5}
 \end{aligned}
 $$
