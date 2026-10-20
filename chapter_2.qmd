@@ -803,7 +803,7 @@ $$
 
 א. לכל $c\neq0$ ולכל $1\leq i\leq m$ הפעולה ההפוכה ל-$cR_{i}\rightarrow R_{i}$ היא $\frac{1}{c}R_{i}\rightarrow R_{i}$.  
 
-ב. לכל $c\in F$ ולכל $i\neq j$ הפעולה ההפוכה ל-$R_{i}+cR_{j}\rightarrow R_{i}$ היא $R_{i}-cR_{j}\rightarrow R_{i}$. אכן, אם מבצעים את הפעולה הראשונה ואחריה את השנייה (או בסדר הפוך), התוצאה היא $R_{i}+cR_{j}-cR_{j}\rightarrow R_{i}$ או בקיצור $R_{i}\to R_{i}$. החזרה למקור היא המשמעות של פעולה הפוכה.  
+ב. לכל $c\in \mathbb{F}$ ולכל $i\neq j$ הפעולה ההפוכה ל-$R_{i}+cR_{j}\rightarrow R_{i}$ היא $R_{i}-cR_{j}\rightarrow R_{i}$. אכן, אם מבצעים את הפעולה הראשונה ואחריה את השנייה (או בסדר הפוך), התוצאה היא $R_{i}+cR_{j}-cR_{j}\rightarrow R_{i}$ או בקיצור $R_{i}\to R_{i}$. החזרה למקור היא המשמעות של פעולה הפוכה.  
 
 ג. לכל $i\neq j$ הפעולה ההפוכה להחלפה $R_{i}\leftrightarrow R_{j}$ היא אותה ההחלפה $R_{i}\leftrightarrow R_{j}$.  
 :::
