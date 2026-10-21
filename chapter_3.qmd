@@ -2339,16 +2339,16 @@ $$\begin{aligned}
 \right)
 \end{aligned}$$
 
-אז קיבלנו:
+אז קיבלנו
 
-$$A^{-1}=\begin{pmatrix}
+$$.A^{-1}=\begin{pmatrix}
 -2 & 1\\
 \tfrac32 & -\tfrac12
 \end{pmatrix}$$
 
-ב.  נכפיל משמאל ב- $A^{-1}$ את שני אגפי המשוואה $AB=C$ ונקבל:
+ב.  נכפיל משמאל ב- $A^{-1}$ את שני אגפי המשוואה $AB=C$ ונקבל
 
-$$B=A^{-1}C=\begin{pmatrix}
+$$.B=A^{-1}C=\begin{pmatrix}
 -2 & 1\\
 \tfrac32 & -\tfrac12
 \end{pmatrix}\begin{pmatrix}
