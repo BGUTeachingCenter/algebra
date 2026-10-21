@@ -811,13 +811,11 @@ $$.(AB)_{ij}=\sum_{l=1}^k (A)_{il}(B)_{lj}=\sum_{l=1}^k A_{il}b_{lj}=(Av_j)_i$$
 
 אם כן:
 
-$$,(B_1C)_{kj} = \sum_{l=1}^{p} b_{kl} c_{lj}$$ ולכן $$ 
-.(A_1(B_1C))_{ij} = \sum_{k=1}^{n}a_{ik}(B_1C)_{kj}
+$$,(B_1C)_{kj} = \sum_{l=1}^{p} b_{kl} c_{lj}$$ ולכן $$.(A_1(B_1C))_{ij} = \sum_{k=1}^{n}a_{ik}(B_1C)_{kj}
  = \sum_{k=1}^{n} a_{ik} \left( \sum_{l=1}^{p} b_{kl} c_{lj} \right)
  = \sum_{k=1}^{n} \sum_{l=1}^{p}a_{ik}b_{kl}c_{lj}$$ {#eq-associativity1}
 
-כעת נחשב את $((A_1B_1)C)_{ij}$: $$,(A_1B_1)_{il} = \sum_{k=1}^{n}a_{ik}b_{kl}$$ ולכן $$
-.((A_1B_1)C)_{ij} = \sum_{l=1}^{p}(A_1B_1)_{il}c_{l j}
+כעת נחשב את $((A_1B_1)C)_{ij}$: $$,(A_1B_1)_{il} = \sum_{k=1}^{n}a_{ik}b_{kl}$$ ולכן $$.((A_1B_1)C)_{ij} = \sum_{l=1}^{p}(A_1B_1)_{il}c_{l j}
   = \sum_{l=1}^{p} \left( \sum_{k=1}^{n}a_{ik}b_{kl}\right) c_{l j}
   = \sum_{l=1}^{p}\sum_{k=1}^{n} a_{ik}b_{kl}c_{lj}$$  {#eq-associativity2}
 
