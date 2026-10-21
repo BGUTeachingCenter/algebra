@@ -47,7 +47,7 @@ $$S+M=\left(
 \right)
 =\left(
 \begin{array}{ccc}
-0+0 & 22 & 12 \\
+0 & 22 & 12 \\
 19 & 0 & 22 \\
 7 & 14 & 0
 \end{array}
