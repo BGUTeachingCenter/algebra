@@ -554,7 +554,7 @@ $$.A(\alpha v)=\alpha Av=\alpha\cdot 0=0$$ כלומר $\alpha v$ הוא פתרו
 ::: proposition
  *תהי $Ax=b$ ממ\"ל לא הומוגנית. נניח שקיים לה פתרון (לא בהכרח יחיד) $v_0\in\mathbb{F}^n$. אז מתקיים הקשר הבא בין קבוצת הפתרונות של הממ\"ל הלא הומוגנית לקבוצת הפתרונות של הממ\"ל ההומוגנית $Ax=0$:*
 
-*$$.\Set{x\in\mathbb{F}^n|Ax=b}=\Set{v_0+y|y\in\mathbb{F}^n,Ay=0}$$*
+*$$\Set{x\in\mathbb{F}^n|Ax=b}=\Set{v_0+y|y\in\mathbb{F}^n,Ay=0}$$*
 :::
 
 ::: remark
