@@ -1663,10 +1663,10 @@ a_{rk}, & r \neq i\\
 \alpha a_{ik}, & r = i
 \end{cases}$$ כלומר השורה ה- $i$ של $A$ הוכפלה ב־ $\alpha$ ושאר השורות לא השתנו. קיבלנו את $S(A)$.
 
-ג.  $S=(R_i+\alpha R_j\to R_i)$ עבור $i\neq j$. כאן $$,E = I_m + \alpha P(i,j)$$ כאשר $P(i,j)$ היא המטריצה שכל ערכיה הם $0$ פרט ל- $(P(i,j))_{ij}=1$. נחשב: $$EA = (I_m + \alpha P(i,j))A = A + \alpha (P(i,j)A)$$ אבל $$(P(i,j)A)_{rk} = \sum_{l=1}^m (P(i,j))_{rl} a_{lk} = \begin{cases}
+ג.  $S=(R_i+\alpha R_j\to R_i)$ עבור $i\neq j$. כאן $$,E = I_m + \alpha P(i,j)$$ כאשר $P(i,j)$ היא המטריצה שכל ערכיה הם $0$ פרט ל- $(P(i,j))_{ij}=1$. נחשב: $$EA = (I_m + \alpha P(i,j))A = A + \alpha (P(i,j)A)$$ אבל $$,(P(i,j)A)_{rk} = \sum_{l=1}^m (P(i,j))_{rl} a_{lk} = \begin{cases}
 0, & r \neq i\\
 a_{jk}, & r = i
-\end{cases}$$ ולכן $$(EA)_{rk} =
+\end{cases}$$ ולכן $$.(EA)_{rk} =
 \begin{cases}
 a_{rk}, & r \neq i\\
 a_{ik} + \alpha a_{jk}, & r = i
@@ -1702,117 +1702,116 @@ $$.A =
 
 נבצע דירוג קנוני, אבל הפעם נציין בכל שלב את המטריצה האלמנטרית המתאימה $E_i$ ונעקוב אחר המכפלה המצטברת.
 
-שלב 1: $R_2 - 2R_1 \to R_2$ $$\begin{aligned}
-E_1 &=
+שלב 1: $R_2 - 2R_1 \to R_2$ $$
+E_1 =
 \begin{pmatrix}
 1 & 0 & 0 \\
 -2 & 1 & 0 \\
 0 & 0 & 1
 \end{pmatrix},
 \qquad
-E_1 A &=
+E_1 A =
 \begin{pmatrix}
 1 & 2 & 3 & 1 \\
 0 & 0 & -1 & -4 \\
 1 & 3 & 4 & 0
-\end{pmatrix}
-\end{aligned}$$
+\end{pmatrix}$$
 
-שלב 2: $R_3 - R_1 \to R_3$ $$\begin{aligned}
-E_2 &=
+שלב 2: $R_3 - R_1 \to R_3$ $$
+E_2 =
 \begin{pmatrix}
 1 & 0 & 0 \\
 0 & 1 & 0 \\
 -1 & 0 & 1
 \end{pmatrix},
 \qquad
-E_2 E_1 A &=
+E_2 E_1 A =
 \begin{pmatrix}
 1 & 2 & 3 & 1 \\
 0 & 0 & -1 & -4 \\
 0 & 1 & 1 & -1
 \end{pmatrix}
-\end{aligned}$$
+$$
 
-שלב 3: $R_3 \leftrightarrow R_2$ $$\begin{aligned}
-E_3 &=
+שלב 3: $R_3 \leftrightarrow R_2$ $$
+E_3 =
 \begin{pmatrix}
 1 & 0 & 0 \\
 0 & 0 & 1 \\
 0 & 1 & 0
 \end{pmatrix},
 \qquad
-E_3 E_2 E_1 A &=
+E_3 E_2 E_1 A=
 \begin{pmatrix}
 1 & 2 & 3 & 1 \\
 0 & 1 & 1 & -1 \\
 0 & 0 & -1 & -4
 \end{pmatrix}
-\end{aligned}$$
+$$
 
-שלב 4: $-R_3 \to R_3$ $$\begin{aligned}
-E_4 &=
+שלב 4: $-R_3 \to R_3$ $$
+E_4 =
 \begin{pmatrix}
 1 & 0 & 0 \\
 0 & 1 & 0 \\
 0 & 0 & -1
 \end{pmatrix},
 \qquad
-E_4 E_3 E_2 E_1 A &=
+E_4 E_3 E_2 E_1 A =
 \begin{pmatrix}
 1 & 2 & 3 & 1 \\
 0 & 1 & 1 & -1 \\
 0 & 0 & 1 & 4
 \end{pmatrix}
-\end{aligned}$$
+$$
 
-שלב 5: $R_2 - R_3 \to R_2$ $$\begin{aligned}
-E_5 &=
+שלב 5: $R_2 - R_3 \to R_2$ $$
+E_5 =
 \begin{pmatrix}
 1 & 0 & 0 \\
 0 & 1 & -1 \\
 0 & 0 & 1
 \end{pmatrix},
 \qquad
-E_5 E_4 E_3 E_2 E_1 A &=
+E_5 E_4 E_3 E_2 E_1 A =
 \begin{pmatrix}
 1 & 2 & 3 & 1 \\
 0 & 1 & 0 & -5 \\
 0 & 0 & 1 & 4
 \end{pmatrix}
-\end{aligned}$$
+$$
 
-שלב 6: $R_1 - 3R_3 \to R_1$ $$\begin{aligned}
-E_6 &=
+שלב 6: $R_1 - 3R_3 \to R_1$ $$
+E_6 =
 \begin{pmatrix}
 1 & 0 & -3 \\
 0 & 1 & 0 \\
 0 & 0 & 1
 \end{pmatrix},
 \qquad
-E_6 E_5 E_4 E_3 E_2 E_1 A &=
+E_6 E_5 E_4 E_3 E_2 E_1 A =
 \begin{pmatrix}
 1 & 2 & 0 & -11 \\
 0 & 1 & 0 & -5 \\
 0 & 0 & 1 & 4
 \end{pmatrix}
-\end{aligned}$$
+$$
 
-שלב 7: $R_1 - 2R_2 \to R_1$ $$\begin{aligned}
-E_7 &=
+שלב 7: $R_1 - 2R_2 \to R_1$ $$
+E_7 =
 \begin{pmatrix}
 1 & -2 & 0 \\
 0 &  1 & 0 \\
 0 &  0 & 1
 \end{pmatrix},
 \qquad
-E_7 E_6 E_5 E_4 E_3 E_2 E_1 A &=
+E_7 E_6 E_5 E_4 E_3 E_2 E_1 A =
 \begin{pmatrix}
 1 & 0 & 0 & -1 \\
 0 & 1 & 0 & -5 \\
 0 & 0 & 1 & 4
 \end{pmatrix}
-\end{aligned}$$
+$$
 
 המטריצה האחרונה שקיבלנו בצד ימין היא מדורגת קנונית:
 
