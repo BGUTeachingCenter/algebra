@@ -1135,7 +1135,7 @@ $$A^0=I_n, \quad A^1=A, \quad A^2=A\cdot A, \quad A^3=A\cdot A\cdot A$$
 
 ולכל $k\in\mathbb{N}$
 
-$$.A^k = \underbrace{A \cdot A \cdot \ldots \cdot A}_{\text{םימעפ}\, k}$$
+$$.A^k = \underbrace{A \cdot A \cdot \ldots \cdot A}_{\text{פעמים}\, k}$$
 
 עבור פולינום $$p(x)=a_mx^m+a_{m-1}x^{m-1}+...+a_1x+a_0$$ נגדיר את ההצבה של $A$ בו ע\"י $$.p(A)=a_mA^m+a_{m-1}A^{m-1}+...+a_1A+a_0I_n$$
 :::
