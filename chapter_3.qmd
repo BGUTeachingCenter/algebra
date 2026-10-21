@@ -186,13 +186,11 @@ $$A = \begin{pmatrix} 1 & i \\
 -6 & 3+10i 
 \end{pmatrix}$$
 
-אז $$.\begin{aligned}
-A+B&=\begin{pmatrix} 1+7-5i & i+2+7i \\
+אז $$.A+B&=\begin{pmatrix} 1+7-5i & i+2+7i \\
 2-3i-6 & 3-2i+3+10i 
 \end{pmatrix}=\begin{pmatrix} 8-5i & 2+8i \\
 -4-3i & 6+8i 
-\end{pmatrix}
-\end{aligned}$$
+\end{pmatrix}$$
 :::
 
 ::: {.definition #def-entry-formula}
