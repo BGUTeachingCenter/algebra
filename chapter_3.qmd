@@ -186,7 +186,7 @@ $$A = \begin{pmatrix} 1 & i \\
 -6 & 3+10i 
 \end{pmatrix}$$
 
-אז $$\begin{aligned}
+אז $$.\begin{aligned}
 A+B&=\begin{pmatrix} 1+7-5i & i+2+7i \\
 2-3i-6 & 3-2i+3+10i 
 \end{pmatrix}=\begin{pmatrix} 8-5i & 2+8i \\
@@ -338,7 +338,7 @@ $$.\sum_{l=1}^n a_l=a_1+a_2+a_3+\cdots+a_n$$
 :::
 
 ::: example
-במקרה $a_l=l$ נקבל $$\sum_{l=1}^{5} l=1+2+3+4+5=15$$
+במקרה $a_l=l$ נקבל: $$\sum_{l=1}^{5} l=1+2+3+4+5=15$$
 :::
 
 ::: definition
@@ -375,7 +375,7 @@ y_m
 x = \begin{pmatrix}
 1 \\
 5
-\end{pmatrix}$$ ונקבל $$.\begin{pmatrix}
+\end{pmatrix}$$ ונקבל: $$\begin{pmatrix}
 2 & -1 \\
 3 & 4
 \end{pmatrix}
@@ -585,7 +585,7 @@ y
 
 הכיוון $\subseteq$: יהי $x\in\mathbb{F}^n$ כך ש- $Ax=b$. אז מתקיים $x=v_0+y$ עבור $y=x-v_0$. נבדוק ש-$y$ הוא פתרון של הממ\"ל ההומוגנית:
 
-$$.Ay=A(x-v_0)=Ax-Av_0=b-b=0$$
+$$Ay=A(x-v_0)=Ax-Av_0=b-b=0$$
 
 לכן
 
@@ -701,7 +701,7 @@ EF&=\begin{pmatrix}
 
 ![ריבוע עם אחד מאלכסוניו](images/Adjacency.png){#fig-Adjacency width="40%" fig-align="center"}
 
-ניתן לקודד את כל המידע הרלוונטי לגרף זה במטריצה $M$ (שנקראת מטריצת השכנויות). אם קיימת צלע בין $p_i$ ל- $p_j$, נכתוב $(M)_{ij}=1$. אם לא קיימת צלע ביניהם, נכתוב $(M)_{ij}=0$. כך נקבל $$.M=
+ניתן לקודד את כל המידע הרלוונטי לגרף זה במטריצה $M$ (שנקראת מטריצת השכנויות). אם קיימת צלע בין $p_i$ ל- $p_j$, נכתוב $(M)_{ij}=1$. אם לא קיימת צלע ביניהם, נכתוב $(M)_{ij}=0$. כך נקבל: $$M=
 \begin{pmatrix}
 0 & 1 & 1 & 1 \\
 1 & 0 & 1 & 0 \\
@@ -709,7 +709,7 @@ EF&=\begin{pmatrix}
 1 & 0 & 1 & 0
 \end{pmatrix}$$
 
-מה המשמעות של כפל? נחשב את $M^2=M\cdot M$ ונקבל $$.M^2=
+מה המשמעות של כפל? נחשב את $M^2=M\cdot M$ ונקבל: $$M^2=
 \begin{pmatrix}
 3 & 1 & 2 & 1 \\
 1 & 2 & 1 & 2 \\
@@ -765,7 +765,7 @@ $$AB=
 :::
 
 ::: {.proposition #prp-product-column}
-*יהיו $A\in\mathbb{M}_{m\times k}(\mathbb{F}), B\in\mathbb{M}_{k\times n}(\mathbb{F})$. נניח שהעמודות של $B$ הם הוקטורים $v_1,v_2,...,v_n\in\mathbb{F}^k$. אז מתקיים*
+*יהיו $A\in\mathbb{M}_{m\times k}(\mathbb{F}), B\in\mathbb{M}_{k\times n}(\mathbb{F})$. נניח שהעמודות של $B$ הן הוקטורים $v_1,v_2,...,v_n\in\mathbb{F}^k$. אז מתקיים*
 
 *$$.AB=A\begin{pmatrix}
 | & | & & | \\
@@ -877,7 +877,7 @@ $$.(AI_n)_{ij}=0+...+0+(A)_{ij}(I_n)_{jj}+0+...+0=(A)_{ij}$$
 
 אז $AI_n=A$ כי יש שוויון בין כל האיברים המתאימים. באופן דומה:
 
-$$.(I_m A)_{ij}=\sum_{l=1}^m (I_m)_{il}A_{lj}=0+...+0+(I)_{ii}(A)_{ij}+0+...+0=(A)_{ij}$$
+$$(I_m A)_{ij}=\sum_{l=1}^m (I_m)_{il}A_{lj}=0+...+0+(I)_{ii}(A)_{ij}+0+...+0=(A)_{ij}$$
 
 ולכן $I_m A=A$.
 :::
@@ -901,7 +901,7 @@ $A^t$ זה סימון מיוחד, לא סימון חזקה. כאן $t$ זה מל
 ::: example
  
 
-א.  עבור וקטור שורה $v=(\alpha_1,\alpha_2,...,\alpha_n)$ נקבל $$.v^t=\begin{pmatrix}
+א.  עבור וקטור שורה $v=(\alpha_1,\alpha_2,...,\alpha_n)$ נקבל: $$v^t=\begin{pmatrix}
 \alpha_1\\
 \alpha_2\\
 \vdots \\
@@ -911,7 +911,7 @@ $A^t$ זה סימון מיוחד, לא סימון חזקה. כאן $t$ זה מל
 ב.  עבור $$A=\begin{pmatrix}
 a &b\\
 c & d
-\end{pmatrix}$$ נקבל $$.A^t=\begin{pmatrix}
+\end{pmatrix}$$ נקבל: $$A^t=\begin{pmatrix}
 a &c\\
 b & d
 \end{pmatrix}$$
@@ -920,7 +920,7 @@ b & d
 1 &2\\
 3 & 4\\
 5 & 6
-\end{pmatrix}$$ נקבל $$.B^t=\begin{pmatrix}
+\end{pmatrix}$$ נקבל: $$B^t=\begin{pmatrix}
 1 &3 &5\\
 2 & 4 &6
 \end{pmatrix}$$
@@ -1030,9 +1030,9 @@ B = \begin{pmatrix}
 :::
 
 ::: {.callout-note collapse="true" title="פתרון"}
- נחשב את $AB$ ונקבל
+ נחשב את $AB$ ונקבל:
 
-$$.AB=
+$$AB=
 \begin{pmatrix}
 4 & 5 + i \\
 9 - 5i & 12
@@ -1235,13 +1235,13 @@ i &3 &-1  \\
 
 א.  $$\forall 1\leq i\leq n\quad(P)_{ii}=-(P)_{ii} \implies (P)_{ii}=0$$ כלומר יש רק אפסים על האלכסון הראשי של $P$.
 
-ב.  מצד אחד $P^t=P$ ומצד שני $.P^t=-P$ לכן
+ב.  מצד אחד $P^t=P$ ומצד שני $P^t=-P$ לכן
 
-$$P=-P \implies P+P=-P+P \implies 2P=0 \implies P=0$$
+$$.P=-P \implies P+P=-P+P \implies 2P=0 \implies P=0$$
 
 למעשה, השתמשנו באלגברה רגילה כדי לקבל $P=0$ כמו עבור משוואה במשתנה סקלרי. מותר לחלק בסקלר $2$, שזה כמו להכפיל בסקלר $\frac{1}{2}$.
 
-ג.  ניקח $$.S=\frac{1}{2}(B+B^t), \quad A=\frac{1}{2}(B-B^t)$$ אז לפי טענה -@prp-transpose מתקיים $$\begin{aligned}
+ג.  ניקח $$.S=\frac{1}{2}(B+B^t), \quad A=\frac{1}{2}(B-B^t)$$ אז לפי טענה -@prp-transpose מתקיים: $$\begin{aligned}
 S^t&=\frac{1}{2}(B+B^t)^t=\frac{1}{2}(B^t+B)=S \\
 A^t&=\frac{1}{2}(B-B^t)^t=\frac{1}{2}(B^t-B)=-A \\
 B&=\frac{1}{2}(B+B^t)+\frac{1}{2}(B-B^t)=S+A
@@ -1268,7 +1268,7 @@ B=\begin{pmatrix}
 1 &0
 \end{pmatrix}$$
 
-נקבל
+נקבל:
 
 $$AB=\begin{pmatrix}
 1 &2 \\
@@ -1300,7 +1300,7 @@ $$AB=\begin{pmatrix}
 -b &0
 \end{pmatrix}$$
 
-נחשב מכפלות: $$.AB=\begin{pmatrix}
+נחשב מכפלות: $$AB=\begin{pmatrix}
 0 &a\\
 -a &0
 \end{pmatrix}\begin{pmatrix}
@@ -1334,7 +1334,7 @@ $$AB=\begin{pmatrix}
 (\alpha A)^t&=\alpha A^t=\alpha A
 \end{aligned}$$ ולכן אלו מטריצות סימטריות.
 
-ב.  הפעם נקבל
+ב.  הפעם נקבל:
 
 $$\begin{aligned}
 (A+B)^t&=A^t+B^t=-A-B=-(A+B) \\
@@ -1451,7 +1451,7 @@ b_1 &0 &0 &\cdots &0 \\
 0 &0 &b_3 &\cdots &0 \\
 \vdots &\vdots &\vdots &\ddots &\vdots \\
 0 &0 &0 &\cdots &b_n
-\end{pmatrix}$$ אז לפי חישוב איברי האלכסון הראשי של המכפלה, נקבל $$.AB=\begin{pmatrix}
+\end{pmatrix}$$ אז לפי חישוב איברי האלכסון הראשי של המכפלה, נקבל: $$AB=\begin{pmatrix}
 a_1b_1 &0 &0 &\cdots &0 \\
 0 &a_2b_2 &0 &\cdots &0 \\
 0 &0 &a_3b_3 &\cdots &0 \\
@@ -1459,13 +1459,13 @@ a_1b_1 &0 &0 &\cdots &0 \\
 0 &0 &0 &\cdots &a_nb_n
 \end{pmatrix}$$
 
-בפרט, אם $B=A$ נקבל $$.A^2=\begin{pmatrix}
+בפרט, אם $B=A$ נקבל: $$A^2=\begin{pmatrix}
 a_1^2 &0 &0 &\cdots &0 \\
 0 &a_2^2 &0 &\cdots &0 \\
 0 &0 &a_3^2 &\cdots &0 \\
 \vdots &\vdots &\vdots &\ddots &\vdots \\
 0 &0 &0 &\cdots &a_n^2
-\end{pmatrix}$$ נכפיל שוב ב- $A$ ונקבל: $$.A^3=\begin{pmatrix}
+\end{pmatrix}$$ נכפיל שוב ב- $A$ ונקבל: $$A^3=\begin{pmatrix}
 a_1^3 &0 &0 &\cdots &0 \\
 0 &a_2^3 &0 &\cdots &0 \\
 0 &0 &a_3^3 &\cdots &0 \\
@@ -1651,11 +1651,11 @@ g &h &r
 
 $E$ מזכירה את מטריצת היחידה, אבל יש ארבעה הבדלים: $$e_{ii}=e_{jj}=0, \quad e_{ij}=e_{ji}=1$$
 
-נחשב: $$.(EA)_{rk} = \sum_{l=1}^m e_{rl} a_{lk}$$ אם $r \notin \{i,j\}$, אז $e_{rl}$ הוא בדיוק כמו במטריצת היחידה: $1$ עבור $l=r$, אחרת $0$. לכן השורה ה- $r$ נשארת כפי שהיא. לעומת זאת, אם $r=i$ נקבל $(EA)_{ik} = a_{jk}$. אם $r=j$ נקבל $(EA)_{jk} = a_{ik}$. כלומר החלפנו בין השורות ה- $i,j$ של $A$, ולכן קיבלנו את $S(A)$.
+נחשב: $$(EA)_{rk} = \sum_{l=1}^m e_{rl} a_{lk}$$ אם $r \notin \{i,j\}$, אז $e_{rl}$ הוא בדיוק כמו במטריצת היחידה: $1$ עבור $l=r$, אחרת $0$. לכן השורה ה- $r$ נשארת כפי שהיא. לעומת זאת, אם $r=i$ נקבל $(EA)_{ik} = a_{jk}$. אם $r=j$ נקבל $(EA)_{jk} = a_{ik}$. כלומר החלפנו בין השורות ה- $i,j$ של $A$, ולכן קיבלנו את $S(A)$.
 
 ב.  $S=(\alpha R_i\to R_i)$ עבור $\alpha\neq 0$.
 
-כאן $E$ היא כמעט כמו מטריצת היחידה, עם הבדל אחד: $.e_{ii} = \alpha$
+כאן $E$ היא כמעט כמו מטריצת היחידה, עם הבדל אחד: $e_{ii} = \alpha$
 
 נשתמש בנוסחה מפוצלת כי יש פה שני מקרים:
 
@@ -1665,7 +1665,7 @@ a_{rk}, & r \neq i\\
 \alpha a_{ik}, & r = i
 \end{cases}$$ כלומר השורה ה- $i$ של $A$ הוכפלה ב־ $\alpha$ ושאר השורות לא השתנו. קיבלנו את $S(A)$.
 
-ג.  $S=(R_i+\alpha R_j\to R_i)$ עבור $i\neq j$. כאן $$,E = I_m + \alpha P(i,j)$$ כאשר $P(i,j)$ היא המטריצה שכל ערכיה הם $0$ פרט ל- $(P(i,j))_{ij}=1$. נחשב: $$.EA = (I_m + \alpha P(i,j))A = A + \alpha (P(i,j)A)$$ אבל $$(P(i,j)A)_{rk} = \sum_{l=1}^m (P(i,j))_{rl} a_{lk} = \begin{cases}
+ג.  $S=(R_i+\alpha R_j\to R_i)$ עבור $i\neq j$. כאן $$,E = I_m + \alpha P(i,j)$$ כאשר $P(i,j)$ היא המטריצה שכל ערכיה הם $0$ פרט ל- $(P(i,j))_{ij}=1$. נחשב: $$EA = (I_m + \alpha P(i,j))A = A + \alpha (P(i,j)A)$$ אבל $$(P(i,j)A)_{rk} = \sum_{l=1}^m (P(i,j))_{rl} a_{lk} = \begin{cases}
 0, & r \neq i\\
 a_{jk}, & r = i
 \end{cases}$$ ולכן $$(EA)_{rk} =
@@ -1682,7 +1682,7 @@ a_{ik} + \alpha a_{jk}, & r = i
 :::
 
 ::: proof
-לפי הנתון קיימות פש\"אות $S_1,S_2,...,S_k$ כך שמתקיים $,A'=S_k(...(S_1(A))...)$ כלומר $A'$ מתקבלת מ- $A$ בעקבות הפעלת $S_1$, אחריה $S_2$ וכן הלאה עד $S_k$.
+לפי הנתון קיימות פש\"אות $S_1,S_2,...,S_k$ כך שמתקיים $A'=S_k(...(S_1(A))...)$, כלומר $A'$ מתקבלת מ- $A$ בעקבות הפעלת $S_1$, אחריה $S_2$ וכן הלאה עד $S_k$.
 
 לפי טענה -@prp-elementary, ניתן לפתוח את הסוגריים בהדרגה כאשר בכל שלב הפעולה הרלוונטית הופכת לכפל במטריצה האלמנטרית המתאימה לה:
 
@@ -1705,7 +1705,6 @@ $$.A =
 נבצע דירוג קנוני, אבל הפעם נציין בכל שלב את המטריצה האלמנטרית המתאימה $E_i$ ונעקוב אחר המכפלה המצטברת.
 
 שלב 1: $R_2 - 2R_1 \to R_2$ $$\begin{aligned}
-{2}
 E_1 &=
 \begin{pmatrix}
 1 & 0 & 0 \\
@@ -1722,7 +1721,6 @@ E_1 A &=
 \end{aligned}$$
 
 שלב 2: $R_3 - R_1 \to R_3$ $$\begin{aligned}
-{2}
 E_2 &=
 \begin{pmatrix}
 1 & 0 & 0 \\
@@ -1739,7 +1737,6 @@ E_2 E_1 A &=
 \end{aligned}$$
 
 שלב 3: $R_3 \leftrightarrow R_2$ $$\begin{aligned}
-{2}
 E_3 &=
 \begin{pmatrix}
 1 & 0 & 0 \\
@@ -1756,7 +1753,6 @@ E_3 E_2 E_1 A &=
 \end{aligned}$$
 
 שלב 4: $-R_3 \to R_3$ $$\begin{aligned}
-{2}
 E_4 &=
 \begin{pmatrix}
 1 & 0 & 0 \\
@@ -1773,7 +1769,6 @@ E_4 E_3 E_2 E_1 A &=
 \end{aligned}$$
 
 שלב 5: $R_2 - R_3 \to R_2$ $$\begin{aligned}
-{2}
 E_5 &=
 \begin{pmatrix}
 1 & 0 & 0 \\
@@ -1790,7 +1785,6 @@ E_5 E_4 E_3 E_2 E_1 A &=
 \end{aligned}$$
 
 שלב 6: $R_1 - 3R_3 \to R_1$ $$\begin{aligned}
-{2}
 E_6 &=
 \begin{pmatrix}
 1 & 0 & -3 \\
@@ -1807,7 +1801,6 @@ E_6 E_5 E_4 E_3 E_2 E_1 A &=
 \end{aligned}$$
 
 שלב 7: $R_1 - 2R_2 \to R_1$ $$\begin{aligned}
-{2}
 E_7 &=
 \begin{pmatrix}
 1 & -2 & 0 \\
@@ -1843,7 +1836,7 @@ $$E =
 
 בדיקה:
 
-$$.EA=
+$$EA=
 \begin{pmatrix}
 1 & 1 & -2 \\
 -3 & 1 & 1 \\
@@ -1895,9 +1888,9 @@ a_n
 ::: {.proposition #prp-RREF}
 *אם $A'\in\mathbb{M}_{n\times n}(\mathbb{F})$ מדורגת קנונית, אז התנאים הבאים שקולים:*
 
-א.  *$.A'=I_n$*
+א.  *$A'=I_n$.*
 
-ב.  *$.\mathop{\mathrm{rank}}(A')=n$*
+ב.  *$\mathop{\mathrm{rank}}(A')=n$.*
 
 ג.  *לממ\"ל $A'x=0$ יש פתרון יחיד.*
 
@@ -1943,7 +1936,7 @@ $(\text{ה}) \implies (\text{א})$: אם תמיד קיים פתרון לממ\"ל
 
 א.  *$A$ שקולת שורה ל- $I_n$.*
 
-ב.  *$.\mathop{\mathrm{rank}}(A)=n$*
+ב.  *$\mathop{\mathrm{rank}}(A)=n$.*
 
 ג.  *לממ\"ל $Ax=0$ יש פתרון יחיד.*
 
@@ -1980,7 +1973,7 @@ $C\in\mathbb{M}_{n\times n}(\mathbb{F})$
 
 א.  *$A$ שקולת שורה ל- $I_n$.*
 
-ב.  *$.\mathop{\mathrm{rank}}(A)=n$*
+ב.  *$\mathop{\mathrm{rank}}(A)=n$.*
 
 ג.  *לממ\"ל $Ax=0$ יש פתרון יחיד.*
 
@@ -1998,11 +1991,11 @@ $C\in\mathbb{M}_{n\times n}(\mathbb{F})$
 ::: proof
 כבר הוכחנו שחמשת התנאים הראשונים שקולים. נראה כי $$(\text{ג}) \impliedby (\text{ו}) \impliedby (\text{א})$$ וגם $$(\text{ז}) \iff (\text{ה})$$ ומכאן נסיק שכל אחד מהתנאים $(\text{ח}) ,(\text{ז}) ,(\text{ו})$ שקול לכל שאר התנאים.
 
-$:(\text{ו}) \impliedby (\text{א})$ זה נובע ישירות ממסקנה -@cor-left עם $A'=I_n$.
+$(\text{ו}) \impliedby (\text{א})$: זה נובע ישירות ממסקנה -@cor-left עם $A'=I_n$.
 
-$:(\text{ג}) \impliedby (\text{ו})$ נניח כי קיימת $B\in\mathbb{M}_{n\times n}(\mathbb{F})$ כך ש- $BA=I_n$. אז כדי לפתור את הממ\"ל $Ax=0$ נכפיל את שני האגפים ב- $B$ משמאל: $$B(Ax)=B\cdot0 \implies I_n x=0 \implies x=0$$ לכן יש פתרון יחיד.
+$(\text{ג}) \impliedby (\text{ו})$: נניח כי קיימת $B\in\mathbb{M}_{n\times n}(\mathbb{F})$ כך ש- $BA=I_n$. אז כדי לפתור את הממ\"ל $Ax=0$ נכפיל את שני האגפים ב- $B$ משמאל: $$B(Ax)=B\cdot0 \implies I_n x=0 \implies x=0$$ לכן יש פתרון יחיד.
 
-$:(\text{ז}) \impliedby (\text{ה})$ המטרה היא למצוא $C\in\mathbb{M}_{n\times n}(\mathbb{F})$ כך ש- $AC=I_n$. נסמן את העמודות של $C$ ע\"י $v_1,v_2,...,v_n\in\mathbb{F}^n$, ואז לפי @prp-product-column מתקיים $$.AC=\begin{pmatrix}
+$(\text{ז}) \impliedby (\text{ה})$: המטרה היא למצוא $C\in\mathbb{M}_{n\times n}(\mathbb{F})$ כך ש- $AC=I_n$. נסמן את העמודות של $C$ ע\"י $v_1,v_2,...,v_n\in\mathbb{F}^n$, ואז לפי @prp-product-column מתקיים $$.AC=\begin{pmatrix}
 | & | & & | \\
 Av_1 & Av_2 & \cdots & Av_n \\
 | & | & & |
@@ -2016,7 +2009,7 @@ v_1 & v_2 & \cdots & v_n \\
 | & | & & |
 \end{pmatrix}$$ מקיימת $AC=I_n$ כנדרש.
 
-$:(\text{ה}) \impliedby (\text{ז})$ נניח כי קיימת $C\in\mathbb{M}_{n\times n}(\mathbb{F})$ כך ש- $AC=I_n$. יהי $$b=\begin{pmatrix}
+$(\text{ה}) \impliedby (\text{ז})$: נניח כי קיימת $C\in\mathbb{M}_{n\times n}(\mathbb{F})$ כך ש- $AC=I_n$. יהי $$b=\begin{pmatrix}
 \beta_1 \\
 \beta_2 \\
 \vdots \\
@@ -2030,7 +2023,7 @@ x_1 \\
 x_2 \\
 \vdots \\
 x_n
-\end{pmatrix}$$ עם $.x=\sum_{j=1}^n \beta_j v_j$ לכן נקבל $$.Ax=A(\sum_{j=1}^n \beta_j v_j)=\sum_{j=1}^n \beta_j Av_j=\sum_{j=1}^n \beta_j e_j=b$$
+\end{pmatrix}$$ עם $x=\sum_{j=1}^n \beta_j v_j$, לכן נקבל: $$Ax=A(\sum_{j=1}^n \beta_j v_j)=\sum_{j=1}^n \beta_j Av_j=\sum_{j=1}^n \beta_j e_j=b$$
 
 ניתן להכניס את $A$ לתוך הסכימה לפי @prp-matrix-vector.
 :::
@@ -2090,13 +2083,13 @@ x_n
 
 א.  בהינתן $AA^{-1}=A^{-1}A=I_n$ נובע כי גם $A^{-1}$ הפיכה וההופכית שלה היא $A$.
 
-ב.  מתקיים $$.(\frac{1}{\alpha}A^{-1})(\alpha A)=(\frac{1}{\alpha}\alpha)A^{-1}A=1\cdot I_n=I_n$$ לכן $\alpha A$ הפיכה ומתקיים $.(\alpha A)^{-1}=\frac{1}{\alpha}A^{-1}$
+ב.  מתקיים $$.(\frac{1}{\alpha}A^{-1})(\alpha A)=(\frac{1}{\alpha}\alpha)A^{-1}A=1\cdot I_n=I_n$$ לכן $\alpha A$ הפיכה ומתקיים $(\alpha A)^{-1}=\frac{1}{\alpha}A^{-1}$.
 
 ג.  מתקיים $$.(AB)(B^{-1}A^{-1})=A(BB^{-1})A^{-1}=A(I_nA^{-1})=AA^{-1}=I_n$$ לכן $AB$ הפיכה ומתקיים $(AB)^{-1}=B^{-1}A^{-1}$.
 
 ד.  מתקיים $$.A^t(A^{-1})^t=(A^{-1}A)^t=I_n^t=I_n$$
 
-לכן $A^t$ הפיכה ומתקיים $.(A^t)^{-1}=(A^{-1})^t$
+לכן $A^t$ הפיכה ומתקיים $(A^t)^{-1}=(A^{-1})^t$.
 :::
 
 ::: remark
@@ -2114,7 +2107,7 @@ x_n
 ::: {.corollary #cor-elementary-product}
 א.  *תהי $A\in\mathbb{M}_{n\times n}(\mathbb{F})$ הפיכה. אז מתקיים $$.A^{-1}=E_kE_{k-1}\cdots E_1$$ כאשר $E_1,E_2,...,E_k$ הן המטריצות האלמנטריות המתאימות לפש\"אות $S_1,S_2,...,S_k$ בדירוג הקנוני של $A$.*
 
-ב.  *$A$ היא מכפלה של מטריצות אלמנטריות: $$.A=E_1^{-1}E_2^{-1}\cdots E_k^{-1}$$*
+ב.  *$A$ היא מכפלה של מטריצות אלמנטריות: $$A=E_1^{-1}E_2^{-1}\cdots E_k^{-1}$$*
 :::
 
 ::: proof
@@ -2234,7 +2227,7 @@ $$\begin{aligned}
 \right)
 \end{aligned}$$
 
-אז קיבלנו $$.A^{-1}=
+אז קיבלנו: $$A^{-1}=
 \begin{pmatrix}
 \frac{1}{3} & -\frac{5}{3} & \frac{1}{3}\\
 \frac{2}{3} & \frac{2}{3} & -\frac{1}{3}\\
@@ -2349,16 +2342,16 @@ $$\begin{aligned}
 \right)
 \end{aligned}$$
 
-אז קיבלנו
+אז קיבלנו:
 
-$$.A^{-1}=\begin{pmatrix}
+$$A^{-1}=\begin{pmatrix}
 -2 & 1\\
 \tfrac32 & -\tfrac12
 \end{pmatrix}$$
 
 ב.  נכפיל משמאל ב- $A^{-1}$ את שני אגפי המשוואה $AB=C$ ונקבל:
 
-$$.B=A^{-1}C=\begin{pmatrix}
+$$B=A^{-1}C=\begin{pmatrix}
 -2 & 1\\
 \tfrac32 & -\tfrac12
 \end{pmatrix}\begin{pmatrix}
