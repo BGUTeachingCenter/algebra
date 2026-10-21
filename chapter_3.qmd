@@ -767,7 +767,7 @@ $$AB=
 ::: {.proposition #prp-product-column}
 *יהיו $A\in\mathbb{M}_{m\times k}(\mathbb{F}), B\in\mathbb{M}_{k\times n}(\mathbb{F})$. נניח שהעמודות של $B$ הם הוקטורים $v_1,v_2,...,v_n\in\mathbb{F}^k$. אז מתקיים*
 
-*$$AB=A\begin{pmatrix}
+*$$.AB=A\begin{pmatrix}
 | & | & & | \\
 v_1 & v_2 & \cdots & v_n \\
 | & | & & |
