@@ -1286,7 +1286,7 @@ $$AB=\begin{pmatrix}
 הסבירו מדוע כל מטריצה אנטי-סימטרית $A\in\mathbb{M}_{2\times 2}(\mathbb{F})$ היא מהצורה $$\begin{pmatrix}
 0 &a\\
 -a &0
-\end{pmatrix}$$ עבור $a\in\mathbb{F}$. הסיקו שלכל שתי מטריצות אנטי-סימטריות $A,B\in\mathbb{M}_{2\times 2}(\mathbb{F})$ שאינן $\mathbf{0}_{2\times 2}$ מתקיים $AB=BA$ ומכפלה זו אינה אנטי-סימטרית.
+\end{pmatrix}$$ עבור $a\in\mathbb{F}$. הסיקו שלכל שתי מטריצות אנטי-סימטריות $A,B\in\mathbb{M}_{2\times 2}(\mathbb{F})$ שאינן מטריצת האפס $\mathbf{0}_{2\times 2}$ מתקיים $AB=BA$ ומכפלה זו אינה אנטי-סימטרית.
 :::
 
 ::: {.callout-note collapse="true" title="פתרון"}
