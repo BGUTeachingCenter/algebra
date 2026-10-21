@@ -332,7 +332,7 @@ b_m
 ::: definition
 בהינתן $a_1,a_2,...,a_n\in\mathbb{F}$ נסמן את סכומם בעזרת כתיבה עם $\Sigma$ ואינדקס $l$.
 
-$$.\sum_{l=1}^n a_l=a_1+a_2+a_3+\cdots+a_n.$$
+$$.\sum_{l=1}^n a_l=a_1+a_2+a_3+\cdots+a_n$$
 
 האינדקס $l$ רץ על פני הקבוצה $\Set{1,2,3,\cdots,n}$ וכל הצבה תורמת איבר לסכום.
 :::
@@ -356,7 +356,7 @@ y_m
 :::
 
 ::: remark
-לפי הגדרה זו, לכל $1\leq i\leq m$ מתקיים $$.(Ax)_i=b_i \iff \sum_{j=1}^n (A)_{ij}x_j=b_i.$$
+לפי הגדרה זו, לכל $1\leq i\leq m$ מתקיים $$.(Ax)_i=b_i \iff \sum_{j=1}^n (A)_{ij}x_j=b_i$$
 
 לכן, השוויון הוקטורי $Ax=b$ אכן שקול לממ\"ל.
 :::
@@ -543,18 +543,18 @@ $$Av=\begin{pmatrix}
 ::: proof
 יהיו $v,w\in\mathbb{F}^n$ פתרונות של הממ\"ל.
 
-א.  לפי טענה -@prp-matrix-vector מתקיים $$.A(v+w)=Av+Aw=0+0=0.$$ כלומר $v+w$ הוא פתרון של הממ\"ל.
+א.  לפי טענה -@prp-matrix-vector מתקיים $$.A(v+w)=Av+Aw=0+0=0$$ כלומר $v+w$ הוא פתרון של הממ\"ל.
 
 ב.  שוב, לפי טענה -@prp-matrix-vector לכל $\alpha\in\mathbb{F}$ מתקיים
 
-$$.A(\alpha v)=\alpha Av=\alpha\cdot 0=0.$$ כלומר $\alpha v$ הוא פתרון של הממ\"ל.
+$$.A(\alpha v)=\alpha Av=\alpha\cdot 0=0$$ כלומר $\alpha v$ הוא פתרון של הממ\"ל.
 
 :::
 
 ::: proposition
  *תהי $Ax=b$ ממ\"ל לא הומוגנית. נניח שקיים לה פתרון (לא בהכרח יחיד) $v_0\in\mathbb{F}^n$. אז מתקיים הקשר הבא בין קבוצת הפתרונות של הממ\"ל הלא הומוגנית לקבוצת הפתרונות של הממ\"ל ההומוגנית $Ax=0$:*
 
-*$$.\Set{x\in\mathbb{F}^n|Ax=b}=\Set{v_0+y|y\in\mathbb{F}^n,Ay=0}.$$*
+*$$.\Set{x\in\mathbb{F}^n|Ax=b}=\Set{v_0+y|y\in\mathbb{F}^n,Ay=0}$$*
 :::
 
 ::: remark
@@ -585,11 +585,11 @@ y
 
 הכיוון $\subseteq$: יהי $x\in\mathbb{F}^n$ כך ש- $Ax=b$. אז מתקיים $x=v_0+y$ עבור $y=x-v_0$. נבדוק ש-$y$ הוא פתרון של הממ\"ל ההומוגנית:
 
-$$.Ay=A(x-v_0)=Ax-Av_0=b-b=0.$$
+$$.Ay=A(x-v_0)=Ax-Av_0=b-b=0$$
 
 לכן
 
-$$.x=v_0+y\in\Set{v_0+y|y\in\mathbb{F}^n,Ay=0}.$$ ◻
+$$.x=v_0+y\in\Set{v_0+y|y\in\mathbb{F}^n,Ay=0}$$ ◻
 :::
 
 ### כפל מטריצות
@@ -781,11 +781,11 @@ Av_1 & Av_2 & \cdots & Av_n \\
 :::
 
 ::: proof
-ישירות לפי ההגדרות של כפל מטריצות וכפל מטריצה בוקטור עמודה (שהוא מטריצה עם עמודה אחת). לכל $1\leq j\leq n$ נכתוב $(B)_{ij}=b_{ij}$, כלומר $$.v_j=\begin{pmatrix}b_{1j} \\ b_{2j} \\ \vdots \\ b_{kj}\end{pmatrix}.$$
+ישירות לפי ההגדרות של כפל מטריצות וכפל מטריצה בוקטור עמודה (שהוא מטריצה עם עמודה אחת). לכל $1\leq j\leq n$ נכתוב $(B)_{ij}=b_{ij}$, כלומר $$.v_j=\begin{pmatrix}b_{1j} \\ b_{2j} \\ \vdots \\ b_{kj}\end{pmatrix}$$
 
 אז לפי הגדרות הכפל נובע כי
 
-$$.(AB)_{ij}=\sum_{l=1}^k (A)_{il}(B)_{lj}=\sum_{l=1}^k A_{il}b_{lj}=(Av_j)_i.$$
+$$.(AB)_{ij}=\sum_{l=1}^k (A)_{il}(B)_{lj}=\sum_{l=1}^k A_{il}b_{lj}=(Av_j)_i$$
 
 לכן וקטור העמודה ה- $j$ של $AB$ הוא אכן $Av_j$. ◻
 :::
@@ -811,21 +811,21 @@ $$.(AB)_{ij}=\sum_{l=1}^k (A)_{il}(B)_{lj}=\sum_{l=1}^k A_{il}b_{lj}=(Av_j)_i.$$
 
 אם כן:
 
-$$(B_1C)_{kj} = \sum_{l=1}^{p} b_{kl} c_{lj},$$ ולכן $$ 
+$$,(B_1C)_{kj} = \sum_{l=1}^{p} b_{kl} c_{lj}$$ ולכן $$ 
 .(A_1(B_1C))_{ij} = \sum_{k=1}^{n}a_{ik}(B_1C)_{kj}
  = \sum_{k=1}^{n} a_{ik} \left( \sum_{l=1}^{p} b_{kl} c_{lj} \right)
- = \sum_{k=1}^{n} \sum_{l=1}^{p}a_{ik}b_{kl}c_{lj}.$$ {#eq-associativity1}
+ = \sum_{k=1}^{n} \sum_{l=1}^{p}a_{ik}b_{kl}c_{lj}$$ {#eq-associativity1}
 
-כעת נחשב את $((A_1B_1)C)_{ij}$: $$(A_1B_1)_{il} = \sum_{k=1}^{n}a_{ik}b_{kl},$$ ולכן $$
+כעת נחשב את $((A_1B_1)C)_{ij}$: $$,(A_1B_1)_{il} = \sum_{k=1}^{n}a_{ik}b_{kl}$$ ולכן $$
 .((A_1B_1)C)_{ij} = \sum_{l=1}^{p}(A_1B_1)_{il}c_{l j}
   = \sum_{l=1}^{p} \left( \sum_{k=1}^{n}a_{ik}b_{kl}\right) c_{l j}
-  = \sum_{l=1}^{p}\sum_{k=1}^{n} a_{ik}b_{kl}c_{lj}.$$  {#eq-associativity2}
+  = \sum_{l=1}^{p}\sum_{k=1}^{n} a_{ik}b_{kl}c_{lj}$$  {#eq-associativity2}
 
 נשים לב כי יש שוויון בין שני הביטויים בצד ימין של [-@eq-associativity1] ו-[-@eq-associativity2] כי לפי חוק החילוף אין חשיבות לסדר הסכימה (אפשר לסכום קודם לפי $l$ או קודם לפי $k$ בלי לשנות את הסכום). לכן, לכל $i,j$ מתקיים $(A_1(B_1C))_{ij}=((A_1B_1)C)_{ij}$, ומכאן $$.A_1(B_1C)=(A_1B_1)C$$ ◻
 :::
 
 ::: definition
-מטריצת היחידה מסדר $n\times n$ (אפשר גם לומר מסדר $n$) מוגדרת להיות $$.I_n=I_{n\times n}=.
+מטריצת היחידה מסדר $n\times n$ (אפשר גם לומר מסדר $n$) מוגדרת להיות $$.I_n=I_{n\times n}=
 \begin{pmatrix}
 1 &0 &\cdots &0\\
 0 &1 &\cdots &0\\
@@ -875,11 +875,11 @@ $$.(AI_n)_{ij}=\sum_{l=1}^n (A)_{il}(I_n)_{lj}$$
 
 נשים לב כי לפי הגדרת מטריצת היחידה, מתקיים $(I)_{lj}=0$ לכל $l\neq j$. אז רק איבר אחד בסכום באגף ימין לא מתאפס, והוא מתאים להצבה $l=j$. לכן
 
-$$.(AI_n)_{ij}=0+...+0+(A)_{ij}(I_n)_{jj}+0+...+0=(A)_{ij}.$$
+$$.(AI_n)_{ij}=0+...+0+(A)_{ij}(I_n)_{jj}+0+...+0=(A)_{ij}$$
 
 אז $AI_n=A$ כי יש שוויון בין כל האיברים המתאימים. באופן דומה:
 
-$$.(I_m A)_{ij}=\sum_{l=1}^m (I_m)_{il}A_{lj}=0+...+0+(I)_{ii}(A)_{ij}+0+...+0=(A)_{ij}.$$
+$$.(I_m A)_{ij}=\sum_{l=1}^m (I_m)_{il}A_{lj}=0+...+0+(I)_{ii}(A)_{ij}+0+...+0=(A)_{ij}$$
 
 ולכן $I_m A=A$. ◻
 :::
@@ -943,9 +943,9 @@ b & d
 ::: proof
 נראה שוויון בין האיברים הכלליים של המטריצות בשני האגפים של כל סעיף.
 
-א.  שתי המטריצות מסדר $m\times n$ ולכל $1\leq i\leq m, 1\leq j\leq n$ מתקיים $$.((A^t)^t)_{ij}=(A^t)_{ji}=(A)_{ij}.$$
+א.  שתי המטריצות מסדר $m\times n$ ולכל $1\leq i\leq m, 1\leq j\leq n$ מתקיים $$.((A^t)^t)_{ij}=(A^t)_{ji}=(A)_{ij}$$
 
-ב.  שתי המטריצות מסדר $n\times m$ ולכל $1\leq i\leq n, 1\leq j\leq m$ מתקיים $$.(A+B)^t_{ij}=(A+B)_{ji}=(A)_{ji}+(B)_{ji}=(A^t)_{ij}+(B^t)_{ij}=(A^t+B^t)_{ij}.$$
+ב.  שתי המטריצות מסדר $n\times m$ ולכל $1\leq i\leq n, 1\leq j\leq m$ מתקיים $$.(A+B)^t_{ij}=(A+B)_{ji}=(A)_{ji}+(B)_{ji}=(A^t)_{ij}+(B^t)_{ij}=(A^t+B^t)_{ij}$$
 
 ג.  שתי המטריצות מסדר $n\times m$ ולכל $1\leq i\leq n, 1\leq j\leq m$ מתקיים $$.((\alpha A)^t)_{ij}=(\alpha A)_{ji}=\alpha (A)_{ji}=\alpha (A^t)_{ij}=(\alpha A^t)_{ij}$$
 
@@ -962,7 +962,7 @@ b & d
 :::
 
 ::: example
-ניקח $$A = \begin{pmatrix}
+ניקח $$.A = \begin{pmatrix}
 1 & 2 & 3 \\
 4 & 5 & 6
 \end{pmatrix}, \quad
@@ -970,7 +970,7 @@ C = \begin{pmatrix}
 1 & 0 \\
 -1 & 2 \\
 0 & 3
-\end{pmatrix}.$$
+\end{pmatrix}$$
 
 נחשב גם את $(AC)^t$ וגם את $C^tA^t$ ונראה שאכן יש שוויון (כצפוי). ראשית, נחשב את $AC$:
 
@@ -1139,7 +1139,7 @@ $$A^0=I_n, \quad A^1=A, \quad A^2=A\cdot A, \quad A^3=A\cdot A\cdot A$$
 
 $$.A^k = \underbrace{A \cdot A \cdot \ldots \cdot A}_{\text{םימעפ}\, k}$$
 
-עבור פולינום $$p(x)=a_mx^m+a_{m-1}x^{m-1}+...+a_1x+a_0$$ נגדיר את ההצבה של $A$ בו ע\"י $$.p(A)=a_mA^m+a_{m-1}A^{m-1}+...+a_1A+a_0I_n.$$
+עבור פולינום $$p(x)=a_mx^m+a_{m-1}x^{m-1}+...+a_1x+a_0$$ נגדיר את ההצבה של $A$ בו ע\"י $$.p(A)=a_mA^m+a_{m-1}A^{m-1}+...+a_1A+a_0I_n$$
 :::
 
 ::: example
@@ -1495,11 +1495,11 @@ a_1^k &0 &0 &\cdots &0 \\
 ::: {.callout-note collapse="true" title="פתרון"}
 יהיו $A,B$ כנ\"ל. אז מתקיים
 
-$$AB=(\alpha I_n)B=\alpha(I_nB)=\alpha B,$$
+$$,AB=(\alpha I_n)B=\alpha(I_nB)=\alpha B$$
 
 ובנוסף
 
-$$.BA=B(\alpha I_n)=\alpha(BI_n)=\alpha B.$$
+$$.BA=B(\alpha I_n)=\alpha(BI_n)=\alpha B$$
 
 לכן יש שוויון.
 :::
@@ -1653,7 +1653,7 @@ g &h &r
 
 $E$ מזכירה את מטריצת היחידה, אבל יש ארבעה הבדלים: $$e_{ii}=e_{jj}=0, \quad e_{ij}=e_{ji}=1$$
 
-נחשב: $$(EA)_{rk} = \sum_{l=1}^m e_{rl} a_{lk}.$$ אם $r \notin \{i,j\}$, אז $e_{rl}$ הוא בדיוק כמו במטריצת היחידה: $1$ עבור $l=r$, אחרת $0$. לכן השורה ה- $r$ נשארת כפי שהיא. לעומת זאת, אם $r=i$ נקבל $(EA)_{ik} = a_{jk}$. אם $r=j$ נקבל $(EA)_{jk} = a_{ik}$. כלומר החלפנו בין השורות ה- $i,j$ של $A$, ולכן קיבלנו את $S(A)$.
+נחשב: $$.(EA)_{rk} = \sum_{l=1}^m e_{rl} a_{lk}$$ אם $r \notin \{i,j\}$, אז $e_{rl}$ הוא בדיוק כמו במטריצת היחידה: $1$ עבור $l=r$, אחרת $0$. לכן השורה ה- $r$ נשארת כפי שהיא. לעומת זאת, אם $r=i$ נקבל $(EA)_{ik} = a_{jk}$. אם $r=j$ נקבל $(EA)_{jk} = a_{ik}$. כלומר החלפנו בין השורות ה- $i,j$ של $A$, ולכן קיבלנו את $S(A)$.
 
 ב.  $S=(\alpha R_i\to R_i)$ עבור $\alpha\neq 0$.
 
@@ -1885,7 +1885,7 @@ a_1 \\
 a_2 \\
 \vdots \\
 a_n
-\end{pmatrix}$$ מתקיים $$.x=\sum_{j=1}^n a_je_j.$$
+\end{pmatrix}$$ מתקיים $$.x=\sum_{j=1}^n a_je_j$$
 :::
 
 ::: {.callout-note collapse="true" title="פתרון"}
@@ -2010,7 +2010,7 @@ Av_1 & Av_2 & \cdots & Av_n \\
 | & | & & |
 \end{pmatrix}$$
 
-לכן $$.AC=I_n \iff \forall 1\leq j\leq n \quad Av_j=e_j.$$
+לכן $$.AC=I_n \iff \forall 1\leq j\leq n \quad Av_j=e_j$$
 
 אז קיבלנו $n$ ממ\"ליות, ולכל אחת מהן יש פתרון $v_j$ לפי $(\text{ה})$. אז המטריצה המתאימה $$C=\begin{pmatrix}
 | & | & & | \\
@@ -2032,7 +2032,7 @@ x_1 \\
 x_2 \\
 \vdots \\
 x_n
-\end{pmatrix}$$ עם $.x=\sum_{j=1}^n \beta_j v_j$ לכן נקבל $$.Ax=A(\sum_{j=1}^n \beta_j v_j)=\sum_{j=1}^n \beta_j Av_j=\sum_{j=1}^n \beta_j e_j=b.$$
+\end{pmatrix}$$ עם $.x=\sum_{j=1}^n \beta_j v_j$ לכן נקבל $$.Ax=A(\sum_{j=1}^n \beta_j v_j)=\sum_{j=1}^n \beta_j Av_j=\sum_{j=1}^n \beta_j e_j=b$$
 
 ניתן להכניס את $A$ לתוך הסכימה לפי @prp-matrix-vector. ◻
 :::
@@ -2044,7 +2044,7 @@ x_n
 :::
 
 ::: proof
-לפי התכונות של $I_n$ וחוק הקיבוץ לכפל מטריצות, נובע כי $$.B=BI_n=B(AC)=(BA)C=I_nC=C.$$ ◻
+לפי התכונות של $I_n$ וחוק הקיבוץ לכפל מטריצות, נובע כי $$.B=BI_n=B(AC)=(BA)C=I_nC=C$$ ◻
 :::
 
 ::: corollary
@@ -2078,13 +2078,13 @@ x_n
 ::: {.exercise #exr-inverse-product}
 יהיו $A,B\in\mathbb{M}_{n\times n}(\mathbb{F})$ הפיכות ו- $0\neq \alpha\in\mathbb{F}$. אז מתקיים:
 
-א.  $A^{-1}$ הפיכה ומתקיים $$.(A^{-1})^{-1}=A.$$
+א.  $A^{-1}$ הפיכה ומתקיים $$.(A^{-1})^{-1}=A$$
 
-ב.  $\alpha A$ הפיכה ומתקיים $$.(\alpha A)^{-1}=\frac{1}{\alpha}A^{-1}.$$
+ב.  $\alpha A$ הפיכה ומתקיים $$.(\alpha A)^{-1}=\frac{1}{\alpha}A^{-1}$$
 
-ג.  $AB$ הפיכה ומתקיים $$.(AB)^{-1}=B^{-1}A^{-1}.$$
+ג.  $AB$ הפיכה ומתקיים $$.(AB)^{-1}=B^{-1}A^{-1}$$
 
-ד.  $A^t$ הפיכה ומתקיים $$.(A^t)^{-1}=(A^{-1})^t.$$
+ד.  $A^t$ הפיכה ומתקיים $$.(A^t)^{-1}=(A^{-1})^t$$
 :::
 
 ::: {.callout-note collapse="true" title="פתרון"}
@@ -2114,9 +2114,9 @@ x_n
 הבנו שכל מטריצה $A\in\mathbb{M}_{n\times n}(\mathbb{F})$ הפיכה שקולת שורה ל- $I_n$. יותר מכך, לפי ההוכחה של מסקנה -@cor-left יש התאמה בין $A^{-1}$ לבין הפש\"אות שמובילות ל- $I_n$ בדירוג של $A$. נחדד נקודה זו כמסקנה נוספת:
 
 ::: {.corollary #cor-elementary-product}
-א.  *תהי $A\in\mathbb{M}_{n\times n}(\mathbb{F})$ הפיכה. אז מתקיים $$.A^{-1}=E_kE_{k-1}\cdots E_1.$$ כאשר $E_1,E_2,...,E_k$ הן המטריצות האלמנטריות המתאימות לפש\"אות $S_1,S_2,...,S_k$ בדירוג הקנוני של $A$.*
+א.  *תהי $A\in\mathbb{M}_{n\times n}(\mathbb{F})$ הפיכה. אז מתקיים $$.A^{-1}=E_kE_{k-1}\cdots E_1$$ כאשר $E_1,E_2,...,E_k$ הן המטריצות האלמנטריות המתאימות לפש\"אות $S_1,S_2,...,S_k$ בדירוג הקנוני של $A$.*
 
-ב.  *$A$ היא מכפלה של מטריצות אלמנטריות: $$.A=E_1^{-1}E_2^{-1}\cdots E_k^{-1}.$$*
+ב.  *$A$ היא מכפלה של מטריצות אלמנטריות: $$.A=E_1^{-1}E_2^{-1}\cdots E_k^{-1}$$*
 :::
 
 ::: proof
