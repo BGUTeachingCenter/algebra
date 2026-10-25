@@ -15,7 +15,7 @@
 ::: {.definition #def-det}
  עבור $A\in\mathbb{M}_{n\times n}(\mathbb{F})$ נגדיר את $\det(A)$ ע\"י התכונות הבאות:
 
-א.  $.\det(I_n)=1$
+א.  $\det(I_n)=1$.
 
 ב.  אם $A\xrightarrow{\alpha R_i\to R_i}A'$ עבור $1\leq i \leq n$, אז $\det(A')=\alpha \det(A)$.
 
@@ -29,7 +29,7 @@
 :::
 
 ::: remark
-כבר אפשר לראות דרך אחת לחישוב דטרמיננטה של מטריצה הפיכה: מבצעים דירוג קנוני (שיסתיים ב-$I_n$) ועוקבים אחרי השינוי בערך הדטרמיננטה בעקבות ביצוע פש\"אות, שהן כפל שורה בסקלר או החלפה בין שתי שורות. נניח כי $\alpha_1,\alpha_2,...,\alpha_k\in\mathbb{F}$ הם הסקלרים בהם מכפילים את שורות המטריצה לאורך הדירוג. בנוסף, נניח כי יש $p$ החלפות שורות. אז מתכונות הדטרמיננטה נובע כי $$1=\det(I_n)=(-1)^p\alpha_1\alpha_2\cdots\alpha_k\det(A) \implies \det(A)=\frac{(-1)^p}{\alpha_1\alpha_2\cdots\alpha_k}$$
+כבר אפשר לראות דרך אחת לחישוב דטרמיננטה של מטריצה הפיכה: מבצעים דירוג קנוני (שיסתיים ב-$I_n$) ועוקבים אחרי השינוי בערך הדטרמיננטה בעקבות ביצוע פש\"אות, שהן כפל שורה בסקלר או החלפה בין שתי שורות. נניח כי $\alpha_1,\alpha_2,...,\alpha_k\in\mathbb{F}$ הם הסקלרים בהם מכפילים את שורות המטריצה לאורך הדירוג. בנוסף, נניח כי יש $p$ החלפות שורות. אז מתכונות הדטרמיננטה נובע כי $$.1=\det(I_n)=(-1)^p\alpha_1\alpha_2\cdots\alpha_k\det(A) \implies \det(A)=\frac{(-1)^p}{\alpha_1\alpha_2\cdots\alpha_k}$$
 
 החיסרון של נוסחה זו הוא שהדירוג עלול להיות ארוך, ולא ברור מראש אילו סקלרים יופיעו במכנה. לא תמיד זו הדרך הנוחה ביותר לחישוב דטרמיננטה, אבל זו דרך שתמיד יכולה לעבוד. נרצה שיהיו לנו כלים נוספים כדי שנוכל להסתפק בדירוג חלקי אם בכלל.
 :::
@@ -274,7 +274,7 @@ c & d
 <figcaption>בצד ימין הדטרמיננטה שלילית, ובצד שמאל היא חיובית</figcaption>
 </figure>
 
-::: {#fig:Area .figure}
+::: {#fig:AreaSimulation .figure}
 ![](simulations/Area.html?embed=1){width=720 height=720}
 :::
 
@@ -304,7 +304,7 @@ b_1 & 0 & 0 \\
 <figcaption>הדטרמיננטה חיובית רק בצד ימין</figcaption>
 </figure>
 
-::: {#fig:Volume .figure}
+::: {#fig:VolumeSimulation .figure}
 ![](simulations/Volume.html?embed=1){width=720 height=720}
 :::
 
@@ -318,7 +318,7 @@ b_1 & 0 & 0 \\
 :::
 
 ::: proof
-לפי @prp-elementary מתקיים $EA=S(A)$. לכן $$.\det(EA)=\det(S(A))=\begin{cases}
+לפי @prp-elementary מתקיים $EA=S(A)$. לכן $$\det(EA)=\det(S(A))=\begin{cases}
 \alpha\det(A), & S=(\alpha R_i\to R_i) \\
 \det(A), & S=(R_i+\alpha R_j\to R_i) \\
 -\det(A), & S=(R_i\leftrightarrow R_j)
@@ -326,7 +326,7 @@ b_1 & 0 & 0 \\
 
 באופן דומה:
 
-$$.\det(E)=\det(S(I_n))=\begin{cases}
+$$\det(E)=\det(S(I_n))=\begin{cases}
 \alpha, & S=(\alpha R_i\to R_i) \\
 1, & S=(R_i+\alpha R_j\to R_i) \\
 -1, & S=(R_i\leftrightarrow R_j)
@@ -394,7 +394,7 @@ t & -1 \\
 לפי -@prp-det-product מתקיים $$.\det(A)\det(A^{-1})=\det(AA^{-1})=\det(I_n)=1$$ נחלק ב- $\det(A)$ ונקבל $$.\det(A^{-1})=\frac{1}{\det(A)}$$
 :::
 
-::: {#exr-similar-det}
+::: {.exercise #exr-similar-det}
 יהיו $A,P\in\mathbb{M}_{n\times n}(\mathbb{F})$ כך ש- $P$ הפיכה. הראו כי $$.\det(PAP^{-1})=\det(A)$$
 :::
 
@@ -527,7 +527,7 @@ $$.\det(L)=\det(L^t)=d_1d_2\cdots d_n$$
 :::
 
 ::: {.proposition #prp-laplace}
- *`\label{prop:laplace}`{=latex} תהי $$.A=\begin{pmatrix}a_{11} & \cdots & a_{1n}\\
+ *`\label{prop:laplace}`{=latex} תהי $$A=\begin{pmatrix}a_{11} & \cdots & a_{1n}\\
 \vdots & \ddots & \vdots\\
 a_{n1} & \cdots & a_{nn}
 \end{pmatrix}$$ אז מתקיים:*
@@ -550,7 +550,7 @@ a_{n1} & \cdots & a_{nn}
 ב.  נניח שהנוסחה לפיתוח לפי שורה נכונה, לכל שורה.
 
 יהי $1\leq j\leq n$. לפי טענה -@prp-det-transpose מתקיים $\det(A)=\det(A^t)$. נפתח את אגף ימין לפי השורה ה- $j$ (בהתאם לעמודה ה- $j$ של המטריצה המקורית) ונשתמש באינדקס סכימה $i$: $$\begin{aligned}
-.\det(A)&=\det(A^t)=\sum_{i=1}^n(-1)^{j+i}(A^t)_{ji}\det(M_{j,i}(A^t))\\
+\det(A)&=\det(A^t)=\sum_{i=1}^n(-1)^{j+i}(A^t)_{ji}\det(M_{j,i}(A^t))\\
 &=\sum_{i=1}^n(-1)^{i+j}a_{ij}\det((M_{i,j}(A))^t) =\sum_{i=1}^n(-1)^{i+j}a_{ij}\det(M_{i,j}(A))
 \end{aligned}$$
 
@@ -625,7 +625,7 @@ $$\begin{aligned}
 i & 1+i \\
 2+i & 4
 \end{pmatrix}+0 \\
-&=1\bigl((3\cdot 4 - (-i)(2+i)\bigr)
+&=1\bigl(3\cdot 4 - (-i)(2+i)\bigr)
 -
 2\bigl(4i - (1+i)(2+i)\bigr)
 \\
@@ -689,7 +689,7 @@ $$\begin{aligned}
 החישוב הבא מתאים לנפח של מקבילון שבסיסו מונח על מישור $xy$. זהו מקרה כללי יותר מהתיבה שראינו בדוגמה -@exm-area-volume.
 
 ::: example
-נסתכל על הוקטורים הבאים ב- $\mathbb{R}^3$: $$.v_1=(a,b,0),v_2=(c,d,0),v_3=(0,0,h)$$
+נסתכל על הוקטורים הבאים ב- $\mathbb{R}^3$: $$v_1=(a,b,0),v_2=(c,d,0),v_3=(0,0,h)$$
 
 <figure id="fig:Piped">
 <img src="images/Piped.png" style="width:40.0%" />
