@@ -415,7 +415,7 @@ t & -1 \\
 
 א.  נניח כי $A$ אינה הפיכה. לא ייתכן כי $A^t$ הפיכה, כי אז לפי @exr-inverse-product גם $A=(A^t)^t$ הפיכה וזו סתירה. לכן, לפי -@thm-det-invertible נובע כי $$.\det(A^t)=0=\det(A)$$
 
-ב.  נניח כי $A$ הפיכה. אז לפי @cor-elementary-product היא מכפלה של מטריצות אלמנטריות $E_1,\cdots,E_k$. לכן $$A=E_k\cdots E_1 \implies A^t=(E_k\cdots E_1)^t=E_1^t\cdots E_k^t$$ ואז לפי טענה -@prp-det-product נובע כי $$.\det(A)=\det(E_k)\cdots\det(E_1)\quad,\quad \det(A^t)=\det(E_1^t)\cdots\det(E_k^t)$$
+ב.  נניח כי $A$ הפיכה. אז לפי @cor-elementary-product היא מכפלה של מטריצות אלמנטריות $E_1,\cdots,E_k$. לכן $$A=E_k\cdots E_1 \implies A^t=(E_k\cdots E_1)^t=E_1^t\cdots E_k^t$$ ואז לפי טענה -@prp-det-product נובע כי $$.\det(A)=\det(E_k)\cdots\det(E_1),\quad \det(A^t)=\det(E_1^t)\cdots\det(E_k^t)$$
 
 לאור חוק החילוף ב- $\mathbb{F}$, נותר להראות כי $\det(E^t)=\det(E)$ לכל מטריצה אלמנטרית $E\in\mathbb{M}_{n\times n}(\mathbb{F})$.
 
