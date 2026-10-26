@@ -417,11 +417,11 @@ t & -1 \\
 
 ב.  נניח כי $A$ הפיכה. אז לפי @cor-elementary-product היא מכפלה של מטריצות אלמנטריות $E_1,\cdots,E_k$. לכן $$A=E_k\cdots E_1 \implies A^t=(E_k\cdots E_1)^t=E_1^t\cdots E_k^t$$ ואז לפי טענה -@prp-det-product נובע כי $$.\det(A)=\det(E_k)\cdots\det(E_1),\quad \det(A^t)=\det(E_1^t)\cdots\det(E_k^t)$$
 
-לאור חוק החילוף ב- $\mathbb{F}$, נותר להראות כי $\det(E^t)=\det(E)$ לכל מטריצה אלמנטרית $E\in\mathbb{M}_{n\times n}(\mathbb{F})$.
+לאור חוק החילוף ב- $\mathbb{F}$, נותר להראות כי $\det(E^t)=\det(E)$ לכל מטריצה אלמנטרית $E$. נבחן את שלושת סוגי המטריצות האלמנטריות:
 
 -   אם $E$ מתאימה לפש\"א $S=(R_i\leftrightarrow R_j)$, אז $E^t=E$ והדטרמיננטות גם שוות (לערך $-1$).
 -   אם $E$ מתאימה לפש\"א $S=(\alpha R_i\to R_i)$, אז $E$ היא מטריצה אלכסונית (עם $1$ לאורך האלכסון הראשי חוץ מ- $\alpha$ בשורה ה- $i$) ושוב $E^t=E$.
--   אם $E$ מתאימה לפש\"א $S=(R_i+\alpha R_j\to R_i)$, אז $E^t$ מתאימה לפש\"א $S=(R_j+\alpha R_i\to R_j)$. במקרה זה $E^t\neq E$, אבל מתקיים $\det(E^t)=1=\det(E)$.
+-   אם $E$ מתאימה לפש\"א $S=(R_i+\alpha R_j\to R_i)$, אז $E^t$ מתאימה לפש\"א $R_j+\alpha R_i\to R_j$. במקרה זה $E^t\neq E$, אבל מתקיים $\det(E^t)=1=\det(E)$.
 
 
 :::
