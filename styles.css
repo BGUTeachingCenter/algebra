@@ -141,10 +141,6 @@ figure.quarto-figure figcaption {
   text-align: right !important;
 }
 
-#prp-det-transpose + .proof > ol > li:last-child > ul {
-  padding-right: 1rem !important;
-}
-
 .definition li > p:first-child,
 .example li > p:first-child,
 .exercise li > p:first-child,
