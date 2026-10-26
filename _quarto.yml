@@ -63,6 +63,7 @@ crossref:
 
 format:
   html:
+    anchor-sections: false
     toc: true
     number-sections: true
     html-math-method: mathjax
