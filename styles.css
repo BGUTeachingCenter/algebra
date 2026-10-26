@@ -141,6 +141,10 @@ figure.quarto-figure figcaption {
   text-align: right !important;
 }
 
+#prp-det-transpose + .proof > ol > li:last-child > ul {
+  padding-right: 1rem !important;
+}
+
 .definition li > p:first-child,
 .example li > p:first-child,
 .exercise li > p:first-child,
@@ -176,11 +180,7 @@ figure.quarto-figure figcaption {
 .callout.solution .callout-body { padding: 0.6rem; }
 
 /* ===== QED ===== */
-.proof > :last-child:not(:is(ol, ul))::after,
-.proof > :is(ol, ul):last-child > li:last-child:not(:has(> :is(p, ol, ul)))::after,
-.proof > :is(ol, ul):last-child > li:last-child > p:last-child::after,
-.proof > :is(ol, ul):last-child > li:last-child > :is(ol, ul):last-child > li:last-child:not(:has(> :is(p, ol, ul)))::after,
-.proof > :is(ol, ul):last-child > li:last-child > :is(ol, ul):last-child > li:last-child > p:last-child::after {
+.proof > :last-child::after {
   content: " \25A0";
   float: left;
   margin-left: 0.2rem;
