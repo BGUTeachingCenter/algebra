@@ -556,13 +556,13 @@ $$.A(\alpha v)=\alpha Av=\alpha\cdot 0=0$$ כלומר $\alpha v$ הוא פתרו
 :::
 
 ::: remark
-הרעיון הזה כבר מוכר לנו מההצגה הפרמטרית של ישר/מישור. למשל, ראינו שלישר במישור יש הצגה פרמטרית מהצורה $$\left{\begin{pmatrix}
+הרעיון הזה כבר מוכר לנו מההצגה הפרמטרית של ישר/מישור. למשל, ראינו שלישר במישור יש הצגה פרמטרית מהצורה $$\left\{\begin{pmatrix}
 x_0 \\
 y_0 
 \end{pmatrix}+t\begin{pmatrix}
 \alpha \\
 \beta
-\end{pmatrix}\middle|t\in\mathbb{R}\right}$$ כאשר $\begin{pmatrix}
+\end{pmatrix}\middle|t\in\mathbb{R}\right\}$$ כאשר $\begin{pmatrix}
 \alpha \\
 \beta
 \end{pmatrix}\in\mathbb{R}^2$ הוא וקטור כיוון (בפרק [-@sec-geometry]) השתמשנו בוקטורי שורה, אבל בהקשר של כפל צריך לקחת וקטורי עמודה). אם הישר מתאר קבוצת פתרונות של ממ\"ל $\begin{pmatrix}a_1 &a_2\end{pmatrix}\begin{pmatrix}
