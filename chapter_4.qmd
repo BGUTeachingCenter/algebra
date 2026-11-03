@@ -344,9 +344,7 @@ $$\det(A)\overset{R_2 - 4R_1 \to R_2}{\overset{R_3 - 7R_1 \to R_3}{=}}
  *`\label{prop:det-order-2}`{=latex} לכל $$A=\begin{pmatrix}
     a & b \\
     c & d
-    \end{pmatrix}$$ מתקיים:*
-
-*$A$ הפיכה אם ורק אם $\det(A)\neq 0$. במקרה זה מתקיים $$.A^{-1}=\frac{1}{ad-bc}\begin{pmatrix}
+    \end{pmatrix}$$ מתקיים: $A$ הפיכה אם ורק אם $\det(A)\neq 0$. יתר על כן, במקרה זה מתקיים $$.A^{-1}=\frac{1}{ad-bc}\begin{pmatrix}
     d & -b \\
     -c & a
     \end{pmatrix}$$*
