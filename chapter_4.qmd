@@ -343,7 +343,7 @@ t & 1 \\
 :::
 
 ::: {.callout-note collapse="true" title="פתרון"}
- נחשב את הדטרמיננטה לפי הנוסחה בטענה -@prp-det-order-2 ונקבל $\det(A)=t^2+1$. אז לפי משפט -@thm-det-invertible נובע כי $A$ הפיכה אם ורק אם $$.t^2+1\neq 0 \iff t^2\neq-1 \iff t\neq\pm i$$ בנוסף, לכל $t\neq\pm i$ מתקיים $$.A^{-1}=\frac{1}{t^2+1}\begin{pmatrix}
+ נחשב את הדטרמיננטה לפי הנוסחה בהגדרה -@def-det-base ונקבל $\det(A)=t^2+1$. אז לפי משפט -@thm-det-invertible נובע כי $A$ הפיכה אם ורק אם $$.t^2+1\neq 0 \iff t^2\neq-1 \iff t\neq\pm i$$ בנוסף, לכל $t\neq\pm i$ מתקיים $$.A^{-1}=\frac{1}{t^2+1}\begin{pmatrix}
 t & -1 \\
 1 & t
 \end{pmatrix}$$
