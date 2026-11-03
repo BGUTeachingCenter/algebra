@@ -313,30 +313,6 @@ b_1 & 0 & 0 \\
 
 ### מטריצות ריבועיות כלליות
 
-::: {.proposition #prp-elementary-det}
- *`\label{prop:elementary-det}`{=latex} יהיו $E,A\in\mathbb{M}_{n\times n}(\mathbb{F})$ כך ש- $E$ מטריצה אלמנטרית המתאימה לפש\"א $S$, כלומר $E=S(I_n)$. אז מתקיים $$.\det(EA)=\det(E)\det(A)$$*
-:::
-
-::: proof
-לפי @prp-elementary מתקיים $EA=S(A)$. לכן $$\det(EA)=\det(S(A))=\begin{cases}
-\alpha\det(A), & S=(\alpha R_i\to R_i) \\
-\det(A), & S=(R_i+\alpha R_j\to R_i) \\
--\det(A), & S=(R_i\leftrightarrow R_j)
-\end{cases}$$
-
-באופן דומה:
-
-$$\det(E)=\det(S(I_n))=\begin{cases}
-\alpha, & S=(\alpha R_i\to R_i) \\
-1, & S=(R_i+\alpha R_j\to R_i) \\
--1, & S=(R_i\leftrightarrow R_j)
-\end{cases}$$
-
-לכן, בכל מקרה מתקיים
-
-$$.\det(EA)=\det(E)\det(A)$$
-:::
-
 יש לנו כבר מספיק כלים כדי להוכיח תנאי שקול להפיכות של מטריצה ריבועית, שהוא אחד השימושים העיקריים של הדטרמיננטה.
 
 ::: {.theorem #thm-det-invertible}
