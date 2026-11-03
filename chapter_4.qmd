@@ -10,7 +10,7 @@
 
 נציין שהסימון לדטרמיננטה של מטריצה $A$ הוא $\det(A)$ ללא קשר לסדר המטריצה, אבל הנוסחה עצמה תלויה בסדר. יש גם סימון חלופי שכדאי להכיר: $|A|$.
 
-## הגדרת הדטרמיננטה באמצעות פיתוח לפי שורה
+## הגדרת הדטרמיננטה ופיתוח לפי שורה או עמודה
 
 ::: {.definition #def-det-base}
 עבור $A=(a)\in\mathbb{M}_{1\times1}(\mathbb{F})$ נגדיר $\det(A)=a$.
@@ -153,6 +153,20 @@ i & 1+i \\
 \end{aligned}$$
 :::
 
+## תכונות הדטרמיננטה והקשר לדירוג
+
+::: proposition
+ עבור $A\in\mathbb{M}_{n\times n}(\mathbb{F})$, הדטרמיננטה שהוגדרה לעיל מקיימת את התכונות הבאות:
+
+א.  $\det(I_n)=1$.
+
+ב.  אם $A\xrightarrow{\alpha R_i\to R_i}A'$ עבור $1\leq i \leq n$, אז $\det(A')=\alpha \det(A)$.
+
+ג.  אם $A\xrightarrow{R_i+\alpha R_j\to R_i}A'$ עבור $i\neq j$, אז $\det(A')=\det(A)$.
+
+ד.  אם $A\xrightarrow{R_i\leftrightarrow R_j}A'$ עבור $i\neq j$, אז $\det(A')=-\det(A)$.
+:::
+
 חוץ מפיתוח לפי שורה/עמודה תמיד כדאי לזכור שדירוג יכול להיות שימושי כחלק מהחישוב, גם אם הוא חלקי. בדוגמה הבאה נשתמש קודם בדירוג חלקי כדי לאפס את איברי העמודה הראשונה חוץ מהראשון, כך שנוכל לפתח את הדטרמיננטה לפי העמודה הראשונה יחסית בקלות.
 
 ::: example
@@ -197,19 +211,6 @@ $$\begin{aligned}
 \end{pmatrix}\\
 &=45-38=7
 \end{aligned}$$
-:::
-## תכונות הדטרמיננטה והקשר לדירוג
-
-::: proposition
- עבור $A\in\mathbb{M}_{n\times n}(\mathbb{F})$, הדטרמיננטה שהוגדרה לעיל מקיימת את התכונות הבאות:
-
-א.  $\det(I_n)=1$.
-
-ב.  אם $A\xrightarrow{\alpha R_i\to R_i}A'$ עבור $1\leq i \leq n$, אז $\det(A')=\alpha \det(A)$.
-
-ג.  אם $A\xrightarrow{R_i+\alpha R_j\to R_i}A'$ עבור $i\neq j$, אז $\det(A')=\det(A)$.
-
-ד.  אם $A\xrightarrow{R_i\leftrightarrow R_j}A'$ עבור $i\neq j$, אז $\det(A')=-\det(A)$.
 :::
 
 ::: remark
