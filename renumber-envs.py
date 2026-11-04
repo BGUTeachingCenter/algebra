@@ -44,7 +44,7 @@ THM_TITLE_RE = re.compile(
     r'<p><span class="theorem-title"><strong>[^<]*</strong></span>\s*')
 # כותרת של סביבה בסגנון הוכחה (Proof/Remark/Solution)
 PROOF_TITLE_RE = re.compile(
-    r'<p><span class="proof-title">(?:<em>)?([A-Za-z]+)(?:</em>)?\.?\s*</span>\s*')
+    r'<p><span class="proof-title">(?:<em>)?([A-Za-z]+)(?:\s+\d+(?:\.\d+)*)?(?:</em>)?\.?\s*</span>\s*')
 
 def title_block(label, num=None):
     # בלי <strong>: ה-CSS של .theorem-title כבר מבליט. <strong> מוסיף
