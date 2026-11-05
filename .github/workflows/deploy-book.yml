@@ -22,7 +22,7 @@ permissions:
   contents: read
 
 env:
-  BOOK_NAME: algebra                        # <-- CHANGE PER BOOK
+  BOOK_NAME: algebra_g                      # <-- CHANGE PER BOOK
   AWS_REGION: il-central-1
   AWS_ACCOUNT: "263011180932"
   BUCKET: bgu-teaching-center-deploy-artifacts

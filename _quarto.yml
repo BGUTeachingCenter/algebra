@@ -4,7 +4,7 @@ project:
     - renumber-envs.py   # יישור מספור הסביבות וההפניות למספור של הספר
     - fix-rtl-math.py #  תיקון כיווניות של נוסחאות מתמטיות ב-RTL
 book:
-  title: אלגברה לינארית
+  title: "מבוא לאלגברה ג׳"
   author: ד"ר יונתן שלח, ד"ר נדב מאיר
   language: he
   chapters:
