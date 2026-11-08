@@ -30,6 +30,8 @@ book:
       - icon: download
         href: downloads/book.pdf
         text: הורדת הספר כ-PDF
+  # One tag only: _includes/head.html loaded the same ID a second time (double page views).
+  google-analytics: "G-TPY4VZJV6M"
 
 language:
   crossref-ch-prefix: "פרק"     # טקסט @sec-הפניה לפרק שלם
@@ -80,7 +82,6 @@ format:
     include-after-body:
       - tracking.html
       - report-typo.html
-    include-in-header: _includes/head.html
       
     filters:
       - env-to-callout.lua
@@ -112,8 +113,6 @@ format:
 
 number-sections: true
 
-website:
-  google-analytics: "G-TPY4VZJV6M"
 
 
 resources:
