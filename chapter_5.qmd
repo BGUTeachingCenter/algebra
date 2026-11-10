@@ -877,7 +877,7 @@ t
 :::
 
 ::: corollary
-*יהי $V$ מ\"ו מעל $\mathbb{F}$, ויהיו $\Set{v_1,...,v_k}\in V$ בת\"ל ו- $w\in V$ כך שמתקיים $w\notin\mathop{\mathrm{Span}}(v_1,...,v_k)$. אז $\Set{v_1,...,v_k,w}$ בת\"ל.*
+*יהי $V$ מ\"ו מעל $\mathbb{F}$, ויהיו $\Set{v_1,...,v_k}\subseteq V$ בת\"ל ו- $w\in V$ כך שמתקיים $w\notin\mathop{\mathrm{Span}}(v_1,...,v_k)$. אז $\Set{v_1,...,v_k,w}$ בת\"ל.*
 :::
 
 ::: proof
@@ -2110,7 +2110,7 @@ R_4 - R_2 \to R_4
 0 & 0 & 0 & 0 \\
 0 & 0 & 0 & 0
 \end{pmatrix} \\
-\xrightarrow{-\frac{1}{3}R_2\to R_2}
+\xrightarrow{R_1-2R_2\to R_1}
 &\begin{pmatrix}
 1 & 0 & -\frac{2}{3} & -1 \\
 0 & 1 & \frac{1}{3} & 2 \\
@@ -2158,7 +2158,7 @@ $$\begin{aligned}
 ::: {.callout-note collapse="true" title="פתרון"}
 בכיוון הראשון, נניח כי $\Set{v_1,...,v_k}$ בת\"ל וקיימים $\alpha_1,..,\alpha_k\in\mathbb{F}$ כך ש- $$.\alpha_1Av_1+...+\alpha_kAv_k=0 \iff A(\alpha_1v_1+...+\alpha_kv_k)=\underline{0}$$ מהפיכות $A$ נובע כי $\alpha_1v_1+...+\alpha_kv_k=\underline{0}$, ומהנתון על $\Set{v_1,...,v_k}$ נובע כי בהכרח $\alpha_1=...=\alpha_k=0$. אז $\Set{Av_1,...,Av_k}$ בת\"ל.
 
-בכיוון השני (שלא דורש הפיכות), נניח כי $\Set{Av_1,...,Av_k}$ בת\"ל וקיימים $\alpha_1,..,\alpha_k\in\mathbb{F}$ כך ש- $$.\alpha_Av_1+...+\alpha_kv_k=\underline{0}$$ נכפיל את שני האגפים ב- $A$ ונקבל $$.A(\alpha_1v_1+...+\alpha_kv_k)=A\underline{0} \iff \alpha_1Av_1+...+\alpha_kAv_k=\underline{0}$$ לכן, בהכרח מתקיים $\alpha_1=...=\alpha_k=0$ לפי ההנחה. אז $\Set{v_1,...,v_k}$ בת\"ל.
+בכיוון השני (שלא דורש הפיכות), נניח כי $\Set{Av_1,...,Av_k}$ בת\"ל וקיימים $\alpha_1,..,\alpha_k\in\mathbb{F}$ כך ש- $$.\alpha_1v_1+...+\alpha_kv_k=\underline{0}$$ נכפיל את שני האגפים ב- $A$ ונקבל $$.A(\alpha_1v_1+...+\alpha_kv_k)=A\underline{0} \iff \alpha_1Av_1+...+\alpha_kAv_k=\underline{0}$$ לכן, בהכרח מתקיים $\alpha_1=...=\alpha_k=0$ לפי ההנחה. אז $\Set{v_1,...,v_k}$ בת\"ל.
 :::
 
 :::: {.theorem #thm-rank-nullity}
@@ -2207,7 +2207,7 @@ $k\leq n$.
 אז לפי מסקנה
 \ref{cor:left},
 קיימת מטריצה הפיכה
-$B\in\mathbb{M}_{n\times n}(\mathbb{F})$
+$B\in\mathbb{M}_{m\times m}(\mathbb{F})$
 כך ש-
 $A'=BA$.
 לפי תרגיל
@@ -2273,8 +2273,8 @@ $\alpha_1,...,\alpha_r\in\mathbb{F}$
 כך ש-
 $$
 \begin{aligned}
-\alpha_1w_1+...+\alpha_rw_r=0 &\implies (\alpha_1,...,\alpha_n,*,...,*)=(0,...,0,0...,0) \\
-& \implies \alpha_1=...=\alpha_n=0
+\alpha_1w_1+...+\alpha_rw_r=0 &\implies (\alpha_1,...,\alpha_r,*,...,*)=(0,...,0,0...,0) \\
+& \implies \alpha_1=...=\alpha_r=0
 \end{aligned}
 $$
 אז 
@@ -2377,7 +2377,7 @@ $\mathop{\mathrm{N}}(A)$.
 $\alpha_{r+1},...,\alpha_n\in\mathbb{F}$
 כך ש-
 $$
-\alpha_1\begin{pmatrix}
+\alpha_{r+1}\begin{pmatrix}
 -b_{1,r+1} \\
 \vdots \\
 -b_{r,r+1} \\
