@@ -1331,7 +1331,7 @@ $$\begin{aligned}
 :::
 
 ::: proof
- לפי הנתון קיימות פש\"אות $S_1,...,S_k$ כך ש- $B=(S_k\circ\cdots\circ S_1)(A)$, או באופן שקול קיימות מטריצות אלמנטריות $E_1,...,E_k\in\mathbb{M}_{m\times m}$ כך ש- $B=E_k\cdots E_1A$. אז לפי טענה -@prp-row-space-invariance נובע כי $$.\mathop{\mathrm{Row}}(A)=\mathop{\mathrm{Row}}(E_1A)=....=\mathop{\mathrm{Row}}(E_k\cdots E_1A)=\mathop{\mathrm{Row}}(B)$$ ◻
+ לפי הנתון קיימות פש\"אות $S_1,...,S_k$ כך ש- $B=S_k(S_{k-1}(\cdots S_2(S_1(A))\cdots))$, או באופן שקול קיימות מטריצות אלמנטריות $E_1,...,E_k\in\mathbb{M}_{m\times m}$ כך ש- $B=E_k\cdots E_1A$. אז לפי טענה -@prp-row-space-invariance נובע כי $$.\mathop{\mathrm{Row}}(A)=\mathop{\mathrm{Row}}(E_1A)=....=\mathop{\mathrm{Row}}(E_k\cdots E_1A)=\mathop{\mathrm{Row}}(B)$$ ◻
 :::
 
 ::: remark
