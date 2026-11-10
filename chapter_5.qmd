@@ -1151,10 +1151,13 @@ v_1 & v_2 & \cdots & v_n \\
 | & | & & |
 \end{pmatrix}$$
 
-סעיפים $(\text{י})$,$(\text{יא})$ במשפט -@thm-invertible2 הם שקולים, ולכן מתקיים: $$\begin{aligned}
-$(\text{ב})$\impliedby$(\text{ג})$+$(\text{א})$ \\
-(\text{א})\impliedby(\text{ג})+(\text{ב})
-\end{aligned}$$ ◻
+סעיפים $(\text{י})$,$(\text{כ})$ במשפט -@thm-invertible2 הם שקולים, ולכן מתקיים:
+$$
+\begin{aligned}
+(\text{ב})&\impliedby(\text{ג})+(\text{א}) \\
+(\text{א})&\impliedby(\text{ג})+(\text{ב})
+\end{aligned}
+$$ ◻
 :::
 
 ### חילוץ קבוצה בת\"ל והשלמה לבסיס {#sec-extraction}
@@ -1328,7 +1331,7 @@ $$\begin{aligned}
 :::
 
 ::: proof
- לפי הנתון קיימות פש\"אות $S_1,...,S_k$ כך ש- $B=S_k(...(S_1(A))$, או באופן שקול קיימות מטריצות אלמנטריות $E_1,...,E_k\in\mathbb{M}_{m\times m}$ כך ש- $B=E_k\cdots E_1A$. אז לפי טענה -@prp-row-space-invariance נובע כי $$.\mathop{\mathrm{Row}}(A)=\mathop{\mathrm{Row}}(E_1A)=....=\mathop{\mathrm{Row}}(E_k\cdots E_1A)=\mathop{\mathrm{Row}}(B)$$ ◻
+ לפי הנתון קיימות פש\"אות $S_1,...,S_k$ כך ש- $B=(S_k\circ\cdots\circ S_1)(A)$, או באופן שקול קיימות מטריצות אלמנטריות $E_1,...,E_k\in\mathbb{M}_{m\times m}$ כך ש- $B=E_k\cdots E_1A$. אז לפי טענה -@prp-row-space-invariance נובע כי $$.\mathop{\mathrm{Row}}(A)=\mathop{\mathrm{Row}}(E_1A)=....=\mathop{\mathrm{Row}}(E_k\cdots E_1A)=\mathop{\mathrm{Row}}(B)$$ ◻
 :::
 
 ::: remark
@@ -1368,7 +1371,7 @@ $$\begin{aligned}
 ::: remark
 נזכיר שבקבוצה רגילה אין חשיבות לסדר האיברים. אז מקודם שכדיברנו על בסיס אמנם השתמשנו באינדקסים, אבל לא הייתה חשיבות לסדר. עכשיו זה ישתנה, ומכאן הצורך בהגדרה החדשה.
 
-למה הכוונה \"חשיבות לסדר הכתיבה\"? ראינו משהו דומה בכתיבת הקוארדינטות של וקטור ב- $\mathbb{F}^n$, להבדיל מהכתיבה של קבוצה (שם אין חשיבות לסדר האיברים). בפרט, לכל שני בסיסים סדורים $B_1=\Set{v_1,...,v_n},C=\Set{w_1,...,w_n}$ מתקיים $$.B=C \iff \forall 1\leq i \leq n \quad v_i=w_i$$
+למה הכוונה \"חשיבות לסדר הכתיבה\"? ראינו משהו דומה בכתיבת הקוארדינטות של וקטור ב- $\mathbb{F}^n$, להבדיל מהכתיבה של קבוצה (שם אין חשיבות לסדר האיברים). בפרט, לכל שני בסיסים סדורים $B_1=\Set{v_1,...,v_n},C=\Set{w_1,...,w_n}$ מתקיים $$.B_1=C \iff \forall 1\leq i \leq n \quad v_i=w_i$$
 :::
 
 ::: example
@@ -2273,7 +2276,7 @@ $\alpha_1,...,\alpha_r\in\mathbb{F}$
 כך ש-
 $$
 \begin{aligned}
-\alpha_1w_1+...+\alpha_rw_r=0 &\implies (\alpha_1,...,\alpha_r,*,...,*)=(0,...,0,0...,0) \\
+\alpha_1w_1+...+\alpha_rw_r=0 &\implies (\alpha_1,...,\alpha_r,*,...,*)=(0,...,0) \\
 & \implies \alpha_1=...=\alpha_r=0
 \end{aligned}
 $$
