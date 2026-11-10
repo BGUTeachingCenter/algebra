@@ -1989,7 +1989,7 @@ $V$
 
 בשביל הפרישה די להראות כי $v_1,v_2,v_3\in\mathop{\mathrm{Span}}(B')$, שהרי אז ינבע כי $$.V=\mathop{\mathrm{Span}}(B)\subseteq \mathop{\mathrm{Span}}(B')\subseteq V \implies \mathop{\mathrm{Span}}(B')=V$$
 
-כבר מתקיים $v_1\in B'$. אין צורך בדירוג כדי לראות איך אפשר לכתוב את $v_2,v_3$ כצירופים לינאריים של איברי $B$: $$\begin{aligned}
+כבר מתקיים $v_1\in B'$. אין צורך בדירוג כדי לראות איך אפשר לכתוב את $v_2,v_3$ כצירופים לינאריים של איברי $B'$: $$\begin{aligned}
 v_2&=(v_1+v_2)-v_1\in\mathop{\mathrm{Span}}(B') \\
 v_3&=(v_1+v_2+v_3)-(v_1+v_2)\in\mathop{\mathrm{Span}}(B')
 \end{aligned}$$
