@@ -80,13 +80,13 @@
 
 ב. לכל $v\in V$ מתקיים $$.0\cdot v=(0+0)\cdot v=0\cdot v+0\cdot v$$ קיים איבר נגדי $-(0\cdot v)$ וניתן לחבר אותו לשני אגפי המשוואה: $$0\cdot v+(-(0\cdot v))=0\cdot v+0\cdot v+(-(0\cdot v)) \implies 0_V=0\cdot v+0_V \implies 0_V=0\cdot v$$
 
-ג. לכל $v\in V$ מתקיים $$.(1+(-1))v=0\cdot v$$ לפי האקסיומה האחרונה ולפי סעיף ב' נובע כי $$.1\cdot v+(-1)v=0_V$$ לפי אקסיומה נוספת מתקיים $1\cdot v=v$, ובנוסף קיים איבר נגדי $-v$. נחבר אותו לשני אגפי המשוואה משמאל ונקבל $$-v+v+(-1)v=-v+0_V \implies 0_V+(-1)v=-v \implies (-1)v=-v$$
+ג. לכל $v\in V$ מתקיים $$.(1+(-1))v=0\cdot v$$ לפי האקסיומה האחרונה ולפי סעיף ב' נובע כי $$.1\cdot v+(-1)v=0_V$$ לפי אקסיומה נוספת מתקיים $1\cdot v=v$, ובנוסף קיים איבר נגדי $-v$. נחבר אותו לשני אגפי המשוואה משמאל ונקבל $$.-v+v+(-1)v=-v+0_V \implies 0_V+(-1)v=-v \implies (-1)v=-v$$
 
 
 :::
 
 ::: remark
-פעולת החיסור בין שני וקטורים $v_1,v_2\in V$ מוגדרת באופן הבא: $$.v_1-v_2=v_1+(-v_2)$$ זהו סימון יותר נוח, אבל כדאי לזכור שחיסור הוא למעשה חיבור האיבר הנגדי.
+פעולת החיסור בין שני וקטורים $v_1,v_2\in V$ מוגדרת באופן הבא: $$v_1-v_2=v_1+(-v_2)$$ זהו סימון יותר נוח, אבל כדאי לזכור שחיסור הוא למעשה חיבור האיבר הנגדי.
 :::
 
 ::: exercise
@@ -104,7 +104,7 @@
  מכאן
  $0_V=0'_V$, כנדרש.
 
-ב. יהיו $v\in V$ ו- $\alpha\in \mathbb{F}$. אז מתקיים $$.\alpha\cdot(0_V+0_V)=\alpha\cdot 0_V$$ לפי דיסטריביוטיביות נובע כי $$.\alpha\cdot 0_V+\alpha\cdot 0_V=\alpha\cdot 0_V$$ נחבר את האיבר הנגדי $-(\alpha\cdot 0_V)$ לשני אגפי המשוואה, ונקבל $$\alpha\cdot 0_V+\alpha\cdot 0_V-(\alpha\cdot 0_V)=\alpha\cdot 0_V-(\alpha\cdot 0_V) \implies \alpha\cdot 0_V=0_V$$
+ב. יהיו $v\in V$ ו- $\alpha\in \mathbb{F}$. אז מתקיים $$.\alpha\cdot(0_V+0_V)=\alpha\cdot 0_V$$ לפי דיסטריביוטיביות נובע כי $$.\alpha\cdot 0_V+\alpha\cdot 0_V=\alpha\cdot 0_V$$ נחבר את האיבר הנגדי $-(\alpha\cdot 0_V)$ לשני אגפי המשוואה, ונקבל $$.\alpha\cdot 0_V+\alpha\cdot 0_V-(\alpha\cdot 0_V)=\alpha\cdot 0_V-(\alpha\cdot 0_V) \implies \alpha\cdot 0_V=0_V$$
 
 
 :::
@@ -346,9 +346,9 @@ $(1,2,3,0)\in \mathbb{R}^4$ הוא צ\"ל של שלושת הוקטורים $$(1,
 
 -   קיום וקטור האפס: מתקיים $$.0_V=0\cdot v_1+0\cdot v_2+...+0\cdot v_k\in\mathop{\mathrm{Span}}(v_1,...,v_k)$$
 
--   סגירות לחיבור: יהיו $.w_1,w_2\in\mathop{\mathrm{Span}}(v_1,...,v_k)$
+-   סגירות לחיבור: יהיו $w_1,w_2\in\mathop{\mathrm{Span}}(v_1,...,v_k)$
 
-    אז קיימים סקלרים $\alpha_1,...,\alpha_k,\beta_1,...,\beta_k\in\mathbb{F}$ כך ש- $$.w_1=\alpha_1v_1+...+\alpha_kv_k\quad,\quad w_2=\beta_1v_1+...\beta_kv_k$$ מתקיים: $$\begin{aligned}
+    אז קיימים סקלרים $\alpha_1,...,\alpha_k,\beta_1,...,\beta_k\in\mathbb{F}$ כך ש- $$w_1=\alpha_1v_1+...+\alpha_kv_k\quad,\quad w_2=\beta_1v_1+...\beta_kv_k$$ מתקיים: $$\begin{aligned}
     w_1+w_2&=(\alpha_1v_1+...+\alpha_kv_k)+(\beta_1v_1+...+\beta_kv_k)\\
     &=(\alpha_1+\beta_1)v_1+...+(\alpha_k+\beta_k)v_k\in\mathop{\mathrm{Span}}(v_1,...,v_k)
     \end{aligned}$$
@@ -467,7 +467,7 @@ $(1,2,3,0)\in \mathbb{R}^4$ הוא צ\"ל של שלושת הוקטורים $$(1,
 ההגדרה הבאה מתייחסת לתת-מרחבים שקשורים למטריצה נתונה.
 
 :::: {.definition #def-row-col}
-`\label{def:row-col}`{=latex} תהי $A\in\mathbb{M}_{m\times n}(\mathbb{F})$ עם שורות $$R_1^A,...,R_m^A\in\mathbb{F}^n$$ ועמודות $$.C_1^A,...,C_n^A\in\mathbb{F}^m$$ נגדיר את מרחב השורות $$,\mathop{\mathrm{Row}}(A)=\mathop{\mathrm{Span}}(R_1^A,...,R_m^A)\subseteq\mathbb{F}^n$$ ואת מרחב העמודות $$.\mathop{\mathrm{Col}}(A)=\mathop{\mathrm{Span}}(C_1^A,...,C_n^A)\subseteq\mathbb{F}^m$$
+`\label{def:row-col}`{=latex} תהי $A\in\mathbb{M}_{m\times n}(\mathbb{F})$ עם שורות $$R_1^A,...,R_m^A\in\mathbb{F}^n$$ ועמודות $$C_1^A,...,C_n^A\in\mathbb{F}^m$$ נגדיר את מרחב השורות $$,\mathop{\mathrm{Row}}(A)=\mathop{\mathrm{Span}}(R_1^A,...,R_m^A)\subseteq\mathbb{F}^n$$ ואת מרחב העמודות $$.\mathop{\mathrm{Col}}(A)=\mathop{\mathrm{Span}}(C_1^A,...,C_n^A)\subseteq\mathbb{F}^m$$
 :::
 
 ::: example
@@ -706,12 +706,7 @@ t
 \end{pmatrix}\right)
 \end{aligned}$$
 
-השוויון השני קל לבדיקה, אבל הדרך להגיע אליו היא \"לפרק\" את הוקטור $\begin{pmatrix}
-s+2t\\
--s-t\\
-s\\
-t
-\end{pmatrix}$ לסכום של שני וקטורים כך שבכל אחד יופיע רק פרמטר אחד, ואז מכל וקטור אפשר להוציא את הפרמטר המתאים החוצה לפי כפל בסקלר. הנה ההסבר המלא: $$\begin{pmatrix}
+השוויון השני קל לבדיקה, אבל הדרך להגיע אליו היא \"לפרק\" את הוקטור $\begin{pmatrix}s+2t\\-s-t\\s\\t\end{pmatrix}$ לסכום של שני וקטורים כך שבכל אחד יופיע רק פרמטר אחד, ואז מכל וקטור אפשר להוציא את הפרמטר המתאים החוצה לפי כפל בסקלר. הנה ההסבר המלא: $$\begin{pmatrix}
 s+2t\\
 -s-t\\
 s\\
@@ -1203,7 +1198,7 @@ A=&\begin{pmatrix}
 \end{pmatrix}
 \end{aligned}$$
 
-קיבלנו שלושה איברים מובילים רק בשלוש העמודות הראשונות, ולכן הדרגה היא $3$. זה מראה כי מלכתחילה $v_4,v_5\in\mathop{\mathrm{Span}}(v_1,v_2,v_3)$, ולמעשה $.v_4=v_1+2v_2, v_5=3v_1-v_3$
+קיבלנו שלושה איברים מובילים רק בשלוש העמודות הראשונות, ולכן הדרגה היא $3$. זה מראה כי מלכתחילה $v_4,v_5\in\mathop{\mathrm{Span}}(v_1,v_2,v_3)$, ולמעשה $v_4=v_1+2v_2, v_5=3v_1-v_3$.
 
 לכן $\Set{v_1,v_2,v_3}$ היא בסיס ל- $W$.
 
@@ -1468,7 +1463,7 @@ $E$ הוא הבסיס הסטנדרטי. הקוארדינטות ביחס אליו
         \end{pmatrix},\begin{pmatrix}
         0 & 0 \\
         0 & 1
-        \end{pmatrix}}$$ ועל הבסיס הסדור $$.B=\Set{\begin{pmatrix}
+        \end{pmatrix}}$$ ועל הבסיס הסדור $$B=\Set{\begin{pmatrix}
         1 & 0 \\
         0 & 0
         \end{pmatrix},\begin{pmatrix}
@@ -1480,10 +1475,7 @@ $E$ הוא הבסיס הסטנדרטי. הקוארדינטות ביחס אליו
         \end{pmatrix},\begin{pmatrix}
         0 & 0 \\
         0 & 1
-        \end{pmatrix}}$$ אז לכל $\begin{pmatrix}
-    a & b \\
-    c & d
-    \end{pmatrix}\in\mathbb{M}_{2\times 2}(\mathbb{R})$ מתקיים $$\left[\begin{pmatrix}
+        \end{pmatrix}}$$ אז לכל $\begin{pmatrix}a & b\\c & d\end{pmatrix}\in\mathbb{M}_{2\times 2}(\mathbb{R})$ מתקיים $$\left[\begin{pmatrix}
     a & b \\
     c & d
     \end{pmatrix}\right]_E=\begin{pmatrix}
@@ -1499,7 +1491,7 @@ $E$ הוא הבסיס הסטנדרטי. הקוארדינטות ביחס אליו
     c \\ 
     b \\
     d
-    \end{pmatrix}$$ השוויון השני נובע מהשוויון הבא: $$.\begin{pmatrix}
+    \end{pmatrix}$$ השוויון השני נובע מהשוויון הבא: $$\begin{pmatrix}
     a & b \\
     c & d
     \end{pmatrix}=a\begin{pmatrix}
@@ -1516,7 +1508,7 @@ $E$ הוא הבסיס הסטנדרטי. הקוארדינטות ביחס אליו
     0 & 1
     \end{pmatrix}$$
 
-ג. ב- $\mathbb{F}^n$ הבסיס הסטנדרטי הוא $$.E=\Set{e_1,...,e_n}$$ לכל $$\begin{pmatrix}
+ג. ב- $\mathbb{F}^n$ הבסיס הסטנדרטי הוא $$E=\Set{e_1,...,e_n}$$ לכל $$\begin{pmatrix}
     a_1 \\
     \vdots \\
     a_n
@@ -1538,19 +1530,7 @@ $E$ הוא הבסיס הסטנדרטי. הקוארדינטות ביחס אליו
 \end{pmatrix},\begin{pmatrix}
 2 \\
 -1
-\end{pmatrix}}$$ חשבו את $.\left[\begin{pmatrix}
-0 \\
-0
-\end{pmatrix}\right]_B,\left[\begin{pmatrix}
-1 \\
-1
-\end{pmatrix}\right]_B,\left[\begin{pmatrix}
-2 \\
-4
-\end{pmatrix}\right]_B,\left[\begin{pmatrix}
-3 \\
-1
-\end{pmatrix}\right]_B$
+\end{pmatrix}}$$ חשבו את $\left[\begin{pmatrix}0\\0\end{pmatrix}\right]_B,\left[\begin{pmatrix}1\\1\end{pmatrix}\right]_B,\left[\begin{pmatrix}2\\4\end{pmatrix}\right]_B,\left[\begin{pmatrix}3\\1\end{pmatrix}\right]_B$.
 :::
 
 ::: {.callout-note collapse="true" title="פתרון"}
@@ -1935,13 +1915,7 @@ i & 1
 0 & 1 & 1 & 0 \\
 0 & 0 & 0 & 0
 \end{pmatrix}
-\end{aligned}$$ זה מראה כי השורה השלישית היא צירוף לינארי של שתי השורות הראשונות, שמהוות בסיס למרחב השורות. בנוסף, ניתן להוסיף את וקטורי היחידה $e_3,e_4$ כדי להשלים את בסיס זה לבסיס ל- $\mathbb{C}^4$. נחזור חזרה למרחב הוקטורי $\mathbb{M}_{2\times 2}$ ונקבל ש- $\Set{\begin{pmatrix}
-1 & i \\
-i & 1
-\end{pmatrix},\begin{pmatrix}
-0 & 1 \\
-1 & 0
-\end{pmatrix}}$ היא בסיס ל- $W$, ולכן $\dim(W)=2$. לאחר השלמה נקבל את הבסיס הבא ל- $\mathbb{M}_{2\times 2}(\mathbb{C})$: $$\Set{\begin{pmatrix}
+\end{aligned}$$ זה מראה כי השורה השלישית היא צירוף לינארי של שתי השורות הראשונות, שמהוות בסיס למרחב השורות. בנוסף, ניתן להוסיף את וקטורי היחידה $e_3,e_4$ כדי להשלים את בסיס זה לבסיס ל- $\mathbb{C}^4$. נחזור חזרה למרחב הוקטורי $\mathbb{M}_{2\times 2}$ ונקבל ש- $\Set{\begin{pmatrix}1 & i\\i & 1\end{pmatrix},\begin{pmatrix}0 & 1\\1 & 0\end{pmatrix}}$ היא בסיס ל- $W$, ולכן $\dim(W)=2$. לאחר השלמה נקבל את הבסיס הבא ל- $\mathbb{M}_{2\times 2}(\mathbb{C})$: $$\Set{\begin{pmatrix}
 1 & i \\
 i & 1
 \end{pmatrix},\begin{pmatrix}
@@ -2247,7 +2221,7 @@ $\dim(\mathop{\mathrm{Col}}(A))=k=\dim(\mathop{\mathrm{Col}}(A'))$.
 $A'$,
 שהיא מהצורה
 $$
-.A'=\begin{pmatrix}
+A'=\begin{pmatrix}
 1 & 0 & \cdots & 0 & b_{1,r+1} & \cdots & b_{1,n} \\
 0 & 1 & \cdots & 0 & b_{2,r+1} & \cdots & b_{2,n} \\
 \vdots & \vdots & \cdots & \vdots & \vdots & \cdots & \vdots \\
@@ -2361,23 +2335,7 @@ t_n
 \end{aligned}
 $$
 
-$\Set{\begin{pmatrix}
--b_{1,r+1} \\
-\vdots \\
--b_{r,r+1} \\
-1 \\
-0 \\
-\vdots \\
-0
-\end{pmatrix},...,\begin{pmatrix}
--b_{1,n} \\
-\vdots \\
--b_{r,n} \\
-0 \\
-\vdots \\
-0 \\
-1
-\end{pmatrix}}$
+$\Set{\begin{pmatrix}-b_{1,r+1}\\\vdots\\-b_{r,r+1}\\1\\0\\\vdots\\0\end{pmatrix},...,\begin{pmatrix}-b_{1,n}\\\vdots\\-b_{r,n}\\0\\\vdots\\0\\1\end{pmatrix}}$
 היא גם בת"ל ולכן היא בסיס 
 ל-
 $\mathop{\mathrm{N}}(A)$.
@@ -2467,21 +2425,11 @@ $$.\dim(\mathop{\mathrm{N}}(A))=n-\mathop{\mathrm{rank}}(A)\geq n-m$$
 
 ::: {.callout-note collapse="true" title="פתרון"}
 
-א. מספר העמודות של $A$ הוא בהכרח $4$, כי מספר העמודות שווה למספר המשתנים של הממ\"ל $Ax=\underline{0}$ ונתון שקבוצת הפתרונות היא תת-מרחב של $\mathbb{R}^4$. הקבוצה $\Set{\begin{pmatrix}
-    1 \\
-    2 \\
-    3 \\
-    4
-    \end{pmatrix},\begin{pmatrix}
-    1 \\
-    0 \\
-    -1 \\
-    0
-    \end{pmatrix}}$ היא בת\"ל כי שני הוקטורים אינם קו-לינאריים. לכן, קבוצה זו היא בסיס ל- $W$ ומתקיים $\dim(\mathop{\mathrm{N}}(A))=\dim(W)=2$. לפי משפט הדרגה נובע כי $$.\dim(\mathop{\mathrm{N}}(A))+\mathop{\mathrm{rank}}(A)=4 \implies \mathop{\mathrm{rank}}(A)=2$$ אז מספר השורות המינימלי הוא $2$, אבל אין שום חסם עליון כי אפשר לחזור על אחת משתי השורות (או שתיהן) מספר שרירותי של פעמים. אפשר גם לקחת צירופים לינאריים שונים של שתי השורות ולקבל מספר שרירותי של שורות שונות, ועדיין הדרגה תישאר $2$.
+א. מספר העמודות של $A$ הוא בהכרח $4$, כי מספר העמודות שווה למספר המשתנים של הממ\"ל $Ax=\underline{0}$ ונתון שקבוצת הפתרונות היא תת-מרחב של $\mathbb{R}^4$. הקבוצה $\Set{\begin{pmatrix}1\\2\\3\\4\end{pmatrix},\begin{pmatrix}1\\0\\-1\\0\end{pmatrix}}$ היא בת\"ל כי שני הוקטורים אינם קו-לינאריים. לכן, קבוצה זו היא בסיס ל- $W$ ומתקיים $\dim(\mathop{\mathrm{N}}(A))=\dim(W)=2$. לפי משפט הדרגה נובע כי $$.\dim(\mathop{\mathrm{N}}(A))+\mathop{\mathrm{rank}}(A)=4 \implies \mathop{\mathrm{rank}}(A)=2$$ אז מספר השורות המינימלי הוא $2$, אבל אין שום חסם עליון כי אפשר לחזור על אחת משתי השורות (או שתיהן) מספר שרירותי של פעמים. אפשר גם לקחת צירופים לינאריים שונים של שתי השורות ולקבל מספר שרירותי של שורות שונות, ועדיין הדרגה תישאר $2$.
 
 ב. יש שתי דרכי פתרון.
 
-[דרך א']{.underline}: נשים לב כי $$.\begin{pmatrix}
+[דרך א']{.underline}: נשים לב כי $$\begin{pmatrix}
     x \\
     y \\
     z \\
@@ -2578,17 +2526,7 @@ $$\begin{pmatrix}
     0 & -2 & 0 & 1
     \end{pmatrix}$$
 
-[דרך ב']{.underline}: נחזור אל $\Set{\begin{pmatrix}
-    1 \\
-    2 \\
-    3 \\
-    4
-    \end{pmatrix},\begin{pmatrix}
-    1 \\
-    0 \\
-    -1 \\
-    0
-    \end{pmatrix}}$ והפעם נסתכל על המטריצה שאלה הן שורותיה:
+[דרך ב']{.underline}: נחזור אל $\Set{\begin{pmatrix}1\\2\\3\\4\end{pmatrix},\begin{pmatrix}1\\0\\-1\\0\end{pmatrix}}$ והפעם נסתכל על המטריצה שאלה הן שורותיה:
 
 $$\begin{pmatrix}
     1 & 2 & 3 & 4 \\
