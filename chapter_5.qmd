@@ -296,7 +296,7 @@ B=\begin{pmatrix}
 <figcaption>פרישה של שני וקטורים לדוגמה במישור ע"י שני וקטורים נתונים, כאשר בכחול מסומן הישר הנפרש ע"י וקטור אחד</figcaption>
 </figure>
 
-::: {#fig:Span2D .figure}
+::: {#fig:Span2DSimulation .figure}
 ![](simulations/Span2D.html?embed=1){width=720 height=720}
 :::
 באופן כללי, נרצה להגדיר צירוף לינארי של מספר וקטורים (אולי יותר גדול משניים):
@@ -333,7 +333,7 @@ $(1,2,3,0)\in \mathbb{R}^4$ הוא צ\"ל של שלושת הוקטורים $$(1,
 <img src="images/Span3D.png" style="width:60.0%" />
 <figcaption>פרישה של שני וקטורים לדוגמה במרחב ע"י שלושה וקטורים נתונים, כאשר בכחול מסומן הישר הנפרש ע"י וקטור אחד ובירוק מסומן המישור הנפרש ע"י שני וקטורים</figcaption>
 </figure>
-::: {#fig:Span3D .figure}
+::: {#fig:Span3DSimulation .figure}
 ![](simulations/Span3D.html?embed=1){width=720 height=720}
 :::
 
@@ -478,7 +478,7 @@ $(1,2,3,0)\in \mathbb{R}^4$ הוא צ\"ל של שלושת הוקטורים $$(1,
     -1 &0 &1
     \end{pmatrix}$$ מתקיים $$\begin{aligned}
     ,\mathop{\mathrm{Row}}(A)&=\mathop{\mathrm{Span}}((1,2,3),(-1,0,1)) \\
-    .\mathop{\mathrm{Col}}(A)&=\mathop{\mathrm{Span}}\left(\begin{pmatrix}1 \\ -1\end{pmatrix},\begin{pmatrix}2 \\ 0\end{pmatrix},\begin{pmatrix}3 \\ 1\end{pmatrix}\right)
+    \mathop{\mathrm{Col}}(A)&=\mathop{\mathrm{Span}}\left(\begin{pmatrix}1 \\ -1\end{pmatrix},\begin{pmatrix}2 \\ 0\end{pmatrix},\begin{pmatrix}3 \\ 1\end{pmatrix}\right)
     \end{aligned}$$
 
 ב. $$B=\begin{pmatrix}
@@ -487,7 +487,7 @@ $(1,2,3,0)\in \mathbb{R}^4$ הוא צ\"ל של שלושת הוקטורים $$(1,
     3 & -i
     \end{pmatrix}$$ מתקיים $$\begin{aligned}
     ,\mathop{\mathrm{Row}}(B)&=\mathop{\mathrm{Span}}((i,0),(2,1+i),(3,-i)) \\
-    .\mathop{\mathrm{Col}}(B)&=\mathop{\mathrm{Span}}\left(\begin{pmatrix}i \\ 2 \\ 3\end{pmatrix},\begin{pmatrix}0 \\ 1+i \\-i\end{pmatrix}\right)
+    \mathop{\mathrm{Col}}(B)&=\mathop{\mathrm{Span}}\left(\begin{pmatrix}i \\ 2 \\ 3\end{pmatrix},\begin{pmatrix}0 \\ 1+i \\-i\end{pmatrix}\right)
     \end{aligned}$$
 :::
 
@@ -824,7 +824,7 @@ t
 <figcaption>תלות לינארית בין ארבעה וקטורים במרחב, כאשר אף שלושה אינם על מישור אחד</figcaption>
 </figure>
 
-::: {#fig:LinearIndependence .figure}
+::: {#fig:LinearIndependenceSimulation .figure}
 ![](simulations/LinearIndependence.html?embed=1){width=720 height=720}
 :::
 
