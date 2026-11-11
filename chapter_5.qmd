@@ -338,7 +338,7 @@ $(1,2,3,0)\in \mathbb{R}^4$ הוא צ\"ל של שלושת הוקטורים $$(1,
 :::
 
 :::: {.proposition #prp-span-subspace}
-*`\label{prop:span-subspace}`{=latex} יהי $V$ מ\"ו מעל $\mathbb{F}$, ויהיו $v_1,v_2,...,v_k\in V$. אז $\mathop{\mathrm{Span}}(v_1,...,v_k)$ הוא תת-מרחב של $V$ המקיים $v_1,...,v_k\in \mathop{\mathrm{Span}}(v_1,...,v_k)$.*
+*`\label{prop:span-subspace}`{=latex} יהי $V$ מ\"ו מעל $\mathbb{F}$, ויהיו $v_1,v_2,...,v_k\in V$. אז $\mathop{\mathrm{Span}}(v_1,...,v_k)$ הוא תת-מרחב של $V$ המקיים $$.v_1,...,v_k\in \mathop{\mathrm{Span}}(v_1,...,v_k)$$*
 :::
 
 ::: proof
@@ -346,9 +346,7 @@ $(1,2,3,0)\in \mathbb{R}^4$ הוא צ\"ל של שלושת הוקטורים $$(1,
 
 -   קיום וקטור האפס: מתקיים $$.0_V=0\cdot v_1+0\cdot v_2+...+0\cdot v_k\in\mathop{\mathrm{Span}}(v_1,...,v_k)$$
 
--   סגירות לחיבור: יהיו $w_1,w_2\in\mathop{\mathrm{Span}}(v_1,...,v_k)$
-
-    אז קיימים סקלרים $\alpha_1,...,\alpha_k,\beta_1,...,\beta_k\in\mathbb{F}$ כך ש- $$w_1=\alpha_1v_1+...+\alpha_kv_k\quad,\quad w_2=\beta_1v_1+...\beta_kv_k$$ מתקיים: $$\begin{aligned}
+-   סגירות לחיבור: יהיו $w_1,w_2\in\mathop{\mathrm{Span}}(v_1,...,v_k)$. קיימים סקלרים $\alpha_1,...,\alpha_k,\beta_1,...,\beta_k\in\mathbb{F}$ כך ש- $$.w_1=\alpha_1v_1+...+\alpha_kv_k,\quad w_2=\beta_1v_1+...\beta_kv_k$$ מתקיים: $$\begin{aligned}
     w_1+w_2&=(\alpha_1v_1+...+\alpha_kv_k)+(\beta_1v_1+...+\beta_kv_k)\\
     &=(\alpha_1+\beta_1)v_1+...+(\alpha_k+\beta_k)v_k\in\mathop{\mathrm{Span}}(v_1,...,v_k)
     \end{aligned}$$
