@@ -353,7 +353,7 @@ $(1,2,3,0)\in \mathbb{R}^4$ הוא צ\"ל של שלושת הוקטורים $$(1,
 
 -   סגירות לכפל בסקלר: לכל $\gamma\in\mathbb{F}$ מתקיים $$.\gamma w_1=\gamma(\alpha_1v_1+...+\alpha_kv_k)=(\gamma\alpha_1)v_1+...+(\gamma\alpha_k)v_k\in\mathop{\mathrm{Span}}(v_1,...,v_k)$$
 
-לכן, $\mathop{\mathrm{Span}}(v_1,...,v_k)$ הוא תת-מרחב של $V$. נותר לבדוק כי $v_1,...,v_k\in\mathop{\mathrm{Span}}(v_1,...,v_k)$. אכן, לכל $1\leq j\leq k$ מתקיים $$.v_j=0\cdot v_1+...+0\cdot v_{j-1}+1\cdot v_j+0\cdot v_{j+1}+...+0\cdot v_k\in\mathop{\mathrm{Span}}(v_1,...,v_k)$$
+לכן, $\mathop{\mathrm{Span}}(v_1,...,v_k)$ הוא תת-מרחב של $V$. נותר לבדוק כי $v_1,...,v_k\in\mathop{\mathrm{Span}}(v_1,...,v_k)$. אכן, יש צירוף לינארי טבעי לכל $1\leq j\leq k$ מהצורה $$.v_j=0\cdot v_1+...+0\cdot v_{j-1}+1\cdot v_j+0\cdot v_{j+1}+...+0\cdot v_k\in\mathop{\mathrm{Span}}(v_1,...,v_k)$$
 :::
 
 ::: example
