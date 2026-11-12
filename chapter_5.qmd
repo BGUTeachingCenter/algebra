@@ -675,12 +675,12 @@ $$\begin{pmatrix}
 \end{cases}$$
 
 המשתנים החופשיים הם $x_3,x_4$. נציב $(x_3,x_4)=(s,t)$ ונקבל $$\begin{aligned}
-\mathop{\mathrm{N}}(A)&=\Set{\begin{pmatrix}
+\mathop{\mathrm{N}}(A)&=\left\{\begin{pmatrix}
 s+2t\\
 -s-t\\
 s\\
 t
-\end{pmatrix}|s,t\in\mathbb{R}}=\Set{s\begin{pmatrix}
+\end{pmatrix}\middle|s,t\in\mathbb{R}\right\}=\left\{s\begin{pmatrix}
 1\\
 -1\\
 1\\
@@ -690,7 +690,7 @@ t
 -1\\
 0\\
 1
-\end{pmatrix}:s,t\in\mathbb{R}}\\
+\end{pmatrix}\middle|s,t\in\mathbb{R}\right\}\\
 &=\mathop{\mathrm{Span}}\left(\begin{pmatrix}
 1\\
 -1\\
