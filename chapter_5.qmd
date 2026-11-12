@@ -1149,7 +1149,7 @@ v_1 & v_2 & \cdots & v_n \\
 | & | & & |
 \end{pmatrix}$$
 
-סעיפים $(\text{י})$,$(\text{כ})$ במשפט -@thm-invertible2 הם שקולים, ולכן מתקיים:
+סעיפים $(\text{י})$,$(\text{יא})$ במשפט -@thm-invertible2 הם שקולים, ולכן מתקיים:
 $$
 \begin{aligned}
 (\text{ב})&\impliedby(\text{ג})+(\text{א}) \\
