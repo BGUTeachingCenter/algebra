@@ -120,7 +120,7 @@ $B=\Set{\begin{pmatrix}
 
 -   סגירות לכפל סקלר: יהיו $v\in W_1\cap W_2$ ו- $\alpha\in\mathbb{F}$. בפרט, $v\in W_1$ ולכן $\alpha v\in W_1$ מסגירות $W_1$ לכפל בסקלר. באופן דומה, גם מתקיים $\alpha v\in W_2$, ולכן $\alpha v\in W_1\cap W_2$.
 
- ◼
+ 
 :::
 
 ::: exercise
@@ -211,7 +211,7 @@ $$\begin{pmatrix}
 הוכחנו ש- $W_1+W_2$ הוא אכן תת-מרחב. לבסוף, לכל $v\in W_1,w\in W_2$ מתקיים: $$\begin{aligned}
 v&=v+0_V\in W_1+W_2 \\
 w&=0_V+w\in W_1+W_2
-\end{aligned}$$ כלומר, מתקיים $W_1\subseteq W_1+W_2$ וגם $W_2\subseteq W_1+W_2$, כנדרש. ◼
+\end{aligned}$$ כלומר, מתקיים $W_1\subseteq W_1+W_2$ וגם $W_2\subseteq W_1+W_2$, כנדרש. 
 :::
 
 ::: example
@@ -326,7 +326,7 @@ $$
 $$\begin{aligned}
 &W_1\cap W_2\subseteq W_1\subseteq W_1+W_2\subseteq V \\
 &W_1\cap W_2\subseteq W_2\subseteq W_1+W_2\subseteq V 
-\end{aligned}$$ ◼
+\end{aligned}$$ 
 :::
 
 ::: exercise
@@ -364,7 +364,7 @@ $$\begin{aligned}
 0, \quad &m+1\leq i\leq k
 \end{cases}$$
 
-לכל $m+1\leq i\leq k$ נציב $\alpha_i=0$ במשוואה [-@eq-adjoining], ונקבל $$.\alpha_1 w_1+...+\alpha_m w_m+\beta_1 u_1+...+\beta_{l-m} u_{l-m}=0$$ אגף שמאל הוא צירוף לינארי של איברי הבסיס $B_2$ (דיללנו את הצירוף והשארנו רק וקטורים שמופיעים ב- $B_2$), ולכן בהכרח כל הסקלרים מתאפסים. אז $B$ בת\"ל ולכן מדובר בבסיס ל- $W_1+W_2$. לבסוף, נשים לב כי $$.\dim(W_1+W_2)=k+l-m=\dim(W_1)+\dim(W_2)-\dim(W_1\cap W_2)$$ ◼
+לכל $m+1\leq i\leq k$ נציב $\alpha_i=0$ במשוואה [-@eq-adjoining], ונקבל $$.\alpha_1 w_1+...+\alpha_m w_m+\beta_1 u_1+...+\beta_{l-m} u_{l-m}=0$$ אגף שמאל הוא צירוף לינארי של איברי הבסיס $B_2$ (דיללנו את הצירוף והשארנו רק וקטורים שמופיעים ב- $B_2$), ולכן בהכרח כל הסקלרים מתאפסים. אז $B$ בת\"ל ולכן מדובר בבסיס ל- $W_1+W_2$. לבסוף, נשים לב כי $$.\dim(W_1+W_2)=k+l-m=\dim(W_1)+\dim(W_2)-\dim(W_1\cap W_2)$$ 
 :::
 
 ::: example
