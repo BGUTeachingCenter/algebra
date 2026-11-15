@@ -289,8 +289,7 @@ $$
 ::: {.callout-note collapse="true" title="פתרון"}
 מתקיים $$\begin{aligned}
 &w\in W_1+W_2 \iff \exists u\in W_1, v\in W_2 \quad w=u+v \\
-&\iff \exists \alpha_1,...,\alpha_k,\beta_1,...,\beta_m\in\mathbb{F}\quad u=\alpha_1w_1+...+\alpha_kw_k,\quad v=\beta_1v_1+...+\beta_mv_m \\
-&\iff \exists \alpha_1,...,\alpha_k,\beta_1,...,\beta_m\in\mathbb{F}\quad w=\alpha_1w_1+...\alpha_kw_k+\beta_1v_1+...+\beta_mv_m \\
+&\iff \exists \alpha_1,...,\alpha_k,\beta_1,...,\beta_m\in\mathbb{F}\quad w=(\alpha_1w_1+...+\alpha_kw_k)+(\beta_1v_1+...+\beta_mv_m) \\
 &\iff w\in\mathop{\mathrm{Span}}(w_1,...,w_k,v_1,...,v_m)
 \end{aligned}$$ לכן יש שוויון בין הקבוצות.
 :::
@@ -316,7 +315,7 @@ $$
 נרצה להבין את הקשר בין המימדים של שני תת-מרחבים, חיתוכם וסכומם. קשר אחד כבר קל להסיק:
 
 ::: corollary
- *יהיו $V$ מ\"ו מעל $\mathbb{F}$ ו- $W_1,W_2\subseteq V$. אז מתקיים: $$\begin{aligned}
+ *יהיו $V$ מ\"ו מעל $\mathbb{F}$ ויהיו $W_1,W_2$ תת-מרחבים של $V$. אז מתקיים: $$\begin{aligned}
 \dim(W_1\cap W_2)\leq \dim(W_1)\leq\dim(W_1+W_2)\leq\dim(V)
 \end{aligned}$$ ובאופן דומה: $$\dim(W_1\cap W_2)\leq \dim(W_2)\leq\dim(W_1+W_2)\leq\dim(V)$$*
 :::
@@ -341,7 +340,7 @@ $$\begin{aligned}
 הנוסחה במשפט הבא נקראת נוסחת המימדים, והיא מבטאת קשר יותר מדויק בין המימדים של שני תת-מרחבים, חיתוכם וסכומם.
 
 ::: {.theorem #thm-dim-formula}
-*`\label{thm:dim-formula}`{=latex} יהי $V$ מ\"ו נוצר סופית מעל $\mathbb{F}$, ויהיו $W_1,W_2$ תת-מרחבים של $V$. אז מתקיים $$.\dim(W_1+W_2)=\dim(W_1)+\dim(W_2)-\dim(W_1\cap W_2)$$*
+*`\label{thm:dim-formula}`{=latex} יהי $V$ מ\"ו נוצר סופית מעל $\mathbb{F}$, ויהיו $W_1,W_2\subseteq V$ תת-מרחבים. אז מתקיים $$.\dim(W_1+W_2)=\dim(W_1)+\dim(W_2)-\dim(W_1\cap W_2)$$*
 :::
 
 ::: remark
