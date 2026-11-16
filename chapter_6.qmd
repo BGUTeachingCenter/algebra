@@ -357,7 +357,7 @@ $$\begin{aligned}
 נניח שקיימים $\alpha_1,...,\alpha_k,\beta_1,...,\beta_{l-m}\in\mathbb{F}$ כך שמתקיים $$ 
 .\alpha_1 w_1+...+\alpha_k w_k+\beta_1 u_1+...+\beta_{l-m} u_{l-m}=0$$ {#eq-adjoining}
 
-נחסיר משני האגפים את $\beta_1 u_1+...+\beta_{l-m} u_{l-m}$, ונקבל $$.\alpha_1 w_1+...+\alpha_k w_k=-\beta_1 u_1+...-\beta_{l-m} u_{l-m}$$ נשים לב כי אגף שמאל שייך ל- $W_1$, ואילו אגף ימין שייך ל- $W_2$. לכן, שניהם שייכים ל- $W_1\cap W_2$. בפרט, שניהם שווים לצירוף לינארי של איברי הבסיס $B_0$. לכן קיימים $\gamma_1,...,\gamma_m\in\mathbb{F}$ כך שמתקיים $$\alpha_1 w_1+...+\alpha_m w_m+\alpha_{m+1} w_{m+1}+...+\alpha_k w_k=\gamma_1w_1+...+\gamma_m w_m$$
+נחסיר משני האגפים את $\beta_1 u_1+...+\beta_{l-m} u_{l-m}$, ונקבל $$.\alpha_1 w_1+...+\alpha_k w_k=-\beta_1 u_1+...-\beta_{l-m} u_{l-m}$$ נשים לב כי אגף שמאל שייך ל- $W_1$, ואילו אגף ימין שייך ל- $W_2$. לכן, שניהם שייכים ל- $W_1\cap W_2$. בפרט, שניהם שווים לצירוף לינארי של איברי הבסיס $B_0$. לכן קיימים $\gamma_1,...,\gamma_m\in\mathbb{F}$ כך שמתקיים $$.\alpha_1 w_1+...+\alpha_m w_m+\alpha_{m+1} w_{m+1}+...+\alpha_k w_k=\gamma_1w_1+...+\gamma_m w_m$$
 
 הקבוצה $B_1=\Set{w_1,...,w_m,w_{m+1},...,w_k}$ היא בסיס, ולכן הסקלרים נקבעים ביחידות לפי טענה -@prp-unique-scalars. מכאן $$.\alpha_i=\begin{cases}
 \gamma_i,\quad &1\leq i\leq m \\
