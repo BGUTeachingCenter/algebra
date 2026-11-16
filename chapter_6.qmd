@@ -485,7 +485,7 @@ w_1  & \cdots & w_m  & u_1  & \cdots & u_k \\
 0 \\
 2 \\
 0   
-\end{pmatrix}\right),W_2=\mathop{\mathrm{Span}}\left(\begin{pmatrix}
+\end{pmatrix}\right),\quad W_2=\mathop{\mathrm{Span}}\left(\begin{pmatrix}
 2 \\
 1 \\
 3 \\
@@ -597,7 +597,7 @@ $$\begin{pmatrix}
 :::
 
 ::: exercise
-נסתכל על תת-המרחבים הבאים של $\mathbb{R}^4$: $$W_1=\mathop{\mathrm{N}}(A), W_2=\mathop{\mathrm{Span}}\left(\begin{pmatrix}1\\0\\0\\-1\end{pmatrix},\begin{pmatrix}1\\-1\\1\\-1\end{pmatrix}\right)$$ כאשר $$.A=\begin{pmatrix}
+נסתכל על תת-המרחבים הבאים של $\mathbb{R}^4$: $$W_1=\mathop{\mathrm{N}}(A),\quad W_2=\mathop{\mathrm{Span}}\left(\begin{pmatrix}1\\0\\0\\-1\end{pmatrix},\begin{pmatrix}1\\-1\\1\\-1\end{pmatrix}\right)$$ כאשר $$.A=\begin{pmatrix}
 1 & 1 & 1 & 1 \\
 1 & -1 & 1 & -1
 \end{pmatrix}$$ מצאו בסיסים ל- $W_1\cap W_2,W_1+W_2$.
@@ -606,7 +606,7 @@ $$\begin{pmatrix}
 ::: {.callout-note collapse="true" title="פתרון"}
 דרך אחת לפתור את התרגיל היא למצוא בסיס ל- $\mathop{\mathrm{N}}(A)$. בבסיס זה יש שני וקטורים, ולכן יחד עם הוקטורים בקבוצה הפורשת את $W_2$, נקבל מטריצה של $4$ עמודות. דרך זו תקינה, אך היא דורשת שני דירוגים וכדאי להכיר גם גישה אחרת.
 
-אמנם המרחב הוא $\mathbb{R}^4$ ולא $\mathbb{R}^3$, אך יש דמיון לחיתוך בין מישור שנתון ע\"י ממ\"ל לישר שנתון בהצגה פרמטרית. כאן $W_1$ נתון ע\"י ממ\"ל ו- $W_2$ נתון בהצגה פרמטרית (אבל שניהם ממימד $2$). גם כאן ניתן למצוא את החיתוך ע\"י הצבת ההצגה הפרמטרית של $W_2$ בממ\"ל המתאימה ל- $A$. נשים לב כי $$.W_2=\Set{s\begin{pmatrix}1\\0\\0\\-1\end{pmatrix}+t\begin{pmatrix}1\\-1\\1\\-1\end{pmatrix}|s,t\in\mathbb{R}}=\Set{\begin{pmatrix}s+t\\-t\\t\\-s-t\end{pmatrix}|s,t\in\mathbb{R}}$$
+אמנם המרחב הוא $\mathbb{R}^4$ ולא $\mathbb{R}^3$, אך יש דמיון לחיתוך בין מישור שנתון ע\"י ממ\"ל לישר שנתון בהצגה פרמטרית. כאן $W_1$ נתון ע\"י ממ\"ל ו- $W_2$ נתון בהצגה פרמטרית (אבל שניהם ממימד $2$). גם כאן ניתן למצוא את החיתוך ע\"י הצבת ההצגה הפרמטרית של $W_2$ בממ\"ל המתאימה ל- $A$. נשים לב כי $$.W_2=\left\{s\begin{pmatrix}1\\0\\0\\-1\end{pmatrix}+t\begin{pmatrix}1\\-1\\1\\-1\end{pmatrix}\middle|s,t\in\mathbb{R}\right}=\left\{\begin{pmatrix}s+t\\-t\\t\\-s-t\end{pmatrix}\middle|s,t\in\mathbb{R}\right\}$$
 
 הממ\"ל המתאימה ל- $A$ היא: $$\begin{cases}
 x_1+x_2+x_3+x_4=0 \\
@@ -618,9 +618,9 @@ s+t-t+t-s-t=0 \\
 s+t+t+t+s+t=0
 \end{cases} \implies s=-2t$$ נחזור להצגה של $W_2$ ונציב $s=-2t$:
 
-$$W_1\cap W_2=\Set{\begin{pmatrix}-t\\-t\\t\\t\end{pmatrix}|t\in\mathbb{R}}=\mathop{\mathrm{Span}}\left(\begin{pmatrix}-1 \\ -1 \\ 1 \\ 1\end{pmatrix}\right)$$
+$$W_1\cap W_2=\left\{\begin{pmatrix}-t\\-t\\t\\t\end{pmatrix}\middle|t\in\mathbb{R}\right\}=\mathop{\mathrm{Span}}\left(\begin{pmatrix}-1 \\ -1 \\ 1 \\ 1\end{pmatrix}\right)$$
 
-קיבלנו שהקבוצה $\Set{\begin{pmatrix}-1 \\ -1 \\ 1 \\ 1\end{pmatrix}}$ היא בסיס ל- $W_1\cap W_2$, ולכן $\dim(W_1\cap W_2)=1$. בנוסף, $\dim(W_2)=2$ כי הקבוצה הפורשת אותו היא בת\"ל (הוקטורים אינם קו-לינאריים) ולכן בסיס. באופן דומה, $\dim(W_1)=4-\mathop{\mathrm{rank}}(A)=4-2=2$ לפי משפט -@thm-rank-nullity (משפט הדרגה). לכן, לפי נוסחת המימדים נובע כי $$.\dim(W_1+W_2)=2+2-1=3$$ כדי למצוא בסיס ל- $W_1+W_2$ מספיק להוסיף לקבוצה הפורשת את $W_2$ כל וקטור ב- $W_1$ שאינו בחיתוך, כי זה בדיוק אומר שהוא לא נפרש ע\"י וקטורי הבסיס של $W_2$. כך נקבל קבוצה בת\"ל ב- $W_1+W_2$ שגודלה שווה למימדו, ולכן היא בהכרח בסיס.
+קיבלנו שהקבוצה $\Set{\begin{pmatrix}-1 \\ -1 \\ 1 \\ 1\end{pmatrix}}$ היא בסיס ל- $W_1\cap W_2$, ולכן $\dim(W_1\cap W_2)=1$. בנוסף, $\dim(W_2)=2$ כי הקבוצה הפורשת אותו היא בת\"ל (הוקטורים אינם קו-לינאריים) ולכן בסיס. באופן דומה, לפי משפט -@thm-rank-nullity (משפט הדרגה) מתקיים $$.\dim(W_1)=4-\mathop{\mathrm{rank}}(A)=4-2=2$$ לכן, לפי נוסחת המימדים נובע כי $$.\dim(W_1+W_2)=2+2-1=3$$ כדי למצוא בסיס ל- $W_1+W_2$ מספיק להוסיף לקבוצה הפורשת את $W_2$ כל וקטור ב- $W_1$ שאינו בחיתוך, כי זה בדיוק אומר שהוא לא נפרש ע\"י וקטורי הבסיס של $W_2$. כך נקבל קבוצה בת\"ל ב- $W_1+W_2$ שגודלה שווה למימדו, ולכן היא בהכרח בסיס.
 
 מספיק למצוא וקטור אחד ב- $\mathop{\mathrm{N}}(A)$ שאינו כפל בסקלר של $\begin{pmatrix}-1 \\ -1 \\ 1 \\ 1\end{pmatrix}$. דוגמה לוקטור כזה היא $\begin{pmatrix}1 \\ 0 \\ -1 \\ 0\end{pmatrix}$, שאפשר למצוא ע\"י הצבת $x_2=x_4=0$ במשוואות או ע\"י דירוג $A$. למען הסר ספק, צורתה המדורגת קנונית של $A$ היא $$.\begin{pmatrix}
 1 & 0 & 1 & 0 \\
