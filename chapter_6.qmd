@@ -152,7 +152,7 @@ $$\begin{pmatrix}
 0 & 1 & 0 & 0 \\
 0 & 0 & 1 & -1 \\
 0 & 0 & 0 & 0
-\end{pmatrix}$$ ולכן, הקשר בין הסקלרים הוא בהכרח: $$a=d,b=0,c=d$$ נציב זאת באגף שמאל של משוואה [-@eq-intersection]. (אפשר גם באגף ימין) ונקבל $$.W_1\cap W_2=\Set{d\begin{pmatrix}1\\1\\0\\1\end{pmatrix}|d\in\mathbb{R}}=\mathop{\mathrm{Span}}\left(
+\end{pmatrix}$$ ולכן, הקשר בין הסקלרים הוא בהכרח: $$a=d,b=0,c=d$$ נציב זאת באגף שמאל של משוואה [-@eq-intersection]. (אפשר גם באגף ימין) ונקבל $$.W_1\cap W_2=\left\{d\begin{pmatrix}1\\1\\0\\1\end{pmatrix}\middle|d\in\mathbb{R}\right\}=\mathop{\mathrm{Span}}\left(
 \begin{pmatrix}1\\1\\0\\1\end{pmatrix}
 \right)$$
 :::
