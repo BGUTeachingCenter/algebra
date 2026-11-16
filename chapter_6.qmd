@@ -299,7 +299,7 @@ $$
 :::
 
 ::: exercise
-הוכיחו או הפריכו את הטענה הבאה: יהיו $V$ מ\"ו מעל $\mathbb{F}$ ויהיו $W_1,W_2,W_3\subseteq V$ תת-מרחבים. אם $W_1+W_3=W_2+W_3$, אז $W_1=W_2$.
+הוכיחו או הפריכו את הטענה הבאה: יהיו $V$ מ\"ו מעל $\mathbb{F}$ ויהיו $W_1,W_2,W_3\subseteq V$ תת-מרחבים. אם מתקיים $W_1+W_3=W_2+W_3$, אז $W_1=W_2$.
 :::
 
 ::: {.callout-note collapse="true" title="פתרון"}
@@ -307,7 +307,7 @@ $$
 
 נבחר $V=\mathbb{R}^2$ ונסמן $$.W_1=\mathop{\mathrm{Span}}(e_1),\quad W_2=\mathop{\mathrm{Span}}(e_1+e_2),\quad W_3=\mathop{\mathrm{Span}}(e_2)$$
 
-אז מתקיים $W_1\neq W_2$, כי $e_1,e_1+e_2$ אינם קו-לינאריים. ובכל זאת: $$W_1+W_3=\mathop{\mathrm{Span}}(e_1,e_2)=\mathbb{R}^2=\mathop{\mathrm{Span}}(e_1+e_2,e_2)=W_2+W_3$$
+אז מתקיים $W_1\neq W_2$, כי $e_1,e_1+e_2$ אינם קו-לינאריים. ובכל זאת מתקיים $$.W_1+W_3=\mathop{\mathrm{Span}}(e_1,e_2)=\mathbb{R}^2=\mathop{\mathrm{Span}}(e_1+e_2,e_2)=W_2+W_3$$
 :::
 
 ## נוסחת המימדים
