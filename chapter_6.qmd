@@ -256,7 +256,7 @@ $$
     0 & a \\
     b & 0
     \end{pmatrix}\middle|a,b\in\mathbb{R}
-    \right}$$
+    \right\}$$
 
 ניקח את הסכום ונקבל: $$\begin{aligned}
     W_1+W_2&=\left\{\begin{pmatrix}
@@ -269,7 +269,7 @@ $$
     \right\}=\left\{\begin{pmatrix}
     t & a \\
     b & t
-    \end{pmatrix}\middle|t,a,b\in\mathbb{R}}\right\} \\
+    \end{pmatrix}\middle|t,a,b\in\mathbb{R}\right\} \\
     &=\mathop{\mathrm{Span}}\left(I_2,\begin{pmatrix}
     0 & 1 \\
     0 & 0
