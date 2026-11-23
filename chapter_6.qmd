@@ -22,7 +22,7 @@
     H_2&=\Set{(x,y,z)\in\mathbb{R}^3|a_2x+b_2y+c_2z=0}
     \end{aligned}$$ מתקיים $$.H_1\cap H_2=\Set{(x,y,z)\in\mathbb{R}^3|a_1x+b_1y+c_1z=0,a_2x+b_2y+c_2z=0}$$ אם המישורים אינם מתלכדים, אז הנורמלים $(a_1,b_1,c_1),(a_2,b_2,c_2)$ מהווים קבוצה בת\"ל והדרגה של מטריצת המקדמים של הממ\"ל היא $2$. ניתן להשתמש במשפט הדרגה כדי לחשב את המימד של קבוצת הפתרונות ולקבל $3-2=1$. לכן, החיתוך של שני מישורים כנ\"ל הוא אכן ישר. אבל אם המישורים מתלכדים, החיתוך ביניהם הוא המישור $H_1=H_2$.
 
-ג. נכליל את הדוגמאות הקודמות: עבור $A\in\mathbb{M}_{m\times n}(\mathbb{F})$, נסתכל על $\mathop{\mathrm{N}}(A)$ - מרחב הפתרונות של הממ\"ל $Ax=0$. נסתכל גם על $\mathop{\mathrm{N}}(B)$ עבור $B\in\mathbb{M}_{k\times n}(\mathbb{F})$. אז $\mathop{\mathrm{N}}(A)\cap \mathop{\mathrm{N}}(B)=\mathop{\mathrm{N}}\begin{pmatrix}
+ג. נכליל את הדוגמאות הקודמות: עבור $A\in\mathbb{M}_{m\times n}(\mathbb{F})$, נסתכל על $\mathop{\mathrm{N}}(A)$ - מרחב הפתרונות של הממ\"ל $Ax=\underline{0}$. נסתכל גם על $\mathop{\mathrm{N}}(B)$ עבור $B\in\mathbb{M}_{k\times n}(\mathbb{F})$. אז $\mathop{\mathrm{N}}(A)\cap \mathop{\mathrm{N}}(B)=\mathop{\mathrm{N}}\begin{pmatrix}
     A \\
     B
     \end{pmatrix}$, כאשר $\begin{pmatrix}
