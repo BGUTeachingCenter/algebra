@@ -1913,7 +1913,7 @@ i & 1
 0 & 1 & 1 & 0 \\
 0 & 0 & 0 & 0
 \end{pmatrix}
-\end{aligned}$$ זה מראה כי השורה השלישית היא צירוף לינארי של שתי השורות הראשונות, שמהוות בסיס למרחב השורות. בנוסף, ניתן להוסיף את וקטורי היחידה $e_3,e_4$ כדי להשלים את בסיס זה לבסיס ל- $\mathbb{C}^4$. נחזור חזרה למרחב הוקטורי $\mathbb{M}_{2\times 2}$ ונקבל ש- $\Set{\begin{pmatrix}1 & i\\i & 1\end{pmatrix},\begin{pmatrix}0 & 1\\1 & 0\end{pmatrix}}$ היא בסיס ל- $W$, ולכן $\dim(W)=2$. לאחר השלמה נקבל את הבסיס הבא ל- $\mathbb{M}_{2\times 2}(\mathbb{C})$: $$\Set{\begin{pmatrix}
+\end{aligned}$$ זה מראה כי השורה השלישית היא צירוף לינארי של שתי השורות הראשונות, שמהוות בסיס למרחב השורות. בנוסף, ניתן להוסיף את וקטורי היחידה $e_3,e_4$ כדי להשלים את בסיס זה לבסיס ל- $\mathbb{C}^4$. נחזור חזרה למרחב הוקטורי $\mathbb{M}_{2\times 2}(\mathbb{C})$ ונקבל ש- $\Set{\begin{pmatrix}1 & i\\i & 1\end{pmatrix},\begin{pmatrix}0 & 1\\1 & 0\end{pmatrix}}$ היא בסיס ל- $W$, ולכן $\dim(W)=2$. לאחר השלמה נקבל את הבסיס הבא ל- $\mathbb{M}_{2\times 2}(\mathbb{C})$: $$\Set{\begin{pmatrix}
 1 & i \\
 i & 1
 \end{pmatrix},\begin{pmatrix}
