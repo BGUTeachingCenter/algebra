@@ -1032,7 +1032,7 @@ v_1 & v_2 & \cdots & v_k \\
 \alpha_k
 \end{pmatrix}$$
 
-עבור $w=0$ ניתן לראות את הקשר לתלות לינארית. מכאן הטענה הבאה:
+עבור $w=\underline{0}$ ניתן לראות את הקשר לתלות לינארית. מכאן הטענה הבאה:
 
 :::: {.proposition #prp-nullity}
 *`\label{prop:nullity}`{=latex} יהיו $v_1,...,v_k\in\mathbb{F}^n$. אז הוקטורים הנ\"ל הם בת\"ל אם ורק אם קיים פתרון יחיד לממ\"ל $Ax=\underline{0}$ כאשר $$,A=\begin{pmatrix}
