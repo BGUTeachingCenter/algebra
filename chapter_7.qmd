@@ -1602,7 +1602,7 @@ $$[I]_B^E=\begin{pmatrix}
 2.  $T$ על אם ורק אם $\mathop{\mathrm{rank}}([T]_C^B)=m$.
 :::
 ::: {.callout-note collapse="true" title="פתרון"}
-1.  לפי טענה -@prp-injective, $T$ חח״ע אם ורק אם $\mathop{\mathrm{Ker}}(T)=\Set{\underline{0}}$. לפי טענה -@prp-ker-image-rep, התנאי האחרון שקול לתנאי $\mathop{\mathrm{N}}([T]_C^B)=\Set{\underline{0}}$, כי מתקיים $$.v=0_V \iff [v]_B=\underline{0}$$
+1.  לפי טענה -@prp-injective, $T$ חח״ע אם ורק אם $\mathop{\mathrm{Ker}}(T)=\Set{0_V}$. לפי טענה -@prp-ker-image-rep, התנאי האחרון שקול לתנאי $\mathop{\mathrm{N}}([T]_C^B)=\Set{\underline{0}}$, כי מתקיים $$.v=0_V \iff [v]_B=\underline{0}$$
 
 2.  לפי טענה -@prp-image-span, $T$ על אם ורק אם $\mathop{\mathrm{Span}}(T(v_1),...,T(v_n))=W$. לפי טענה -@prp-ker-image-rep, התנאי האחרון שקול לתנאי $\mathop{\mathrm{Col}}([T]_C^B)=\mathbb{F}^m$. לבסוף, לפי משפט -@thm-rank-nullity, מתקיים $$.\dim(\mathop{\mathrm{Col}}([T]_C^B))=\mathop{\mathrm{rank}}([T]_C^B)$$ לאור זאת ולפי לפי מסקנה -@cor-subspace-dim, הדרגה שווה ל- $m$ אם ורק אם $\mathop{\mathrm{Col}}([T]_C^B)=\mathbb{F}^m$. לסיכום, $T$ על אם ורק אם $\mathop{\mathrm{rank}}([T]_C^B)=m$.
 :::
