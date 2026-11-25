@@ -515,9 +515,8 @@ T(v_1)=T(v_2) &\iff T(v_1)-T(v_2)=0_W \iff T(v_1-v_2)=0_W \\
 ב.  *אם $n=m$, אז $$.\text{$T_A$ חח״ע} \iff \text{$T_A$ על} \iff \text{$A$ הפיכה}$$*
 :::
 ::: proof
- 
 
-א.  לפי טענות -@prp-matrix-map ו-@prp-injective מתקיים: $$\begin{aligned}
+א.  לפי טענה -@prp-matrix-map ולפי טענה -@prp-injective מתקיים: $$\begin{aligned}
     \mathop{\mathrm{N}}(A)=\Set{\underline{0}} &\iff \mathop{\mathrm{Ker}}(T_A)=\Set{\underline{0}} \iff \text{$T_A$ חח״ע} \\
     \mathop{\mathrm{Col}}(A)=\mathbb{F}^m &\iff \mathop{\mathrm{Im}}(T_A)=\mathbb{F}^m \iff \text{$T_A$ על} 
     \end{aligned}$$
