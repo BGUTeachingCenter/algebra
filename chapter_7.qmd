@@ -40,30 +40,30 @@ T(\alpha v_1) &= \alpha T(v_1)
 ::: example
  
 
-1.  $f:\mathbb{R}\to\mathbb{R}$ המוגדרת ע\"י $f(x)=2x$ היא ה\"ל (ניתן לחשוב על $\mathbb{R}$ כעל $\mathbb{R}^1$, שהוא מ\"ו ממימד $1$). לכל $x_1,x_2,\alpha\in\mathbb{R}$ מתקיים: $$\left\{
+א.  $f:\mathbb{R}\to\mathbb{R}$ המוגדרת ע\"י $f(x)=2x$ היא ה\"ל (ניתן לחשוב על $\mathbb{R}$ כעל $\mathbb{R}^1$, שהוא מ\"ו ממימד $1$). לכל $x_1,x_2,\alpha\in\mathbb{R}$ מתקיים: $$\left\{
     \begin{aligned}
     f(x_1+x_2)&=2(x_1+x_2)=2x_1+2x_2=f(x_1)+f(x_2) \\
     f(\alpha x)&=2(\alpha x)=\alpha(2x)=\alpha f(x)
     \end{aligned}
     \right.$$
 
-2.  $T:\mathbb{R}^2\to\mathbb{R}$ המוגדרת ע\"י $T\begin{pmatrix}x \\y\end{pmatrix}=x+y$ היא ה\"ל. לכל $\begin{pmatrix}x_1 \\y_1\end{pmatrix},\begin{pmatrix}x_2 \\y_2\end{pmatrix}\in\mathbb{R}^2$ ולכל $\alpha\in\mathbb{R}$ מתקיים $$\begin{aligned}
+ב.  $T:\mathbb{R}^2\to\mathbb{R}$ המוגדרת ע\"י $T\begin{pmatrix}x \\y\end{pmatrix}=x+y$ היא ה\"ל. לכל $\begin{pmatrix}x_1 \\y_1\end{pmatrix},\begin{pmatrix}x_2 \\y_2\end{pmatrix}\in\mathbb{R}^2$ ולכל $\alpha\in\mathbb{R}$ מתקיים $$\begin{aligned}
     T\left(\begin{pmatrix}x_1 \\y_1\end{pmatrix}+\begin{pmatrix}x_2 \\y_2\end{pmatrix}\right)&=T\begin{pmatrix}x_1+x_2 \\y_1+y_2\end{pmatrix}=(x_1+x_2)+(y_1+y_2)\\
     &=(x_1+y_1)+(x_2+y_2)=T\begin{pmatrix}x_1 \\y_1\end{pmatrix}+T\begin{pmatrix}x_2 \\y_2\end{pmatrix}
     \end{aligned}$$ וגם $$.T\left(\alpha\begin{pmatrix}x_1 \\y_1\end{pmatrix}\right)=T\begin{pmatrix}\alpha x_1 \\\alpha y_1\end{pmatrix}=\alpha x_1+\alpha y_1=\alpha(x_1+y_1)=\alpha T\begin{pmatrix}x_1 \\y_1\end{pmatrix}$$
 
-3.  הפונקציה $f:\mathbb{R}\to\mathbb{R}$ המוגדרת ע\"י $f(x)=x+1$ אינה ה\"ל. בתור דוגמה נגדית, ניקח $x_1=0,x_2=1,\alpha=2$ ונקבל $$.f(x_1+x_2)=f(1)=2\neq 1+2=f(0)+f(1)=f(x_1)+f(x_2)$$ לחילופין, ניתן להפריך לינאריות גם לפי התכונה השנייה: $$f(2x_1)=f(0)=1\neq 2\cdot 1=2f(0)=2f(x_1)$$ כאן הפרכנו את שתי התכונות בהגדרה של ה\"ל, אך מספיק להפריך אחת.
+ג.  הפונקציה $f:\mathbb{R}\to\mathbb{R}$ המוגדרת ע\"י $f(x)=x+1$ אינה ה\"ל. בתור דוגמה נגדית, ניקח $x_1=0,x_2=1,\alpha=2$ ונקבל $$.f(x_1+x_2)=f(1)=2\neq 1+2=f(0)+f(1)=f(x_1)+f(x_2)$$ לחילופין, ניתן להפריך לינאריות גם לפי התכונה השנייה: $$f(2x_1)=f(0)=1\neq 2\cdot 1=2f(0)=2f(x_1)$$ כאן הפרכנו את שתי התכונות בהגדרה של ה\"ל, אך מספיק להפריך אחת.
 
-4.  הפונקציה $f:\mathbb{R}\to\mathbb{R}$ המוגדרת ע\"י $f(x)=x^2$ אינה ה\"ל. בתור דוגמה נגדית, ניקח $x_1=1,x_2=-1,\alpha=2$ ונקבל $$.f(x_1+x_2)=f(0)=0\neq 1+1=f(1)+f(-1)=f(x_1)+f(x_2)$$ שוב ניתן להפריך לינאריות גם לפי התכונה השנייה: $$f(2x_1)=f(2)=4\neq 2\cdot 1=2f(1)=2f(x_1)$$
+ד.  הפונקציה $f:\mathbb{R}\to\mathbb{R}$ המוגדרת ע\"י $f(x)=x^2$ אינה ה\"ל. בתור דוגמה נגדית, ניקח $x_1=1,x_2=-1,\alpha=2$ ונקבל $$.f(x_1+x_2)=f(0)=0\neq 1+1=f(1)+f(-1)=f(x_1)+f(x_2)$$ שוב ניתן להפריך לינאריות גם לפי התכונה השנייה: $$f(2x_1)=f(2)=4\neq 2\cdot 1=2f(1)=2f(x_1)$$
 
-5.  העתקת השחלוף $T:\mathbb{M}_{m\times n}(\mathbb{F})\to\mathbb{M}_{n\times m}(\mathbb{F})$ המוגדרת ע\"י $T(A)=A^t$ היא לינארית. הוכחנו זאת בטענה -@prp-transpose, לפיה לכל $A,B\in\mathbb{M}_{m\times n}(\mathbb{F})$ ולכל $\alpha\in\mathbb{F}$ מתקיים: $$\left\{
+ה.  העתקת השחלוף $T:\mathbb{M}_{m\times n}(\mathbb{F})\to\mathbb{M}_{n\times m}(\mathbb{F})$ המוגדרת ע\"י $T(A)=A^t$ היא לינארית. הוכחנו זאת בטענה -@prp-transpose, לפיה לכל $A,B\in\mathbb{M}_{m\times n}(\mathbb{F})$ ולכל $\alpha\in\mathbb{F}$ מתקיים: $$\left\{
     \begin{aligned}
     T(A+B)&=(A+B)^t=A^t+B^t=T(A)+T(B) \\
     T(\alpha A)&=(\alpha A)^t=\alpha A^t=\alpha T(A)
     \end{aligned}
     \right.$$
 
-6.  יהי $V$ מ\"ו מעל $\mathbb{F}$ ממימד $n$ עם בסיס סדור $B$. הפונקציה $T:V\to\mathbb{F}^n$ המוגדרת ע\"י $T(v)=[v]_B$ היא לינארית. הוכחנו זאת בטענה -@prp-coordinates-linear, לפיה לכל $v_1,v_2\in V$ ולכל $\alpha\in\mathbb{F}$ מתקיים: $$\left\{
+ו.  יהי $V$ מ\"ו מעל $\mathbb{F}$ ממימד $n$ עם בסיס סדור $B$. הפונקציה $T:V\to\mathbb{F}^n$ המוגדרת ע\"י $T(v)=[v]_B$ היא לינארית. הוכחנו זאת בטענה -@prp-coordinates-linear, לפיה לכל $v_1,v_2\in V$ ולכל $\alpha\in\mathbb{F}$ מתקיים: $$\left\{
     \begin{aligned}
     T(v_1+v_2)&=[v_1+v_2]_B=[v_1]_B+[v_2]_B=T(v_1)+T(v_2) \\
     T(\alpha v_1)&=[\alpha v_1]_B=\alpha[v_1]_B=\alpha T(v_1)
@@ -83,14 +83,14 @@ T(\alpha v_1) &= \alpha T(v_1)
 ::: {.proposition #prp-more-linearity}
 *יהיו $V,W$ מרחבים וקטוריים מעל $\mathbb{F}$, ותהי $T:V\to W$ ה\"ל. אז מתקיים:*
 
-1.  *לכל $v_1,...,v_k\in V$ ולכל $\alpha_1,...,\alpha_k\in \mathbb{F}$ מתקיים $$.T(\alpha_1 v_1+...+\alpha_k v_k)=\alpha_1 T(v_1)+...+\alpha_k T(v_k)$$*
+א.  *לכל $v_1,...,v_k\in V$ ולכל $\alpha_1,...,\alpha_k\in \mathbb{F}$ מתקיים $$.T(\alpha_1 v_1+...+\alpha_k v_k)=\alpha_1 T(v_1)+...+\alpha_k T(v_k)$$*
 
-2.  *$$.T(0_V)=0_W$$*
+ב.  *$$.T(0_V)=0_W$$*
 :::
 ::: proof
  
 
-1.  יהיו $v_1,...,v_k\in V$ ו- $\alpha_1,...,\alpha_k\in \mathbb{F}$. נשתמש שוב ושוב בתכונת החיבור של לינאריות, כדי להפריד את המחוברים זה אחר זה (ההוכחה הפורמלית היא באינדוקציה למי שמכיר):
+א.  יהיו $v_1,...,v_k\in V$ ו- $\alpha_1,...,\alpha_k\in \mathbb{F}$. נשתמש שוב ושוב בתכונת החיבור של לינאריות, כדי להפריד את המחוברים זה אחר זה (ההוכחה הפורמלית היא באינדוקציה למי שמכיר):
 
     $$\begin{aligned}
     &T(\alpha_1 v_1+...+\alpha_{k-1}v_{k-1}+\alpha_k v_k)=T(\alpha_1 v_1+...+\alpha_{k-1}v_{k-1})+T(\alpha_k v_k)\\
@@ -98,7 +98,7 @@ T(\alpha v_1) &= \alpha T(v_1)
     &=T(\alpha_1 v_1)+...+T(\alpha_k v_k)=\alpha_1T(v_1)+...+\alpha_k T(v_k)
     \end{aligned}$$ במעבר האחרון הוצאנו סקלר מכל ערך של $T$ לחוד.
 
-2.  מתקיים $$.T(0_V)=T(0\cdot 0_V)=0\cdot T(0_V)=0_W$$
+ב.  מתקיים $$.T(0_V)=T(0\cdot 0_V)=0\cdot T(0_V)=0_W$$
 
 :::
 ::: {#fig-LinearMap .figure}
@@ -138,13 +138,13 @@ $T$ אינה לינארית. הדרך הפשוטה ביותר להראות זא�
 ההוכחה מיידית לפי טענה -@prp-matrix-vector.
 :::
 ::: {.example #exm-rotation}
-1.  עבור $$A=\begin{pmatrix}
+א.  עבור $$A=\begin{pmatrix}
     1 & 1 
     \end{pmatrix}$$ נקבל ה\"ל $T_A:\mathbb{R}^2\to \mathbb{R}$ הנתונה ע\"י $$.T_A\begin{pmatrix}x\\y\end{pmatrix}=\begin{pmatrix}
     1 & 1 
     \end{pmatrix}\begin{pmatrix}x\\y\end{pmatrix}=x+y$$ ראינו אותה בדוגמה קודמת, אבל עכשיו הקשר למטריצה (וקטור שורה) ברור.
 
-2.  עבור $$A=\begin{pmatrix}
+ב.  עבור $$A=\begin{pmatrix}
     1 & 2 & -3 \\
     2 & 0 & 1
     \end{pmatrix}$$ נקבל ה\"ל $T_A:\mathbb{R}^3\to \mathbb{R}^2$ הנתונה ע\"י $$.T_A\begin{pmatrix}x\\y\\z\end{pmatrix}=\begin{pmatrix}
@@ -155,7 +155,7 @@ $T$ אינה לינארית. הדרך הפשוטה ביותר להראות זא�
     2x+z
     \end{pmatrix}$$
 
-3.  תהי $\theta\in\mathbb{R}$. נסמן $$.A=\begin{pmatrix}
+ג.  תהי $\theta\in\mathbb{R}$. נסמן $$.A=\begin{pmatrix}
     \cos{\theta} & -\sin{\theta} \\
     \sin{\theta} & \cos{\theta} 
     \end{pmatrix}$$ נקבל ה\"ל $T_A:\mathbb{R}^2\to \mathbb{R}^2$ הנתונה ע\"י $$.T_A\begin{pmatrix}x\\y\end{pmatrix}=\begin{pmatrix}
@@ -168,7 +168,7 @@ $T$ אינה לינארית. הדרך הפשוטה ביותר להראות זא�
 
     במקרה זה ל- $T_A$ יש משמעות גיאומטרית של סיבוב וקטור הקלט $\begin{pmatrix}x\\y\end{pmatrix}$ בזווית $\theta$ נגד כיוון השעון, ולכן $A$ נקראת מטריצת סיבוב. זו פעולה אנלוגית להכפלת $z=x+iy$ במספר $e^{i\theta}=\cos{\theta}+i\sin{\theta}$ במישור המרוכב $\mathbb{C}$. אכן: $$(\cos{\theta}+i\sin{\theta})(x+iy)=x\cos{\theta}-y\sin{\theta}+i(x\sin{\theta}+y\cos{\theta})$$
 
-4.  נסמן $$.A=\begin{pmatrix}
+ד.  נסמן $$.A=\begin{pmatrix}
     0 & 1 \\
     1 & 0
     \end{pmatrix}$$ נקבל ה\"ל $T_A:\mathbb{R}^2\to \mathbb{R}^2$ הנתונה ע\"י $$.T_A\begin{pmatrix}x\\y\end{pmatrix}=\begin{pmatrix}
@@ -264,9 +264,9 @@ T(v+w)&=T(\sum_{k=1}^n(\alpha_k+\beta_k)v_k)=\sum_{k=1}^n(\alpha_k+\beta_k)w_k \
 ::: example
  
 
-1.  נברר אם קיימת ה\"ל $T:\mathbb{R}^3\to\mathbb{R}^3$ המקיימת $$.T\underbrace{\begin{pmatrix}1\\-1\\1\end{pmatrix}}_{v_1}=\begin{pmatrix}1\\2\\3\end{pmatrix},\quad T\underbrace{\begin{pmatrix}2\\1\\0\end{pmatrix}}_{v_2}=\begin{pmatrix}4\\-1\\0\end{pmatrix},\quad T\underbrace{\begin{pmatrix}4\\-1\\2\end{pmatrix}}_{v_3}=\begin{pmatrix}0\\0\\0\end{pmatrix}$$ נשים לב כי וקטורי הקלט $v_1,v_2,v_3$ הם ת\"ל. יש למצוא את משוואת התלות הלינארית ביניהם ולבדוק שוקטורי הפלט גם מקיימים אותה. דירוג מראה כי $$.v_3=2v_1+v_2$$ נניח בשלילה שקיימת ה\"ל $T$ שמקיימת את הנתונים. אז נובע כי $$,T(v_3)=2T(v_1)+T(v_2)$$ ולאחר הצבת הנתונים נקבל $$.\begin{pmatrix}0\\0\\0\end{pmatrix}=2\begin{pmatrix}1\\2\\3\end{pmatrix}+\begin{pmatrix}4\\-1\\0\end{pmatrix}$$ זו סתירה כי אגף ימין שווה ל- $\begin{pmatrix}6\\3\\6\end{pmatrix}$. המסקנה היא שלא קיימת ה\"ל $T$ המקיימת את הנתונים.
+א.  נברר אם קיימת ה\"ל $T:\mathbb{R}^3\to\mathbb{R}^3$ המקיימת $$.T\underbrace{\begin{pmatrix}1\\-1\\1\end{pmatrix}}_{v_1}=\begin{pmatrix}1\\2\\3\end{pmatrix},\quad T\underbrace{\begin{pmatrix}2\\1\\0\end{pmatrix}}_{v_2}=\begin{pmatrix}4\\-1\\0\end{pmatrix},\quad T\underbrace{\begin{pmatrix}4\\-1\\2\end{pmatrix}}_{v_3}=\begin{pmatrix}0\\0\\0\end{pmatrix}$$ נשים לב כי וקטורי הקלט $v_1,v_2,v_3$ הם ת\"ל. יש למצוא את משוואת התלות הלינארית ביניהם ולבדוק שוקטורי הפלט גם מקיימים אותה. דירוג מראה כי $$.v_3=2v_1+v_2$$ נניח בשלילה שקיימת ה\"ל $T$ שמקיימת את הנתונים. אז נובע כי $$,T(v_3)=2T(v_1)+T(v_2)$$ ולאחר הצבת הנתונים נקבל $$.\begin{pmatrix}0\\0\\0\end{pmatrix}=2\begin{pmatrix}1\\2\\3\end{pmatrix}+\begin{pmatrix}4\\-1\\0\end{pmatrix}$$ זו סתירה כי אגף ימין שווה ל- $\begin{pmatrix}6\\3\\6\end{pmatrix}$. המסקנה היא שלא קיימת ה\"ל $T$ המקיימת את הנתונים.
 
-2.  נמצא $T:\mathbb{R}^3\to\mathbb{R}^3$ המקיימת $$.T\begin{pmatrix}1\\-1\\1\end{pmatrix}=\begin{pmatrix}1\\2\\3\end{pmatrix},\quad T\begin{pmatrix}2\\1\\0\end{pmatrix}=\begin{pmatrix}4\\-1\\0\end{pmatrix},\quad T\begin{pmatrix}4\\-1\\2\end{pmatrix}=\begin{pmatrix}6\\3\\6\end{pmatrix}$$
+ב.  נמצא $T:\mathbb{R}^3\to\mathbb{R}^3$ המקיימת $$.T\begin{pmatrix}1\\-1\\1\end{pmatrix}=\begin{pmatrix}1\\2\\3\end{pmatrix},\quad T\begin{pmatrix}2\\1\\0\end{pmatrix}=\begin{pmatrix}4\\-1\\0\end{pmatrix},\quad T\begin{pmatrix}4\\-1\\2\end{pmatrix}=\begin{pmatrix}6\\3\\6\end{pmatrix}$$
 
     אלה הנתונים הקודמים עם שינוי אחד: כעת $T(v_3)=\begin{pmatrix}6\\3\\6\end{pmatrix}$ בהתאם לחישוב שנובע מהתלות הלינארית בין וקטורי הקלט. כלומר, הנתון השלישי כבר נקבע על ידי שני הנתונים הראשונים. אז קיימות אינסוף אפשרויות לה\"ל המקיימת את הנתונים. מדוע אינסוף? כדי למצוא נוסחה ל- $T$ צריך להשלים את $\Set{v_1,v_2}$ לבסיס ל- $\mathbb{R}^3$. דירוג לפי שורות מראה כי ניתן לעשות זאת ע\"י הוספת הוקטור $e_3$ (כי בסוף הדירוג לא יהיה איבר מוביל בעמודה השלישית). הערך $T(e_3)$ נתון לבחירתנו, ומכאן יש אינסוף אפשרויות. נמצא אחת באופן מפורש ע\"י הבחירה השרירותית $T(e_3)=\begin{pmatrix}0\\0\\0\end{pmatrix}$. נסמן $$.B=\Set{v_1,v_2,e_3}$$
 
@@ -331,9 +331,9 @@ T(v+w)&=T(\sum_{k=1}^n(\alpha_k+\beta_k)v_k)=\sum_{k=1}^n(\alpha_k+\beta_k)w_k \
 
 לכל קבוצה נבדוק סגירות לחיבור וכפל בסקלר.
 
-1.  יהיו $v_1,v_2\in \mathop{\mathrm{Ker}}(T), \alpha\in\mathbb{F}$. מתקיים $$,T(v_1+v_2)=T(v_1)+T(v_2)=0_W+0_W=0_W$$ ולכן $v_1+v_2\in\mathop{\mathrm{Ker}}(T)$. באופן דומה: $$T(\alpha v_1)=\alpha T(v_1)=\alpha\cdot 0_W=0_W$$ ולכן $\alpha v_1\in\mathop{\mathrm{Ker}}(T)$.
+א.  יהיו $v_1,v_2\in \mathop{\mathrm{Ker}}(T), \alpha\in\mathbb{F}$. מתקיים $$,T(v_1+v_2)=T(v_1)+T(v_2)=0_W+0_W=0_W$$ ולכן $v_1+v_2\in\mathop{\mathrm{Ker}}(T)$. באופן דומה: $$T(\alpha v_1)=\alpha T(v_1)=\alpha\cdot 0_W=0_W$$ ולכן $\alpha v_1\in\mathop{\mathrm{Ker}}(T)$.
 
-2.  יהיו $w_1,w_2\in \mathop{\mathrm{Im}}(T), \alpha\in\mathbb{F}$. קיימים $u_1,u_2\in V$ כך ש- $$.w_1=T(u_1),\quad w_2=T(u_2)$$ נשים לב כי $$,T(u_1+u_2)=T(u_1)+T(u_2)=w_1+w_2$$ ובפרט מתקיים $w_1+w_2\in\mathop{\mathrm{Im}}(T)$. באופן דומה: $$T(\alpha u_1)=\alpha T(u_1)=\alpha w_1$$ ולכן $\alpha w_1\in\mathop{\mathrm{Im}}(T)$.
+ב.  יהיו $w_1,w_2\in \mathop{\mathrm{Im}}(T), \alpha\in\mathbb{F}$. קיימים $u_1,u_2\in V$ כך ש- $$.w_1=T(u_1),\quad w_2=T(u_2)$$ נשים לב כי $$,T(u_1+u_2)=T(u_1)+T(u_2)=w_1+w_2$$ ובפרט מתקיים $w_1+w_2\in\mathop{\mathrm{Im}}(T)$. באופן דומה: $$T(\alpha u_1)=\alpha T(u_1)=\alpha w_1$$ ולכן $\alpha w_1\in\mathop{\mathrm{Im}}(T)$.
 
 :::
 ::: example
@@ -396,16 +396,16 @@ $$\begin{aligned}
 ::: {.proposition #prp-matrix-map}
 *תהי $A\in\mathbb{M}_{m\times n}(\mathbb{F})$. אז מתקיים:*
 
-1.  *$$\mathop{\mathrm{Ker}}(T_A)=\mathop{\mathrm{N}}(A)\subseteq \mathbb{F}^n$$*
+א.  *$$\mathop{\mathrm{Ker}}(T_A)=\mathop{\mathrm{N}}(A)\subseteq \mathbb{F}^n$$*
 
-2.  *$$\mathop{\mathrm{Im}}(T_A)=\mathop{\mathrm{Col}}(A)\subseteq \mathbb{F}^m$$*
+ב.  *$$\mathop{\mathrm{Im}}(T_A)=\mathop{\mathrm{Col}}(A)\subseteq \mathbb{F}^m$$*
 :::
 ::: proof
 נזכור כי $T_A$ היא ה\"ל מ- $\mathbb{F}^n$ ל- $\mathbb{F}^m$.
 
-1.  לפי הגדרת $T_A$, לכל $v\in\mathbb{F}^n$ מתקיים $T_A(v)=Av$. לכן: $$v\in\mathop{\mathrm{Ker}}(T_A)\iff T_A(v)=0 \iff Av=0 \iff v\in \mathop{\mathrm{N}}(A)$$ מכאן נובע כי $\mathop{\mathrm{Ker}}(T_A)=\mathop{\mathrm{N}}(A)$.
+א.  לפי הגדרת $T_A$, לכל $v\in\mathbb{F}^n$ מתקיים $T_A(v)=Av$. לכן: $$v\in\mathop{\mathrm{Ker}}(T_A)\iff T_A(v)=0 \iff Av=0 \iff v\in \mathop{\mathrm{N}}(A)$$ מכאן נובע כי $\mathop{\mathrm{Ker}}(T_A)=\mathop{\mathrm{N}}(A)$.
 
-2.  לפי טענה -@prp-image-span, מהעובדה $\mathbb{F}^n=\mathop{\mathrm{Span}}(e_1,...,e_n)$ נובע כי $$.\mathop{\mathrm{Im}}(T_A)=\mathop{\mathrm{Span}}(Ae_1,...,Ae_n)=\mathop{\mathrm{Col}}(A)$$
+ב.  לפי טענה -@prp-image-span, מהעובדה $\mathbb{F}^n=\mathop{\mathrm{Span}}(e_1,...,e_n)$ נובע כי $$.\mathop{\mathrm{Im}}(T_A)=\mathop{\mathrm{Span}}(Ae_1,...,Ae_n)=\mathop{\mathrm{Col}}(A)$$
 
     השוויון האחרון נובע מכך שלכל $1\leq j\leq n$, הוקטור $Ae_j$ הוא בדיוק העמודה ה- $j$ של $A$.
 
@@ -448,15 +448,15 @@ $$\begin{aligned}
 ::: exercise
 יהיו $V,W$ מרחבים וקטוריים מעל $\mathbb{F}$.
 
-1.  הראו כי ההעתקות $\mathbf{0}_{V,W},\mathrm{Id}_{V}$ הן לינאריות.
+א.  הראו כי ההעתקות $\mathbf{0}_{V,W},\mathrm{Id}_{V}$ הן לינאריות.
 
-2.  הראו כי מתקיים: $$\begin{aligned}
+ב.  הראו כי מתקיים: $$\begin{aligned}
     \mathop{\mathrm{Ker}}(\mathrm{Id}_{V})      &= \Set{0_V},      & \quad \mathop{\mathrm{Im}}(\mathrm{Id}_{V})      &= V \\
     \mathop{\mathrm{Ker}}(\mathbf{0}_{V,W})   &= V,            & \quad \mathop{\mathrm{Im}}(\mathbf{0}_{V,W})   &= \Set{0_W}
     \end{aligned}$$
 :::
 ::: {.callout-note collapse="true" title="פתרון"}
-1.  יהיו $v_1,v_2\in V,\alpha\in\mathbb{F}$ מתקיים: $$\begin{aligned}
+א.  יהיו $v_1,v_2\in V,\alpha\in\mathbb{F}$ מתקיים: $$\begin{aligned}
     \mathrm{Id}_{V}(v_1+v_2)&=v_1+v_2=\mathrm{Id}_{V}(v_1)+\mathrm{Id}_{V}(v_2) \\
     \mathbf{0}_{V,W}(v_1+v_2)&=0_W=0_W+0_W=\mathbf{0}_{V,W}(v_1)+\mathbf{0}_{V,W}(v_2)
     \end{aligned}$$
@@ -466,7 +466,7 @@ $$\begin{aligned}
     \mathbf{0}_{V,W}(\alpha v_1)&=0_W=\alpha\cdot 0_W=\alpha\mathbf{0}_{V,W}(v_1)
     \end{aligned}$$
 
-2.  עבור העתקת הזהות: $$\begin{aligned}
+ב.  עבור העתקת הזהות: $$\begin{aligned}
     \mathop{\mathrm{Ker}}(\mathrm{Id}_{V})&=\Set{v\in V|\mathrm{Id}_{V}(v)=0_V}=\Set{v\in V|v=0_V}=\Set{0_V} \\
     \mathop{\mathrm{Im}}(\mathrm{Id}_{V})&=\Set{\mathrm{Id}_{V}(v)|v\in V}=\Set{v|v\in V}=V
     \end{aligned}$$
@@ -507,22 +507,22 @@ T(v_1)=T(v_2) &\iff T(v_1)-T(v_2)=0_W \iff T(v_1-v_2)=0_W \\
 ::: {.proposition #prp-matrix-map-2}
 *תהי $A\in\mathbb{M}_{m\times n}(\mathbb{F})$. $T_A:\mathbb{F}^n\to\mathbb{F}^m$ מקיימת:*
 
-1.  *$$\begin{aligned}
+א.  *$$\begin{aligned}
     \mathop{\mathrm{N}}(A)=\Set{\underline{0}} &\iff \text{$T_A$ חח״ע} \\
     \mathop{\mathrm{Col}}(A)=\mathbb{F}^m &\iff \text{$T_A$ על} 
     \end{aligned}$$*
 
-2.  *אם $n=m$, אז $$.\text{$T_A$ חח״ע} \iff \text{$T_A$ על} \iff \text{$A$ הפיכה}$$*
+ב.  *אם $n=m$, אז $$.\text{$T_A$ חח״ע} \iff \text{$T_A$ על} \iff \text{$A$ הפיכה}$$*
 :::
 ::: proof
  
 
-1.  לפי טענות -@prp-matrix-map ו- -@prp-injective מתקיים: $$\begin{aligned}
+א.  לפי טענות -@prp-matrix-map ו- -@prp-injective מתקיים: $$\begin{aligned}
     \mathop{\mathrm{N}}(A)=\Set{\underline{0}} &\iff \mathop{\mathrm{Ker}}(T_A)=\Set{\underline{0}} \iff \text{$T_A$ חח״ע} \\
     \mathop{\mathrm{Col}}(A)=\mathbb{F}^m &\iff \mathop{\mathrm{Im}}(T_A)=\mathbb{F}^m \iff \text{$T_A$ על} 
     \end{aligned}$$
 
-2.  עבור $n=m$ ידוע כי (לפי משפט -@thm-invertible) $$,\mathop{\mathrm{N}}(A)=\Set{\underline{0}} \iff \mathop{\mathrm{Col}}(A)=\mathbb{F}^m \iff \text{$A$ הפיכה}$$ ולכן במקרה זה מתקיים $$.\text{$T_A$ חח״ע} \iff \text{$T_A$ על} \iff \text{$A$ הפיכה}$$
+ב.  עבור $n=m$ ידוע כי (לפי משפט -@thm-invertible) $$,\mathop{\mathrm{N}}(A)=\Set{\underline{0}} \iff \mathop{\mathrm{Col}}(A)=\mathbb{F}^m \iff \text{$A$ הפיכה}$$ ולכן במקרה זה מתקיים $$.\text{$T_A$ חח״ע} \iff \text{$T_A$ על} \iff \text{$A$ הפיכה}$$
 
 :::
 ::: example
@@ -576,34 +576,34 @@ $T=T_A$
 ::: exercise
 הוכיחו או הפריכו:
 
-1.  קיימת ה\"ל $T:\mathbb{R}^3\to\mathbb{R}^4$ שהיא על.
+א.  קיימת ה\"ל $T:\mathbb{R}^3\to\mathbb{R}^4$ שהיא על.
 
-2.  קיימת ה\"ל $T:\mathbb{R}^4\to\mathbb{R}^3$ שהיא חח״ע.
+ב.  קיימת ה\"ל $T:\mathbb{R}^4\to\mathbb{R}^3$ שהיא חח״ע.
 
-3.  $T:\mathbb{M}_{2\times 3}(\mathbb{C})\to\mathbb{C}^6$ היא על אם ורק אם היא חח״ע.
+ג.  $T:\mathbb{M}_{2\times 3}(\mathbb{C})\to\mathbb{C}^6$ היא על אם ורק אם היא חח״ע.
 :::
 ::: {.callout-note collapse="true" title="פתרון"}
-1.  נניח בשלילה שקיימת $T:\mathbb{R}^3\to\mathbb{R}^4$ שהיא על. כלומר מתקיים $\mathop{\mathrm{Im}}(T)=\mathbb{R}^4$, ולפי משפט המימדים לה\"ל נובע כי $$.\dim(\mathop{\mathrm{Ker}}(T))+\dim(\mathbb{R}^4)=\dim(\mathbb{R}^3)$$ מכאן $\dim(\mathop{\mathrm{Ker}}(T))=-1$ וזו סתירה. לסיכום, הראינו כי לא קיימת $T$ כזו.
+א.  נניח בשלילה שקיימת $T:\mathbb{R}^3\to\mathbb{R}^4$ שהיא על. כלומר מתקיים $\mathop{\mathrm{Im}}(T)=\mathbb{R}^4$, ולפי משפט המימדים לה\"ל נובע כי $$.\dim(\mathop{\mathrm{Ker}}(T))+\dim(\mathbb{R}^4)=\dim(\mathbb{R}^3)$$ מכאן $\dim(\mathop{\mathrm{Ker}}(T))=-1$ וזו סתירה. לסיכום, הראינו כי לא קיימת $T$ כזו.
 
-2.  נניח שקיימת $T:\mathbb{R}^4\to\mathbb{R}^3$ שהיא חח״ע. כלומר מתקיים $\mathop{\mathrm{Ker}}(T)=\Set{\underline{0}}$, ולפי משפט המימדים לה\"ל נובע כי $$.0+\dim(\mathop{\mathrm{Im}}(T))=\dim(\mathbb{R}^4)$$ קיבלנו $\dim(\mathop{\mathrm{Im}}(T))=4$, אבל מתקיים $\mathop{\mathrm{Im}}(T)\subseteq\mathbb{R}^3$ ולכן $$.\dim(\mathop{\mathrm{Im}}(T))\leq\dim(\mathbb{R}^3)=3$$ זו סתירה, ומכאן לא קיימת ה\"ל כזו.
+ב.  נניח שקיימת $T:\mathbb{R}^4\to\mathbb{R}^3$ שהיא חח״ע. כלומר מתקיים $\mathop{\mathrm{Ker}}(T)=\Set{\underline{0}}$, ולפי משפט המימדים לה\"ל נובע כי $$.0+\dim(\mathop{\mathrm{Im}}(T))=\dim(\mathbb{R}^4)$$ קיבלנו $\dim(\mathop{\mathrm{Im}}(T))=4$, אבל מתקיים $\mathop{\mathrm{Im}}(T)\subseteq\mathbb{R}^3$ ולכן $$.\dim(\mathop{\mathrm{Im}}(T))\leq\dim(\mathbb{R}^3)=3$$ זו סתירה, ומכאן לא קיימת ה\"ל כזו.
 
-3.  הטענה נכונה. נוכיח זאת: תהי $T:\mathbb{M}_{2\times 3}(\mathbb{C})\to\mathbb{C}^6$. נשים לב כי $$.\dim(\mathbb{M}_{2\times 3}(\mathbb{C}))=6=\dim(\mathbb{C}^6)$$ בנוסף, ממשפט המימדים לה\"ל נובע כי $$,\dim(\mathop{\mathrm{Ker}}(T))+\dim(\mathop{\mathrm{Im}}(T))=6$$ ולכן $$.\dim(\mathop{\mathrm{Ker}}(T))=0 \iff \dim(\mathop{\mathrm{Im}}(T))=6$$ ובאופן שקול (לפי מסקנה -@cor-subspace-dim): $$\mathop{\mathrm{Ker}}(T)=\Set{\underline{0}} \iff \mathop{\mathrm{Im}}(T)=\mathbb{C}^6$$ לבסוף, לפי טענה -@prp-injective אפשר להסיק כי $T$ היא על אם ורק אם היא חח״ע.
+ג.  הטענה נכונה. נוכיח זאת: תהי $T:\mathbb{M}_{2\times 3}(\mathbb{C})\to\mathbb{C}^6$. נשים לב כי $$.\dim(\mathbb{M}_{2\times 3}(\mathbb{C}))=6=\dim(\mathbb{C}^6)$$ בנוסף, ממשפט המימדים לה\"ל נובע כי $$,\dim(\mathop{\mathrm{Ker}}(T))+\dim(\mathop{\mathrm{Im}}(T))=6$$ ולכן $$.\dim(\mathop{\mathrm{Ker}}(T))=0 \iff \dim(\mathop{\mathrm{Im}}(T))=6$$ ובאופן שקול (לפי מסקנה -@cor-subspace-dim): $$\mathop{\mathrm{Ker}}(T)=\Set{\underline{0}} \iff \mathop{\mathrm{Im}}(T)=\mathbb{C}^6$$ לבסוף, לפי טענה -@prp-injective אפשר להסיק כי $T$ היא על אם ורק אם היא חח״ע.
 :::
 הטענה הבאה מכלילה את התרגיל האחרון:
 
 ::: proposition
 *תהי $T:V\to W$ ה\"ל.*
 
-1.  *אם $T$ על, אז $$.\dim(W)\leq\dim(V)$$*
+א.  *אם $T$ על, אז $$.\dim(W)\leq\dim(V)$$*
 
-2.  *אם $T$ חח״ע, אז $$.\dim(W)\geq\dim(V)$$*
+ב.  *אם $T$ חח״ע, אז $$.\dim(W)\geq\dim(V)$$*
 :::
 ::: proof
  
 
-1.  לפי הנתון, מתקיים $\mathop{\mathrm{Im}}(T)=W$. לכן, לפי משפט המימדים לה\"ל נובע כי $$.\dim(\mathop{\mathrm{Ker}}(T))+\dim(W)=\dim(V)$$ מתקיים $\dim(\mathop{\mathrm{Ker}}(T))\geq 0$, ולכן $$.\dim(W)\leq\dim(V)$$
+א.  לפי הנתון, מתקיים $\mathop{\mathrm{Im}}(T)=W$. לכן, לפי משפט המימדים לה\"ל נובע כי $$.\dim(\mathop{\mathrm{Ker}}(T))+\dim(W)=\dim(V)$$ מתקיים $\dim(\mathop{\mathrm{Ker}}(T))\geq 0$, ולכן $$.\dim(W)\leq\dim(V)$$
 
-2.  הפעם מתקיים $\mathop{\mathrm{Ker}}(T)=\Set{0_V}$. לפי המשפט המימדים נקבל $$.\dim(\mathop{\mathrm{Im}}(T))=\dim(V)$$ מצד שני, $\mathop{\mathrm{Im}}(T)\subseteq W$ ולכן מתקיים $\dim(\mathop{\mathrm{Im}}(T))\leq \dim(W)$. בסך הכל: $$\dim(V)\leq\dim(W)$$
+ב.  הפעם מתקיים $\mathop{\mathrm{Ker}}(T)=\Set{0_V}$. לפי המשפט המימדים נקבל $$.\dim(\mathop{\mathrm{Im}}(T))=\dim(V)$$ מצד שני, $\mathop{\mathrm{Im}}(T)\subseteq W$ ולכן מתקיים $\dim(\mathop{\mathrm{Im}}(T))\leq \dim(W)$. בסך הכל: $$\dim(V)\leq\dim(W)$$
 
 :::
 ::: remark
@@ -614,11 +614,11 @@ $T=T_A$
 ::: {.theorem #thm-3-for-2-iso}
 *תהי $T:V\to W$ ה\"ל. כל שניים מהתנאים הבאים גורר את התנאי השלישי:*
 
-1.  *$T$ חח״ע.*
+א.  *$T$ חח״ע.*
 
-2.  *$T$ על.*
+ב.  *$T$ על.*
 
-3.  *$\dim(V)=\dim(W)$*
+ג.  *$\dim(V)=\dim(W)$*
 :::
 ::: proof
 $(\text{ג})\impliedby(\text{ב})+(\text{א})$: לפי ההנחות מתקיים $$.\dim(\mathop{\mathrm{Ker}}(T))=0,\quad \dim(\mathop{\mathrm{Im}}(T))=\dim(W)$$ לאחר הצבה בנוסחה של משפט המימדים לה\"ל, נקבל $$.\dim(W)=\dim(V)$$
@@ -632,11 +632,11 @@ $(\text{א})\impliedby(\text{ג})+(\text{ב})$: לפי ההנחות מתקיים
 
 לאור זאת ולפי המשפט החדש, כל שניים מהתנאים הבאים גוררים את התנאי השלישי:
 
-1.  $v_1,...,v_n$ בת\"ל.
+א.  $v_1,...,v_n$ בת\"ל.
 
-2.  $\mathop{\mathrm{Span}}(v_1,...,v_n)=\mathbb{F}^m$
+ב.  $\mathop{\mathrm{Span}}(v_1,...,v_n)=\mathbb{F}^m$
 
-3.  $n=m$
+ג.  $n=m$
 
 זהו בדיוק משפט \"שלישי חינם\" המקורי לקבוצת וקטורים.
 :::
@@ -688,12 +688,12 @@ $(\text{א})\impliedby(\text{ג})+(\text{ב})$: לפי ההנחות מתקיים
 ![הרכבה כפעולה דו-שלבית](images/Composition.png){#fig-Composition width="60%" fig-align="center"}
 
 ::: {.example #exm-composition}
-1.  יהיו $T:\mathbb{R}^2\to\mathbb{R}^2$ ו- $S:\mathbb{R}^2\to \mathbb{R}^3$ המוגדרות ע\"י $$.S\begin{pmatrix}x\\y\end{pmatrix}=\begin{pmatrix}2x\\3y\\4x-y\end{pmatrix},\quad T\begin{pmatrix}x\\y\end{pmatrix}=\begin{pmatrix}x+y\\x-y\end{pmatrix}$$ ההרכבה $S\circ T:\mathbb{R}^2\to \mathbb{R}^3$ מוגדרת ומתקיים $$\begin{aligned}
+א.  יהיו $T:\mathbb{R}^2\to\mathbb{R}^2$ ו- $S:\mathbb{R}^2\to \mathbb{R}^3$ המוגדרות ע\"י $$.S\begin{pmatrix}x\\y\end{pmatrix}=\begin{pmatrix}2x\\3y\\4x-y\end{pmatrix},\quad T\begin{pmatrix}x\\y\end{pmatrix}=\begin{pmatrix}x+y\\x-y\end{pmatrix}$$ ההרכבה $S\circ T:\mathbb{R}^2\to \mathbb{R}^3$ מוגדרת ומתקיים $$\begin{aligned}
     (S\circ T)\begin{pmatrix}x\\y\end{pmatrix}&=S\left(T\begin{pmatrix}x\\y\end{pmatrix}\right)=S\begin{pmatrix}x+y\\x-y\end{pmatrix}=\begin{pmatrix}2(x+y)\\3(x-y)\\4(x+y)-(x-y)\end{pmatrix} \\
     &=\begin{pmatrix}2x+2y\\3x-3y\\3x+5y\end{pmatrix}
     \end{aligned}$$ שימו לב שההרכבה $T\circ S$ לא מוגדרת במקרה זה, כי הטווח $\mathbb{R}^3$ של $S$ אינו מוכל בתחום $\mathbb{R}^2$ של $T$.
 
-2.  יהיו $T:\mathbb{R}^3\to\mathbb{M}_{2\times 2}(\mathbb{R})$ ו- $S:\mathbb{M}_{2\times 2}(\mathbb{R})\to \mathbb{R}^4$ המוגדרות ע\"י $$.S\begin{pmatrix}
+ב.  יהיו $T:\mathbb{R}^3\to\mathbb{M}_{2\times 2}(\mathbb{R})$ ו- $S:\mathbb{M}_{2\times 2}(\mathbb{R})\to \mathbb{R}^4$ המוגדרות ע\"י $$.S\begin{pmatrix}
     a & b \\
     c & d
     \end{pmatrix}=\begin{pmatrix}a\\a+b\\b+c\\c+d\end{pmatrix},\quad T\begin{pmatrix}x\\y\\z\end{pmatrix}=\begin{pmatrix}
@@ -759,22 +759,22 @@ $(\text{א})\impliedby(\text{ג})+(\text{ב})$: לפי ההנחות מתקיים
 ::: {.exercise #exr-composition}
 יהיו $T:V\to W$ ו- $S:W\to U$ ה\"ל. הוכיחו כי:
 
-1.  $$\mathop{\mathrm{Ker}}(T)\subseteq \mathop{\mathrm{Ker}}(S\circ T)$$
+א.  $$\mathop{\mathrm{Ker}}(T)\subseteq \mathop{\mathrm{Ker}}(S\circ T)$$
 
-2.  $$\mathop{\mathrm{Im}}(S\circ T)\subseteq \mathop{\mathrm{Im}}(S)$$
+ב.  $$\mathop{\mathrm{Im}}(S\circ T)\subseteq \mathop{\mathrm{Im}}(S)$$
 
-3.  אם $S\circ T$ חח״ע, אז $T$ חח״ע.
+ג.  אם $S\circ T$ חח״ע, אז $T$ חח״ע.
 
-4.  אם $S\circ T$ על, אז $S$ על.
+ד.  אם $S\circ T$ על, אז $S$ על.
 :::
 ::: {.callout-note collapse="true" title="פתרון"}
-1.  יהי $v\in\mathop{\mathrm{Ker}}(T)$. לפי ההגדרות וטענה -@prp-more-linearity, מתקיים $$.(S\circ T)(v)=S(T(v))=S(0_W)=0_U$$ כלומר $v\in\mathop{\mathrm{Ker}}(S\circ T)$, ולכן $$.\mathop{\mathrm{Ker}}(T)\subseteq \mathop{\mathrm{Ker}}(S\circ T)$$
+א.  יהי $v\in\mathop{\mathrm{Ker}}(T)$. לפי ההגדרות וטענה -@prp-more-linearity, מתקיים $$.(S\circ T)(v)=S(T(v))=S(0_W)=0_U$$ כלומר $v\in\mathop{\mathrm{Ker}}(S\circ T)$, ולכן $$.\mathop{\mathrm{Ker}}(T)\subseteq \mathop{\mathrm{Ker}}(S\circ T)$$
 
-2.  יהי $w\in\mathop{\mathrm{Im}}(S\circ T)$. לפי ההגדרה, קיים $v\in V$ כך ש- $$.w=(S\circ T)(v)=S(T(v))$$ זה מראה כי $S$ שולחת את $T(v)$ ל- $w$, ולכן $w\in\mathop{\mathrm{Im}}(S)$. מכאן נקבל $$.\mathop{\mathrm{Im}}(S\circ T)\subseteq \mathop{\mathrm{Im}}(S)$$
+ב.  יהי $w\in\mathop{\mathrm{Im}}(S\circ T)$. לפי ההגדרה, קיים $v\in V$ כך ש- $$.w=(S\circ T)(v)=S(T(v))$$ זה מראה כי $S$ שולחת את $T(v)$ ל- $w$, ולכן $w\in\mathop{\mathrm{Im}}(S)$. מכאן נקבל $$.\mathop{\mathrm{Im}}(S\circ T)\subseteq \mathop{\mathrm{Im}}(S)$$
 
-3.  נניח כי $S\circ T$ חח״ע. לפי טענה -@prp-injective מתקיים $\mathop{\mathrm{Ker}}(S\circ T)=\Set{0_V}$, ולפי סעיף א' נובע כי $$.\Set{0_V}\subseteq \mathop{\mathrm{Ker}}(T)\subseteq \mathop{\mathrm{Ker}}(S\circ T)=\Set{0_V}$$ מכאן $\mathop{\mathrm{Ker}}(T)=\Set{0_V}$, ושוב לפי הטענה (בכיוון ההפוך שלה) נובע כי $T$ חח״ע.
+ג.  נניח כי $S\circ T$ חח״ע. לפי טענה -@prp-injective מתקיים $\mathop{\mathrm{Ker}}(S\circ T)=\Set{0_V}$, ולפי סעיף א' נובע כי $$.\Set{0_V}\subseteq \mathop{\mathrm{Ker}}(T)\subseteq \mathop{\mathrm{Ker}}(S\circ T)=\Set{0_V}$$ מכאן $\mathop{\mathrm{Ker}}(T)=\Set{0_V}$, ושוב לפי הטענה (בכיוון ההפוך שלה) נובע כי $T$ חח״ע.
 
-4.  נניח כי $S\circ T$ על, כלומר $\mathop{\mathrm{Im}}(S\circ T)=U$. לפי סעיף ב' נובע כי $$.U=\mathop{\mathrm{Im}}(S\circ T)\subseteq \mathop{\mathrm{Im}}(S)=U$$ לכן $\mathop{\mathrm{Im}}(S)=U$, כלומר $S$ על.
+ד.  נניח כי $S\circ T$ על, כלומר $\mathop{\mathrm{Im}}(S\circ T)=U$. לפי סעיף ב' נובע כי $$.U=\mathop{\mathrm{Im}}(S\circ T)\subseteq \mathop{\mathrm{Im}}(S)=U$$ לכן $\mathop{\mathrm{Im}}(S)=U$, כלומר $S$ על.
 :::
 ## מטריצות מייצגות של העתקות לינאריות
 
@@ -811,7 +811,7 @@ $(\text{א})\impliedby(\text{ג})+(\text{ב})$: לפי ההנחות מתקיים
 ::: example
  
 
-1.  תהי $T:\mathbb{R}^2\to \mathbb{R}^3$ המוגדרת ע\"י $$.T\begin{pmatrix}x\\y\end{pmatrix}=\begin{pmatrix}x+2y\\2x+y\\x-y\end{pmatrix}$$ ניקח את הבסיסים הסטנדרטיים $$E_2=\Set{\begin{pmatrix}1\\0\end{pmatrix},\begin{pmatrix}0\\1\end{pmatrix}},E_3=\Set{\begin{pmatrix}1\\0\\0\end{pmatrix},\begin{pmatrix}0\\1\\0\end{pmatrix},\begin{pmatrix}0\\0\\1\end{pmatrix}}$$ ונקבל את המטריצה המייצגת לפי $E_2,E_3$: $$[T]_{E_3}^{E_2}=\begin{pmatrix}\begin{array}{c}
+א.  תהי $T:\mathbb{R}^2\to \mathbb{R}^3$ המוגדרת ע\"י $$.T\begin{pmatrix}x\\y\end{pmatrix}=\begin{pmatrix}x+2y\\2x+y\\x-y\end{pmatrix}$$ ניקח את הבסיסים הסטנדרטיים $$E_2=\Set{\begin{pmatrix}1\\0\end{pmatrix},\begin{pmatrix}0\\1\end{pmatrix}},E_3=\Set{\begin{pmatrix}1\\0\\0\end{pmatrix},\begin{pmatrix}0\\1\\0\end{pmatrix},\begin{pmatrix}0\\0\\1\end{pmatrix}}$$ ונקבל את המטריצה המייצגת לפי $E_2,E_3$: $$[T]_{E_3}^{E_2}=\begin{pmatrix}\begin{array}{c}
     |\\[-0.4ex]
     \left[T\begin{pmatrix}1\\0\end{pmatrix}\right]_{E_3}\\[-0.4ex]
     |
@@ -828,7 +828,7 @@ $(\text{א})\impliedby(\text{ג})+(\text{ב})$: לפי ההנחות מתקיים
     1 & -1
     \end{pmatrix}$$ כאן וקטורי הקוארדינטות הם הוקטורים עצמם כי $E_3$ הוא בסיס סטנדרטי.
 
-2.  הכללה של הסעיף הקודם: תהי $T_A:\mathbb{F}^n\to\mathbb{F}^m$ כאשר $A\in\mathbb{M}_{m\times n}(\mathbb{F})$. ניקח את הבסיסים הסטנדרטיים $E_n,E_m$ ל- $\mathbb{F}^n,\mathbb{F}^m$ בהתאמה, ונקבל:
+ב.  הכללה של הסעיף הקודם: תהי $T_A:\mathbb{F}^n\to\mathbb{F}^m$ כאשר $A\in\mathbb{M}_{m\times n}(\mathbb{F})$. ניקח את הבסיסים הסטנדרטיים $E_n,E_m$ ל- $\mathbb{F}^n,\mathbb{F}^m$ בהתאמה, ונקבל:
 
     $$\begin{aligned}
     [T_A]_{E_m}^{E_n}&=\begin{pmatrix}
@@ -877,7 +877,7 @@ $(\text{א})\impliedby(\text{ג})+(\text{ב})$: לפי ההנחות מתקיים
 
     אם כן, ההצגה הטבעית של $T_A$ היא לפי הבסיסים הסטנדרטיים. המטריצה המייצגת במקרה זה היא $A$ עצמה.
 
-3.  תהי $T:\mathbb{M}_{2\times 2}(\mathbb{F})\to\mathbb{M}_{2\times 2}(\mathbb{F})$ העתקת השחלוף המוגדרת ע\"י $$.T(A)=A^t$$ ניקח את הבסיס הסטנדרטי $$E=\Set{\begin{pmatrix}
+ג.  תהי $T:\mathbb{M}_{2\times 2}(\mathbb{F})\to\mathbb{M}_{2\times 2}(\mathbb{F})$ העתקת השחלוף המוגדרת ע\"י $$.T(A)=A^t$$ ניקח את הבסיס הסטנדרטי $$E=\Set{\begin{pmatrix}
     1 & 0 \\
     0 & 0
     \end{pmatrix},\begin{pmatrix}
@@ -972,7 +972,7 @@ $(\text{א})\impliedby(\text{ג})+(\text{ב})$: לפי ההנחות מתקיים
     \end{pmatrix}
     \end{aligned}$$
 
-4.  נסתכל על העתקת האפס $0_{V,W}:V\to W$ וניקח בסיסים סדורים $$B=\Set{v_1,...,v_n},\quad C=\Set{w_1,...,w_m}$$ ל- $V,W$. מתקיים $$.[0_{V,W}]_C^B=\begin{pmatrix}
+ד.  נסתכל על העתקת האפס $0_{V,W}:V\to W$ וניקח בסיסים סדורים $$B=\Set{v_1,...,v_n},\quad C=\Set{w_1,...,w_m}$$ ל- $V,W$. מתקיים $$.[0_{V,W}]_C^B=\begin{pmatrix}
     \begin{array}{c}
     |\\[-0.4ex]
     [0_W]_C\\[-0.4ex]
@@ -999,14 +999,14 @@ $(\text{א})\impliedby(\text{ג})+(\text{ב})$: לפי ההנחות מתקיים
 ::: {.proposition #prp-rep-matrix}
 *יהיו $T:V\to W$, $S:W\to U$ ה\"ל, ויהיו $B,C,D$ בסיסים סדורים ל- $V,W,U$ בהתאמה. אז:*
 
-1.  *לכל $v\in V$ מתקיים $$.[T(v)]_C=[T]_C^B[v]_B$$*
+א.  *לכל $v\in V$ מתקיים $$.[T(v)]_C=[T]_C^B[v]_B$$*
 
-2.  *$$[S\circ T]_D^B=[S]_D^C[T]_C^B$$*
+ב.  *$$[S\circ T]_D^B=[S]_D^C[T]_C^B$$*
 :::
 ::: proof
  
 
-1.  נסמן $B=\Set{v_1,...,v_n}$. לכל $v\in V$ קיימים סקלרים יחידים $\alpha_1,...,\alpha_n\in\mathbb{F}$ כך ש- $$,v=\alpha_1 v_1+...+\alpha_n v_n$$ ובהתאם מתקיים $$.[v]_B=\begin{pmatrix}\alpha_1\\\vdots\\\alpha_n\end{pmatrix}$$ לכן, מהלינאריות של $T$ וגם של קוארדינטות נובע כי $$\begin{aligned}
+א.  נסמן $B=\Set{v_1,...,v_n}$. לכל $v\in V$ קיימים סקלרים יחידים $\alpha_1,...,\alpha_n\in\mathbb{F}$ כך ש- $$,v=\alpha_1 v_1+...+\alpha_n v_n$$ ובהתאם מתקיים $$.[v]_B=\begin{pmatrix}\alpha_1\\\vdots\\\alpha_n\end{pmatrix}$$ לכן, מהלינאריות של $T$ וגם של קוארדינטות נובע כי $$\begin{aligned}
     [T(v)]_C&=[\alpha_1T(v_1)+...+\alpha_nT(v_n)]_C=\alpha_1[T(v_1)]_C+...+\alpha_n[T(v_n)]_C \\
     &=\begin{pmatrix}
     \begin{array}{c}
@@ -1032,7 +1032,7 @@ $(\text{א})\impliedby(\text{ג})+(\text{ב})$: לפי ההנחות מתקיים
     \begin{pmatrix}\alpha_1\\\vdots\\\alpha_n\end{pmatrix}=[T]_C^B[v]_B
     \end{aligned}$$
 
-2.  תחילה נבצע את כפל המטריצות בהתאם לעמודות של המטריצה הימנית במכפלה, ואחר כך נשתמש בסעיף הקודם: $$\begin{aligned}
+ב.  תחילה נבצע את כפל המטריצות בהתאם לעמודות של המטריצה הימנית במכפלה, ואחר כך נשתמש בסעיף הקודם: $$\begin{aligned}
     [S]_D^C[T]_C^B&=[S]_D^C\begin{pmatrix}
     \begin{array}{c}
     |\\[-0.4ex]
@@ -1210,12 +1210,12 @@ $$[S\circ T]_D^B=[S]_D^C[T]_C^B=\begin{pmatrix}
 ::: exercise
 יהיו $T,S:V\to W$ ה\"ל, ויהיו $B,C$ בסיסים סדורים ל- $V,W$ בהתאמה. אז:
 
-1.  $$[T+S]_C^B=[T]_C^B+[S]_C^B$$
+א.  $$[T+S]_C^B=[T]_C^B+[S]_C^B$$
 
-2.  לכל $\alpha\in\mathbb{F}$ מתקיים $$.[\alpha T]_C^B=\alpha[T]_C^B$$
+ב.  לכל $\alpha\in\mathbb{F}$ מתקיים $$.[\alpha T]_C^B=\alpha[T]_C^B$$
 :::
 ::: {.callout-note collapse="true" title="פתרון"}
-1.  מתקיים $$\begin{aligned}
+א.  מתקיים $$\begin{aligned}
     [T+S]_C^B&=\begin{pmatrix}
     \begin{array}{c}
     |\\[-0.4ex]
@@ -1281,7 +1281,7 @@ $$[S\circ T]_D^B=[S]_D^C[T]_C^B=\begin{pmatrix}
     \end{pmatrix}=[T]_C^B+[S]_C^B
     \end{aligned}$$
 
-2.  יהי $\alpha\in\mathbb{F}$. מתקיים: $$\begin{aligned}
+ב.  יהי $\alpha\in\mathbb{F}$. מתקיים: $$\begin{aligned}
     [\alpha T]_C^B&=\begin{pmatrix}
     \begin{array}{c}
     |\\[-0.4ex]
@@ -1358,7 +1358,7 @@ $$[S\circ T]_D^B=[S]_D^C[T]_C^B=\begin{pmatrix}
 ::: example
  
 
-1.  עבור $C=B=\Set{v_1,...,v_n}$ מתקיים: $$\begin{aligned}
+א.  עבור $C=B=\Set{v_1,...,v_n}$ מתקיים: $$\begin{aligned}
     [I]_B^B&=\begin{pmatrix}
     \begin{array}{c}
     |\\[-0.4ex]
@@ -1403,7 +1403,7 @@ $$[S\circ T]_D^B=[S]_D^C[T]_C^B=\begin{pmatrix}
     \end{pmatrix}=I_n
     \end{aligned}$$ כלומר מטריצת המעבר מבסיס (בגודל $n$) לעצמו היא מטריצת היחידה $I_n$.
 
-2.  יהי $E$ הבסיס הסטנדרטי ל- $\mathbb{R}^3$ וניקח בנוסף את הבסיס הסדור $$B=\Set{\begin{pmatrix}1\\2\\3\end{pmatrix},\begin{pmatrix}1\\3\\7\end{pmatrix},\begin{pmatrix}0\\2\\1\end{pmatrix}}$$ ייצוג וקטורים לפי $E$ הוא מיידי, ולכן נקבל $$\begin{aligned}
+ב.  יהי $E$ הבסיס הסטנדרטי ל- $\mathbb{R}^3$ וניקח בנוסף את הבסיס הסדור $$B=\Set{\begin{pmatrix}1\\2\\3\end{pmatrix},\begin{pmatrix}1\\3\\7\end{pmatrix},\begin{pmatrix}0\\2\\1\end{pmatrix}}$$ ייצוג וקטורים לפי $E$ הוא מיידי, ולכן נקבל $$\begin{aligned}
     [I]_E^B&=\begin{pmatrix}
     \begin{array}{c}
     |\\[-0.4ex]
@@ -1573,19 +1573,19 @@ $$[I]_B^E=\begin{pmatrix}
 ::: {.proposition #prp-ker-image-rep}
 *תהי $T:V\to W$ ה\"ל, ויהיו $B,C$ בסיסים סדורים ל- $V,W$ בהתאמה. אז מתקיים:*
 
-1.  *לכל $v\in V$ $$.v\in\mathop{\mathrm{Ker}}(T) \iff [v]_B\in\mathop{\mathrm{N}}([T]_C^B)$$*
+א.  *לכל $v\in V$ $$.v\in\mathop{\mathrm{Ker}}(T) \iff [v]_B\in\mathop{\mathrm{N}}([T]_C^B)$$*
 
-2.  *לכל $w\in W$ $$.w\in\mathop{\mathrm{Im}}(T) \iff [w]_C\in\mathop{\mathrm{Col}}([T]_C^B)$$*
+ב.  *לכל $w\in W$ $$.w\in\mathop{\mathrm{Im}}(T) \iff [w]_C\in\mathop{\mathrm{Col}}([T]_C^B)$$*
 :::
 ::: proof
 נשתמש בטענה -@prp-rep-matrix.
 
-1.  יהי $v\in V$. מתקיים: $$\begin{aligned}
+א.  יהי $v\in V$. מתקיים: $$\begin{aligned}
     v\in\mathop{\mathrm{Ker}}(T) &\iff T(v)=0_W \iff [T(v)]_C=\underline{0} \iff [T]_C^B[v]_B=\underline{0} \\
     &\iff [v]_B\in\mathop{\mathrm{N}}([T]_C^B)
     \end{aligned}$$
 
-2.  יהי $w\in W$. נסמן $B=\Set{v_1,...,v_n}$ ונקבל לפי טענה -@prp-image-span: $$\begin{aligned}
+ב.  יהי $w\in W$. נסמן $B=\Set{v_1,...,v_n}$ ונקבל לפי טענה -@prp-image-span: $$\begin{aligned}
     w\in\mathop{\mathrm{Im}}(T) &\iff w\in\mathop{\mathrm{Span}}(T(v_1),...,T(v_n)) \\
     &\iff [w]_C\in \mathop{\mathrm{Span}}([T(v_1)]_C,...,[T(v_n)]_C)  \iff [w]_C\in \mathop{\mathrm{Col}}([T]_C^B)
     \end{aligned}$$
@@ -1594,14 +1594,14 @@ $$[I]_B^E=\begin{pmatrix}
 ::: exercise
 בסימונים של הטענה לעיל, הוכיחו כי:
 
-1.  $T$ חח״ע אם ורק אם $\mathop{\mathrm{N}}([T]_C^B)=\Set{\underline{0}}$.
+א.  $T$ חח״ע אם ורק אם $\mathop{\mathrm{N}}([T]_C^B)=\Set{\underline{0}}$.
 
-2.  $T$ על אם ורק אם $\mathop{\mathrm{rank}}([T]_C^B)=m$.
+ב.  $T$ על אם ורק אם $\mathop{\mathrm{rank}}([T]_C^B)=m$.
 :::
 ::: {.callout-note collapse="true" title="פתרון"}
-1.  לפי טענה -@prp-injective, $T$ חח״ע אם ורק אם $\mathop{\mathrm{Ker}}(T)=\Set{0_V}$. לפי טענה -@prp-ker-image-rep, התנאי האחרון שקול לתנאי $\mathop{\mathrm{N}}([T]_C^B)=\Set{\underline{0}}$, כי מתקיים $$.v=0_V \iff [v]_B=\underline{0}$$
+א.  לפי טענה -@prp-injective, $T$ חח״ע אם ורק אם $\mathop{\mathrm{Ker}}(T)=\Set{0_V}$. לפי טענה -@prp-ker-image-rep, התנאי האחרון שקול לתנאי $\mathop{\mathrm{N}}([T]_C^B)=\Set{\underline{0}}$, כי מתקיים $$.v=0_V \iff [v]_B=\underline{0}$$
 
-2.  לפי טענה -@prp-image-span, $T$ על אם ורק אם $\mathop{\mathrm{Span}}(T(v_1),...,T(v_n))=W$. לפי טענה -@prp-ker-image-rep, התנאי האחרון שקול לתנאי $\mathop{\mathrm{Col}}([T]_C^B)=\mathbb{F}^m$. לבסוף, לפי משפט -@thm-rank-nullity, מתקיים $$.\dim(\mathop{\mathrm{Col}}([T]_C^B))=\mathop{\mathrm{rank}}([T]_C^B)$$ לאור זאת ולפי מסקנה -@cor-subspace-dim, הדרגה שווה ל- $m$ אם ורק אם $\mathop{\mathrm{Col}}([T]_C^B)=\mathbb{F}^m$. לסיכום, $T$ על אם ורק אם $\mathop{\mathrm{rank}}([T]_C^B)=m$.
+ב.  לפי טענה -@prp-image-span, $T$ על אם ורק אם $\mathop{\mathrm{Span}}(T(v_1),...,T(v_n))=W$. לפי טענה -@prp-ker-image-rep, התנאי האחרון שקול לתנאי $\mathop{\mathrm{Col}}([T]_C^B)=\mathbb{F}^m$. לבסוף, לפי משפט -@thm-rank-nullity, מתקיים $$.\dim(\mathop{\mathrm{Col}}([T]_C^B))=\mathop{\mathrm{rank}}([T]_C^B)$$ לאור זאת ולפי מסקנה -@cor-subspace-dim, הדרגה שווה ל- $m$ אם ורק אם $\mathop{\mathrm{Col}}([T]_C^B)=\mathbb{F}^m$. לסיכום, $T$ על אם ורק אם $\mathop{\mathrm{rank}}([T]_C^B)=m$.
 :::
 ## איזומורפיזמים
 
@@ -1702,16 +1702,16 @@ x+y
 ::: exercise
  
 
-1.  תהי $A\in M_{n\times n}(\mathbb{F})$ הפיכה. נגדיר ה\"ל $S_A:\mathbb{M}_{n\times n}(\mathbb{F})\to\mathbb{M}_{n\times n}(\mathbb{F})$ ע\"י $$.S_A(B)=AB$$ הוכיחו כי היא איזומורפיזם. מצאו נוסחה ל- $S_A^{-1}$.
+א.  תהי $A\in M_{n\times n}(\mathbb{F})$ הפיכה. נגדיר ה\"ל $S_A:\mathbb{M}_{n\times n}(\mathbb{F})\to\mathbb{M}_{n\times n}(\mathbb{F})$ ע\"י $$.S_A(B)=AB$$ הוכיחו כי היא איזומורפיזם. מצאו נוסחה ל- $S_A^{-1}$.
 
-2.  כעת נניח כי $A$ אינה הפיכה. הוכיחו כי $S_A$ אינה איזומורפיזם.
+ב.  כעת נניח כי $A$ אינה הפיכה. הוכיחו כי $S_A$ אינה איזומורפיזם.
 
     רמז: בשני הסעיפים אין צורך במטריצה מייצגת.
 :::
 ::: {.callout-note collapse="true" title="פתרון"}
-1.  יש לציין שהמטריצה המייצגת אינה $A$, אלא מטריצה אחרת (הקשורה אליה) מסדר $n^2\times n^2$. במקום לחשב אותה הרבה יותר קל להוכיח כי $S_A$ הפיכה (ולכן איזומורפיזם) ע\"י פתרון המשוואה $$AB=C$$ כאשר הנעלם הוא המטריצה $B$. נתון כי $A$ הפיכה ולכן ניתן להכפיל את שני האגפים ב- $A^{-1}$ משמאל: $$B=A^{-1}C$$ קיבלנו $$S_A(A^{-1}C)=C$$ ולכן $S_A$ הפיכה כי לכל $C$ מצאנו $B=A^{-1}C$ יחידה המקיימת $S_A(B)=C$. מתקיים $$.(S_A)^{-1}(C)=A^{-1}C$$ או באופן תמציתי, קיבלנו $$.(S_A)^{-1}=S_{A^{-1}}$$
+א.  יש לציין שהמטריצה המייצגת אינה $A$, אלא מטריצה אחרת (הקשורה אליה) מסדר $n^2\times n^2$. במקום לחשב אותה הרבה יותר קל להוכיח כי $S_A$ הפיכה (ולכן איזומורפיזם) ע\"י פתרון המשוואה $$AB=C$$ כאשר הנעלם הוא המטריצה $B$. נתון כי $A$ הפיכה ולכן ניתן להכפיל את שני האגפים ב- $A^{-1}$ משמאל: $$B=A^{-1}C$$ קיבלנו $$S_A(A^{-1}C)=C$$ ולכן $S_A$ הפיכה כי לכל $C$ מצאנו $B=A^{-1}C$ יחידה המקיימת $S_A(B)=C$. מתקיים $$.(S_A)^{-1}(C)=A^{-1}C$$ או באופן תמציתי, קיבלנו $$.(S_A)^{-1}=S_{A^{-1}}$$
 
-2.  די להראות ש- $S_A$ אינה על, או לחילופין שהיא אינה חח״ע. אין צורך בשתי הבדיקות, אך נעבור על שתיהן.
+ב.  די להראות ש- $S_A$ אינה על, או לחילופין שהיא אינה חח״ע. אין צורך בשתי הבדיקות, אך נעבור על שתיהן.
 
     $S_A$ אינה על: $A$ אינה הפיכה, ולכן אין פתרון למשוואה $$.AB=I_n$$ זה מראה כי $I_n\notin \mathop{\mathrm{Im}}(S_A)$, כלומר $S_A$ אינה על. למעשה, לא קיימת אף מטריצה הפיכה ב- $\mathop{\mathrm{Im}}(S_A)$.
 
