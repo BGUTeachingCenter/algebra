@@ -1403,7 +1403,7 @@ $$[S\circ T]_D^B=[S]_D^C[T]_C^B=\begin{pmatrix}
     \end{pmatrix}=I_n
     \end{aligned}$$ כלומר מטריצת המעבר מבסיס (בגודל $n$) לעצמו היא מטריצת היחידה $I_n$.
 
-2.  יהי $E$ הבסיס הסטנדרטי ל- $\mathbb{R}^3$ וניקח בנוסף את הבסיס הסדור $$.B=\Set{\begin{pmatrix}1\\2\\3\end{pmatrix},\begin{pmatrix}1\\3\\7\end{pmatrix},\begin{pmatrix}0\\2\\1\end{pmatrix}}$$ ייצוג וקטורים לפי $E$ הוא מיידי, ולכן נקבל $$\begin{aligned}
+2.  יהי $E$ הבסיס הסטנדרטי ל- $\mathbb{R}^3$ וניקח בנוסף את הבסיס הסדור $$B=\Set{\begin{pmatrix}1\\2\\3\end{pmatrix},\begin{pmatrix}1\\3\\7\end{pmatrix},\begin{pmatrix}0\\2\\1\end{pmatrix}}$$ ייצוג וקטורים לפי $E$ הוא מיידי, ולכן נקבל $$\begin{aligned}
     [I]_E^B&=\begin{pmatrix}
     \begin{array}{c}
     |\\[-0.4ex]
@@ -1601,7 +1601,7 @@ $$[I]_B^E=\begin{pmatrix}
 ::: {.callout-note collapse="true" title="פתרון"}
 1.  לפי טענה -@prp-injective, $T$ חח״ע אם ורק אם $\mathop{\mathrm{Ker}}(T)=\Set{0_V}$. לפי טענה -@prp-ker-image-rep, התנאי האחרון שקול לתנאי $\mathop{\mathrm{N}}([T]_C^B)=\Set{\underline{0}}$, כי מתקיים $$.v=0_V \iff [v]_B=\underline{0}$$
 
-2.  לפי טענה -@prp-image-span, $T$ על אם ורק אם $\mathop{\mathrm{Span}}(T(v_1),...,T(v_n))=W$. לפי טענה -@prp-ker-image-rep, התנאי האחרון שקול לתנאי $\mathop{\mathrm{Col}}([T]_C^B)=\mathbb{F}^m$. לבסוף, לפי משפט -@thm-rank-nullity, מתקיים $$.\dim(\mathop{\mathrm{Col}}([T]_C^B))=\mathop{\mathrm{rank}}([T]_C^B)$$ לאור זאת ולפי לפי מסקנה -@cor-subspace-dim, הדרגה שווה ל- $m$ אם ורק אם $\mathop{\mathrm{Col}}([T]_C^B)=\mathbb{F}^m$. לסיכום, $T$ על אם ורק אם $\mathop{\mathrm{rank}}([T]_C^B)=m$.
+2.  לפי טענה -@prp-image-span, $T$ על אם ורק אם $\mathop{\mathrm{Span}}(T(v_1),...,T(v_n))=W$. לפי טענה -@prp-ker-image-rep, התנאי האחרון שקול לתנאי $\mathop{\mathrm{Col}}([T]_C^B)=\mathbb{F}^m$. לבסוף, לפי משפט -@thm-rank-nullity, מתקיים $$.\dim(\mathop{\mathrm{Col}}([T]_C^B))=\mathop{\mathrm{rank}}([T]_C^B)$$ לאור זאת ולפי מסקנה -@cor-subspace-dim, הדרגה שווה ל- $m$ אם ורק אם $\mathop{\mathrm{Col}}([T]_C^B)=\mathbb{F}^m$. לסיכום, $T$ על אם ורק אם $\mathop{\mathrm{rank}}([T]_C^B)=m$.
 :::
 ## איזומורפיזמים
 
@@ -1615,7 +1615,7 @@ $$[I]_B^E=\begin{pmatrix}
 כבר הוכחנו את משפט -@thm-3-for-2-iso, שהוא בעצם משפט \"שלישי חינם\" לאיזומורפיזמים. בפרט, המשפט קובע כי עבור איזומורפיזם $T:V\to W$ בהכרח מתקיים $\dim(V)=\dim(W)$. לחילופין, אם ידוע שיש שוויון מימדים, אז די להוכיח כי $T$ היא חח״ע או על כדי להסיק שגם התכונה השנייה מתקיימת, ולכן $T$ היא איזומורפיזם. באופן אינטואיטיבי, המימד הוא אחד המאפיינים המרכזיים של המבנה הלינארי של המרחב. שוויון מימדים פירושו שקיים איזומורפיזם, ולהיפך.
 
 ::: example
-תהי $T:M_{n\times n}(\mathbb{F})\to M_{n\times n}(\mathbb{F})$ העתקת השחלוף המוגדרת ע\"י $$.T(A)=A^t$$ נראה כי $T$ היא איזומורפיזם. לפי משפט \"שלישי חינם\", די להראות כי היא חח״ע שהרי מימד התחום שווה למימד הטווח (המרחבים עצמם שווים). אם כן: $$A\in\mathop{\mathrm{Ker}}(T) \iff A^t=0_{n\times n} \iff (A^t)^t=(0_{n\times n})^t \iff A=0_{n\times n}$$ לכן $\mathop{\mathrm{Ker}}(T)=\Set{0_{n\times n}}$ ו- $T$ היא חח״ע. מכאן שהיא איזורמורפיזם.
+תהי $T:M_{n\times n}(\mathbb{F})\to M_{n\times n}(\mathbb{F})$ העתקת השחלוף המוגדרת ע\"י $$.T(A)=A^t$$ נראה כי $T$ היא איזומורפיזם. לפי משפט \"שלישי חינם\", די להראות כי היא חח״ע שהרי מימד התחום שווה למימד הטווח (המרחבים עצמם שווים). אם כן: $$A\in\mathop{\mathrm{Ker}}(T) \iff A^t=0_{n\times n} \iff (A^t)^t=(0_{n\times n})^t \iff A=0_{n\times n}$$ לכן $\mathop{\mathrm{Ker}}(T)=\Set{0_{n\times n}}$ ו- $T$ היא חח״ע. מכאן שהיא איזומורפיזם.
 
 לחילופין, אפשר להראות כי היא על בעזרת תכונה בסיסית של שחלוף, ולא הרבה מעבר לזה. תהי $B\in\mathbb{M}_{n\times n}(\mathbb{F})$. נפתור את המשוואה (כאשר הנעלם הוא המטריצה $A$) הבאה: $$A^t=B$$ נפעיל את העתקת השחלוף ונקבל $$,A=B^t$$ ואכן מתקיים $$(B^t)^t=B$$ כנדרש. לכן, $T$ היא על כי בחרנו $B$ שרירותית והראינו כי $T(B^t)=B$. אז שוב הראינו כי $T$ היא איזומורפיזם.
 :::
