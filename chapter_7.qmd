@@ -331,9 +331,9 @@ T(v+w)&=T(\sum_{k=1}^n(\alpha_k+\beta_k)v_k)=\sum_{k=1}^n(\alpha_k+\beta_k)w_k \
 
 לכל קבוצה נבדוק סגירות לחיבור וכפל בסקלר.
 
-1.  יהיו $v_1,v_2\in \mathop{\mathrm{Ker}}(T), \alpha\in\mathbb{F}$. מתקיים $$,T(v_1+v_2)=T(v_1)+T(v_2)=0_W+0_W=0_W$$ ולכן $v_1+v_2\in\mathop{\mathrm{Ker}}(T)$. באופן דומה: $$,T(\alpha v_1)=\alpha T(v_1)=\alpha\cdot 0_W=0_W$$ ולכן $\alpha v_1\in\mathop{\mathrm{Ker}}(T)$.
+1.  יהיו $v_1,v_2\in \mathop{\mathrm{Ker}}(T), \alpha\in\mathbb{F}$. מתקיים $$,T(v_1+v_2)=T(v_1)+T(v_2)=0_W+0_W=0_W$$ ולכן $v_1+v_2\in\mathop{\mathrm{Ker}}(T)$. באופן דומה: $$T(\alpha v_1)=\alpha T(v_1)=\alpha\cdot 0_W=0_W$$ ולכן $\alpha v_1\in\mathop{\mathrm{Ker}}(T)$.
 
-2.  יהיו $w_1,w_2\in \mathop{\mathrm{Im}}(T), \alpha\in\mathbb{F}$. קיימים $u_1,u_2\in V$ כך ש- $$.w_1=T(u_1),\quad w_2=T(u_2)$$ נשים לב כי $$,T(u_1+u_2)=T(u_1)+T(u_2)=w_1+w_2$$ ובפרט מתקיים $w_1+w_2\in\mathop{\mathrm{Im}}(T)$. באופן דומה: $$,T(\alpha u_1)=\alpha T(u_1)=\alpha w_1$$ ולכן $\alpha w_1\in\mathop{\mathrm{Im}}(T)$.
+2.  יהיו $w_1,w_2\in \mathop{\mathrm{Im}}(T), \alpha\in\mathbb{F}$. קיימים $u_1,u_2\in V$ כך ש- $$.w_1=T(u_1),\quad w_2=T(u_2)$$ נשים לב כי $$,T(u_1+u_2)=T(u_1)+T(u_2)=w_1+w_2$$ ובפרט מתקיים $w_1+w_2\in\mathop{\mathrm{Im}}(T)$. באופן דומה: $$T(\alpha u_1)=\alpha T(u_1)=\alpha w_1$$ ולכן $\alpha w_1\in\mathop{\mathrm{Im}}(T)$.
 
 :::
 ::: example
@@ -494,7 +494,7 @@ $$
 $$*
 :::
 ::: proof
-הכיוון $\impliedby$: נניח כי $T$ חח״ע. נזכור כי $T(0_V)=0_W$ לפי טענה -@prp-more-linearity. לכן: $$,v\in\mathop{\mathrm{Ker}}(T) \iff T(v)=0_W \iff T(v)=T(0_V) \iff v=0_V$$ ומכאן $\mathop{\mathrm{Ker}}(T)=\Set{0_V}$.
+הכיוון $\impliedby$: נניח כי $T$ חח״ע. נזכור כי $T(0_V)=0_W$ לפי טענה -@prp-more-linearity. לכן: $$v\in\mathop{\mathrm{Ker}}(T) \iff T(v)=0_W \iff T(v)=T(0_V) \iff v=0_V$$ ומכאן $\mathop{\mathrm{Ker}}(T)=\Set{0_V}$.
 
 הכיוון $\implies$: נניח כי $\mathop{\mathrm{Ker}}(T)=\Set{0_V}$. לכל $v_1,v_2\in V$ מתקיים $$\begin{aligned}
 T(v_1)=T(v_2) &\iff T(v_1)-T(v_2)=0_W \iff T(v_1-v_2)=0_W \\
@@ -587,7 +587,7 @@ $T=T_A$
 
 2.  נניח שקיימת $T:\mathbb{R}^4\to\mathbb{R}^3$ שהיא חח״ע. כלומר מתקיים $\mathop{\mathrm{Ker}}(T)=\Set{\underline{0}}$, ולפי משפט המימדים לה\"ל נובע כי $$.0+\dim(\mathop{\mathrm{Im}}(T))=\dim(\mathbb{R}^4)$$ קיבלנו $\dim(\mathop{\mathrm{Im}}(T))=4$, אבל מתקיים $\mathop{\mathrm{Im}}(T)\subseteq\mathbb{R}^3$ ולכן $$.\dim(\mathop{\mathrm{Im}}(T))\leq\dim(\mathbb{R}^3)=3$$ זו סתירה, ומכאן לא קיימת ה\"ל כזו.
 
-3.  הטענה נכונה. נוכיח זאת: תהי $T:\mathbb{M}_{2\times 3}(\mathbb{C})\to\mathbb{C}^6$. נשים לב כי $$.\dim(\mathbb{M}_{2\times 3}(\mathbb{C}))=6=\dim(\mathbb{C}^6)$$ בנוסף, ממשפט המימדים לה\"ל נובע כי $$,\dim(\mathop{\mathrm{Ker}}(T))+\dim(\mathop{\mathrm{Im}}(T))=6$$ ולכן $$.\dim(\mathop{\mathrm{Ker}}(T))=0 \iff \dim(\mathop{\mathrm{Im}}(T))=6$$ ובאופן שקול (לפי מסקנה -@cor-subspace-dim): $$.\mathop{\mathrm{Ker}}(T)=\Set{\underline{0}} \iff \mathop{\mathrm{Im}}(T)=\mathbb{C}^6$$ לבסוף, לפי טענה -@prp-injective אפשר להסיק כי $T$ היא על אם ורק אם היא חח״ע.
+3.  הטענה נכונה. נוכיח זאת: תהי $T:\mathbb{M}_{2\times 3}(\mathbb{C})\to\mathbb{C}^6$. נשים לב כי $$.\dim(\mathbb{M}_{2\times 3}(\mathbb{C}))=6=\dim(\mathbb{C}^6)$$ בנוסף, ממשפט המימדים לה\"ל נובע כי $$,\dim(\mathop{\mathrm{Ker}}(T))+\dim(\mathop{\mathrm{Im}}(T))=6$$ ולכן $$.\dim(\mathop{\mathrm{Ker}}(T))=0 \iff \dim(\mathop{\mathrm{Im}}(T))=6$$ ובאופן שקול (לפי מסקנה -@cor-subspace-dim): $$\mathop{\mathrm{Ker}}(T)=\Set{\underline{0}} \iff \mathop{\mathrm{Im}}(T)=\mathbb{C}^6$$ לבסוף, לפי טענה -@prp-injective אפשר להסיק כי $T$ היא על אם ורק אם היא חח״ע.
 :::
 הטענה הבאה מכלילה את התרגיל האחרון:
 
@@ -628,7 +628,7 @@ $(\text{ב})\impliedby(\text{ג})+(\text{א})$: לפי ההנחות מתקיים
 $(\text{א})\impliedby(\text{ג})+(\text{ב})$: לפי ההנחות מתקיים $$.\dim(\mathop{\mathrm{Im}}(T))=\dim(W),\quad \dim(V)=\dim(W)$$ לאחר הצבה בנוסחה, נקבל $$.\dim(\mathop{\mathrm{Ker}}(T))+\dim(W)=\dim(W)$$ נובע כי $\dim(\mathop{\mathrm{Ker}}(T))=0$, ולכן $\mathop{\mathrm{Ker}}(T)=\Set{0_V}$. פירוש הדבר ש- $T$ חח״ע לפי טענה -@prp-injective.
 :::
 ::: remark
-מה הקשר של המשפט לעיל לבין משפט \"שלישי חינם\" לקבוצת וקטורים (משפט -@thm-3-for-2)? המשפט הישן הוא מקרה פרטי של המשפט החדש. נראה זאת: תהי $A\in\mathbb{M}_{m\times n}(\mathbb{F})$. נסמן את עמודותיה ב- $v_1,...,v_n$, ונשים לב כי $$.\text{$v_1,...,v_n$ בת"ל}\iff \mathop{\mathrm{N}}(A)=\Set{\underline{0}} \iff \mathop{\mathrm{Ker}}(T_A)=\Set{\underline{0}} \iff \text{$T_A$ חח״ע}$$ בנוסף: $$.\text{$v_1,...,v_n$ פורשים את $\mathbb{F}^m$}\iff \mathop{\mathrm{Col}}(A)=\mathbb{F}^m \iff \mathop{\mathrm{Im}}(T_A)=\mathbb{F}^m \iff \text{$T_A$ על}$$
+מה הקשר של המשפט לעיל לבין משפט \"שלישי חינם\" לקבוצת וקטורים (משפט -@thm-3-for-2)? המשפט הישן הוא מקרה פרטי של המשפט החדש. נראה זאת: תהי $A\in\mathbb{M}_{m\times n}(\mathbb{F})$. נסמן את עמודותיה ב- $v_1,...,v_n$, ונשים לב כי $$.\text{$v_1,...,v_n$ בת"ל}\iff \mathop{\mathrm{N}}(A)=\Set{\underline{0}} \iff \mathop{\mathrm{Ker}}(T_A)=\Set{\underline{0}} \iff \text{$T_A$ חח״ע}$$ בנוסף: $$\text{$v_1,...,v_n$ פורשים את $\mathbb{F}^m$}\iff \mathop{\mathrm{Col}}(A)=\mathbb{F}^m \iff \mathop{\mathrm{Im}}(T_A)=\mathbb{F}^m \iff \text{$T_A$ על}$$
 
 לאור זאת ולפי המשפט החדש, כל שניים מהתנאים הבאים גוררים את התנאי השלישי:
 
@@ -1182,7 +1182,6 @@ $$\left(
 -1 & 2 & 2 & 4
 \end{array}
 \right)$$
-:::
 
 צורתה המדורגת קנונית היא: 
 $$\left(
@@ -1206,6 +1205,7 @@ $$[S\circ T]_D^B=[S]_D^C[T]_C^B=\begin{pmatrix}
 -\frac{11}{20} & \frac{11}{10} \\
 \frac{37}{20} & \frac{3}{10}
 \end{pmatrix}$$
+:::
 
 ::: exercise
 יהיו $T,S:V\to W$ ה\"ל, ויהיו $B,C$ בסיסים סדורים ל- $V,W$ בהתאמה. אז:
