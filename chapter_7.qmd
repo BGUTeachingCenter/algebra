@@ -98,7 +98,6 @@ $$
 &=T(\alpha_1 v_1)+...+T(\alpha_k v_k)=\alpha_1T(v_1)+...+\alpha_k T(v_k)
 \end{aligned}
 $$
-
  במעבר האחרון הוצאנו סקלר מכל ערך של $T$ לחוד.
 
 ב.  מתקיים $$.T(0_V)=T(0\cdot 0_V)=0\cdot T(0_V)=0_W$$
