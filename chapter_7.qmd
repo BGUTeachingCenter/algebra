@@ -91,12 +91,15 @@ T(\alpha v_1) &= \alpha T(v_1)
  
 
 א.  יהיו $v_1,...,v_k\in V$ ו- $\alpha_1,...,\alpha_k\in \mathbb{F}$. נשתמש שוב ושוב בתכונת החיבור של לינאריות, כדי להפריד את המחוברים זה אחר זה (ההוכחה הפורמלית היא באינדוקציה למי שמכיר):
+$$
+\begin{aligned}
+&T(\alpha_1 v_1+...+\alpha_{k-1}v_{k-1}+\alpha_k v_k)=T(\alpha_1 v_1+...+\alpha_{k-1}v_{k-1})+T(\alpha_k v_k)\\
+&=T(\alpha_1 v_1+...+\alpha_{k-2}v_{k-2})+T(\alpha_{k-1}v_{k-1})+T(\alpha_k v_k)=...\\
+&=T(\alpha_1 v_1)+...+T(\alpha_k v_k)=\alpha_1T(v_1)+...+\alpha_k T(v_k)
+\end{aligned}
+$$
 
-    $$\begin{aligned}
-    &T(\alpha_1 v_1+...+\alpha_{k-1}v_{k-1}+\alpha_k v_k)=T(\alpha_1 v_1+...+\alpha_{k-1}v_{k-1})+T(\alpha_k v_k)\\
-    &=T(\alpha_1 v_1+...+\alpha_{k-2}v_{k-2})+T(\alpha_{k-1}v_{k-1})+T(\alpha_k v_k)=...\\
-    &=T(\alpha_1 v_1)+...+T(\alpha_k v_k)=\alpha_1T(v_1)+...+\alpha_k T(v_k)
-    \end{aligned}$$ במעבר האחרון הוצאנו סקלר מכל ערך של $T$ לחוד.
+ במעבר האחרון הוצאנו סקלר מכל ערך של $T$ לחוד.
 
 ב.  מתקיים $$.T(0_V)=T(0\cdot 0_V)=0\cdot T(0_V)=0_W$$
 
