@@ -330,7 +330,7 @@ T(v+w)&=T(\sum_{k=1}^n(\alpha_k+\beta_k)v_k)=\sum_{k=1}^n(\alpha_k+\beta_k)w_k \
 -   *$\mathop{\mathrm{Im}}(T)$ היא תת-מרחב של $W$.*
 :::
 ::: proof
-ראשית, מתקיים $0_V\in\mathop{\mathrm{Ker}}(T)$ כי $T(0_V)=0_W$ לפי סעיף ב' של טענה -@prp-more-linearity. זה גם מראה כי $0_W\in\mathop{\mathrm{Im}}(T)$.
+ראשית, מתקיים $0_V\in\mathop{\mathrm{Ker}}(T)$ כי $T(0_V)=0_W$ לפי סעיף ב' של טענה -@prp-more-linearity. עובדה זו גם מראה שמתקיים $0_W\in\mathop{\mathrm{Im}}(T)$.
 
 לכל קבוצה נבדוק סגירות לחיבור וכפל בסקלר.
 
