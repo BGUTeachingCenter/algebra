@@ -464,20 +464,20 @@ $$\begin{aligned}
     \mathbf{0}_{V,W}(v_1+v_2)&=0_W=0_W+0_W=\mathbf{0}_{V,W}(v_1)+\mathbf{0}_{V,W}(v_2)
     \end{aligned}$$
 
-    בנוסף: $$\begin{aligned}
-    \mathrm{Id}_{V}(\alpha v_1)&=\alpha v_1=\alpha\mathrm{Id}_{V}(v_1) \\
-    \mathbf{0}_{V,W}(\alpha v_1)&=0_W=\alpha\cdot 0_W=\alpha\mathbf{0}_{V,W}(v_1)
-    \end{aligned}$$
+ בנוסף: $$\begin{aligned}
+\mathrm{Id}_{V}(\alpha v_1)&=\alpha v_1=\alpha\mathrm{Id}_{V}(v_1) \\
+\mathbf{0}_{V,W}(\alpha v_1)&=0_W=\alpha\cdot 0_W=\alpha\mathbf{0}_{V,W}(v_1)
+\end{aligned}$$
 
 ב.  עבור העתקת הזהות: $$\begin{aligned}
     \mathop{\mathrm{Ker}}(\mathrm{Id}_{V})&=\Set{v\in V|\mathrm{Id}_{V}(v)=0_V}=\Set{v\in V|v=0_V}=\Set{0_V} \\
     \mathop{\mathrm{Im}}(\mathrm{Id}_{V})&=\Set{\mathrm{Id}_{V}(v)|v\in V}=\Set{v|v\in V}=V
     \end{aligned}$$
 
-    עבור העתקת האפס: $$\begin{aligned}
-    \mathop{\mathrm{Ker}}(\mathbf{0}_{V,W})&=\Set{v\in V|\mathbf{0}_{V,W}(v)=0_W}=\Set{v\in V|0_W=0_W}=V \\
-    \mathop{\mathrm{Im}}(\mathbf{0}_{V,W})&=\Set{\mathbf{0}_{V,W}(v)|v\in V}=\Set{0_W|v\in V}=\Set{0_W}
-    \end{aligned}$$
+ עבור העתקת האפס: $$\begin{aligned}
+\mathop{\mathrm{Ker}}(\mathbf{0}_{V,W})&=\Set{v\in V|\mathbf{0}_{V,W}(v)=0_W}=\Set{v\in V|0_W=0_W}=V \\
+\mathop{\mathrm{Im}}(\mathbf{0}_{V,W})&=\Set{\mathbf{0}_{V,W}(v)|v\in V}=\Set{0_W|v\in V}=\Set{0_W}
+\end{aligned}$$
 :::
 המושגים הכלליים של \"פונקציה על\" ו\"פונקציה חד-חד-ערכית\" תקפים גם לגבי העתקות לינאריות ויהיו רלוונטיים עבורנו. נגדיר אותם במדויק.
 
