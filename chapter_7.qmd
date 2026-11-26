@@ -169,7 +169,7 @@ $T$ אינה לינארית. הדרך הפשוטה ביותר להראות זא�
     x\sin{\theta}+y\cos{\theta}
     \end{pmatrix}$$
 
-    במקרה זה ל- $T_A$ יש משמעות גיאומטרית של סיבוב וקטור הקלט $\begin{pmatrix}x\\y\end{pmatrix}$ בזווית $\theta$ נגד כיוון השעון, ולכן $A$ נקראת מטריצת סיבוב. זו פעולה אנלוגית להכפלת $z=x+iy$ במספר $e^{i\theta}=\cos{\theta}+i\sin{\theta}$ במישור המרוכב $\mathbb{C}$. אכן: $$(\cos{\theta}+i\sin{\theta})(x+iy)=x\cos{\theta}-y\sin{\theta}+i(x\sin{\theta}+y\cos{\theta})$$
+ במקרה זה ל- $T_A$ יש משמעות גיאומטרית של סיבוב וקטור הקלט $\begin{pmatrix}x\\y\end{pmatrix}$ בזווית $\theta$ נגד כיוון השעון, ולכן $A$ נקראת מטריצת סיבוב. זו פעולה אנלוגית להכפלת $z=x+iy$ במספר $e^{i\theta}=\cos{\theta}+i\sin{\theta}$ במישור המרוכב $\mathbb{C}$. אכן: $$(\cos{\theta}+i\sin{\theta})(x+iy)=x\cos{\theta}-y\sin{\theta}+i(x\sin{\theta}+y\cos{\theta})$$
 
 ד.  נסמן $$.A=\begin{pmatrix}
     0 & 1 \\
@@ -182,7 +182,7 @@ $T$ אינה לינארית. הדרך הפשוטה ביותר להראות זא�
     x
     \end{pmatrix}$$ כאן המשמעות הגיאומטרית של פעולת $T_A$ היא שיקוף ביחס לישר $y=x$.
 
-    ![שיקוף הוקטור ביחס לישר](images/Reflection.png){#fig-Reflection width="50%" fig-align="center"}
+![שיקוף הוקטור ביחס לישר](images/Reflection.png){#fig-Reflection width="50%" fig-align="center"}
 :::
 
 ::: {#fig-Rotation .figure}
@@ -207,7 +207,7 @@ $T$ אינה לינארית. הדרך הפשוטה ביותר להראות זא�
 בינתיים ראינו כי לכל $A\in\mathbb{M}_{m\times n}(\mathbb{F})$ מתאימה ה\"ל $T_A:\mathbb{F}^n\to\mathbb{F}^m$. מה לגבי הכיוון השני? כלומר, האם כל ה\"ל $T:\mathbb{F}^n\to\mathbb{F}^m$ מתאימה למטריצה מסדר מתאים? התשובה חיובית, ומטריצה זו נקבעת ביחידות. זה מראה כי יש קשר הדוק בין מטריצות להעתקות לינאריות.
 
 ::: {.proposition #prp-unique-matrix}
-*תהי $T:\mathbb{F}^n\to\mathbb{F}^m$ ה\"ל. אז קיימת ויחידה $A\in\mathbb{M}_{m\times n}(\mathbb{F})$ כך ש- $T=T_A.$*
+*תהי $T:\mathbb{F}^n\to\mathbb{F}^m$ ה\"ל. אז קיימת ויחידה $A\in\mathbb{M}_{m\times n}(\mathbb{F})$ כך ש- $T=T_A$.*
 :::
 ::: proof
 לכל $\begin{pmatrix}x_1\\\vdots\\x_n\end{pmatrix}\in\mathbb{F}^n$ מתקיים: $$\begin{aligned}
