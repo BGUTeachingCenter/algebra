@@ -356,7 +356,7 @@ c+d
 \end{pmatrix}=\begin{pmatrix}
 0 \\
 0
-\end{pmatrix}=\left\{\begin{pmatrix}
+\end{pmatrix}\right\}=\left\{\begin{pmatrix}
 -s & s \\
 -t & t
 \end{pmatrix}\middle|s,t\in \mathbb{R}\right\} \\
@@ -371,7 +371,7 @@ c+d
 \mathop{\mathrm{Im}}(T)&=\left\{T\begin{pmatrix}
 a & b \\
 c & d
-\end{pmatrix}|\begin{pmatrix}
+\end{pmatrix}\middle|\begin{pmatrix}
 a & b \\
 c & d
 \end{pmatrix}\in\mathbb{M}_{2\times 2}(\mathbb{R})\right\} \\
