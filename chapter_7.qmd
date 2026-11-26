@@ -347,19 +347,19 @@ c & d
 a+b \\
 c+d
 \end{pmatrix}$$ לפי הגדרת הגרעין, מתקיים: $$\begin{aligned}
-\mathop{\mathrm{Ker}}(T)&=\Set{\begin{pmatrix}
+\mathop{\mathrm{Ker}}(T)&=\left\{\begin{pmatrix}
 a & b \\
 c & d
-\end{pmatrix}|\begin{pmatrix}
+\end{pmatrix}\middle|\begin{pmatrix}
 a+b \\
 c+d
 \end{pmatrix}=\begin{pmatrix}
 0 \\
 0
-\end{pmatrix}}=\Set{\begin{pmatrix}
+\end{pmatrix}=\left\{\begin{pmatrix}
 -s & s \\
 -t & t
-\end{pmatrix}|s,t\in \mathbb{R}} \\
+\end{pmatrix}\middle|s,t\in \mathbb{R}\right\} \\
 &=\mathop{\mathrm{Span}}\left(\begin{pmatrix}
 -1 & 1 \\
 0 & 0
@@ -368,17 +368,17 @@ c+d
 -1 & 1
 \end{pmatrix}\right)
 \end{aligned}$$ לפי הגדרת התמונה, מתקיים: $$\begin{aligned}
-\mathop{\mathrm{Im}}(T)&=\Set{T\begin{pmatrix}
+\mathop{\mathrm{Im}}(T)&=\left\{T\begin{pmatrix}
 a & b \\
 c & d
 \end{pmatrix}|\begin{pmatrix}
 a & b \\
 c & d
-\end{pmatrix}\in\mathbb{M}_{2\times 2}(\mathbb{R})} \\
-&=\Set{\begin{pmatrix}
+\end{pmatrix}\in\mathbb{M}_{2\times 2}(\mathbb{R})\right\} \\
+&=\left\{\begin{pmatrix}
 a+b \\
 c+d
-\end{pmatrix}|a,b,c,d\in\mathbb{R}}=\mathop{\mathrm{Span}}\left(\begin{pmatrix}1\\0\end{pmatrix},\begin{pmatrix}0\\1\end{pmatrix}\right)=\mathbb{R}^2
+\end{pmatrix}\middle|a,b,c,d\in\mathbb{R}\right\}=\mathop{\mathrm{Span}}\left(\begin{pmatrix}1\\0\end{pmatrix},\begin{pmatrix}0\\1\end{pmatrix}\right)=\mathbb{R}^2
 \end{aligned}$$
 :::
 אחד היתרונות של ה\"ל הוא שמספיק לדעת את ערכיה על קבוצה פורשת (בפרט בסיס) כדי לדעת את כל התמונה. זה לא בהכרח נכון לתמונה של פונקציה שאינה ה\"ל (במקרה כזה יש לחקור את הפונקציה, לרוב ע\"י כלים של חדו\"א). הטענה הבאה נותנת דרך פשוטה לחשב את התמונה של ה\"ל.
