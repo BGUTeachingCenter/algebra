@@ -410,7 +410,7 @@ $$\begin{aligned}
 
 ב.  לפי טענה -@prp-image-span, מהעובדה $\mathbb{F}^n=\mathop{\mathrm{Span}}(e_1,...,e_n)$ נובע כי $$.\mathop{\mathrm{Im}}(T_A)=\mathop{\mathrm{Span}}(Ae_1,...,Ae_n)=\mathop{\mathrm{Col}}(A)$$
 
-    השוויון האחרון נובע מכך שלכל $1\leq j\leq n$, הוקטור $Ae_j$ הוא בדיוק העמודה ה- $j$ של $A$.
+ השוויון האחרון נובע מכך שלכל $1\leq j\leq n$, הוקטור $Ae_j$ הוא בדיוק העמודה ה- $j$ של $A$.
 
 :::
 ::: {#fig-KerIm .figure}
